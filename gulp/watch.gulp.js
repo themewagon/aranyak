@@ -24,7 +24,6 @@ gulp.task('watch', () => {
   gulp.watch(paths.pug.src.all, gulp.series(updating));
   gulp.watch(paths.style.src, gulp.series('style'));
   gulp.watch(paths.script.src, gulp.series('script'));
-  gulp.watch(['./src/js/flatpickr.js'], gulp.series('script:webpack'));
   gulp.watch(paths.script.configNavbar, gulp.series('script'));
   gulp.watch(paths.script.echartsExample, gulp.series('script'));
   gulp.watch(

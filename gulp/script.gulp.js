@@ -18,25 +18,6 @@ const {
 } = require('./utils.js');
 const gulpIf = require('gulp-if');
 
-/* -------------------------------------------------------------------------- */
-/*                       JavaScript Compile with Webpack                      */
-/* -------------------------------------------------------------------------- */
-gulp.task('script:webpack', () => {
-  return gulp
-    .src(`./src/js/theme.js`)
-    .pipe(
-      webpackStream({
-        mode: 'development',
-        entry: {
-          flatpickr: './src/js/flatpickr.js'
-        },
-        output: {
-          filename: '[name].js'
-        }
-      })
-    )
-    .pipe(gulp.dest(`${baseDir}/assets/js`));
-});
 
 /* -------------------------------------------------------------------------- */
 /*                             JavaScript Compile                             */

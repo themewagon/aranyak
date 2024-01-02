@@ -3643,19 +3643,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .falcon-data-table .paging_full_numbers .btn-check[disabled] + .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-check[disabled] + .page-link,
-.falcon-data-table .paging_full .btn-check[disabled] + .page-link,
-.falcon-data-table .paging_numbers .btn-check[disabled] + .page-link,
-.falcon-data-table .paging_simple_numbers .btn-check[disabled] + .page-link, [data-list] .btn-check[disabled] + .page, .table-list .btn-check[disabled] + .page, .tox .tox-menu__footer .btn-check[disabled] + .tox-button:last-child,
-.tox .tox-dialog__footer .btn-check[disabled] + .tox-button:last-child, .tox .tox-menu__footer .btn-check[disabled] + .tox-button--secondary,
-.tox .tox-dialog__footer .btn-check[disabled] + .tox-button--secondary, .btn-check:disabled + .btn, .falcon-data-table .paging_full_numbers .btn-check:disabled + .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-check:disabled + .page-link,
-.falcon-data-table .paging_full .btn-check:disabled + .page-link,
-.falcon-data-table .paging_numbers .btn-check:disabled + .page-link,
-.falcon-data-table .paging_simple_numbers .btn-check:disabled + .page-link, [data-list] .btn-check:disabled + .page, .table-list .btn-check:disabled + .page, .tox .tox-menu__footer .btn-check:disabled + .tox-button:last-child,
-.tox .tox-dialog__footer .btn-check:disabled + .tox-button:last-child, .tox .tox-menu__footer .btn-check:disabled + .tox-button--secondary,
-.tox .tox-dialog__footer .btn-check:disabled + .tox-button--secondary {
+.btn-check[disabled] + .btn, [data-list] .btn-check[disabled] + .page, .table-list .btn-check[disabled] + .page, .btn-check:disabled + .btn, [data-list] .btn-check:disabled + .page, .table-list .btn-check:disabled + .page {
   pointer-events: none;
   -webkit-filter: none;
   filter: none;
@@ -3940,35 +3928,11 @@ textarea.form-control-lg {
 .input-group > .form-floating:focus-within {
   z-index: 5;
 }
-.input-group .btn, .input-group .falcon-data-table .paging_full_numbers .page-link, .falcon-data-table .paging_full_numbers .input-group .page-link,
-.input-group .falcon-data-table .paging_first_last_numbers .page-link,
-.falcon-data-table .paging_first_last_numbers .input-group .page-link,
-.input-group .falcon-data-table .paging_full .page-link,
-.falcon-data-table .paging_full .input-group .page-link,
-.input-group .falcon-data-table .paging_numbers .page-link,
-.falcon-data-table .paging_numbers .input-group .page-link,
-.input-group .falcon-data-table .paging_simple_numbers .page-link,
-.falcon-data-table .paging_simple_numbers .input-group .page-link, .input-group [data-list] .page, [data-list] .input-group .page, .input-group .table-list .page, .table-list .input-group .page, .input-group .tox .tox-menu__footer .tox-button:last-child, .tox .tox-menu__footer .input-group .tox-button:last-child,
-.input-group .tox .tox-dialog__footer .tox-button:last-child,
-.tox .tox-dialog__footer .input-group .tox-button:last-child, .input-group .tox .tox-menu__footer .tox-button--secondary, .tox .tox-menu__footer .input-group .tox-button--secondary,
-.input-group .tox .tox-dialog__footer .tox-button--secondary,
-.tox .tox-dialog__footer .input-group .tox-button--secondary {
+.input-group .btn, .input-group [data-list] .page, [data-list] .input-group .page, .input-group .table-list .page, .table-list .input-group .page {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus, .input-group .falcon-data-table .paging_full_numbers .page-link:focus, .falcon-data-table .paging_full_numbers .input-group .page-link:focus,
-.input-group .falcon-data-table .paging_first_last_numbers .page-link:focus,
-.falcon-data-table .paging_first_last_numbers .input-group .page-link:focus,
-.input-group .falcon-data-table .paging_full .page-link:focus,
-.falcon-data-table .paging_full .input-group .page-link:focus,
-.input-group .falcon-data-table .paging_numbers .page-link:focus,
-.falcon-data-table .paging_numbers .input-group .page-link:focus,
-.input-group .falcon-data-table .paging_simple_numbers .page-link:focus,
-.falcon-data-table .paging_simple_numbers .input-group .page-link:focus, .input-group [data-list] .page:focus, [data-list] .input-group .page:focus, .input-group .table-list .page:focus, .table-list .input-group .page:focus, .input-group .tox .tox-menu__footer .tox-button:focus:last-child, .tox .tox-menu__footer .input-group .tox-button:focus:last-child,
-.input-group .tox .tox-dialog__footer .tox-button:focus:last-child,
-.tox .tox-dialog__footer .input-group .tox-button:focus:last-child, .input-group .tox .tox-menu__footer .tox-button--secondary:focus, .tox .tox-menu__footer .input-group .tox-button--secondary:focus,
-.input-group .tox .tox-dialog__footer .tox-button--secondary:focus,
-.tox .tox-dialog__footer .input-group .tox-button--secondary:focus {
+.input-group .btn:focus, .input-group [data-list] .page:focus, [data-list] .input-group .page:focus, .input-group .table-list .page:focus, .table-list .input-group .page:focus {
   z-index: 5;
 }
 
@@ -3995,17 +3959,8 @@ textarea.form-control-lg {
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn,
-.falcon-data-table .paging_full_numbers .input-group-lg > .page-link,
-.falcon-data-table .paging_first_last_numbers .input-group-lg > .page-link,
-.falcon-data-table .paging_full .input-group-lg > .page-link,
-.falcon-data-table .paging_numbers .input-group-lg > .page-link,
-.falcon-data-table .paging_simple_numbers .input-group-lg > .page-link,
 [data-list] .input-group-lg > .page,
-.table-list .input-group-lg > .page,
-.tox .tox-menu__footer .input-group-lg > .tox-button:last-child,
-.tox .tox-dialog__footer .input-group-lg > .tox-button:last-child,
-.tox .tox-menu__footer .input-group-lg > .tox-button--secondary,
-.tox .tox-dialog__footer .input-group-lg > .tox-button--secondary {
+.table-list .input-group-lg > .page {
   padding: 0.375rem 1.25rem;
   font-size: 1.2rem;
   border-radius: var(--falcon-border-radius-lg);
@@ -4015,17 +3970,8 @@ textarea.form-control-lg {
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn,
-.falcon-data-table .paging_full_numbers .input-group-sm > .page-link,
-.falcon-data-table .paging_first_last_numbers .input-group-sm > .page-link,
-.falcon-data-table .paging_full .input-group-sm > .page-link,
-.falcon-data-table .paging_numbers .input-group-sm > .page-link,
-.falcon-data-table .paging_simple_numbers .input-group-sm > .page-link,
 [data-list] .input-group-sm > .page,
-.table-list .input-group-sm > .page,
-.tox .tox-menu__footer .input-group-sm > .tox-button:last-child,
-.tox .tox-dialog__footer .input-group-sm > .tox-button:last-child,
-.tox .tox-menu__footer .input-group-sm > .tox-button--secondary,
-.tox .tox-dialog__footer .input-group-sm > .tox-button--secondary {
+.table-list .input-group-sm > .page {
   padding: 0.1875rem 0.75rem;
   font-size: 0.875rem;
   border-radius: var(--falcon-border-radius-sm);
@@ -4247,13 +4193,7 @@ textarea.form-control-lg {
   z-index: 4;
 }
 
-.btn, .falcon-data-table .paging_full_numbers .page-link,
-.falcon-data-table .paging_first_last_numbers .page-link,
-.falcon-data-table .paging_full .page-link,
-.falcon-data-table .paging_numbers .page-link,
-.falcon-data-table .paging_simple_numbers .page-link, [data-list] .page, .table-list .page, .tox .tox-menu__footer .tox-button:last-child,
-.tox .tox-dialog__footer .tox-button:last-child, .tox .tox-menu__footer .tox-button--secondary,
-.tox .tox-dialog__footer .tox-button--secondary {
+.btn, [data-list] .page, .table-list .page {
   --falcon-btn-padding-x: 1rem;
   --falcon-btn-padding-y: 0.3125rem;
   --falcon-btn-font-family: ;
@@ -4295,48 +4235,24 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .falcon-data-table .paging_full_numbers .page-link,
-  .falcon-data-table .paging_first_last_numbers .page-link,
-  .falcon-data-table .paging_full .page-link,
-  .falcon-data-table .paging_numbers .page-link,
-  .falcon-data-table .paging_simple_numbers .page-link, [data-list] .page, .table-list .page, .tox .tox-menu__footer .tox-button:last-child,
-  .tox .tox-dialog__footer .tox-button:last-child, .tox .tox-menu__footer .tox-button--secondary,
-  .tox .tox-dialog__footer .tox-button--secondary {
+  .btn, [data-list] .page, .table-list .page {
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
   }
 }
-.btn:hover, .falcon-data-table .paging_full_numbers .page-link:hover,
-.falcon-data-table .paging_first_last_numbers .page-link:hover,
-.falcon-data-table .paging_full .page-link:hover,
-.falcon-data-table .paging_numbers .page-link:hover,
-.falcon-data-table .paging_simple_numbers .page-link:hover, [data-list] .page:hover, .table-list .page:hover, .tox .tox-menu__footer .tox-button:hover:last-child,
-.tox .tox-dialog__footer .tox-button:hover:last-child, .tox .tox-menu__footer .tox-button--secondary:hover,
-.tox .tox-dialog__footer .tox-button--secondary:hover {
+.btn:hover, [data-list] .page:hover, .table-list .page:hover {
   color: var(--falcon-btn-hover-color);
   text-decoration: none;
   background-color: var(--falcon-btn-hover-bg);
   border-color: var(--falcon-btn-hover-border-color);
 }
-.btn-check + .btn:hover, .falcon-data-table .paging_full_numbers .btn-check + .page-link:hover,
-.falcon-data-table .paging_first_last_numbers .btn-check + .page-link:hover,
-.falcon-data-table .paging_full .btn-check + .page-link:hover,
-.falcon-data-table .paging_numbers .btn-check + .page-link:hover,
-.falcon-data-table .paging_simple_numbers .btn-check + .page-link:hover, [data-list] .btn-check + .page:hover, .table-list .btn-check + .page:hover, .tox .tox-menu__footer .btn-check + .tox-button:hover:last-child,
-.tox .tox-dialog__footer .btn-check + .tox-button:hover:last-child, .tox .tox-menu__footer .btn-check + .tox-button--secondary:hover,
-.tox .tox-dialog__footer .btn-check + .tox-button--secondary:hover {
+.btn-check + .btn:hover, [data-list] .btn-check + .page:hover, .table-list .btn-check + .page:hover {
   color: var(--falcon-btn-color);
   background-color: var(--falcon-btn-bg);
   border-color: var(--falcon-btn-border-color);
 }
-.btn:focus-visible, .falcon-data-table .paging_full_numbers .page-link:focus-visible,
-.falcon-data-table .paging_first_last_numbers .page-link:focus-visible,
-.falcon-data-table .paging_full .page-link:focus-visible,
-.falcon-data-table .paging_numbers .page-link:focus-visible,
-.falcon-data-table .paging_simple_numbers .page-link:focus-visible, [data-list] .page:focus-visible, .table-list .page:focus-visible, .tox .tox-menu__footer .tox-button:focus-visible:last-child,
-.tox .tox-dialog__footer .tox-button:focus-visible:last-child, .tox .tox-menu__footer .tox-button--secondary:focus-visible,
-.tox .tox-dialog__footer .tox-button--secondary:focus-visible {
+.btn:focus-visible, [data-list] .page:focus-visible, .table-list .page:focus-visible {
   color: var(--falcon-btn-hover-color);
   background-color: var(--falcon-btn-hover-bg);
   border-color: var(--falcon-btn-hover-border-color);
@@ -4344,114 +4260,24 @@ textarea.form-control-lg {
   -webkit-box-shadow: var(--falcon-btn-box-shadow), var(--falcon-btn-focus-box-shadow);
   box-shadow: var(--falcon-btn-box-shadow), var(--falcon-btn-focus-box-shadow);
 }
-.btn-check:focus-visible + .btn, .falcon-data-table .paging_full_numbers .btn-check:focus-visible + .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-check:focus-visible + .page-link,
-.falcon-data-table .paging_full .btn-check:focus-visible + .page-link,
-.falcon-data-table .paging_numbers .btn-check:focus-visible + .page-link,
-.falcon-data-table .paging_simple_numbers .btn-check:focus-visible + .page-link, [data-list] .btn-check:focus-visible + .page, .table-list .btn-check:focus-visible + .page, .tox .tox-menu__footer .btn-check:focus-visible + .tox-button:last-child,
-.tox .tox-dialog__footer .btn-check:focus-visible + .tox-button:last-child, .tox .tox-menu__footer .btn-check:focus-visible + .tox-button--secondary,
-.tox .tox-dialog__footer .btn-check:focus-visible + .tox-button--secondary {
+.btn-check:focus-visible + .btn, [data-list] .btn-check:focus-visible + .page, .table-list .btn-check:focus-visible + .page {
   border-color: var(--falcon-btn-hover-border-color);
   outline: 0;
   -webkit-box-shadow: var(--falcon-btn-box-shadow), var(--falcon-btn-focus-box-shadow);
   box-shadow: var(--falcon-btn-box-shadow), var(--falcon-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn, .falcon-data-table .paging_full_numbers .btn-check:checked + .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-check:checked + .page-link,
-.falcon-data-table .paging_full .btn-check:checked + .page-link,
-.falcon-data-table .paging_numbers .btn-check:checked + .page-link,
-.falcon-data-table .paging_simple_numbers .btn-check:checked + .page-link, [data-list] .btn-check:checked + .page, .table-list .btn-check:checked + .page, .tox .tox-menu__footer .btn-check:checked + .tox-button:last-child,
-.tox .tox-dialog__footer .btn-check:checked + .tox-button:last-child, .tox .tox-menu__footer .btn-check:checked + .tox-button--secondary,
-.tox .tox-dialog__footer .btn-check:checked + .tox-button--secondary, :not(.btn-check) + .btn:active, .falcon-data-table .paging_full_numbers :not(.btn-check) + .page-link:active,
-.falcon-data-table .paging_first_last_numbers :not(.btn-check) + .page-link:active,
-.falcon-data-table .paging_full :not(.btn-check) + .page-link:active,
-.falcon-data-table .paging_numbers :not(.btn-check) + .page-link:active,
-.falcon-data-table .paging_simple_numbers :not(.btn-check) + .page-link:active, [data-list] :not(.btn-check) + .page:active, .table-list :not(.btn-check) + .page:active, .tox .tox-menu__footer :not(.btn-check) + .tox-button:active:last-child,
-.tox .tox-dialog__footer :not(.btn-check) + .tox-button:active:last-child, .tox .tox-menu__footer :not(.btn-check) + .tox-button--secondary:active,
-.tox .tox-dialog__footer :not(.btn-check) + .tox-button--secondary:active, .btn:first-child:active, .falcon-data-table .paging_full_numbers .page-link:first-child:active,
-.falcon-data-table .paging_first_last_numbers .page-link:first-child:active,
-.falcon-data-table .paging_full .page-link:first-child:active,
-.falcon-data-table .paging_numbers .page-link:first-child:active,
-.falcon-data-table .paging_simple_numbers .page-link:first-child:active, [data-list] .page:first-child:active, .table-list .page:first-child:active, .tox .tox-menu__footer .tox-button:first-child:active:last-child,
-.tox .tox-dialog__footer .tox-button:first-child:active:last-child, .tox .tox-menu__footer .tox-button--secondary:first-child:active,
-.tox .tox-dialog__footer .tox-button--secondary:first-child:active, .btn.active, .falcon-data-table .paging_full_numbers .active.page-link,
-.falcon-data-table .paging_first_last_numbers .active.page-link,
-.falcon-data-table .paging_full .active.page-link,
-.falcon-data-table .paging_numbers .active.page-link,
-.falcon-data-table .paging_simple_numbers .active.page-link, [data-list] .active.page, .table-list .active.page, .tox .tox-menu__footer .active.tox-button:last-child,
-.tox .tox-dialog__footer .active.tox-button:last-child, .tox .tox-menu__footer .active.tox-button--secondary,
-.tox .tox-dialog__footer .active.tox-button--secondary, .btn.show, .falcon-data-table .paging_full_numbers .show.page-link,
-.falcon-data-table .paging_first_last_numbers .show.page-link,
-.falcon-data-table .paging_full .show.page-link,
-.falcon-data-table .paging_numbers .show.page-link,
-.falcon-data-table .paging_simple_numbers .show.page-link, [data-list] .show.page, .table-list .show.page, .tox .tox-menu__footer .show.tox-button:last-child,
-.tox .tox-dialog__footer .show.tox-button:last-child, .tox .tox-menu__footer .show.tox-button--secondary,
-.tox .tox-dialog__footer .show.tox-button--secondary {
+.btn-check:checked + .btn, [data-list] .btn-check:checked + .page, .table-list .btn-check:checked + .page, :not(.btn-check) + .btn:active, [data-list] :not(.btn-check) + .page:active, .table-list :not(.btn-check) + .page:active, .btn:first-child:active, [data-list] .page:first-child:active, .table-list .page:first-child:active, .btn.active, [data-list] .active.page, .table-list .active.page, .btn.show, [data-list] .show.page, .table-list .show.page {
   color: var(--falcon-btn-active-color);
   background-color: var(--falcon-btn-active-bg);
   border-color: var(--falcon-btn-active-border-color);
   -webkit-box-shadow: var(--falcon-btn-active-shadow);
   box-shadow: var(--falcon-btn-active-shadow);
 }
-.btn-check:checked + .btn:focus-visible, .falcon-data-table .paging_full_numbers .btn-check:checked + .page-link:focus-visible,
-.falcon-data-table .paging_first_last_numbers .btn-check:checked + .page-link:focus-visible,
-.falcon-data-table .paging_full .btn-check:checked + .page-link:focus-visible,
-.falcon-data-table .paging_numbers .btn-check:checked + .page-link:focus-visible,
-.falcon-data-table .paging_simple_numbers .btn-check:checked + .page-link:focus-visible, [data-list] .btn-check:checked + .page:focus-visible, .table-list .btn-check:checked + .page:focus-visible, .tox .tox-menu__footer .btn-check:checked + .tox-button:focus-visible:last-child,
-.tox .tox-dialog__footer .btn-check:checked + .tox-button:focus-visible:last-child, .tox .tox-menu__footer .btn-check:checked + .tox-button--secondary:focus-visible,
-.tox .tox-dialog__footer .btn-check:checked + .tox-button--secondary:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .falcon-data-table .paging_full_numbers :not(.btn-check) + .page-link:active:focus-visible,
-.falcon-data-table .paging_first_last_numbers :not(.btn-check) + .page-link:active:focus-visible,
-.falcon-data-table .paging_full :not(.btn-check) + .page-link:active:focus-visible,
-.falcon-data-table .paging_numbers :not(.btn-check) + .page-link:active:focus-visible,
-.falcon-data-table .paging_simple_numbers :not(.btn-check) + .page-link:active:focus-visible, [data-list] :not(.btn-check) + .page:active:focus-visible, .table-list :not(.btn-check) + .page:active:focus-visible, .tox .tox-menu__footer :not(.btn-check) + .tox-button:active:focus-visible:last-child,
-.tox .tox-dialog__footer :not(.btn-check) + .tox-button:active:focus-visible:last-child, .tox .tox-menu__footer :not(.btn-check) + .tox-button--secondary:active:focus-visible,
-.tox .tox-dialog__footer :not(.btn-check) + .tox-button--secondary:active:focus-visible, .btn:first-child:active:focus-visible, .falcon-data-table .paging_full_numbers .page-link:first-child:active:focus-visible,
-.falcon-data-table .paging_first_last_numbers .page-link:first-child:active:focus-visible,
-.falcon-data-table .paging_full .page-link:first-child:active:focus-visible,
-.falcon-data-table .paging_numbers .page-link:first-child:active:focus-visible,
-.falcon-data-table .paging_simple_numbers .page-link:first-child:active:focus-visible, [data-list] .page:first-child:active:focus-visible, .table-list .page:first-child:active:focus-visible, .tox .tox-menu__footer .tox-button:first-child:active:focus-visible:last-child,
-.tox .tox-dialog__footer .tox-button:first-child:active:focus-visible:last-child, .tox .tox-menu__footer .tox-button--secondary:first-child:active:focus-visible,
-.tox .tox-dialog__footer .tox-button--secondary:first-child:active:focus-visible, .btn.active:focus-visible, .falcon-data-table .paging_full_numbers .active.page-link:focus-visible,
-.falcon-data-table .paging_first_last_numbers .active.page-link:focus-visible,
-.falcon-data-table .paging_full .active.page-link:focus-visible,
-.falcon-data-table .paging_numbers .active.page-link:focus-visible,
-.falcon-data-table .paging_simple_numbers .active.page-link:focus-visible, [data-list] .active.page:focus-visible, .table-list .active.page:focus-visible, .tox .tox-menu__footer .active.tox-button:focus-visible:last-child,
-.tox .tox-dialog__footer .active.tox-button:focus-visible:last-child, .tox .tox-menu__footer .active.tox-button--secondary:focus-visible,
-.tox .tox-dialog__footer .active.tox-button--secondary:focus-visible, .btn.show:focus-visible, .falcon-data-table .paging_full_numbers .show.page-link:focus-visible,
-.falcon-data-table .paging_first_last_numbers .show.page-link:focus-visible,
-.falcon-data-table .paging_full .show.page-link:focus-visible,
-.falcon-data-table .paging_numbers .show.page-link:focus-visible,
-.falcon-data-table .paging_simple_numbers .show.page-link:focus-visible, [data-list] .show.page:focus-visible, .table-list .show.page:focus-visible, .tox .tox-menu__footer .show.tox-button:focus-visible:last-child,
-.tox .tox-dialog__footer .show.tox-button:focus-visible:last-child, .tox .tox-menu__footer .show.tox-button--secondary:focus-visible,
-.tox .tox-dialog__footer .show.tox-button--secondary:focus-visible {
+.btn-check:checked + .btn:focus-visible, [data-list] .btn-check:checked + .page:focus-visible, .table-list .btn-check:checked + .page:focus-visible, :not(.btn-check) + .btn:active:focus-visible, [data-list] :not(.btn-check) + .page:active:focus-visible, .table-list :not(.btn-check) + .page:active:focus-visible, .btn:first-child:active:focus-visible, [data-list] .page:first-child:active:focus-visible, .table-list .page:first-child:active:focus-visible, .btn.active:focus-visible, [data-list] .active.page:focus-visible, .table-list .active.page:focus-visible, .btn.show:focus-visible, [data-list] .show.page:focus-visible, .table-list .show.page:focus-visible {
   -webkit-box-shadow: var(--falcon-btn-active-shadow), var(--falcon-btn-focus-box-shadow);
   box-shadow: var(--falcon-btn-active-shadow), var(--falcon-btn-focus-box-shadow);
 }
-.btn:disabled, .falcon-data-table .paging_full_numbers .page-link:disabled,
-.falcon-data-table .paging_first_last_numbers .page-link:disabled,
-.falcon-data-table .paging_full .page-link:disabled,
-.falcon-data-table .paging_numbers .page-link:disabled,
-.falcon-data-table .paging_simple_numbers .page-link:disabled, [data-list] .page:disabled, .table-list .page:disabled, .tox .tox-menu__footer .tox-button:disabled:last-child,
-.tox .tox-dialog__footer .tox-button:disabled:last-child, .tox .tox-menu__footer .tox-button--secondary:disabled,
-.tox .tox-dialog__footer .tox-button--secondary:disabled, .btn.disabled, .falcon-data-table .paging_full_numbers .disabled.page-link,
-.falcon-data-table .paging_first_last_numbers .disabled.page-link,
-.falcon-data-table .paging_full .disabled.page-link,
-.falcon-data-table .paging_numbers .disabled.page-link,
-.falcon-data-table .paging_simple_numbers .disabled.page-link, [data-list] .disabled.page, .table-list .disabled.page, .tox .tox-menu__footer .disabled.tox-button:last-child,
-.tox .tox-dialog__footer .disabled.tox-button:last-child, .tox .tox-menu__footer .disabled.tox-button--secondary,
-.tox .tox-dialog__footer .disabled.tox-button--secondary, fieldset:disabled .btn, fieldset:disabled .falcon-data-table .paging_full_numbers .page-link, .falcon-data-table .paging_full_numbers fieldset:disabled .page-link,
-fieldset:disabled .falcon-data-table .paging_first_last_numbers .page-link,
-.falcon-data-table .paging_first_last_numbers fieldset:disabled .page-link,
-fieldset:disabled .falcon-data-table .paging_full .page-link,
-.falcon-data-table .paging_full fieldset:disabled .page-link,
-fieldset:disabled .falcon-data-table .paging_numbers .page-link,
-.falcon-data-table .paging_numbers fieldset:disabled .page-link,
-fieldset:disabled .falcon-data-table .paging_simple_numbers .page-link,
-.falcon-data-table .paging_simple_numbers fieldset:disabled .page-link, fieldset:disabled [data-list] .page, [data-list] fieldset:disabled .page, fieldset:disabled .table-list .page, .table-list fieldset:disabled .page, fieldset:disabled .tox .tox-menu__footer .tox-button:last-child, .tox .tox-menu__footer fieldset:disabled .tox-button:last-child,
-fieldset:disabled .tox .tox-dialog__footer .tox-button:last-child,
-.tox .tox-dialog__footer fieldset:disabled .tox-button:last-child, fieldset:disabled .tox .tox-menu__footer .tox-button--secondary, .tox .tox-menu__footer fieldset:disabled .tox-button--secondary,
-fieldset:disabled .tox .tox-dialog__footer .tox-button--secondary,
-.tox .tox-dialog__footer fieldset:disabled .tox-button--secondary {
+.btn:disabled, [data-list] .page:disabled, .table-list .page:disabled, .btn.disabled, [data-list] .disabled.page, .table-list .disabled.page, fieldset:disabled .btn, fieldset:disabled [data-list] .page, [data-list] fieldset:disabled .page, fieldset:disabled .table-list .page, .table-list fieldset:disabled .page {
   color: var(--falcon-btn-disabled-color);
   pointer-events: none;
   background-color: var(--falcon-btn-disabled-bg);
@@ -4461,8 +4287,7 @@ fieldset:disabled .tox .tox-dialog__footer .tox-button--secondary,
   box-shadow: none;
 }
 
-.btn-primary, .tox .tox-menu__footer .tox-button:last-child,
-.tox .tox-dialog__footer .tox-button:last-child {
+.btn-primary {
   --falcon-btn-color: #fff;
   --falcon-btn-bg: #2c7be5;
   --falcon-btn-border-color: #2c7be5;
@@ -4564,9 +4389,7 @@ fieldset:disabled .tox .tox-dialog__footer .tox-button--secondary,
   --falcon-btn-disabled-border-color: #e63757;
 }
 
-.btn-light, .tox .tox-menu__footer .tox-button--secondary,
-.tox .tox-dialog__footer .tox-button--secondary, .btn-tertiary, [data-list-pagination].btn-primary[disabled], .tox .tox-menu__footer [data-list-pagination][disabled].tox-button:last-child,
-.tox .tox-dialog__footer [data-list-pagination][disabled].tox-button:last-child {
+.btn-light, .btn-tertiary, [data-list-pagination].btn-primary[disabled] {
   --falcon-btn-color: #4d5969;
   --falcon-btn-bg: #f9fafd;
   --falcon-btn-border-color: #f9fafd;
@@ -4583,9 +4406,7 @@ fieldset:disabled .tox .tox-dialog__footer .tox-button--secondary,
   --falcon-btn-disabled-border-color: #f9fafd;
 }
 
-.btn-dark, [data-bs-theme=dark] .btn-tertiary, [data-bs-theme=dark] [data-list-pagination].btn-primary[disabled], [data-bs-theme=dark] .tox .tox-menu__footer [data-list-pagination][disabled].tox-button:last-child, .tox .tox-menu__footer [data-bs-theme=dark] [data-list-pagination][disabled].tox-button:last-child,
-[data-bs-theme=dark] .tox .tox-dialog__footer [data-list-pagination][disabled].tox-button:last-child,
-.tox .tox-dialog__footer [data-bs-theme=dark] [data-list-pagination][disabled].tox-button:last-child {
+.btn-dark, [data-bs-theme=dark] .btn-tertiary, [data-bs-theme=dark] [data-list-pagination].btn-primary[disabled] {
   --falcon-btn-color: #fff;
   --falcon-btn-bg: #0b1727;
   --falcon-btn-border-color: #0b1727;
@@ -4763,26 +4584,14 @@ fieldset:disabled .tox .tox-dialog__footer .tox-button--secondary,
   color: var(--falcon-btn-hover-color);
 }
 
-.btn-lg, .btn-group-lg > .btn, .falcon-data-table .paging_full_numbers .btn-group-lg > .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group-lg > .page-link,
-.falcon-data-table .paging_full .btn-group-lg > .page-link,
-.falcon-data-table .paging_numbers .btn-group-lg > .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group-lg > .page-link, [data-list] .btn-group-lg > .page, .table-list .btn-group-lg > .page, .tox .tox-menu__footer .btn-group-lg > .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group-lg > .tox-button:last-child, .tox .tox-menu__footer .btn-group-lg > .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group-lg > .tox-button--secondary {
+.btn-lg, .btn-group-lg > .btn, [data-list] .btn-group-lg > .page, .table-list .btn-group-lg > .page {
   --falcon-btn-padding-y: 0.375rem;
   --falcon-btn-padding-x: 1.25rem;
   --falcon-btn-font-size: 1.2rem;
   --falcon-btn-border-radius: var(--falcon-border-radius-lg);
 }
 
-.btn-sm, [data-list] .page, .table-list .page, .btn-group-sm > .btn, .falcon-data-table .paging_full_numbers .btn-group-sm > .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group-sm > .page-link,
-.falcon-data-table .paging_full .btn-group-sm > .page-link,
-.falcon-data-table .paging_numbers .btn-group-sm > .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group-sm > .page-link, .tox .tox-menu__footer .btn-group-sm > .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group-sm > .tox-button:last-child, .tox .tox-menu__footer .btn-group-sm > .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group-sm > .tox-button--secondary {
+.btn-sm, [data-list] .page, .table-list .page, .btn-group-sm > .btn {
   --falcon-btn-padding-y: 0.1875rem;
   --falcon-btn-padding-x: 0.75rem;
   --falcon-btn-font-size: 0.875rem;
@@ -5165,169 +4974,49 @@ fieldset:disabled .tox .tox-dialog__footer .tox-button--secondary,
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .falcon-data-table .paging_full_numbers .btn-group > .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group > .page-link,
-.falcon-data-table .paging_full .btn-group > .page-link,
-.falcon-data-table .paging_numbers .btn-group > .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group > .page-link, [data-list] .btn-group > .page, .table-list .btn-group > .page, .tox .tox-menu__footer .btn-group > .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group > .tox-button:last-child, .tox .tox-menu__footer .btn-group > .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group > .tox-button--secondary,
+.btn-group > .btn, [data-list] .btn-group > .page, .table-list .btn-group > .page,
 .btn-group-vertical > .btn,
-.falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link,
-.falcon-data-table .paging_full .btn-group-vertical > .page-link,
-.falcon-data-table .paging_numbers .btn-group-vertical > .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link,
 [data-list] .btn-group-vertical > .page,
-.table-list .btn-group-vertical > .page,
-.tox .tox-menu__footer .btn-group-vertical > .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button:last-child,
-.tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary {
+.table-list .btn-group-vertical > .page {
   position: relative;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn, .falcon-data-table .paging_full_numbers .btn-group > .btn-check:checked + .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group > .btn-check:checked + .page-link,
-.falcon-data-table .paging_full .btn-group > .btn-check:checked + .page-link,
-.falcon-data-table .paging_numbers .btn-group > .btn-check:checked + .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group > .btn-check:checked + .page-link, [data-list] .btn-group > .btn-check:checked + .page, .table-list .btn-group > .btn-check:checked + .page, .tox .tox-menu__footer .btn-group > .btn-check:checked + .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group > .btn-check:checked + .tox-button:last-child, .tox .tox-menu__footer .btn-group > .btn-check:checked + .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group > .btn-check:checked + .tox-button--secondary,
+.btn-group > .btn-check:checked + .btn, [data-list] .btn-group > .btn-check:checked + .page, .table-list .btn-group > .btn-check:checked + .page,
 .btn-group > .btn-check:focus + .btn,
-.falcon-data-table .paging_full_numbers .btn-group > .btn-check:focus + .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group > .btn-check:focus + .page-link,
-.falcon-data-table .paging_full .btn-group > .btn-check:focus + .page-link,
-.falcon-data-table .paging_numbers .btn-group > .btn-check:focus + .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group > .btn-check:focus + .page-link,
 [data-list] .btn-group > .btn-check:focus + .page,
 .table-list .btn-group > .btn-check:focus + .page,
-.tox .tox-menu__footer .btn-group > .btn-check:focus + .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group > .btn-check:focus + .tox-button:last-child,
-.tox .tox-menu__footer .btn-group > .btn-check:focus + .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group > .btn-check:focus + .tox-button--secondary,
 .btn-group > .btn:hover,
-.falcon-data-table .paging_full_numbers .btn-group > .page-link:hover,
-.falcon-data-table .paging_first_last_numbers .btn-group > .page-link:hover,
-.falcon-data-table .paging_full .btn-group > .page-link:hover,
-.falcon-data-table .paging_numbers .btn-group > .page-link:hover,
-.falcon-data-table .paging_simple_numbers .btn-group > .page-link:hover,
 [data-list] .btn-group > .page:hover,
 .table-list .btn-group > .page:hover,
-.tox .tox-menu__footer .btn-group > .tox-button:hover:last-child,
-.tox .tox-dialog__footer .btn-group > .tox-button:hover:last-child,
-.tox .tox-menu__footer .btn-group > .tox-button--secondary:hover,
-.tox .tox-dialog__footer .btn-group > .tox-button--secondary:hover,
 .btn-group > .btn:focus,
-.falcon-data-table .paging_full_numbers .btn-group > .page-link:focus,
-.falcon-data-table .paging_first_last_numbers .btn-group > .page-link:focus,
-.falcon-data-table .paging_full .btn-group > .page-link:focus,
-.falcon-data-table .paging_numbers .btn-group > .page-link:focus,
-.falcon-data-table .paging_simple_numbers .btn-group > .page-link:focus,
 [data-list] .btn-group > .page:focus,
 .table-list .btn-group > .page:focus,
-.tox .tox-menu__footer .btn-group > .tox-button:focus:last-child,
-.tox .tox-dialog__footer .btn-group > .tox-button:focus:last-child,
-.tox .tox-menu__footer .btn-group > .tox-button--secondary:focus,
-.tox .tox-dialog__footer .btn-group > .tox-button--secondary:focus,
 .btn-group > .btn:active,
-.falcon-data-table .paging_full_numbers .btn-group > .page-link:active,
-.falcon-data-table .paging_first_last_numbers .btn-group > .page-link:active,
-.falcon-data-table .paging_full .btn-group > .page-link:active,
-.falcon-data-table .paging_numbers .btn-group > .page-link:active,
-.falcon-data-table .paging_simple_numbers .btn-group > .page-link:active,
 [data-list] .btn-group > .page:active,
 .table-list .btn-group > .page:active,
-.tox .tox-menu__footer .btn-group > .tox-button:active:last-child,
-.tox .tox-dialog__footer .btn-group > .tox-button:active:last-child,
-.tox .tox-menu__footer .btn-group > .tox-button--secondary:active,
-.tox .tox-dialog__footer .btn-group > .tox-button--secondary:active,
 .btn-group > .btn.active,
-.falcon-data-table .paging_full_numbers .btn-group > .active.page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group > .active.page-link,
-.falcon-data-table .paging_full .btn-group > .active.page-link,
-.falcon-data-table .paging_numbers .btn-group > .active.page-link,
-.falcon-data-table .paging_simple_numbers .btn-group > .active.page-link,
 [data-list] .btn-group > .active.page,
 .table-list .btn-group > .active.page,
-.tox .tox-menu__footer .btn-group > .active.tox-button:last-child,
-.tox .tox-dialog__footer .btn-group > .active.tox-button:last-child,
-.tox .tox-menu__footer .btn-group > .active.tox-button--secondary,
-.tox .tox-dialog__footer .btn-group > .active.tox-button--secondary,
 .btn-group-vertical > .btn-check:checked + .btn,
-.falcon-data-table .paging_full_numbers .btn-group-vertical > .btn-check:checked + .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .btn-check:checked + .page-link,
-.falcon-data-table .paging_full .btn-group-vertical > .btn-check:checked + .page-link,
-.falcon-data-table .paging_numbers .btn-group-vertical > .btn-check:checked + .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .btn-check:checked + .page-link,
 [data-list] .btn-group-vertical > .btn-check:checked + .page,
 .table-list .btn-group-vertical > .btn-check:checked + .page,
-.tox .tox-menu__footer .btn-group-vertical > .btn-check:checked + .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .btn-check:checked + .tox-button:last-child,
-.tox .tox-menu__footer .btn-group-vertical > .btn-check:checked + .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group-vertical > .btn-check:checked + .tox-button--secondary,
 .btn-group-vertical > .btn-check:focus + .btn,
-.falcon-data-table .paging_full_numbers .btn-group-vertical > .btn-check:focus + .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .btn-check:focus + .page-link,
-.falcon-data-table .paging_full .btn-group-vertical > .btn-check:focus + .page-link,
-.falcon-data-table .paging_numbers .btn-group-vertical > .btn-check:focus + .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .btn-check:focus + .page-link,
 [data-list] .btn-group-vertical > .btn-check:focus + .page,
 .table-list .btn-group-vertical > .btn-check:focus + .page,
-.tox .tox-menu__footer .btn-group-vertical > .btn-check:focus + .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .btn-check:focus + .tox-button:last-child,
-.tox .tox-menu__footer .btn-group-vertical > .btn-check:focus + .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group-vertical > .btn-check:focus + .tox-button--secondary,
 .btn-group-vertical > .btn:hover,
-.falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link:hover,
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link:hover,
-.falcon-data-table .paging_full .btn-group-vertical > .page-link:hover,
-.falcon-data-table .paging_numbers .btn-group-vertical > .page-link:hover,
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link:hover,
 [data-list] .btn-group-vertical > .page:hover,
 .table-list .btn-group-vertical > .page:hover,
-.tox .tox-menu__footer .btn-group-vertical > .tox-button:hover:last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button:hover:last-child,
-.tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary:hover,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary:hover,
 .btn-group-vertical > .btn:focus,
-.falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link:focus,
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link:focus,
-.falcon-data-table .paging_full .btn-group-vertical > .page-link:focus,
-.falcon-data-table .paging_numbers .btn-group-vertical > .page-link:focus,
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link:focus,
 [data-list] .btn-group-vertical > .page:focus,
 .table-list .btn-group-vertical > .page:focus,
-.tox .tox-menu__footer .btn-group-vertical > .tox-button:focus:last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button:focus:last-child,
-.tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary:focus,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary:focus,
 .btn-group-vertical > .btn:active,
-.falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link:active,
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link:active,
-.falcon-data-table .paging_full .btn-group-vertical > .page-link:active,
-.falcon-data-table .paging_numbers .btn-group-vertical > .page-link:active,
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link:active,
 [data-list] .btn-group-vertical > .page:active,
 .table-list .btn-group-vertical > .page:active,
-.tox .tox-menu__footer .btn-group-vertical > .tox-button:active:last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button:active:last-child,
-.tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary:active,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary:active,
 .btn-group-vertical > .btn.active,
-.falcon-data-table .paging_full_numbers .btn-group-vertical > .active.page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .active.page-link,
-.falcon-data-table .paging_full .btn-group-vertical > .active.page-link,
-.falcon-data-table .paging_numbers .btn-group-vertical > .active.page-link,
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .active.page-link,
 [data-list] .btn-group-vertical > .active.page,
-.table-list .btn-group-vertical > .active.page,
-.tox .tox-menu__footer .btn-group-vertical > .active.tox-button:last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .active.tox-button:last-child,
-.tox .tox-menu__footer .btn-group-vertical > .active.tox-button--secondary,
-.tox .tox-dialog__footer .btn-group-vertical > .active.tox-button--secondary {
+.table-list .btn-group-vertical > .active.page {
   z-index: 1;
 }
 
@@ -5348,81 +5037,27 @@ fieldset:disabled .tox .tox-dialog__footer .tox-button--secondary,
 .btn-group {
   border-radius: var(--falcon-border-radius);
 }
-.btn-group > :not(.btn-check:first-child) + .btn, .falcon-data-table .paging_full_numbers .btn-group > :not(.btn-check:first-child) + .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group > :not(.btn-check:first-child) + .page-link,
-.falcon-data-table .paging_full .btn-group > :not(.btn-check:first-child) + .page-link,
-.falcon-data-table .paging_numbers .btn-group > :not(.btn-check:first-child) + .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group > :not(.btn-check:first-child) + .page-link, [data-list] .btn-group > :not(.btn-check:first-child) + .page, .table-list .btn-group > :not(.btn-check:first-child) + .page, .tox .tox-menu__footer .btn-group > :not(.btn-check:first-child) + .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group > :not(.btn-check:first-child) + .tox-button:last-child, .tox .tox-menu__footer .btn-group > :not(.btn-check:first-child) + .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group > :not(.btn-check:first-child) + .tox-button--secondary,
+.btn-group > :not(.btn-check:first-child) + .btn, [data-list] .btn-group > :not(.btn-check:first-child) + .page, .table-list .btn-group > :not(.btn-check:first-child) + .page,
 .btn-group > .btn-group:not(:first-child) {
   margin-right: calc(var(--falcon-border-width) * -1);
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .falcon-data-table .paging_full_numbers .btn-group > .page-link:not(:last-child):not(.dropdown-toggle),
-.falcon-data-table .paging_first_last_numbers .btn-group > .page-link:not(:last-child):not(.dropdown-toggle),
-.falcon-data-table .paging_full .btn-group > .page-link:not(:last-child):not(.dropdown-toggle),
-.falcon-data-table .paging_numbers .btn-group > .page-link:not(:last-child):not(.dropdown-toggle),
-.falcon-data-table .paging_simple_numbers .btn-group > .page-link:not(:last-child):not(.dropdown-toggle), [data-list] .btn-group > .page:not(:last-child):not(.dropdown-toggle), .table-list .btn-group > .page:not(:last-child):not(.dropdown-toggle), .tox .tox-menu__footer .btn-group > .tox-button:not(:last-child):not(.dropdown-toggle):last-child,
-.tox .tox-dialog__footer .btn-group > .tox-button:not(:last-child):not(.dropdown-toggle):last-child, .tox .tox-menu__footer .btn-group > .tox-button--secondary:not(:last-child):not(.dropdown-toggle),
-.tox .tox-dialog__footer .btn-group > .tox-button--secondary:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), [data-list] .btn-group > .page:not(:last-child):not(.dropdown-toggle), .table-list .btn-group > .page:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn.dropdown-toggle-split:first-child,
-.falcon-data-table .paging_full_numbers .btn-group > .dropdown-toggle-split.page-link:first-child,
-.falcon-data-table .paging_first_last_numbers .btn-group > .dropdown-toggle-split.page-link:first-child,
-.falcon-data-table .paging_full .btn-group > .dropdown-toggle-split.page-link:first-child,
-.falcon-data-table .paging_numbers .btn-group > .dropdown-toggle-split.page-link:first-child,
-.falcon-data-table .paging_simple_numbers .btn-group > .dropdown-toggle-split.page-link:first-child,
 [data-list] .btn-group > .dropdown-toggle-split.page:first-child,
 .table-list .btn-group > .dropdown-toggle-split.page:first-child,
-.tox .tox-menu__footer .btn-group > .dropdown-toggle-split.tox-button:first-child:last-child,
-.tox .tox-dialog__footer .btn-group > .dropdown-toggle-split.tox-button:first-child:last-child,
-.tox .tox-menu__footer .btn-group > .dropdown-toggle-split.tox-button--secondary:first-child,
-.tox .tox-dialog__footer .btn-group > .dropdown-toggle-split.tox-button--secondary:first-child,
 .btn-group > .btn-group:not(:last-child) > .btn,
-.falcon-data-table .paging_full_numbers .btn-group > .btn-group:not(:last-child) > .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group > .btn-group:not(:last-child) > .page-link,
-.falcon-data-table .paging_full .btn-group > .btn-group:not(:last-child) > .page-link,
-.falcon-data-table .paging_numbers .btn-group > .btn-group:not(:last-child) > .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group > .btn-group:not(:last-child) > .page-link,
 [data-list] .btn-group > .btn-group:not(:last-child) > .page,
-.table-list .btn-group > .btn-group:not(:last-child) > .page,
-.tox .tox-menu__footer .btn-group > .btn-group:not(:last-child) > .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group > .btn-group:not(:last-child) > .tox-button:last-child,
-.tox .tox-menu__footer .btn-group > .btn-group:not(:last-child) > .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group > .btn-group:not(:last-child) > .tox-button--secondary {
+.table-list .btn-group > .btn-group:not(:last-child) > .page {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3), .falcon-data-table .paging_full_numbers .btn-group > .page-link:nth-child(n+3),
-.falcon-data-table .paging_first_last_numbers .btn-group > .page-link:nth-child(n+3),
-.falcon-data-table .paging_full .btn-group > .page-link:nth-child(n+3),
-.falcon-data-table .paging_numbers .btn-group > .page-link:nth-child(n+3),
-.falcon-data-table .paging_simple_numbers .btn-group > .page-link:nth-child(n+3), [data-list] .btn-group > .page:nth-child(n+3), .table-list .btn-group > .page:nth-child(n+3), .tox .tox-menu__footer .btn-group > .tox-button:nth-child(n+3):last-child,
-.tox .tox-dialog__footer .btn-group > .tox-button:nth-child(n+3):last-child, .tox .tox-menu__footer .btn-group > .tox-button--secondary:nth-child(n+3),
-.tox .tox-dialog__footer .btn-group > .tox-button--secondary:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3), [data-list] .btn-group > .page:nth-child(n+3), .table-list .btn-group > .page:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
-.falcon-data-table .paging_full_numbers .btn-group > :not(.btn-check) + .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group > :not(.btn-check) + .page-link,
-.falcon-data-table .paging_full .btn-group > :not(.btn-check) + .page-link,
-.falcon-data-table .paging_numbers .btn-group > :not(.btn-check) + .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group > :not(.btn-check) + .page-link,
 [data-list] .btn-group > :not(.btn-check) + .page,
 .table-list .btn-group > :not(.btn-check) + .page,
-.tox .tox-menu__footer .btn-group > :not(.btn-check) + .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group > :not(.btn-check) + .tox-button:last-child,
-.tox .tox-menu__footer .btn-group > :not(.btn-check) + .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group > :not(.btn-check) + .tox-button--secondary,
 .btn-group > .btn-group:not(:first-child) > .btn,
-.falcon-data-table .paging_full_numbers .btn-group > .btn-group:not(:first-child) > .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group > .btn-group:not(:first-child) > .page-link,
-.falcon-data-table .paging_full .btn-group > .btn-group:not(:first-child) > .page-link,
-.falcon-data-table .paging_numbers .btn-group > .btn-group:not(:first-child) > .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group > .btn-group:not(:first-child) > .page-link,
 [data-list] .btn-group > .btn-group:not(:first-child) > .page,
-.table-list .btn-group > .btn-group:not(:first-child) > .page,
-.tox .tox-menu__footer .btn-group > .btn-group:not(:first-child) > .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group > .btn-group:not(:first-child) > .tox-button:last-child,
-.tox .tox-menu__footer .btn-group > .btn-group:not(:first-child) > .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group > .btn-group:not(:first-child) > .tox-button--secondary {
+.table-list .btn-group > .btn-group:not(:first-child) > .page {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -5438,24 +5073,12 @@ fieldset:disabled .tox .tox-dialog__footer .tox-button--secondary,
   margin-left: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, [data-list] .page + .dropdown-toggle-split, .table-list .page + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .falcon-data-table .paging_full_numbers .btn-group-sm > .page-link + .dropdown-toggle-split,
-.falcon-data-table .paging_first_last_numbers .btn-group-sm > .page-link + .dropdown-toggle-split,
-.falcon-data-table .paging_full .btn-group-sm > .page-link + .dropdown-toggle-split,
-.falcon-data-table .paging_numbers .btn-group-sm > .page-link + .dropdown-toggle-split,
-.falcon-data-table .paging_simple_numbers .btn-group-sm > .page-link + .dropdown-toggle-split, .tox .tox-menu__footer .btn-group-sm > .tox-button:last-child + .dropdown-toggle-split,
-.tox .tox-dialog__footer .btn-group-sm > .tox-button:last-child + .dropdown-toggle-split, .tox .tox-menu__footer .btn-group-sm > .tox-button--secondary + .dropdown-toggle-split,
-.tox .tox-dialog__footer .btn-group-sm > .tox-button--secondary + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, [data-list] .page + .dropdown-toggle-split, .table-list .page + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
   padding-left: 0.5625rem;
   padding-right: 0.5625rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .falcon-data-table .paging_full_numbers .btn-group-lg > .page-link + .dropdown-toggle-split,
-.falcon-data-table .paging_first_last_numbers .btn-group-lg > .page-link + .dropdown-toggle-split,
-.falcon-data-table .paging_full .btn-group-lg > .page-link + .dropdown-toggle-split,
-.falcon-data-table .paging_numbers .btn-group-lg > .page-link + .dropdown-toggle-split,
-.falcon-data-table .paging_simple_numbers .btn-group-lg > .page-link + .dropdown-toggle-split, [data-list] .btn-group-lg > .page + .dropdown-toggle-split, .table-list .btn-group-lg > .page + .dropdown-toggle-split, .tox .tox-menu__footer .btn-group-lg > .tox-button:last-child + .dropdown-toggle-split,
-.tox .tox-dialog__footer .btn-group-lg > .tox-button:last-child + .dropdown-toggle-split, .tox .tox-menu__footer .btn-group-lg > .tox-button--secondary + .dropdown-toggle-split,
-.tox .tox-dialog__footer .btn-group-lg > .tox-button--secondary + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, [data-list] .btn-group-lg > .page + .dropdown-toggle-split, .table-list .btn-group-lg > .page + .dropdown-toggle-split {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 }
@@ -5481,241 +5104,25 @@ fieldset:disabled .tox .tox-dialog__footer .tox-button--secondary,
   -ms-flex-pack: center;
   justify-content: center;
 }
-.btn-group-vertical > .btn, .falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link,
-.falcon-data-table .paging_full .btn-group-vertical > .page-link,
-.falcon-data-table .paging_numbers .btn-group-vertical > .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link, [data-list] .btn-group-vertical > .page, .table-list .btn-group-vertical > .page, .tox .tox-menu__footer .btn-group-vertical > .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button:last-child, .tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary,
+.btn-group-vertical > .btn, [data-list] .btn-group-vertical > .page, .table-list .btn-group-vertical > .page,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), .falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link:not(:first-child),
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link:not(:first-child),
-.falcon-data-table .paging_full .btn-group-vertical > .page-link:not(:first-child),
-.falcon-data-table .paging_numbers .btn-group-vertical > .page-link:not(:first-child),
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link:not(:first-child), [data-list] .btn-group-vertical > .page:not(:first-child), .table-list .btn-group-vertical > .page:not(:first-child), .tox .tox-menu__footer .btn-group-vertical > .tox-button:not(:first-child):last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button:not(:first-child):last-child, .tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary:not(:first-child),
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), [data-list] .btn-group-vertical > .page:not(:first-child), .table-list .btn-group-vertical > .page:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: calc(var(--falcon-border-width) * -1);
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link:not(:last-child):not(.dropdown-toggle),
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link:not(:last-child):not(.dropdown-toggle),
-.falcon-data-table .paging_full .btn-group-vertical > .page-link:not(:last-child):not(.dropdown-toggle),
-.falcon-data-table .paging_numbers .btn-group-vertical > .page-link:not(:last-child):not(.dropdown-toggle),
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link:not(:last-child):not(.dropdown-toggle), [data-list] .btn-group-vertical > .page:not(:last-child):not(.dropdown-toggle), .table-list .btn-group-vertical > .page:not(:last-child):not(.dropdown-toggle), .tox .tox-menu__footer .btn-group-vertical > .tox-button:not(:last-child):not(.dropdown-toggle):last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button:not(:last-child):not(.dropdown-toggle):last-child, .tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary:not(:last-child):not(.dropdown-toggle),
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), [data-list] .btn-group-vertical > .page:not(:last-child):not(.dropdown-toggle), .table-list .btn-group-vertical > .page:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
-.falcon-data-table .paging_full_numbers .btn-group-vertical > .btn-group:not(:last-child) > .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .btn-group:not(:last-child) > .page-link,
-.falcon-data-table .paging_full .btn-group-vertical > .btn-group:not(:last-child) > .page-link,
-.falcon-data-table .paging_numbers .btn-group-vertical > .btn-group:not(:last-child) > .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .btn-group:not(:last-child) > .page-link,
 [data-list] .btn-group-vertical > .btn-group:not(:last-child) > .page,
-.table-list .btn-group-vertical > .btn-group:not(:last-child) > .page,
-.tox .tox-menu__footer .btn-group-vertical > .btn-group:not(:last-child) > .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .btn-group:not(:last-child) > .tox-button:last-child,
-.tox .tox-menu__footer .btn-group-vertical > .btn-group:not(:last-child) > .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group-vertical > .btn-group:not(:last-child) > .tox-button--secondary {
+.table-list .btn-group-vertical > .btn-group:not(:last-child) > .page {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group-vertical > .btn ~ .btn, .falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link ~ .btn,
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link ~ .btn,
-.falcon-data-table .paging_full .btn-group-vertical > .page-link ~ .btn,
-.falcon-data-table .paging_numbers .btn-group-vertical > .page-link ~ .btn,
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link ~ .btn, .falcon-data-table .paging_full_numbers .btn-group-vertical > .btn ~ .page-link, .falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .paging_full_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_full_numbers .paging_first_last_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_full .paging_full_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_full_numbers .paging_full .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_numbers .paging_full_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_full_numbers .paging_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_simple_numbers .paging_full_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_full_numbers .paging_simple_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .btn ~ .page-link,
-.falcon-data-table .paging_full_numbers .paging_first_last_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .paging_full_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_full .paging_first_last_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .paging_full .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_numbers .paging_first_last_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .paging_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_simple_numbers .paging_first_last_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .paging_simple_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_full .btn-group-vertical > .btn ~ .page-link,
-.falcon-data-table .paging_full_numbers .paging_full .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_full .paging_full_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .paging_full .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_full .paging_first_last_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_full .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_numbers .paging_full .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_full .paging_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_simple_numbers .paging_full .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_full .paging_simple_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_numbers .btn-group-vertical > .btn ~ .page-link,
-.falcon-data-table .paging_full_numbers .paging_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_numbers .paging_full_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .paging_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_numbers .paging_first_last_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_full .paging_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_numbers .paging_full .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_simple_numbers .paging_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_numbers .paging_simple_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .btn ~ .page-link,
-.falcon-data-table .paging_full_numbers .paging_simple_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_simple_numbers .paging_full_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .paging_simple_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_simple_numbers .paging_first_last_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_full .paging_simple_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_simple_numbers .paging_full .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_numbers .paging_simple_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_simple_numbers .paging_numbers .btn-group-vertical > .page-link ~ .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link ~ .page-link, [data-list] .btn-group-vertical > .page ~ .btn, [data-list] .falcon-data-table .paging_full_numbers .btn-group-vertical > .page ~ .page-link, .falcon-data-table .paging_full_numbers [data-list] .btn-group-vertical > .page ~ .page-link,
-[data-list] .falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page ~ .page-link,
-.falcon-data-table .paging_first_last_numbers [data-list] .btn-group-vertical > .page ~ .page-link,
-[data-list] .falcon-data-table .paging_full .btn-group-vertical > .page ~ .page-link,
-.falcon-data-table .paging_full [data-list] .btn-group-vertical > .page ~ .page-link,
-[data-list] .falcon-data-table .paging_numbers .btn-group-vertical > .page ~ .page-link,
-.falcon-data-table .paging_numbers [data-list] .btn-group-vertical > .page ~ .page-link,
-[data-list] .falcon-data-table .paging_simple_numbers .btn-group-vertical > .page ~ .page-link,
-.falcon-data-table .paging_simple_numbers [data-list] .btn-group-vertical > .page ~ .page-link, .table-list .btn-group-vertical > .page ~ .btn, .table-list .falcon-data-table .paging_full_numbers .btn-group-vertical > .page ~ .page-link, .falcon-data-table .paging_full_numbers .table-list .btn-group-vertical > .page ~ .page-link,
-.table-list .falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .table-list .btn-group-vertical > .page ~ .page-link,
-.table-list .falcon-data-table .paging_full .btn-group-vertical > .page ~ .page-link,
-.falcon-data-table .paging_full .table-list .btn-group-vertical > .page ~ .page-link,
-.table-list .falcon-data-table .paging_numbers .btn-group-vertical > .page ~ .page-link,
-.falcon-data-table .paging_numbers .table-list .btn-group-vertical > .page ~ .page-link,
-.table-list .falcon-data-table .paging_simple_numbers .btn-group-vertical > .page ~ .page-link,
-.falcon-data-table .paging_simple_numbers .table-list .btn-group-vertical > .page ~ .page-link, [data-list] .btn-group-vertical > .btn ~ .page, [data-list] .falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link ~ .page, .falcon-data-table .paging_full_numbers [data-list] .btn-group-vertical > .page-link ~ .page,
-[data-list] .falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link ~ .page,
-.falcon-data-table .paging_first_last_numbers [data-list] .btn-group-vertical > .page-link ~ .page,
-[data-list] .falcon-data-table .paging_full .btn-group-vertical > .page-link ~ .page,
-.falcon-data-table .paging_full [data-list] .btn-group-vertical > .page-link ~ .page,
-[data-list] .falcon-data-table .paging_numbers .btn-group-vertical > .page-link ~ .page,
-.falcon-data-table .paging_numbers [data-list] .btn-group-vertical > .page-link ~ .page,
-[data-list] .falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link ~ .page,
-.falcon-data-table .paging_simple_numbers [data-list] .btn-group-vertical > .page-link ~ .page, [data-list] .btn-group-vertical > .page ~ .page, .table-list .btn-group-vertical > .btn ~ .page, .table-list .falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link ~ .page, .falcon-data-table .paging_full_numbers .table-list .btn-group-vertical > .page-link ~ .page,
-.table-list .falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link ~ .page,
-.falcon-data-table .paging_first_last_numbers .table-list .btn-group-vertical > .page-link ~ .page,
-.table-list .falcon-data-table .paging_full .btn-group-vertical > .page-link ~ .page,
-.falcon-data-table .paging_full .table-list .btn-group-vertical > .page-link ~ .page,
-.table-list .falcon-data-table .paging_numbers .btn-group-vertical > .page-link ~ .page,
-.falcon-data-table .paging_numbers .table-list .btn-group-vertical > .page-link ~ .page,
-.table-list .falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link ~ .page,
-.falcon-data-table .paging_simple_numbers .table-list .btn-group-vertical > .page-link ~ .page, .table-list .btn-group-vertical > .page ~ .page, .tox .tox-menu__footer .btn-group-vertical > .tox-button:last-child ~ .btn, .tox .tox-menu__footer .falcon-data-table .paging_full_numbers .btn-group-vertical > .tox-button:last-child ~ .page-link, .falcon-data-table .paging_full_numbers .tox .tox-menu__footer .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.tox .tox-menu__footer .falcon-data-table .paging_first_last_numbers .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .tox .tox-menu__footer .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.tox .tox-menu__footer .falcon-data-table .paging_full .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.falcon-data-table .paging_full .tox .tox-menu__footer .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.tox .tox-menu__footer .falcon-data-table .paging_numbers .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.falcon-data-table .paging_numbers .tox .tox-menu__footer .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.tox .tox-menu__footer .falcon-data-table .paging_simple_numbers .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.falcon-data-table .paging_simple_numbers .tox .tox-menu__footer .btn-group-vertical > .tox-button:last-child ~ .page-link, .tox .tox-menu__footer [data-list] .btn-group-vertical > .tox-button:last-child ~ .page, [data-list] .tox .tox-menu__footer .btn-group-vertical > .tox-button:last-child ~ .page, .tox .tox-menu__footer .table-list .btn-group-vertical > .tox-button:last-child ~ .page, .table-list .tox .tox-menu__footer .btn-group-vertical > .tox-button:last-child ~ .page,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button:last-child ~ .btn,
-.tox .tox-dialog__footer .falcon-data-table .paging_full_numbers .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.falcon-data-table .paging_full_numbers .tox .tox-dialog__footer .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.tox .tox-dialog__footer .falcon-data-table .paging_first_last_numbers .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .tox .tox-dialog__footer .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.tox .tox-dialog__footer .falcon-data-table .paging_full .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.falcon-data-table .paging_full .tox .tox-dialog__footer .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.tox .tox-dialog__footer .falcon-data-table .paging_numbers .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.falcon-data-table .paging_numbers .tox .tox-dialog__footer .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.tox .tox-dialog__footer .falcon-data-table .paging_simple_numbers .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.falcon-data-table .paging_simple_numbers .tox .tox-dialog__footer .btn-group-vertical > .tox-button:last-child ~ .page-link,
-.tox .tox-dialog__footer [data-list] .btn-group-vertical > .tox-button:last-child ~ .page,
-[data-list] .tox .tox-dialog__footer .btn-group-vertical > .tox-button:last-child ~ .page,
-.tox .tox-dialog__footer .table-list .btn-group-vertical > .tox-button:last-child ~ .page,
-.table-list .tox .tox-dialog__footer .btn-group-vertical > .tox-button:last-child ~ .page, .tox .tox-menu__footer .btn-group-vertical > .btn ~ .tox-button:last-child, .tox .tox-menu__footer .falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link ~ .tox-button:last-child, .falcon-data-table .paging_full_numbers .tox .tox-menu__footer .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.tox .tox-menu__footer .falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.falcon-data-table .paging_first_last_numbers .tox .tox-menu__footer .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.tox .tox-menu__footer .falcon-data-table .paging_full .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.falcon-data-table .paging_full .tox .tox-menu__footer .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.tox .tox-menu__footer .falcon-data-table .paging_numbers .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.falcon-data-table .paging_numbers .tox .tox-menu__footer .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.tox .tox-menu__footer .falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.falcon-data-table .paging_simple_numbers .tox .tox-menu__footer .btn-group-vertical > .page-link ~ .tox-button:last-child, .tox .tox-menu__footer [data-list] .btn-group-vertical > .page ~ .tox-button:last-child, [data-list] .tox .tox-menu__footer .btn-group-vertical > .page ~ .tox-button:last-child, .tox .tox-menu__footer .table-list .btn-group-vertical > .page ~ .tox-button:last-child, .table-list .tox .tox-menu__footer .btn-group-vertical > .page ~ .tox-button:last-child, .tox .tox-menu__footer .btn-group-vertical > .tox-button:last-child ~ .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .btn ~ .tox-button:last-child,
-.tox .tox-dialog__footer .falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.falcon-data-table .paging_full_numbers .tox .tox-dialog__footer .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.tox .tox-dialog__footer .falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.falcon-data-table .paging_first_last_numbers .tox .tox-dialog__footer .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.tox .tox-dialog__footer .falcon-data-table .paging_full .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.falcon-data-table .paging_full .tox .tox-dialog__footer .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.tox .tox-dialog__footer .falcon-data-table .paging_numbers .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.falcon-data-table .paging_numbers .tox .tox-dialog__footer .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.tox .tox-dialog__footer .falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.falcon-data-table .paging_simple_numbers .tox .tox-dialog__footer .btn-group-vertical > .page-link ~ .tox-button:last-child,
-.tox .tox-dialog__footer [data-list] .btn-group-vertical > .page ~ .tox-button:last-child,
-[data-list] .tox .tox-dialog__footer .btn-group-vertical > .page ~ .tox-button:last-child,
-.tox .tox-dialog__footer .table-list .btn-group-vertical > .page ~ .tox-button:last-child,
-.table-list .tox .tox-dialog__footer .btn-group-vertical > .page ~ .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button:last-child ~ .tox-button:last-child, .tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary ~ .btn, .tox .tox-menu__footer .falcon-data-table .paging_full_numbers .btn-group-vertical > .tox-button--secondary ~ .page-link, .falcon-data-table .paging_full_numbers .tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.tox .tox-menu__footer .falcon-data-table .paging_first_last_numbers .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.tox .tox-menu__footer .falcon-data-table .paging_full .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.falcon-data-table .paging_full .tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.tox .tox-menu__footer .falcon-data-table .paging_numbers .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.falcon-data-table .paging_numbers .tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.tox .tox-menu__footer .falcon-data-table .paging_simple_numbers .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.falcon-data-table .paging_simple_numbers .tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary ~ .page-link, .tox .tox-menu__footer [data-list] .btn-group-vertical > .tox-button--secondary ~ .page, [data-list] .tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary ~ .page, .tox .tox-menu__footer .table-list .btn-group-vertical > .tox-button--secondary ~ .page, .table-list .tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary ~ .page, .tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary ~ .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary ~ .btn,
-.tox .tox-dialog__footer .falcon-data-table .paging_full_numbers .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.falcon-data-table .paging_full_numbers .tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.tox .tox-dialog__footer .falcon-data-table .paging_first_last_numbers .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.falcon-data-table .paging_first_last_numbers .tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.tox .tox-dialog__footer .falcon-data-table .paging_full .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.falcon-data-table .paging_full .tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.tox .tox-dialog__footer .falcon-data-table .paging_numbers .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.falcon-data-table .paging_numbers .tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.tox .tox-dialog__footer .falcon-data-table .paging_simple_numbers .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.falcon-data-table .paging_simple_numbers .tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary ~ .page-link,
-.tox .tox-dialog__footer [data-list] .btn-group-vertical > .tox-button--secondary ~ .page,
-[data-list] .tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary ~ .page,
-.tox .tox-dialog__footer .table-list .btn-group-vertical > .tox-button--secondary ~ .page,
-.table-list .tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary ~ .page,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary ~ .tox-button:last-child, .tox .tox-menu__footer .btn-group-vertical > .btn ~ .tox-button--secondary, .tox .tox-menu__footer .falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link ~ .tox-button--secondary, .falcon-data-table .paging_full_numbers .tox .tox-menu__footer .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.tox .tox-menu__footer .falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.falcon-data-table .paging_first_last_numbers .tox .tox-menu__footer .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.tox .tox-menu__footer .falcon-data-table .paging_full .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.falcon-data-table .paging_full .tox .tox-menu__footer .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.tox .tox-menu__footer .falcon-data-table .paging_numbers .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.falcon-data-table .paging_numbers .tox .tox-menu__footer .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.tox .tox-menu__footer .falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.falcon-data-table .paging_simple_numbers .tox .tox-menu__footer .btn-group-vertical > .page-link ~ .tox-button--secondary, .tox .tox-menu__footer [data-list] .btn-group-vertical > .page ~ .tox-button--secondary, [data-list] .tox .tox-menu__footer .btn-group-vertical > .page ~ .tox-button--secondary, .tox .tox-menu__footer .table-list .btn-group-vertical > .page ~ .tox-button--secondary, .table-list .tox .tox-menu__footer .btn-group-vertical > .page ~ .tox-button--secondary, .tox .tox-menu__footer .btn-group-vertical > .tox-button:last-child ~ .tox-button--secondary, .tox .tox-menu__footer .btn-group-vertical > .tox-button--secondary ~ .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group-vertical > .btn ~ .tox-button--secondary,
-.tox .tox-dialog__footer .falcon-data-table .paging_full_numbers .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.falcon-data-table .paging_full_numbers .tox .tox-dialog__footer .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.tox .tox-dialog__footer .falcon-data-table .paging_first_last_numbers .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.falcon-data-table .paging_first_last_numbers .tox .tox-dialog__footer .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.tox .tox-dialog__footer .falcon-data-table .paging_full .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.falcon-data-table .paging_full .tox .tox-dialog__footer .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.tox .tox-dialog__footer .falcon-data-table .paging_numbers .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.falcon-data-table .paging_numbers .tox .tox-dialog__footer .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.tox .tox-dialog__footer .falcon-data-table .paging_simple_numbers .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.falcon-data-table .paging_simple_numbers .tox .tox-dialog__footer .btn-group-vertical > .page-link ~ .tox-button--secondary,
-.tox .tox-dialog__footer [data-list] .btn-group-vertical > .page ~ .tox-button--secondary,
-[data-list] .tox .tox-dialog__footer .btn-group-vertical > .page ~ .tox-button--secondary,
-.tox .tox-dialog__footer .table-list .btn-group-vertical > .page ~ .tox-button--secondary,
-.table-list .tox .tox-dialog__footer .btn-group-vertical > .page ~ .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button:last-child ~ .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group-vertical > .tox-button--secondary ~ .tox-button--secondary,
+.btn-group-vertical > .btn ~ .btn, [data-list] .btn-group-vertical > .page ~ .btn, .table-list .btn-group-vertical > .page ~ .btn, [data-list] .btn-group-vertical > .btn ~ .page, [data-list] .btn-group-vertical > .page ~ .page, .table-list .btn-group-vertical > .btn ~ .page, .table-list .btn-group-vertical > .page ~ .page,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
-.falcon-data-table .paging_full_numbers .btn-group-vertical > .btn-group:not(:first-child) > .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-group-vertical > .btn-group:not(:first-child) > .page-link,
-.falcon-data-table .paging_full .btn-group-vertical > .btn-group:not(:first-child) > .page-link,
-.falcon-data-table .paging_numbers .btn-group-vertical > .btn-group:not(:first-child) > .page-link,
-.falcon-data-table .paging_simple_numbers .btn-group-vertical > .btn-group:not(:first-child) > .page-link,
 [data-list] .btn-group-vertical > .btn-group:not(:first-child) > .page,
-.table-list .btn-group-vertical > .btn-group:not(:first-child) > .page,
-.tox .tox-menu__footer .btn-group-vertical > .btn-group:not(:first-child) > .tox-button:last-child,
-.tox .tox-dialog__footer .btn-group-vertical > .btn-group:not(:first-child) > .tox-button:last-child,
-.tox .tox-menu__footer .btn-group-vertical > .btn-group:not(:first-child) > .tox-button--secondary,
-.tox .tox-dialog__footer .btn-group-vertical > .btn-group:not(:first-child) > .tox-button--secondary {
+.table-list .btn-group-vertical > .btn-group:not(:first-child) > .page {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -6973,13 +6380,7 @@ fieldset:disabled .tox .tox-dialog__footer .tox-button--secondary,
   display: none;
 }
 
-.btn .badge, .falcon-data-table .paging_full_numbers .page-link .badge,
-.falcon-data-table .paging_first_last_numbers .page-link .badge,
-.falcon-data-table .paging_full .page-link .badge,
-.falcon-data-table .paging_numbers .page-link .badge,
-.falcon-data-table .paging_simple_numbers .page-link .badge, [data-list] .page .badge, .table-list .page .badge, .tox .tox-menu__footer .tox-button:last-child .badge,
-.tox .tox-dialog__footer .tox-button:last-child .badge, .tox .tox-menu__footer .tox-button--secondary .badge,
-.tox .tox-dialog__footer .tox-button--secondary .badge {
+.btn .badge, [data-list] .page .badge, .table-list .page .badge {
   position: relative;
   top: -1px;
 }
@@ -9228,13 +8629,7 @@ fieldset:disabled .tox .tox-dialog__footer .tox-button--secondary,
   background-color: currentcolor;
   opacity: 0.5;
 }
-.placeholder.btn::before, .falcon-data-table .paging_full_numbers .placeholder.page-link::before,
-.falcon-data-table .paging_first_last_numbers .placeholder.page-link::before,
-.falcon-data-table .paging_full .placeholder.page-link::before,
-.falcon-data-table .paging_numbers .placeholder.page-link::before,
-.falcon-data-table .paging_simple_numbers .placeholder.page-link::before, [data-list] .placeholder.page::before, .table-list .placeholder.page::before, .tox .tox-menu__footer .placeholder.tox-button:last-child::before,
-.tox .tox-dialog__footer .placeholder.tox-button:last-child::before, .tox .tox-menu__footer .placeholder.tox-button--secondary::before,
-.tox .tox-dialog__footer .placeholder.tox-button--secondary::before {
+.placeholder.btn::before, [data-list] .placeholder.page::before, .table-list .placeholder.page::before {
   display: inline-block;
   content: "";
 }
@@ -12437,35 +11832,35 @@ fieldset:disabled .tox .tox-dialog__footer .tox-button--secondary,
   --falcon-bg-opacity: 1;
 }
 
-.bg-primary-subtle, .fc-timegrid .event-bg-primary-subtle {
+.bg-primary-subtle {
   background-color: var(--falcon-primary-bg-subtle) !important;
 }
 
-.bg-secondary-subtle, .fc-timegrid .event-bg-secondary-subtle {
+.bg-secondary-subtle {
   background-color: var(--falcon-secondary-bg-subtle) !important;
 }
 
-.bg-success-subtle, .fc-timegrid .event-bg-success-subtle {
+.bg-success-subtle {
   background-color: var(--falcon-success-bg-subtle) !important;
 }
 
-.bg-info-subtle, .fc-timegrid .event-bg-info-subtle {
+.bg-info-subtle {
   background-color: var(--falcon-info-bg-subtle) !important;
 }
 
-.bg-warning-subtle, .fc-timegrid .event-bg-warning-subtle {
+.bg-warning-subtle {
   background-color: var(--falcon-warning-bg-subtle) !important;
 }
 
-.bg-danger-subtle, .fc-timegrid .event-bg-danger-subtle {
+.bg-danger-subtle {
   background-color: var(--falcon-danger-bg-subtle) !important;
 }
 
-.bg-light-subtle, .fc-timegrid .event-bg-light-subtle {
+.bg-light-subtle {
   background-color: var(--falcon-light-bg-subtle) !important;
 }
 
-.bg-dark-subtle, .fc-timegrid .event-bg-dark-subtle {
+.bg-dark-subtle {
   background-color: var(--falcon-dark-bg-subtle) !important;
 }
 
@@ -22088,17 +21483,8 @@ label,
 .badge,
 .blockquote-footer,
 .btn,
-.falcon-data-table .paging_full_numbers .page-link,
-.falcon-data-table .paging_first_last_numbers .page-link,
-.falcon-data-table .paging_full .page-link,
-.falcon-data-table .paging_numbers .page-link,
-.falcon-data-table .paging_simple_numbers .page-link,
 [data-list] .page,
 .table-list .page,
-.tox .tox-menu__footer .tox-button:last-child,
-.tox .tox-dialog__footer .tox-button:last-child,
-.tox .tox-menu__footer .tox-button--secondary,
-.tox .tox-dialog__footer .tox-button--secondary,
 .navbar,
 .pagination,
 .valid-feedback,
@@ -22611,82 +21997,34 @@ html:not([data-bs-theme=dark]) .d-light-none {
   box-shadow: var(--falcon-btn-falcon-box-shadow) !important;
 }
 
-.btn-falcon-default, .falcon-data-table .paging_full_numbers .page-link,
-.falcon-data-table .paging_first_last_numbers .page-link,
-.falcon-data-table .paging_full .page-link,
-.falcon-data-table .paging_numbers .page-link,
-.falcon-data-table .paging_simple_numbers .page-link, [data-list] .page, .table-list .page, .btn-falcon-default.show {
+.btn-falcon-default, [data-list] .page, .table-list .page, .btn-falcon-default.show {
   color: var(--falcon-btn-falcon-default-color);
   background-color: var(--falcon-btn-falcon-background);
   border-color: var(--falcon-btn-falcon-background);
   -webkit-box-shadow: var(--falcon-btn-falcon-box-shadow);
   box-shadow: var(--falcon-btn-falcon-box-shadow);
 }
-.btn-falcon-default:hover, .falcon-data-table .paging_full_numbers .page-link:hover,
-.falcon-data-table .paging_first_last_numbers .page-link:hover,
-.falcon-data-table .paging_full .page-link:hover,
-.falcon-data-table .paging_numbers .page-link:hover,
-.falcon-data-table .paging_simple_numbers .page-link:hover, [data-list] .page:hover, .table-list .page:hover, .btn-falcon-default:focus, .falcon-data-table .paging_full_numbers .page-link:focus,
-.falcon-data-table .paging_first_last_numbers .page-link:focus,
-.falcon-data-table .paging_full .page-link:focus,
-.falcon-data-table .paging_numbers .page-link:focus,
-.falcon-data-table .paging_simple_numbers .page-link:focus, [data-list] .page:focus, .table-list .page:focus {
+.btn-falcon-default:hover, [data-list] .page:hover, .table-list .page:hover, .btn-falcon-default:focus, [data-list] .page:focus, .table-list .page:focus {
   color: var(--falcon-btn-falcon-default-hover-color);
   background-color: var(--falcon-btn-falcon-background);
   border-color: var(--falcon-btn-falcon-background);
 }
-.btn-falcon-default:hover:not(.disabled):not(:disabled), .falcon-data-table .paging_full_numbers .page-link:hover:not(.disabled):not(:disabled),
-.falcon-data-table .paging_first_last_numbers .page-link:hover:not(.disabled):not(:disabled),
-.falcon-data-table .paging_full .page-link:hover:not(.disabled):not(:disabled),
-.falcon-data-table .paging_numbers .page-link:hover:not(.disabled):not(:disabled),
-.falcon-data-table .paging_simple_numbers .page-link:hover:not(.disabled):not(:disabled), [data-list] .page:hover:not(.disabled):not(:disabled), .table-list .page:hover:not(.disabled):not(:disabled), .btn-falcon-default:focus:not(.disabled):not(:disabled), .falcon-data-table .paging_full_numbers .page-link:focus:not(.disabled):not(:disabled),
-.falcon-data-table .paging_first_last_numbers .page-link:focus:not(.disabled):not(:disabled),
-.falcon-data-table .paging_full .page-link:focus:not(.disabled):not(:disabled),
-.falcon-data-table .paging_numbers .page-link:focus:not(.disabled):not(:disabled),
-.falcon-data-table .paging_simple_numbers .page-link:focus:not(.disabled):not(:disabled), [data-list] .page:focus:not(.disabled):not(:disabled), .table-list .page:focus:not(.disabled):not(:disabled) {
+.btn-falcon-default:hover:not(.disabled):not(:disabled), [data-list] .page:hover:not(.disabled):not(:disabled), .table-list .page:hover:not(.disabled):not(:disabled), .btn-falcon-default:focus:not(.disabled):not(:disabled), [data-list] .page:focus:not(.disabled):not(:disabled), .table-list .page:focus:not(.disabled):not(:disabled) {
   color: var(--falcon-btn-falcon-default-hover-color);
   -webkit-box-shadow: var(--falcon-btn-falcon-hover-box-shadow);
   box-shadow: var(--falcon-btn-falcon-hover-box-shadow);
 }
-.btn-falcon-default:active, .falcon-data-table .paging_full_numbers .page-link:active,
-.falcon-data-table .paging_first_last_numbers .page-link:active,
-.falcon-data-table .paging_full .page-link:active,
-.falcon-data-table .paging_numbers .page-link:active,
-.falcon-data-table .paging_simple_numbers .page-link:active, [data-list] .page:active, .table-list .page:active {
+.btn-falcon-default:active, [data-list] .page:active, .table-list .page:active {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: var(--falcon-btn-falcon-default-active-color);
 }
-.btn-check:checked + .btn-falcon-default, .falcon-data-table .paging_full_numbers .btn-check:checked + .page-link,
-.falcon-data-table .paging_first_last_numbers .btn-check:checked + .page-link,
-.falcon-data-table .paging_full .btn-check:checked + .page-link,
-.falcon-data-table .paging_numbers .btn-check:checked + .page-link,
-.falcon-data-table .paging_simple_numbers .btn-check:checked + .page-link, [data-list] .btn-check:checked + .page, .table-list .btn-check:checked + .page, :not(.btn-check) + .btn-falcon-default:active, .falcon-data-table .paging_full_numbers :not(.btn-check) + .page-link:active,
-.falcon-data-table .paging_first_last_numbers :not(.btn-check) + .page-link:active,
-.falcon-data-table .paging_full :not(.btn-check) + .page-link:active,
-.falcon-data-table .paging_numbers :not(.btn-check) + .page-link:active,
-.falcon-data-table .paging_simple_numbers :not(.btn-check) + .page-link:active, [data-list] :not(.btn-check) + .page:active, .table-list :not(.btn-check) + .page:active, .btn-falcon-default:first-child:active, .falcon-data-table .paging_full_numbers .page-link:first-child:active,
-.falcon-data-table .paging_first_last_numbers .page-link:first-child:active,
-.falcon-data-table .paging_full .page-link:first-child:active,
-.falcon-data-table .paging_numbers .page-link:first-child:active,
-.falcon-data-table .paging_simple_numbers .page-link:first-child:active, [data-list] .page:first-child:active, .table-list .page:first-child:active, .btn-falcon-default.active, .falcon-data-table .paging_full_numbers .active.page-link,
-.falcon-data-table .paging_first_last_numbers .active.page-link,
-.falcon-data-table .paging_full .active.page-link,
-.falcon-data-table .paging_numbers .active.page-link,
-.falcon-data-table .paging_simple_numbers .active.page-link, [data-list] .active.page, .table-list .active.page {
+.btn-check:checked + .btn-falcon-default, [data-list] .btn-check:checked + .page, .table-list .btn-check:checked + .page, :not(.btn-check) + .btn-falcon-default:active, [data-list] :not(.btn-check) + .page:active, .table-list :not(.btn-check) + .page:active, .btn-falcon-default:first-child:active, [data-list] .page:first-child:active, .table-list .page:first-child:active, .btn-falcon-default.active, [data-list] .active.page, .table-list .active.page {
   color: var(--falcon-btn-falcon-default-color);
   background-color: var(--falcon-btn-falcon-default-active-background);
   border-color: var(--falcon-btn-falcon-background);
 }
-.btn-falcon-default:disabled, .falcon-data-table .paging_full_numbers .page-link:disabled,
-.falcon-data-table .paging_first_last_numbers .page-link:disabled,
-.falcon-data-table .paging_full .page-link:disabled,
-.falcon-data-table .paging_numbers .page-link:disabled,
-.falcon-data-table .paging_simple_numbers .page-link:disabled, [data-list] .page:disabled, .table-list .page:disabled, .btn-falcon-default.disabled, .falcon-data-table .paging_full_numbers .disabled.page-link,
-.falcon-data-table .paging_first_last_numbers .disabled.page-link,
-.falcon-data-table .paging_full .disabled.page-link,
-.falcon-data-table .paging_numbers .disabled.page-link,
-.falcon-data-table .paging_simple_numbers .disabled.page-link, [data-list] .disabled.page, .table-list .disabled.page {
+.btn-falcon-default:disabled, [data-list] .page:disabled, .table-list .page:disabled, .btn-falcon-default.disabled, [data-list] .disabled.page, .table-list .disabled.page {
   color: var(--falcon-btn-disabled-color);
   background-color: var(--falcon-btn-falcon-background);
   -webkit-box-shadow: var(--falcon-btn-falcon-box-shadow) !important;
@@ -22797,13 +22135,7 @@ html:not([data-bs-theme=dark]) .d-light-none {
   transform: rotate(-45deg);
 }
 
-.btn, .falcon-data-table .paging_full_numbers .page-link,
-.falcon-data-table .paging_first_last_numbers .page-link,
-.falcon-data-table .paging_full .page-link,
-.falcon-data-table .paging_numbers .page-link,
-.falcon-data-table .paging_simple_numbers .page-link, [data-list] .page, .table-list .page, .tox .tox-menu__footer .tox-button:last-child,
-.tox .tox-dialog__footer .tox-button:last-child, .tox .tox-menu__footer .tox-button--secondary,
-.tox .tox-dialog__footer .tox-button--secondary {
+.btn, [data-list] .page, .table-list .page {
   --falcon-btn-border-width: var(--falcon-border-width);
 }
 
@@ -22811,13 +22143,7 @@ html:not([data-bs-theme=dark]) .d-light-none {
   --falcon-btn-active-color: var(--falcon-link-hover-color);
 }
 
-.btn:disabled, .falcon-data-table .paging_full_numbers .page-link:disabled,
-.falcon-data-table .paging_first_last_numbers .page-link:disabled,
-.falcon-data-table .paging_full .page-link:disabled,
-.falcon-data-table .paging_numbers .page-link:disabled,
-.falcon-data-table .paging_simple_numbers .page-link:disabled, [data-list] .page:disabled, .table-list .page:disabled, .tox .tox-menu__footer .tox-button:disabled:last-child,
-.tox .tox-dialog__footer .tox-button:disabled:last-child, .tox .tox-menu__footer .tox-button--secondary:disabled,
-.tox .tox-dialog__footer .tox-button--secondary:disabled {
+.btn:disabled, [data-list] .page:disabled, .table-list .page:disabled {
   -webkit-box-shadow: var(--falcon-btn-box-shadow);
   box-shadow: var(--falcon-btn-box-shadow);
 }
@@ -23160,1165 +22486,6 @@ pre[class*=language-] {
   width: 100%;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                                  Anchor JS                                 */
-/* -------------------------------------------------------------------------- */
-.anchorjs-link {
-  text-decoration: none !important;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                   Echarts                                  */
-/* -------------------------------------------------------------------------- */
-[data-echarts] {
-  width: 3.625rem;
-  height: 1rem;
-}
-
-.echart-bar-weekly-sales {
-  width: 8.5rem;
-}
-
-.echart-bar-weekly-sales-smaller-width {
-  width: 6.5rem;
-}
-
-.echart-line-total-order {
-  width: 8.625rem;
-  height: 5rem;
-}
-
-.echart-bandwidth-saved {
-  height: 10.3rem;
-  width: 10.3rem;
-}
-
-.echart-line-total-sales {
-  min-height: 18.4375rem;
-}
-@media (min-width: 992px) {
-  .echart-line-total-sales {
-    min-height: 15.625rem;
-  }
-}
-
-.echart-bar-top-products {
-  min-height: 18.4375rem;
-}
-@media (min-width: 1540px) {
-  .echart-bar-top-products {
-    min-height: 15.625rem;
-  }
-}
-
-.echart-bar-top-products-ecommerce {
-  min-height: 18.4375rem;
-}
-@media (min-width: 1540px) {
-  .echart-bar-top-products-ecommerce {
-    min-height: 23.625rem;
-  }
-}
-
-.echart-market-share,
-.echart-product-share {
-  width: 6.625rem;
-  height: 6.625rem;
-}
-
-.echart-world-map {
-  min-height: 26.25rem;
-}
-
-.echart-line-total-sales-ecommerce {
-  height: 18.7rem;
-}
-
-.echart-radar-sales-by-pos-location {
-  min-width: 18rem;
-  min-height: 16rem;
-  max-height: 22rem;
-}
-
-.echart-line-returning-customer-rate {
-  min-width: 16rem;
-  min-height: 20rem;
-}
-
-.echart-candle-chart {
-  height: 20.5rem;
-}
-.firefox .echart-candle-chart {
-  min-height: 21.5rem;
-}
-@media (max-width: 991.98px) {
-  .echart-candle-chart {
-    min-height: 25rem;
-  }
-}
-@media (max-width: 575.98px) {
-  .echart-candle-chart {
-    min-height: 18.75rem;
-  }
-}
-
-.echart-gross-revenue-chart {
-  min-height: 14.375rem;
-}
-
-.echart-active-user-chart {
-  height: 3.125rem;
-}
-
-.echart-bar-report-for-this-week {
-  min-height: 18.4375rem;
-}
-@media (min-width: 1540px) {
-  .echart-bar-report-for-this-week {
-    min-height: 17.6875rem;
-  }
-}
-
-[data-echarts] {
-  width: 3.625rem;
-  height: 1rem;
-}
-
-.total-order-ecommerce {
-  width: 9rem !important;
-  height: 4rem !important;
-}
-
-.echart-audience {
-  min-height: 21.25rem;
-}
-.container-fluid .echart-audience, .container-sm .echart-audience, .container-md .echart-audience, .container-lg .echart-audience, .container-xl .echart-audience, .container-xxl .echart-audience {
-  min-height: 25rem;
-}
-
-.echart-session-by-browser,
-.echart-session-by-country-map {
-  min-height: 12.5rem;
-}
-
-.echart-session-by-device {
-  min-height: 12.5rem;
-}
-
-.echart-most-leads {
-  min-height: 12.65rem;
-}
-
-.echart-session-by-country {
-  min-height: 13.125rem;
-}
-
-@media (min-width: 768px) {
-  .echart-active-users-report-container {
-    width: calc(100% - 120px);
-  }
-}
-
-.echart-active-users-report {
-  min-height: 16.25rem;
-}
-
-.echart-bounce-rate {
-  min-height: 20rem;
-}
-
-.echart-traffic-channels {
-  min-height: 21.875rem;
-}
-
-.echart-browsed-courses {
-  min-height: 21.875rem;
-}
-
-.echart-users-by-time {
-  min-height: 24.75rem;
-}
-
-.echart-goal-charts {
-  height: 1.875rem;
-  width: 100%;
-}
-
-.echart-crm-statistics {
-  height: 2rem !important;
-}
-
-.echart-call-duration {
-  width: 12rem !important;
-  height: 3rem !important;
-}
-
-.echart-marketing-traffic {
-  width: 8.7rem !important;
-  height: 2rem !important;
-}
-
-.crm-weekly-sales-width {
-  width: 8.7rem;
-}
-
-.echart-lead-conversion {
-  min-height: 18.9rem;
-}
-
-.echart-deal-storage-funnel {
-  height: 10rem;
-}
-
-.echart-closed-vs-goal {
-  min-height: 15rem;
-}
-@media (min-width: 1540px) {
-  .echart-closed-vs-goal {
-    min-height: 14rem !important;
-  }
-}
-
-.echart-default-total-order,
-.echart-default {
-  width: 8.625rem;
-  height: 100%;
-}
-
-@media (min-width: 768px) {
-  .echart-unresolved-tickets-container {
-    width: calc(100% - 7.1rem);
-  }
-}
-
-.echart-unresolved-tickets {
-  min-height: 21rem;
-}
-
-.echart-number-of-tickets {
-  min-height: 18.5rem;
-  min-width: 40rem;
-}
-
-.echart-customer-setisfaction {
-  min-height: 19.5rem;
-}
-
-.echart-distribution-of-performance {
-  min-height: 20.875rem;
-  min-width: 40rem;
-}
-
-.echart-satisfaction-survey {
-  min-height: 24.625rem;
-  min-width: 40rem;
-}
-
-.echart-received-tickets {
-  min-height: 23.5rem;
-  min-width: 52rem;
-}
-
-.echart-top-customers {
-  min-height: 22rem;
-}
-
-.echart-ticket-volume {
-  min-height: 21.81rem;
-}
-
-.charts-ticket-priority {
-  height: 1.625rem;
-  width: 1.625rem;
-}
-
-.echart-assignment-scores {
-  min-height: 12.5rem;
-}
-
-.echart-course-status {
-  height: 18.75rem;
-}
-
-.echart-scatter-quartet-chart-example {
-  min-height: 500px;
-}
-@media (max-width: 767.98px) {
-  .echart-scatter-quartet-chart-example {
-    min-height: 1050px;
-  }
-}
-
-.echart-radar-customized-chart {
-  height: 22rem;
-}
-@media (max-width: 991.98px) {
-  .echart-radar-customized-chart {
-    height: 45rem;
-  }
-}
-
-.echart-radar-multiple-chart {
-  height: 21rem;
-}
-@media (max-width: 1539.98px) {
-  .echart-radar-multiple-chart {
-    height: 32rem;
-  }
-}
-@media (max-width: 1199.98px) {
-  .echart-radar-multiple-chart {
-    height: 32rem;
-  }
-}
-@media (max-width: 991.98px) {
-  .echart-radar-multiple-chart {
-    height: 50rem;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .echart-heatmap-calendar-vertical-chart {
-    height: 215rem;
-  }
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                  Flatpickr                                 */
-/* -------------------------------------------------------------------------- */
-.flatpickr-calendar {
-  background-color: var(--falcon-flatpickr-calendar-bg) !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  border: 1px solid var(--falcon-border-color) !important;
-}
-.flatpickr-calendar.arrowTop:after {
-  border-bottom-color: var(--falcon-flatpickr-calendar-bg) !important;
-}
-.flatpickr-calendar.arrowTop:before {
-  border-bottom-color: var(--falcon-border-color) !important;
-}
-.flatpickr-calendar.arrowBottom:after {
-  border-top-color: var(--falcon-flatpickr-calendar-bg) !important;
-}
-.flatpickr-calendar.arrowBottom:before {
-  border-top-color: var(--falcon-border-color) !important;
-}
-.flatpickr-calendar.predefinedRange {
-  display: grid;
-  width: auto;
-}
-.flatpickr-calendar.predefinedRange .flatpickr-predefined-ranges {
-  grid-column: 1;
-  grid-row: 1/span 2;
-  border-left: 1px solid var(--falcon-border-color);
-  border-radius: 0;
-}
-.flatpickr-calendar.predefinedRange .flatpickr-predefined-ranges > * {
-  border-bottom: 1px solid var(--falcon-border-color);
-  background-color: var(--falcon-body-bg-tertiary);
-  text-align: right;
-}
-.flatpickr-calendar.predefinedRange .flatpickr-predefined-ranges > *:hover {
-  background-color: var(--falcon-body-bg);
-}
-.flatpickr-calendar.predefinedRange .flatpickr-predefined-ranges > *:active:focus, .flatpickr-calendar.predefinedRange .flatpickr-predefined-ranges > *:active, .flatpickr-calendar.predefinedRange .flatpickr-predefined-ranges > *:focus {
-  background-color: var(--falcon-primary);
-  color: var(--falcon-white);
-}
-.flatpickr-calendar.predefinedRange .flatpickr-months {
-  position: relative;
-  grid-column: 2;
-  grid-row: 1;
-}
-.flatpickr-calendar.predefinedRange .flatpickr-innerContainer {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.flatpickr-input:disabled, .flatpickr-input[readonly] {
-  background-color: var(--falcon-flatpickr-calendar-bg);
-}
-
-.flatpickr-time .flatpickr-am-pm,
-.flatpickr-time input {
-  color: var(--falcon-gray-400);
-}
-.flatpickr-time .flatpickr-am-pm:hover, .flatpickr-time .flatpickr-am-pm:focus,
-.flatpickr-time input:hover,
-.flatpickr-time input:focus {
-  background-color: var(--falcon-gray-100) !important;
-}
-
-.flatpickr-day {
-  color: var(--falcon-gray-500);
-}
-.flatpickr-day.endRange, .flatpickr-day.startRange {
-  background-color: var(--falcon-primary) !important;
-  border: 0;
-}
-.flatpickr-day.endRange:hover, .flatpickr-day.endRange:focus, .flatpickr-day.startRange:hover, .flatpickr-day.startRange:focus {
-  background-color: var(--falcon-primary) !important;
-}
-.flatpickr-day.inRange, .flatpickr-day.prevMonthDay.inRange, .flatpickr-day.nextMonthDay.inRange, .flatpickr-day.today.inRange, .flatpickr-day.prevMonthDay.today.inRange, .flatpickr-day.nextMonthDay.today.inRange, .flatpickr-day:hover, .flatpickr-day.prevMonthDay:hover, .flatpickr-day.nextMonthDay:hover, .flatpickr-day:focus, .flatpickr-day.prevMonthDay:focus, .flatpickr-day.nextMonthDay:focus {
-  background-color: var(--falcon-gray-200);
-  border-color: var(--falcon-gray-200);
-  color: var(--falcon-gray-500);
-}
-.flatpickr-day.nextMonthDay, .flatpickr-day.prevMonthDay {
-  color: var(--falcon-gray-300);
-}
-.flatpickr-day.today:hover, .flatpickr-day.today:focus {
-  background-color: var(--falcon-flatpickr-calendar-bg);
-}
-.flatpickr-day.selected {
-  background-color: var(--falcon-primary);
-  border-color: var(--falcon-primary);
-}
-.flatpickr-day.selected:hover, .flatpickr-day.selected:focus {
-  color: #fff;
-  background-color: var(--falcon-primary);
-  border-color: var(--falcon-primary);
-}
-
-.flatpickr-time input.flatpickr-hour {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 5px;
-}
-
-.flatpickr-calendar.showTimeInput.hasTime .flatpickr-time {
-  border-top: 0 !important;
-}
-
-.flatpickr-calendar.hasTime .flatpickr-time {
-  border-top-color: var(--falcon-border-color) !important;
-}
-
-.flatpickr-day.selected.startRange + .endRange:not(:nth-child(7n+1)),
-.flatpickr-day.startRange.startRange + .endRange:not(:nth-child(7n+1)),
-.flatpickr-day.endRange.startRange + .endRange:not(:nth-child(7n+1)) {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.flatpickr-current-month .flatpickr-monthDropdown-months .flatpickr-monthDropdown-month {
-  background-color: var(--falcon-flatpickr-calendar-bg) !important;
-}
-
-span.flatpickr-weekday,
-.flatpickr-weekdaycontainer,
-.flatpickr-monthDropdown-months,
-.flatpickr-months .flatpickr-month {
-  background-color: var(--falcon-flatpickr-calendar-bg) !important;
-  color: var(--falcon-body-color) !important;
-}
-
-.flatpickr-wrapper {
-  display: block;
-}
-
-.flatpickr-months .flatpickr-next-month, .flatpickr-months .flatpickr-prev-month {
-  fill: var(--falcon-gray-700);
-}
-.flatpickr-months .flatpickr-next-month:hover svg, .flatpickr-months .flatpickr-prev-month:hover svg {
-  fill: var(--falcon-gray-800);
-}
-
-.flatpickr-day.inRange {
-  -webkit-box-shadow: 5px 0 0 var(--falcon-flatpickr-calendar-bg), -5px 0 0 var(--falcon-flatpickr-calendar-bg);
-  box-shadow: 5px 0 0 var(--falcon-flatpickr-calendar-bg), -5px 0 0 var(--falcon-flatpickr-calendar-bg);
-}
-
-.flatpickr-monthDropdown-months {
-  height: 30px !important;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                    Plyr                                    */
-/* -------------------------------------------------------------------------- */
-.plyr {
-  border-radius: 0.375rem;
-}
-
-.plyr__control--overlaid, .plyr__control--overlaid:hover, .plyr__control--overlaid:focus {
-  background-color: #e63757;
-}
-
-.plyr--video .plyr__controls .plyr__control.plyr__tab-focus, .plyr--video .plyr__controls .plyr__control:hover, .plyr--video .plyr__controls .plyr__control[aria-expanded=true], .plyr__menu__container label.plyr__control input[type=radio]:checked + span {
-  background-color: #e63757;
-}
-
-.plyr--full-ui input[type=range] {
-  color: #e63757;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                  Dropzone                                  */
-/* -------------------------------------------------------------------------- */
-.dropzone {
-  position: relative;
-  background-color: #fff;
-  border: 0;
-  background-color: transparent;
-  border-radius: 0.375rem;
-}
-.dropzone.dropzone-has-default .dz-message {
-  border-color: transparent;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.dropzone.dropzone-has-default .dz-message:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.dropzone .dz-preview {
-  min-height: auto;
-}
-.dropzone .dz-remove {
-  position: absolute;
-  left: 0.5rem;
-  top: 0.5rem;
-  color: #fff;
-  z-index: 1000;
-  cursor: pointer;
-  opacity: 0;
-  width: 2rem;
-  height: 2rem;
-  line-height: 2rem;
-}
-.dropzone .dz-remove * {
-  cursor: pointer;
-}
-.dropzone .dz-message {
-  position: relative;
-  padding: 5rem 2rem;
-  margin: 0;
-  border: 2px dashed var(--falcon-border-color);
-  border-radius: 0.375rem;
-}
-.dropzone.dropzone-single.dz-file-processing .dz-message {
-  display: none;
-}
-.dropzone.dropzone-single.dz-file-processing.dz-file-complete .dz-message {
-  display: block;
-}
-.dropzone.dropzone-single.dz-file-processing.dz-file-complete .dz-default-image {
-  opacity: 0;
-}
-.dropzone.dropzone-single .dz-processing .dz-message-text {
-  opacity: 0 !important;
-}
-.dropzone.dropzone-single .dz-progress {
-  opacity: 1;
-  -webkit-transition: opacity 0.4s ease-in;
-  -o-transition: opacity 0.4s ease-in;
-  transition: opacity 0.4s ease-in;
-  -webkit-animation: none !important;
-  animation: none !important;
-  width: 9.375rem !important;
-  height: 0.5rem !important;
-  margin: 0 !important;
-  -webkit-transform: translateX(50%) !important;
-  -ms-transform: translateX(50%) !important;
-  transform: translateX(50%) !important;
-  top: auto !important;
-  bottom: 1.5rem;
-}
-.dropzone.dropzone-single.dz-max-files-reached .dz-message {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  opacity: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  border-color: transparent;
-}
-.dropzone.dropzone-single.dz-max-files-reached .dz-remove {
-  opacity: 1;
-}
-.dropzone.dropzone-single.dz-max-files-reached:hover .dz-message, .dropzone.dropzone-single.dz-max-files-reached:focus .dz-message {
-  opacity: 1;
-}
-.dropzone.dropzone-single .dz-processing .dz-progress {
-  opacity: 1;
-}
-.dropzone.dropzone-single .dz-complete .dz-progress {
-  opacity: 0;
-}
-.dropzone .dz-preview-single {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: 0;
-}
-.dropzone .dz-preview-single:hover {
-  z-index: auto;
-}
-.dropzone .dz-preview-single .dz-preview-cover {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border: 0 !important;
-  overflow: hidden;
-}
-.dropzone .dz-preview-single .dz-preview-cover .dz-errormessage {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-.dropzone .dz-preview-single .dz-preview-img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: 0.375rem;
-}
-.dropzone.dropzone-multiple {
-  border: 0;
-  background: transparent;
-}
-.dropzone.dropzone-multiple .dz-message {
-  padding: 4rem 2rem;
-  border: 2px dashed var(--falcon-border-color);
-  border-radius: 0.375rem;
-}
-.dropzone.dropzone-multiple .btn *, .dropzone.dropzone-multiple .falcon-data-table .paging_full_numbers .page-link *, .falcon-data-table .paging_full_numbers .dropzone.dropzone-multiple .page-link *,
-.dropzone.dropzone-multiple .falcon-data-table .paging_first_last_numbers .page-link *,
-.falcon-data-table .paging_first_last_numbers .dropzone.dropzone-multiple .page-link *,
-.dropzone.dropzone-multiple .falcon-data-table .paging_full .page-link *,
-.falcon-data-table .paging_full .dropzone.dropzone-multiple .page-link *,
-.dropzone.dropzone-multiple .falcon-data-table .paging_numbers .page-link *,
-.falcon-data-table .paging_numbers .dropzone.dropzone-multiple .page-link *,
-.dropzone.dropzone-multiple .falcon-data-table .paging_simple_numbers .page-link *,
-.falcon-data-table .paging_simple_numbers .dropzone.dropzone-multiple .page-link *, .dropzone.dropzone-multiple [data-list] .page *, [data-list] .dropzone.dropzone-multiple .page *, .dropzone.dropzone-multiple .table-list .page *, .table-list .dropzone.dropzone-multiple .page *, .dropzone.dropzone-multiple .tox .tox-menu__footer .tox-button:last-child *, .tox .tox-menu__footer .dropzone.dropzone-multiple .tox-button:last-child *,
-.dropzone.dropzone-multiple .tox .tox-dialog__footer .tox-button:last-child *,
-.tox .tox-dialog__footer .dropzone.dropzone-multiple .tox-button:last-child *, .dropzone.dropzone-multiple .tox .tox-menu__footer .tox-button--secondary *, .tox .tox-menu__footer .dropzone.dropzone-multiple .tox-button--secondary *,
-.dropzone.dropzone-multiple .tox .tox-dialog__footer .tox-button--secondary *,
-.tox .tox-dialog__footer .dropzone.dropzone-multiple .tox-button--secondary * {
-  cursor: pointer;
-}
-.dropzone.dropzone-multiple .media:first-child {
-  margin-top: 1.8rem;
-}
-.dropzone.dropzone-multiple .dz-image {
-  border-radius: 0.25rem;
-  height: 2.5rem;
-  width: 2.5rem;
-  -o-object-fit: cover;
-  object-fit: cover;
-  margin-left: 1rem;
-  border: 1px solid #d8e2ef;
-}
-.dropzone.dropzone-multiple .dz-progress {
-  opacity: 0;
-  position: relative !important;
-  -webkit-transition: opacity 0.4s ease-in;
-  -o-transition: opacity 0.4s ease-in;
-  transition: opacity 0.4s ease-in;
-  -webkit-animation: none !important;
-  animation: none !important;
-  width: 6.25rem !important;
-  height: 0.5rem !important;
-  margin-top: 0;
-  margin-right: 1rem !important;
-  -webkit-transform: none !important;
-  -ms-transform: none !important;
-  transform: none !important;
-  top: auto !important;
-  right: auto !important;
-}
-.dropzone.dropzone-multiple .dz-complete .dz-progress {
-  -webkit-transition-delay: 1s;
-  -o-transition-delay: 1s;
-  transition-delay: 1s;
-  opacity: 1;
-}
-.dropzone.dz-drag-hover .dz-message {
-  border-color: var(--falcon-primary);
-}
-.dropzone .dz-progress {
-  background: #edf2f9 !important;
-}
-.dropzone .dz-progress .dz-upload {
-  background: var(--falcon-primary) !important;
-}
-
-.dropzone-area {
-  border: 2px dashed #d8e2ef;
-  border-radius: 0.25rem;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                   Choices                                  */
-/* -------------------------------------------------------------------------- */
-.choices {
-  font-family: var(--falcon-font-sans-serif) !important;
-}
-.choices .choices__inner {
-  border-radius: 0.25rem;
-  min-height: calc(1.5 + 0.625rem + var(--falcon-border-width));
-  line-height: 1.5rem !important;
-  font-size: 1rem;
-  background-color: var(--falcon-quaternary-bg) !important;
-  background-size: 16px 12px;
-  border: 1px solid var(--falcon-gray-300);
-  padding: 0.2604166667rem 1rem 0.2604166667rem 1rem;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-}
-.choices .choices__input--cloned {
-  padding: 0;
-  font-size: 1rem;
-  color: var(--falcon-gray-900);
-  background-color: var(--falcon-quaternary-bg) !important;
-  margin-top: 5px !important;
-  vertical-align: top;
-  margin: 1px 0 !important;
-}
-.choices .choices__list--dropdown {
-  border: 1px solid var(--falcon-gray-200) !important;
-  -webkit-box-shadow: var(--falcon-box-shadow) !important;
-  box-shadow: var(--falcon-box-shadow) !important;
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-  background-color: var(--falcon-gray-100);
-}
-.choices .choices__list--dropdown .choices__item--selectable {
-  padding: 2px 1rem;
-  padding-left: 20px;
-  font-size: 1rem !important;
-  background-color: var(--falcon-gray-200);
-  color: var(--falcon-body-color);
-}
-.choices .choices__list--dropdown .choices__item--selectable.is-highlighted {
-  background-color: var(--falcon-primary);
-  color: var(--falcon-choices-item-selectable-highlighted-bg);
-}
-.choices .choices__list {
-  margin-top: 0 !important;
-}
-.choices .choices__list .has-no-choices {
-  background-color: var(--falcon-choices-item-has-no-choices-bg);
-}
-.choices .choices__list--multiple .choices__item {
-  padding: 0 8px !important;
-  font-size: 0.813rem !important;
-  border: 0;
-  background-color: var(--falcon-gray-200);
-  border-radius: 4px;
-  margin-bottom: 0 !important;
-  margin-top: 5px !important;
-  color: var(--falcon-body-color);
-}
-.choices .choices__button {
-  background-color: #ff0000 !important;
-  border-right: #000 !important;
-}
-.choices .choices__list--single {
-  padding: 0 !important;
-}
-.choices .choices__list--single .choices__button {
-  background-color: transparent !important;
-}
-
-.choices[data-type*=select-multiple] .choices__button, .choices[data-type*=text] .choices__button {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yLjU5Mi4wNDRsMTguMzY0IDE4LjM2NC0yLjU0OCAyLjU0OEwuMDQ0IDIuNTkyeiIvPjxwYXRoIGQ9Ik0wIDE4LjM2NEwxOC4zNjQgMGwyLjU0OCAyLjU0OEwyLjU0OCAyMC45MTJ6Ii8+PC9nPjwvc3ZnPg==);
-  background-color: transparent !important;
-  padding-right: 5px !important;
-  width: 5px !important;
-  background-size: 6px !important;
-}
-
-html[data-bs-theme=dark] .choices[data-type*=select-multiple] .choices__button, html[data-bs-theme=dark] .choices[data-type*=text] .choices__button {
-  -webkit-filter: invert(1) grayscale(100%) brightness(80%) !important;
-  filter: invert(1) grayscale(100%) brightness(80%) !important;
-}
-
-.choices[data-type*=select-one] .choices__input {
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-.choices[data-type*=select-one] .choices__inner {
-  padding-bottom: 5px !important;
-}
-
-.is-focused .choices__inner,
-.is-open .choices__inner {
-  border-radius: 0.25rem !important;
-  border-color: var(--falcon-gray-300) !important;
-}
-
-.was-validated .choices.valid .choices__inner {
-  border-color: var(--falcon-success) !important;
-  padding-left: calc(1.5em + 0.75rem);
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2300d27a' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: left calc(0.375em + 0.1875rem) center;
-  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
-}
-.was-validated .choices[data-type=select-one].valid .choices__inner {
-  background-position: left calc(0.375em + 1.55rem) center;
-}
-.was-validated .choices.invalid {
-  margin-bottom: 0;
-}
-.was-validated .choices.invalid .choices__inner {
-  border-color: var(--falcon-danger) !important;
-  padding-left: calc(1.5em + 0.75rem);
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23e63757'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23e63757' stroke='none'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: left calc(0.375em + 0.1875rem) center;
-  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
-}
-.was-validated .choices.invalid + .invalid-feedback {
-  display: block;
-}
-.was-validated .choices[data-type=select-one].invalid .choices__inner {
-  background-position: left calc(0.375em + 1.55rem) center;
-}
-.was-validated .choices[data-type*=select-one] .choices__button {
-  margin-left: 60px !important;
-}
-
-.choices[data-type*=select-one] .choices__input {
-  border-bottom: var(--falcon-gray-100);
-}
-
-.choices .choices__list--single .choices__button {
-  background-color: var(--falcon-bg-choices-close-button) !important;
-}
-
-.choices[data-type*=select-one] .choices__button {
-  margin-left: 30px;
-}
-
-[dir=rtl] .choices[data-type*=select-one]:after {
-  right: auto !important;
-  left: 11.5px !important;
-}
-
-[dir=rtl] .choices[data-type*=select-one] .choices__button {
-  right: auto;
-  left: 0;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                   Leaflet                                  */
-/* -------------------------------------------------------------------------- */
-.leaflet-bar {
-  -webkit-box-shadow: var(--falcon-box-shadow);
-  box-shadow: var(--falcon-box-shadow);
-}
-.leaflet-bar a, .leaflet-bar a:hover {
-  background-color: var(--falcon-leaflet-bar-bg);
-  color: var(--falcon-body-color);
-  border-bottom-color: var(--falcon-border-color);
-  text-decoration: none;
-}
-.leaflet-bar a.leaflet-disabled {
-  background-color: var(--falcon-gray-200);
-}
-
-.marker-cluster-small {
-  background-color: rgba(var(--falcon-primary-rgb), 0.2);
-}
-.marker-cluster-small div {
-  margin: 5px;
-  background-color: var(--falcon-primary);
-  color: #fff;
-}
-
-.marker-cluster-medium {
-  background-color: rgba(var(--falcon-warning-rgb), 0.2);
-}
-.marker-cluster-medium div {
-  margin: 5px;
-  background-color: var(--falcon-warning);
-  color: #fff;
-}
-
-.marker-cluster-large {
-  background-color: rgba(var(--falcon-success-rgb), 0.2);
-}
-.marker-cluster-large div {
-  margin: 5px;
-  background-color: var(--falcon-success);
-  color: #fff;
-}
-
-.leaflet-popup-content-wrapper, .leaflet-popup-tip {
-  background-color: var(--falcon-leaflet-popup-content-wrapper-bg);
-  -webkit-box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
-  border-radius: 0.25rem;
-}
-
-.leaflet-popup-close-button {
-  left: 3px !important;
-  top: 3px !important;
-}
-
-.leaflet-marker-icon {
-  height: auto !important;
-  width: auto !important;
-}
-
-.leaflet-control-attribution {
-  display: none;
-}
-
-.leaflet-top, .leaflet-bottom {
-  z-index: 999;
-}
-
-.leaflet-left .leaflet-control {
-  margin-right: 1.25rem;
-}
-
-.leaflet-right .leaflet-control {
-  margin-left: 1.25rem;
-}
-
-.leaflet-top .leaflet-control {
-  margin-top: 1.25rem;
-}
-
-.leaflet-bottom .leaflet-control {
-  margin-bottom: 1.25rem;
-}
-
-/*-----------------------------------------------
-|   Tinymce
------------------------------------------------*/
-.tox-editor-container .tox-toolbar {
-  border: 0 !important;
-}
-
-.tinymce-mobile-toolbar,
-.tox-edit-area,
-.tox-tinymce {
-  border-color: var(--falcon-gray-200) !important;
-}
-
-.tox-tbtn:not([disabled=disabled]) {
-  color: var(--falcon-body-color) !important;
-}
-
-.tox .tox-tbtn--enabled,
-.tox .tox-tbtn:active,
-.tox .tox-tbtn:hover,
-.tox .tox-tbtn:focus {
-  background-color: var(--falcon-gray-300) !important;
-}
-
-.tox .tox-tbtn:not([disabled=disabled]) svg {
-  fill: var(--falcon-body-color) !important;
-}
-
-.tinymce-mobile-toolstrip .tinymce-mobile-toolbar:not(.tinymce-mobile-context-toolbar) .tinymce-mobile-toolbar-group .tinymce-mobile-toolbar-group-item.tinymce-mobile-toolbar-button.tinymce-mobile-toolbar-button-selected {
-  background-color: var(--falcon-gray-300) !important;
-  color: var(--falcon-body-color) !important;
-  border-radius: 0.25rem;
-}
-
-.tox-collection__item--active {
-  background-color: var(--falcon-gray-300) !important;
-  color: var(--falcon-body-color) !important;
-}
-
-.tox .tox-tbtn--select {
-  padding: 0 10px !important;
-}
-
-.tinymce-mobile-icon-full-dot:before {
-  color: var(--falcon-gray-300);
-}
-
-.tinymce-mobile-icon:not(.tinymce-mobile-icon-back),
-.tinymce-mobile-icon-large-font:before,
-.tinymce-mobile-icon-style-formats:before,
-.tox .tox-collection__item {
-  color: var(--falcon-body-color) !important;
-}
-
-.tox .tox-collection__item-accessory {
-  color: inherit !important;
-}
-
-.tinymce-mobile-toolbar-button svg,
-.tox-collection__item-caret svg {
-  fill: var(--falcon-body-color) !important;
-}
-
-.tox .tox-toolbar__group:not(:last-of-type) {
-  border-left: 1px solid var(--falcon-gray-200) !important;
-}
-
-.tox:not([dir=rtl]) .tox-toolbar__group:not(:last-of-type) {
-  border-right: 1px solid var(--falcon-gray-200) !important;
-}
-
-.tinymce-mobile-toolstrip .tinymce-mobile-toolbar:not(.tinymce-mobile-context-toolbar) .tinymce-mobile-toolbar-group:first-of-type,
-.tinymce-mobile-toolstrip .tinymce-mobile-toolbar:not(.tinymce-mobile-context-toolbar) .tinymce-mobile-toolbar-group:last-of-type {
-  background-color: var(--falcon-primary) !important;
-}
-
-.tinymce-mobile-disabled-mask {
-  background-color: var(--falcon-gray-200) !important;
-}
-
-.tinymce-mobile-outer-container:not(.tinymce-mobile-fullscreen-maximized) .tinymce-mobile-editor-socket {
-  height: 50vh !important;
-}
-
-.tox .tox-toolbar__group {
-  padding: 0 !important;
-}
-.tox .tox-toolbar__group > * {
-  margin: 3px !important;
-}
-.tox .tox-toolbar-overlord {
-  background-color: inherit !important;
-}
-.tox .tox-toolbar-overlord .tox-toolbar__primary {
-  background: none;
-  background-color: inherit;
-  border-bottom: 1px solid var(--falcon-border-color);
-}
-[dir=ltr] .tox .tox-toolbar-overlord .tox-toolbar__primary {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-.tox .tox-menu,
-.tox .tox-dialog {
-  border-radius: 0.25rem !important;
-  border-color: var(--falcon-border-color) !important;
-  background-color: var(--falcon-tinymce-bg) !important;
-}
-.tox .tox-menu__header, .tox .tox-menu__footer,
-.tox .tox-dialog__header,
-.tox .tox-dialog__footer {
-  background-color: var(--falcon-tinymce-bg) !important;
-  border-color: var(--falcon-border-color) !important;
-}
-.tox .tox-toolbar {
-  background-color: var(--falcon-tinymce-bg) !important;
-}
-.tox .tox-selectfield select,
-.tox .tox-textarea,
-.tox .tox-textfield,
-.tox .tox-toolbar-textfield {
-  border-color: var(--falcon-border-color) !important;
-}
-.tox .tox-insert-table-picker > div {
-  border-color: var(--falcon-border-color) !important;
-}
-
-.tox .tox-label, .tox .tox-toolbar-label {
-  color: var(--falcon-gray-900) !important;
-  padding-top: 0.75rem !important;
-  padding-bottom: 0.25rem !important;
-}
-
-.tox .tox-dialog__title {
-  color: var(--falcon-gray-900) !important;
-}
-
-.tox .tox-textarea, .tox .tox-textfield, .tox .tox-toolbar-textfield, .tox .tox-selectfield select, .tox-listbox {
-  background-color: var(--falcon-quaternary-bg) !important;
-  color: var(--falcon-body-color) !important;
-  border-color: var(--falcon-border-color) !important;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
-}
-
-.tox .tox-dialog-wrap__backdrop {
-  background-color: rgba(0, 0, 0, 0.75) !important;
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
-}
-
-.tox .tox-button--naked {
-  color: var(--falcon-body-color) !important;
-}
-.tox .tox-button--naked:hover:not(:disabled) {
-  background-color: var(--falcon-gray-200) !important;
-  border-color: var(--falcon-border-color) !important;
-}
-
-.tox .tox-collection--list .tox-collection__group {
-  border-color: var(--falcon-border-color) !important;
-}
-
-.tox .tox-dialog__body-nav-item {
-  color: var(--falcon-body-color) !important;
-}
-
-.tox .tox-dialog__body-nav-item--active {
-  color: var(--falcon-primary) !important;
-  border-bottom: none !important;
-}
-
-.tox .tox-collection--list .tox-collection__item--enabled {
-  background-color: var(--falcon-gray-200) !important;
-}
-
-.tox.tox-tinymce-aux .tox-toolbar__overflow {
-  background: none !important;
-  background-color: var(--falcon-tinymce-bg) !important;
-  border-color: var(--falcon-border-color) !important;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                  Glightbox                                 */
-/* -------------------------------------------------------------------------- */
-.glightbox-open {
-  overflow: unset !important;
-}
-
-.gscrollbar-fixer {
-  margin-left: 0 !important;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                 Google Map                                 */
-/* -------------------------------------------------------------------------- */
-.googlemap .gm-style-iw.gm-style-iw-c {
-  -webkit-box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07) !important;
-  box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07) !important;
-  padding: 1rem !important;
-}
-.googlemap .gm-style-iw.gm-style-iw-c button[title=Close] {
-  margin-top: 1rem !important;
-  margin-left: 0.5rem !important;
-}
-
-html[dir=rtl] .googlemap .gm-style-iw.gm-style-iw-c button[title=Close] {
-  right: unset !important;
-  left: 0 !important;
-}
-
-.googlemap .gm-fullscreen-control,
-.googlemap .gm-svpc,
-.googlemap .gmnoprint * {
-  background-color: var(--falcon-emphasis-bg) !important;
-  color: inherit !important;
-}
-
 [data-list] .sort[data-sort], .table-list .sort[data-sort] {
   white-space: nowrap;
   cursor: pointer;
@@ -24344,1129 +22511,11 @@ html[dir=rtl] .googlemap .gm-style-iw.gm-style-iw-c button[title=Close] {
   color: var(--falcon-primary) !important;
 }
 
-.ios [data-list-pagination].btn-primary[disabled], .ios .tox .tox-menu__footer [data-list-pagination][disabled].tox-button:last-child, .tox .tox-menu__footer .ios [data-list-pagination][disabled].tox-button:last-child,
-.ios .tox .tox-dialog__footer [data-list-pagination][disabled].tox-button:last-child,
-.tox .tox-dialog__footer .ios [data-list-pagination][disabled].tox-button:last-child {
+.ios [data-list-pagination].btn-primary[disabled] {
   opacity: 1 !important;
   border: 0 !important;
   background-color: var(--falcon-btn-disabled-custom-background) !important;
   color: var(--falcon-btn-disabled-custom-color) !important;
-}
-
-.theme-slider .swiper-nav {
-  margin-top: 0;
-  cursor: pointer;
-}
-.theme-slider .swiper-nav [class*=swiper-] {
-  opacity: 0;
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  top: 50%;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  color: var(--falcon-gray-700);
-  background-color: var(--falcon-swiper-nav-bg) !important;
-  -webkit-box-shadow: -0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-  box-shadow: -0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  margin: 0;
-}
-.theme-slider .swiper-nav [class*=swiper-]:hover, .theme-slider .swiper-nav [class*=swiper-]:focus {
-  background-color: var(--falcon-white);
-  color: var(--falcon-gray-700);
-  opacity: 1 !important;
-}
-.theme-slider .swiper-nav .swiper-button-prev {
-  right: 0.5rem;
-}
-.theme-slider .swiper-nav .swiper-button-next {
-  left: 0.5rem;
-}
-.theme-slider:hover .swiper-nav [class*=swiper-], .theme-slider:focus .swiper-nav [class*=swiper-] {
-  opacity: 0.5;
-}
-.theme-slider .swiper-button-next:after,
-.theme-slider .swiper-button-prev:after {
-  font-family: swiper-icons;
-  font-size: 1rem;
-  font-weight: 800;
-  text-transform: none !important;
-  letter-spacing: 0;
-  text-transform: none;
-  font-variant: initial;
-  line-height: 1;
-}
-
-.product-slider {
-  position: relative;
-}
-@media (min-width: 992px) {
-  .product-slider {
-    height: calc(100% - 3.5625rem);
-  }
-}
-@media (min-width: 1200px) {
-  .product-slider {
-    height: calc(100% - 3.3125rem);
-  }
-}
-@media (min-width: 1540px) {
-  .product-slider {
-    height: calc(100% - 4.75rem);
-  }
-}
-
-[data-layout=container].container-fluid .product-slider, [data-layout=container].container-sm .product-slider, [data-layout=container].container-md .product-slider, [data-layout=container].container-lg .product-slider, [data-layout=container].container-xl .product-slider, [data-layout=container].container-xxl .product-slider {
-  position: relative;
-}
-@media (min-width: 992px) {
-  [data-layout=container].container-fluid .product-slider, [data-layout=container].container-sm .product-slider, [data-layout=container].container-md .product-slider, [data-layout=container].container-lg .product-slider, [data-layout=container].container-xl .product-slider, [data-layout=container].container-xxl .product-slider {
-    height: calc(100% - 4.36rem);
-  }
-}
-@media (min-width: 1200px) {
-  [data-layout=container].container-fluid .product-slider, [data-layout=container].container-sm .product-slider, [data-layout=container].container-md .product-slider, [data-layout=container].container-lg .product-slider, [data-layout=container].container-xl .product-slider, [data-layout=container].container-xxl .product-slider {
-    height: calc(100% - 4.86rem);
-  }
-}
-@media (min-width: 1540px) {
-  [data-layout=container].container-fluid .product-slider, [data-layout=container].container-sm .product-slider, [data-layout=container].container-md .product-slider, [data-layout=container].container-lg .product-slider, [data-layout=container].container-xl .product-slider, [data-layout=container].container-xxl .product-slider {
-    height: calc(100% - 6.42rem);
-  }
-}
-
-.star-rating {
-  background-image: var(--falcon-star-rating-bg-image) !important;
-}
-.star-rating .star-value {
-  background: url("../img/icons/star_on.svg") !important;
-}
-
-#appCalendar {
-  height: calc(100vh - 12.4rem) !important;
-}
-
-.fc .fc-button .fc-icon {
-  line-height: 1rem;
-  font-size: 1.2em;
-}
-.fc .fc-scrollgrid {
-  border-color: var(--falcon-gray-200);
-}
-.fc.fc-theme-standard a:not([href]) {
-  color: inherit;
-}
-.fc.fc-theme-standard .fc-list,
-.fc.fc-theme-standard td, .fc.fc-theme-standard th {
-  border-color: var(--falcon-gray-200);
-}
-.fc .fc-col-header {
-  background-color: var(--falcon-gray-100);
-}
-.fc .fc-col-header th {
-  border-bottom-width: 1px;
-}
-.fc .fc-col-header-cell-cushion {
-  text-decoration: none !important;
-}
-.fc .fc-daygrid-day-frame {
-  border: 2px solid transparent;
-  padding: 2px !important;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.fc .fc-daygrid-day-frame:active {
-  background-color: rgba(var(--falcon-primary-rgb), 0.1) !important;
-}
-.fc .fc-daygrid-day-top {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 0.25rem;
-}
-.fc .fc-daygrid-day-number {
-  width: 1.875rem;
-  height: 1.875rem;
-  background-color: var(--falcon-gray-100);
-  text-align: center;
-  text-decoration: none !important;
-  border-radius: 50%;
-  line-height: 1.875rem;
-  padding: 0 !important;
-  font-size: 0.8333333333rem;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.fc .fc-daygrid-day-number:hover, .fc .fc-daygrid-day-number:focus {
-  background-color: var(--falcon-gray-200);
-}
-.fc .fc-daygrid-bg-harness {
-  top: -2px;
-}
-.fc .fc-daygrid-event {
-  border-radius: 0.25rem !important;
-  margin-top: 0;
-  margin-bottom: 0.25rem !important;
-  padding: 0.25rem 0.5rem !important;
-  border: 0 !important;
-  font-size: 0.6944444444rem;
-}
-.fc .fc-h-event {
-  background-color: var(--falcon-primary-bg-subtle);
-}
-.fc .fc-h-event .fc-event-main {
-  color: #1862c6;
-}
-.fc .fc-h-event .fc-event-time,
-.fc .fc-h-event .fc-event-title {
-  font-weight: 600 !important;
-}
-.fc .fc-event-title {
-  font-weight: normal !important;
-}
-.fc .fc-daygrid-event-dot {
-  border-color: var(--falcon-gray-300) !important;
-}
-.fc .fc-day-today:not(.fc-popover) {
-  background-color: transparent !important;
-}
-.fc .fc-day-today:not(.fc-popover) .fc-daygrid-day-frame {
-  border: 2px solid rgba(var(--falcon-primary-rgb), 0.5);
-}
-.fc .fc-day-today:not(.fc-popover) .fc-daygrid-day-number {
-  background-color: var(--falcon-primary) !important;
-  color: #fff;
-}
-.fc .fc-day-today:not(.fc-popover) .fc-daygrid-day-number:hover, .fc .fc-day-today:not(.fc-popover) .fc-daygrid-day-number:focus {
-  background-color: #1862c6 !important;
-}
-.fc.fc-direction-rtl .fc-daygrid-event.fc-event-start, .fc.fc-direction-rtl .fc-daygrid-event.fc-event-end, .fc.fc-direction-ltr .fc-daygrid-event.fc-event-start, .fc.fc-direction-ltr .fc-daygrid-event.fc-event-end {
-  margin-right: 0;
-  margin-left: 0;
-}
-.fc .fc-popover {
-  border-color: var(--falcon-border-color);
-  -webkit-box-shadow: var(--falcon-box-shadow);
-  box-shadow: var(--falcon-box-shadow);
-  border-radius: 0.375rem;
-  z-index: 1050;
-}
-.fc .fc-popover .fc-popover-title {
-  font-family: var(--falcon-font-sans-serif);
-}
-.fc .fc-popover .fc-daygrid-event {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-  margin-bottom: 2px !important;
-}
-.fc .fc-popover-header {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  border-top-right-radius: 0.375rem;
-  border-top-left-radius: 0.375rem;
-  background: var(--falcon-popover-header-bg);
-}
-.fc .fc-daygrid-more-link {
-  display: block;
-  text-align: center;
-  color: var(--falcon-gray-500) !important;
-  font-size: 0.6944444444rem;
-}
-.fc .fc-daygrid-more-link:hover, .fc .fc-daygrid-more-link:focus {
-  text-decoration: none;
-  color: var(--falcon-gray-600) !important;
-}
-.fc .fc-daygrid-dot-event {
-  color: var(--falcon-gray-500) !important;
-}
-.fc .fc-daygrid-dot-event:hover, .fc .fc-daygrid-dot-event:focus {
-  background-color: var(--falcon-gray-200) !important;
-}
-.fc .fc-day:not(.fc-popover) .fc-daygrid-dot-event {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-.fc .fc-day:not(.fc-popover) .fc-daygrid-dot-event .fc-event-time,
-.fc .fc-day:not(.fc-popover) .fc-daygrid-dot-event .fc-event-title {
-  display: none;
-}
-.fc .fc-list-event:hover td {
-  background-color: unset;
-}
-.fc .fc-dayGridMonth-view .fc-event-time {
-  display: none;
-}
-.fc .fc-timeGridDay-view .fc-scrollgrid-sync-inner {
-  text-align: right;
-}
-.fc .fc-timeGridDay-view .fc-daygrid-day-events,
-.fc .fc-timeGridWeek-view .fc-daygrid-day-events {
-  margin-bottom: 0;
-}
-.fc .fc-timeGridDay-view .fc-v-event .fc-event-main,
-.fc .fc-timeGridWeek-view .fc-v-event .fc-event-main {
-  padding-right: 1rem;
-  color: var(--falcon-gray-500);
-}
-.fc .fc-timeGridDay-view .fc-v-event .fc-event-main:after,
-.fc .fc-timeGridWeek-view .fc-v-event .fc-event-main:after {
-  content: "";
-  position: absolute;
-  height: 0.625rem;
-  width: 0.625rem;
-  border-radius: 50%;
-  background-color: var(--falcon-gray-400);
-  top: 0.3125rem;
-  right: 0;
-}
-.fc .fc-timeGridDay-view .fc-timegrid-event,
-.fc .fc-timeGridWeek-view .fc-timegrid-event {
-  padding: 0.5rem;
-  background-color: transparent;
-  border: 0;
-  border-radius: 0.375rem;
-}
-.fc .fc-timeGridDay-view .fc-timegrid-event:hover, .fc .fc-timeGridDay-view .fc-timegrid-event:focus,
-.fc .fc-timeGridWeek-view .fc-timegrid-event:hover,
-.fc .fc-timeGridWeek-view .fc-timegrid-event:focus {
-  background-color: var(--falcon-gray-200);
-}
-.fc .fc-timeGridDay-view .fc-timegrid-slot,
-.fc .fc-timeGridWeek-view .fc-timegrid-slot {
-  height: 2rem;
-}
-.fc .fc-timeGridDay-view .fc-timegrid-slot-lane,
-.fc .fc-timeGridWeek-view .fc-timegrid-slot-lane {
-  cursor: pointer;
-}
-.fc .fc-timeGridDay-view .fc-timegrid-slot-lane:active,
-.fc .fc-timeGridWeek-view .fc-timegrid-slot-lane:active {
-  background-color: var(--falcon-gray-100);
-}
-.fc .fc-timeGridDay-view .fc-timegrid-col,
-.fc .fc-timeGridWeek-view .fc-timegrid-col {
-  padding: 0.375rem !important;
-}
-.fc .fc-list .fc-list-day-cushion {
-  padding: 0.5rem 1.25rem;
-  background-color: var(--fc-button-list-day-cushion);
-}
-.fc .fc-list .fc-list-day:not(:first-child) .fc-list-day-cushion {
-  margin-top: 1.8rem;
-}
-.fc .fc-list .fc-list-event-time {
-  padding-right: 1.25rem;
-}
-.fc .fc-list .fc-list-event-title {
-  padding-left: 1.25rem;
-}
-.fc .fc-list-empty {
-  background-color: var(--falcon-gray-100);
-}
-.fc .fc-list-event-dot {
-  border-color: var(--falcon-gray-300);
-}
-
-.fc-timegrid .event-bg-primary-subtle {
-  border: 0 !important;
-}
-.fc-timegrid .event-bg-primary-subtle .fc-event-main:after {
-  background-color: #2c7be5 !important;
-}
-
-.bg-primary-subtle .fc-event-main, .fc-timegrid .event-bg-primary-subtle .fc-event-main {
-  color: #1862c6 !important;
-}
-.bg-primary-subtle .fc-event-main:after, .fc-timegrid .event-bg-primary-subtle .fc-event-main:after {
-  background-color: #1862c6 !important;
-}
-.bg-primary-subtle .fc-list-event-time, .fc-timegrid .event-bg-primary-subtle .fc-list-event-time,
-.bg-primary-subtle .fc-list-event-title,
-.fc-timegrid .event-bg-primary-subtle .fc-list-event-title {
-  color: #1862c6 !important;
-  font-weight: 600 !important;
-}
-.bg-primary-subtle .fc-list-event-dot, .fc-timegrid .event-bg-primary-subtle .fc-list-event-dot {
-  border-color: #1862c6;
-}
-
-.fc-timegrid .event-bg-secondary-subtle {
-  border: 0 !important;
-}
-.fc-timegrid .event-bg-secondary-subtle .fc-event-main:after {
-  background-color: #748194 !important;
-}
-
-.bg-secondary-subtle .fc-event-main, .fc-timegrid .event-bg-secondary-subtle .fc-event-main {
-  color: #5d6878 !important;
-}
-.bg-secondary-subtle .fc-event-main:after, .fc-timegrid .event-bg-secondary-subtle .fc-event-main:after {
-  background-color: #5d6878 !important;
-}
-.bg-secondary-subtle .fc-list-event-time, .fc-timegrid .event-bg-secondary-subtle .fc-list-event-time,
-.bg-secondary-subtle .fc-list-event-title,
-.fc-timegrid .event-bg-secondary-subtle .fc-list-event-title {
-  color: #5d6878 !important;
-  font-weight: 600 !important;
-}
-.bg-secondary-subtle .fc-list-event-dot, .fc-timegrid .event-bg-secondary-subtle .fc-list-event-dot {
-  border-color: #5d6878;
-}
-
-.fc-timegrid .event-bg-success-subtle {
-  border: 0 !important;
-}
-.fc-timegrid .event-bg-success-subtle .fc-event-main:after {
-  background-color: #00d27a !important;
-}
-
-.bg-success-subtle .fc-event-main, .fc-timegrid .event-bg-success-subtle .fc-event-main {
-  color: #009f5c !important;
-}
-.bg-success-subtle .fc-event-main:after, .fc-timegrid .event-bg-success-subtle .fc-event-main:after {
-  background-color: #009f5c !important;
-}
-.bg-success-subtle .fc-list-event-time, .fc-timegrid .event-bg-success-subtle .fc-list-event-time,
-.bg-success-subtle .fc-list-event-title,
-.fc-timegrid .event-bg-success-subtle .fc-list-event-title {
-  color: #009f5c !important;
-  font-weight: 600 !important;
-}
-.bg-success-subtle .fc-list-event-dot, .fc-timegrid .event-bg-success-subtle .fc-list-event-dot {
-  border-color: #009f5c;
-}
-
-.fc-timegrid .event-bg-info-subtle {
-  border: 0 !important;
-}
-.fc-timegrid .event-bg-info-subtle .fc-event-main:after {
-  background-color: #27bcfd !important;
-}
-
-.bg-info-subtle .fc-event-main, .fc-timegrid .event-bg-info-subtle .fc-event-main {
-  color: #02a7ef !important;
-}
-.bg-info-subtle .fc-event-main:after, .fc-timegrid .event-bg-info-subtle .fc-event-main:after {
-  background-color: #02a7ef !important;
-}
-.bg-info-subtle .fc-list-event-time, .fc-timegrid .event-bg-info-subtle .fc-list-event-time,
-.bg-info-subtle .fc-list-event-title,
-.fc-timegrid .event-bg-info-subtle .fc-list-event-title {
-  color: #02a7ef !important;
-  font-weight: 600 !important;
-}
-.bg-info-subtle .fc-list-event-dot, .fc-timegrid .event-bg-info-subtle .fc-list-event-dot {
-  border-color: #02a7ef;
-}
-
-.fc-timegrid .event-bg-warning-subtle {
-  border: 0 !important;
-}
-.fc-timegrid .event-bg-warning-subtle .fc-event-main:after {
-  background-color: #f5803e !important;
-}
-
-.bg-warning-subtle .fc-event-main, .fc-timegrid .event-bg-warning-subtle .fc-event-main {
-  color: #f2600e !important;
-}
-.bg-warning-subtle .fc-event-main:after, .fc-timegrid .event-bg-warning-subtle .fc-event-main:after {
-  background-color: #f2600e !important;
-}
-.bg-warning-subtle .fc-list-event-time, .fc-timegrid .event-bg-warning-subtle .fc-list-event-time,
-.bg-warning-subtle .fc-list-event-title,
-.fc-timegrid .event-bg-warning-subtle .fc-list-event-title {
-  color: #f2600e !important;
-  font-weight: 600 !important;
-}
-.bg-warning-subtle .fc-list-event-dot, .fc-timegrid .event-bg-warning-subtle .fc-list-event-dot {
-  border-color: #f2600e;
-}
-
-.fc-timegrid .event-bg-danger-subtle {
-  border: 0 !important;
-}
-.fc-timegrid .event-bg-danger-subtle .fc-event-main:after {
-  background-color: #e63757 !important;
-}
-
-.bg-danger-subtle .fc-event-main, .fc-timegrid .event-bg-danger-subtle .fc-event-main {
-  color: #d01a3b !important;
-}
-.bg-danger-subtle .fc-event-main:after, .fc-timegrid .event-bg-danger-subtle .fc-event-main:after {
-  background-color: #d01a3b !important;
-}
-.bg-danger-subtle .fc-list-event-time, .fc-timegrid .event-bg-danger-subtle .fc-list-event-time,
-.bg-danger-subtle .fc-list-event-title,
-.fc-timegrid .event-bg-danger-subtle .fc-list-event-title {
-  color: #d01a3b !important;
-  font-weight: 600 !important;
-}
-.bg-danger-subtle .fc-list-event-dot, .fc-timegrid .event-bg-danger-subtle .fc-list-event-dot {
-  border-color: #d01a3b;
-}
-
-.fc-timegrid .event-bg-light-subtle {
-  border: 0 !important;
-}
-.fc-timegrid .event-bg-light-subtle .fc-event-main:after {
-  background-color: #f9fafd !important;
-}
-
-.bg-light-subtle .fc-event-main, .fc-timegrid .event-bg-light-subtle .fc-event-main {
-  color: #d3daf0 !important;
-}
-.bg-light-subtle .fc-event-main:after, .fc-timegrid .event-bg-light-subtle .fc-event-main:after {
-  background-color: #d3daf0 !important;
-}
-.bg-light-subtle .fc-list-event-time, .fc-timegrid .event-bg-light-subtle .fc-list-event-time,
-.bg-light-subtle .fc-list-event-title,
-.fc-timegrid .event-bg-light-subtle .fc-list-event-title {
-  color: #d3daf0 !important;
-  font-weight: 600 !important;
-}
-.bg-light-subtle .fc-list-event-dot, .fc-timegrid .event-bg-light-subtle .fc-list-event-dot {
-  border-color: #d3daf0;
-}
-
-.fc-timegrid .event-bg-dark-subtle {
-  border: 0 !important;
-}
-.fc-timegrid .event-bg-dark-subtle .fc-event-main:after {
-  background-color: #0b1727 !important;
-}
-
-.bg-dark-subtle .fc-event-main, .fc-timegrid .event-bg-dark-subtle .fc-event-main {
-  color: black !important;
-}
-.bg-dark-subtle .fc-event-main:after, .fc-timegrid .event-bg-dark-subtle .fc-event-main:after {
-  background-color: black !important;
-}
-.bg-dark-subtle .fc-list-event-time, .fc-timegrid .event-bg-dark-subtle .fc-list-event-time,
-.bg-dark-subtle .fc-list-event-title,
-.fc-timegrid .event-bg-dark-subtle .fc-list-event-title {
-  color: black !important;
-  font-weight: 600 !important;
-}
-.bg-dark-subtle .fc-list-event-dot, .fc-timegrid .event-bg-dark-subtle .fc-list-event-dot {
-  border-color: black;
-}
-
-[data-fc-view]:not(.active) .icon-check {
-  opacity: 0;
-}
-
-.timeline li {
-  position: relative;
-  padding-right: 1.5rem;
-}
-.timeline li:after {
-  position: absolute;
-  content: "";
-  height: 0.625rem;
-  width: 0.625rem;
-  border-radius: 50%;
-  background: var(--falcon-gray-200);
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.timeline li:not(:last-child):before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 1px;
-  background-color: var(--falcon-gray-200);
-  top: 50%;
-  right: 0.3125rem;
-}
-
-.windows.chrome .fc-scroller {
-  overflow: hidden auto !important;
-  overflow: auto;
-}
-.windows.chrome .fc-scroller::-webkit-scrollbar {
-  visibility: hidden;
-  -webkit-appearance: none;
-  width: 6px;
-  height: 6px;
-  background-color: transparent;
-}
-.windows.chrome .fc-scroller::-webkit-scrollbar-thumb {
-  visibility: hidden;
-  border-radius: 3px;
-  background-color: var(--falcon-scrollbar-bg);
-}
-.windows.chrome .fc-scroller:hover::-webkit-scrollbar, .windows.chrome .fc-scroller:hover::-webkit-scrollbar-thumb, .windows.chrome .fc-scroller:focus::-webkit-scrollbar, .windows.chrome .fc-scroller:focus::-webkit-scrollbar-thumb {
-  visibility: visible;
-}
-.windows.firefox .fc-scroller {
-  overflow: hidden auto !important;
-  overflow: auto !important;
-  scrollbar-color: var(--falcon-scrollbar-bg) transparent;
-  scrollbar-width: thin;
-}
-
-@media (min-width: 768px) {
-  .fc .fc-daygrid-day-frame {
-    padding: 0.375rem !important;
-  }
-  .fc .fc-day:not(.fc-popover) .fc-daygrid-dot-event .fc-event-time,
-  .fc .fc-day:not(.fc-popover) .fc-daygrid-dot-event .fc-event-title {
-    display: block;
-  }
-  .fc .fc-daygrid-more-link {
-    margin-right: 0.625rem;
-    text-align: right;
-    font-size: 0.8333333333rem;
-  }
-  .fc .fc-daygrid-event {
-    font-size: 0.8333333333rem;
-  }
-}
-.ie .fc-daygrid-event {
-  overflow: hidden;
-}
-
-.safari .fc-dayGridMonth-view .fc-daygrid-day {
-  position: relative;
-}
-.safari .fc-dayGridMonth-view .fc-daygrid-day .fc-daygrid-day-frame {
-  position: absolute;
-  right: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-}
-
-.fc .fc-timegrid-axis-frame, .fc-list-event-time {
-  text-transform: capitalize;
-}
-
-/*-----------------------------------------------
-|   Management Calendar Events
------------------------------------------------*/
-.management-calendar .management-calendar-events {
-  height: 20rem;
-}
-.management-calendar .calendar-outline .fc-event-title {
-  display: none;
-}
-.management-calendar .calendar-outline .fc-daygrid-day-events {
-  display: none;
-}
-.management-calendar .calendar-outline td,
-.management-calendar .calendar-outline th {
-  border-color: transparent !important;
-}
-.management-calendar .calendar-outline .fc-day-today .fc-daygrid-day-frame {
-  border-color: transparent !important;
-}
-.management-calendar .calendar-outline .fc-bg-event {
-  border-radius: 30px;
-}
-.management-calendar .calendar-outline .fc-scrollgrid {
-  border: 0 !important;
-}
-.management-calendar .calendar-outline .fc-daygrid-bg-harness {
-  height: 38px;
-  top: -2px;
-}
-@media (min-width: 768px) {
-  .management-calendar .calendar-outline .fc-daygrid-bg-harness {
-    height: 40px;
-    top: 1px;
-  }
-  .firefox .management-calendar .calendar-outline .fc-daygrid-bg-harness {
-    top: 2px;
-  }
-}
-.management-calendar .calendar-outline .fc-col-header-cell-cushion {
-  display: inline-block;
-  padding: 10px 4px;
-}
-.management-calendar .calendar-outline .fc-daygrid-day-number {
-  background-color: transparent;
-  font-weight: 600;
-}
-
-/*-----------------------------------------------
-|   Lottie
------------------------------------------------*/
-.lottie {
-  width: 5rem;
-  height: 5rem;
-}
-
-.ie .wizard-lottie {
-  height: 37.5rem;
-}
-
-.d3-packed-bubble-chart {
-  height: 25rem;
-}
-
-/*-----------------------------------------------
-|   Data table
------------------------------------------------*/
-table.dataTable {
-  margin: 0 !important;
-  border-color: var(--falcon-border-color) !important;
-}
-table.dataTable thead tr {
-  border-top: 1px solid var(--falcon-border-color);
-}
-
-.dataTables_wrapper {
-  margin: 0 auto;
-}
-.dataTables_wrapper .table-responsive {
-  margin-bottom: 1rem;
-}
-.dataTables_wrapper .dataTables_filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-@media (min-width: 768px) {
-  .dataTables_wrapper .dataTables_filter {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: end;
-  }
-}
-.dataTables_wrapper .dataTables_filter label {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.dataTables_wrapper .dataTables_filter label input {
-  max-width: 15rem;
-  display: unset !important;
-  width: unset !important;
-}
-.dataTables_wrapper .dataTables_info {
-  padding-top: 0 !important;
-  font-size: 0.8333333333rem;
-}
-.dataTables_wrapper .data-table.dataTable {
-  border-collapse: collapse !important;
-}
-.dataTables_wrapper .data-table.dataTable td,
-.dataTables_wrapper .data-table.dataTable th {
-  white-space: nowrap;
-}
-.dataTables_wrapper .paging_simple .page-link {
-  border-radius: 0.25rem !important;
-  margin-right: 0.5rem !important;
-  background-color: #2c7be5;
-  padding-right: 1.8rem !important;
-  padding-left: 1.8rem !important;
-  border: 0;
-  color: #fff;
-}
-.dataTables_wrapper .paging_simple .page-link:hover {
-  background-color: #1a68d1;
-}
-.dataTables_wrapper .paging_simple .pagination {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-.dataTables_wrapper .dataTables_info {
-  padding-top: 0 !important;
-  color: var(--falcon-gray-700) !important;
-  text-align: right;
-}
-.dataTables_wrapper .disabled .page-link {
-  background-color: var(--falcon-btn-falcon-background) !important;
-  color: #748194;
-}
-.dataTables_wrapper .dtr-details {
-  margin-right: 1.875rem !important;
-}
-.dataTables_wrapper .sort:before {
-  display: none !important;
-}
-.dataTables_wrapper .sort:after {
-  position: relative !important;
-  display: inline !important;
-  top: 1px !important;
-  bottom: auto !important;
-  right: 0.5rem !important;
-  opacity: 1 !important;
-}
-.dataTables_wrapper .sort.sorting:after {
-  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgNyA5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNi41MjU1NiAzLjVDNi45NDkzNyAzLjUgNy4xNjEyOCAzLjA2MjUgNi44NTUxOSAyLjc5MTY3TDMuODQxNCAwLjEyNUMzLjY1MzA0IC0wLjA0MTY2NjcgMy4zNDY5NiAtMC4wNDE2NjY3IDMuMTU4NTkgMC4xMjVMMC4xNDQ4MDkgMi43OTE2N0MtMC4xNjEyNzkgMy4wNjI1IDAuMDUwNjI3OSAzLjUgMC40NzQ0NDEgMy41SDYuNTI1NTZaIiBmaWxsPSIjQjZDMkQyIi8+CjxwYXRoIGQ9Ik0wLjQ3NDQ0MiA1LjVDMC4wNTA2MjgyIDUuNSAtMC4xNjEyNzkgNS45Mzc1IDAuMTQ0ODA5IDYuMjA4MzNMMy4xNTg1OSA4Ljg3NUMzLjM0Njk2IDkuMDQxNjcgMy42NTMwNCA5LjA0MTY3IDMuODQxNDEgOC44NzVMNi44NTUxOSA2LjIwODMzQzcuMTYxMjggNS45Mzc1IDYuOTQ5MzcgNS41IDYuNTI1NTYgNS41TDAuNDc0NDQyIDUuNVoiIGZpbGw9IiNCNkMyRDIiLz4KPC9zdmc+Cg==");
-}
-.dataTables_wrapper .sort.sorting_asc:after {
-  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSI0IiB2aWV3Qm94PSIwIDAgNyA0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNi41MjU1NiAzLjVDNi45NDkzNyAzLjUgNy4xNjEyOCAzLjA2MjUgNi44NTUxOSAyLjc5MTY3TDMuODQxNCAwLjEyNUMzLjY1MzA0IC0wLjA0MTY2NjcgMy4zNDY5NiAtMC4wNDE2NjY3IDMuMTU4NTkgMC4xMjVMMC4xNDQ4MDkgMi43OTE2N0MtMC4xNjEyNzkgMy4wNjI1IDAuMDUwNjI3OSAzLjUgMC40NzQ0NDEgMy41SDYuNTI1NTZaIiBmaWxsPSIjQjZDMkQyIi8+Cjwvc3ZnPgo=") !important;
-  top: -2px !important;
-}
-.dataTables_wrapper .sort.sorting_desc:after {
-  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSI0IiB2aWV3Qm94PSIwIDAgNyA0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMC40NzQ0NDIgMC41MDAwMDFDMC4wNTA2MjgyIDAuNTAwMDAxIC0wLjE2MTI3OSAwLjkzNzUgMC4xNDQ4MDkgMS4yMDgzM0wzLjE1ODU5IDMuODc1QzMuMzQ2OTYgNC4wNDE2NyAzLjY1MzA0IDQuMDQxNjcgMy44NDE0MSAzLjg3NUw2Ljg1NTE5IDEuMjA4MzNDNy4xNjEyOCAwLjkzNzUwMSA2Ljk0OTM3IDAuNTAwMDAxIDYuNTI1NTYgMC41MDAwMDFMMC40NzQ0NDIgMC41MDAwMDFaIiBmaWxsPSIjQjZDMkQyIi8+Cjwvc3ZnPgo=") !important;
-  top: -2px !important;
-}
-.dataTables_wrapper .no-sort {
-  padding-left: 0.25rem !important;
-}
-.dataTables_wrapper .no-sort:before, .dataTables_wrapper .no-sort:after {
-  display: none !important;
-}
-.dataTables_wrapper .dataTables_scroll .dataTables_scrollHead {
-  width: auto !important;
-}
-.dataTables_wrapper .dataTables_scroll .dataTables_scrollHead .dataTables_scrollHeadInner {
-  width: 100% !important;
-}
-.dataTables_wrapper .dataTables_scroll .dataTables_scrollBody {
-  width: 100% !important;
-}
-.dataTables_wrapper .dataTables_scroll .dataTables_scrollBody table {
-  width: 100% !important;
-}
-.dataTables_wrapper .dataTables_scroll .dataTables_scrollBody table thead tr {
-  border: none !important;
-}
-.dataTables_wrapper .dataTables_scroll .dataTables_scrollBody table .sort:before {
-  display: none !important;
-}
-.dataTables_wrapper .dataTables_scroll .dataTables_scrollBody table .sort:after {
-  display: none !important;
-}
-.dataTables_wrapper .dataTables_scroll .dataTables_scrollBody thead tr {
-  visibility: collapse !important;
-  line-height: 0;
-}
-
-.falcon-data-table .data-table {
-  margin: 0 !important;
-}
-.falcon-data-table .paging_full_numbers .page-link,
-.falcon-data-table .paging_first_last_numbers .page-link,
-.falcon-data-table .paging_full .page-link,
-.falcon-data-table .paging_numbers .page-link,
-.falcon-data-table .paging_simple_numbers .page-link {
-  margin-right: 0.25rem;
-  margin-left: 0.25rem;
-  padding: 3px 12px;
-  border-radius: 0.25rem !important;
-  border: 1px solid var(--falcon-btn-border-color) !important;
-}
-.falcon-data-table .paging_full_numbers .page-item.active .page-link,
-.falcon-data-table .paging_first_last_numbers .page-item.active .page-link,
-.falcon-data-table .paging_full .page-item.active .page-link,
-.falcon-data-table .paging_numbers .page-item.active .page-link,
-.falcon-data-table .paging_simple_numbers .page-item.active .page-link {
-  background-color: transparent;
-  color: #2c7be5 !important;
-}
-
-table.dataTable.dtr-inline.collapsed > tbody > tr[role=row] > td:first-child:before,
-table.dataTable.dtr-inline.collapsed > tbody > tr[role=row] > th:first-child:before {
-  top: 0.3125rem;
-}
-
-.data-table-row-bulk-select {
-  width: 1.75rem !important;
-}
-
-.data-table-row-action {
-  width: 2.5rem !important;
-}
-
-table.dataTable.table-sm > thead > tr > th :not(.sorting_disabled) {
-  padding-left: 0;
-}
-
-table.dataTable thead tr > .dtfc-fixed-right, table.dataTable thead tr > .dtfc-fixed-left {
-  z-index: 1;
-  background-color: var(--falcon-gray-200);
-}
-
-table.dataTable tbody tr > .dtfc-fixed-right, table.dataTable tbody tr > .dtfc-fixed-left {
-  z-index: 1;
-  background-color: var(--falcon-gray-200);
-}
-
-div.dtfc-right-top-blocker, div.dtfc-left-top-blocker {
-  background-color: var(--falcon-gray-200);
-}
-
-.select2 {
-  width: 100% !important;
-}
-
-.select2-container .select2-selection,
-.select2-container .select2-selection__rendered,
-.select2-container .select2-dropdown,
-.select2-container .select2-search__field {
-  background-color: var(--falcon-quaternary-bg) !important;
-  color: var(--falcon-gray-900) !important;
-  border-color: var(--falcon-gray-300) !important;
-}
-.select2-container .select2-selection__choice {
-  padding: 0.25rem 0.5rem !important;
-  font-size: 0.8333333333rem !important;
-  background-color: var(--falcon-gray-200);
-  color: var(--falcon-body-color) !important;
-  border: none !important;
-}
-.select2-container .select2-selection__choice .select2-selection__choice__remove {
-  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23666a6d'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/0.5rem auto no-repeat !important;
-}
-.select2-container .select2-selection__choice .select2-selection__choice__remove:hover {
-  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2385878a'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/0.5rem auto no-repeat !important;
-}
-.select2-container .select2-results__option.select2-results__option--highlighted:not(.select2-results__option--selected) {
-  background-color: var(--falcon-dropdown-link-hover-bg-global) !important;
-  color: var(--falcon-gray-900) !important;
-}
-
-html[data-bs-theme=dark] .select2-results__option.select2-results__option--highlighted:not(.select2-results__option--selected) {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-  color: var(--falcon-gray-900) !important;
-}
-
-.picmo__popupContainer {
-  z-index: 9999;
-}
-
-.picmo__picker.picmo__picker {
-  width: 18.75rem;
-  --background-color: #fff;
-  --category-name-background-color: $white;
-  --border-color: #d8e2ef;
-  --category-tab-color: var(--falcon-gray-700);
-  --category-tab-highlight-background-color: #edf2f9;
-  --text-color: var(--falcon-body-color);
-  --search-placeholder-color: var(--falcon-gray-400);
-  --search-icon-color: var(--falcon-gray-500);
-  --search-background-color: var(--falcon-quaternary-bg);
-  --search-focus-background-color: var(--falcon-quaternary-bg);
-  --search-focus-border-color: #2c7be5;
-}
-.picmo__picker.picmo__picker section {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.picmo__picker.picmo__picker .picmo__header {
-  --secondary-background-color: $white;
-}
-.picmo__picker.picmo__picker .picmo__preview {
-  --preview-background-color: $white;
-}
-.picmo__picker.picmo__picker .picmo__emojiCategory .picmo__noRecents {
-  color: var(--falcon-body-color) !important;
-}
-.picmo__picker.picmo__picker .picmo__emojiCategory .picmo__categoryName {
-  --category-name-text-color: var(--falcon-gray-600);
-  font-weight: 500;
-}
-.picmo__picker.picmo__picker .picmo__emojiButton {
-  --emoji-size: 1.7rem;
-}
-.picmo__picker.picmo__picker .picmo__emojiButton:hover {
-  --hover-background-color: #edf2f9;
-}
-.picmo__picker.picmo__picker .picmo__content {
-  min-height: unset !important;
-  padding: unset !important;
-}
-.picmo__picker.picmo__picker .picmo__searchContainer .picmo__searchField {
-  border: 1px solid var(--falcon-border-color);
-  border-radius: 0.375rem;
-  padding: 1rem;
-}
-.picmo__picker.picmo__picker .picmo__categoryButtons .picmo__categoryTab.picmo__categoryTabActive .picmo__categoryButton {
-  border: unset;
-  background: unset;
-  color: #2c7be5;
-}
-.picmo__picker.picmo__picker .picmo__categoryButtons .picmo__categoryTab.picmo__categoryTabActive .picmo__categoryButton:hover {
-  background: var(--falcon-gray-200);
-}
-.picmo__picker.picmo__picker .picmo__categoryButtons .picmo__categoryTab .picmo__categoryButton svg {
-  width: 0.8em;
-}
-
-.safari .picmo__categoryButtons {
-  outline: none;
-}
-
-[data-bs-theme=dark] .picmo__picker.picmo__picker {
-  --background-color: #232e3c;
-  --border-color: #344050;
-  --category-tab-highlight-background-color: #344050;
-  --category-name-background-color: #232e3c;
-  --search-focus-border-color: #9da9bb;
-}
-[data-bs-theme=dark] .picmo__picker.picmo__picker .picmo__header {
-  --secondary-background-color: #232e3c;
-}
-[data-bs-theme=dark] .picmo__picker.picmo__picker .picmo__preview {
-  --preview-background-color: #232e3c;
-}
-[data-bs-theme=dark] .picmo__picker.picmo__picker .picmo__emojiButton:hover {
-  --hover-background-color: #344050;
-}
-
-.noUi-primary .noUi-connect {
-  background: var(--falcon-primary) !important;
-}
-
-.noUi-secondary .noUi-connect {
-  background: var(--falcon-secondary) !important;
-}
-
-.noUi-success .noUi-connect {
-  background: var(--falcon-success) !important;
-}
-
-.noUi-info .noUi-connect {
-  background: var(--falcon-info) !important;
-}
-
-.noUi-warning .noUi-connect {
-  background: var(--falcon-warning) !important;
-}
-
-.noUi-danger .noUi-connect {
-  background: var(--falcon-danger) !important;
-}
-
-.noUi-light .noUi-connect {
-  background: var(--falcon-light) !important;
-}
-
-.noUi-dark .noUi-connect {
-  background: var(--falcon-dark) !important;
-}
-
-.noUi-handle-square.noUi-target {
-  --falcon-noUi-handle-top: -2px;
-}
-.noUi-handle-square.noUi-target .noUi-handle {
-  height: 16px;
-  width: 16px;
-}
-.noUi-handle-square.noUi-target .noUi-handle::after, .noUi-handle-square.noUi-target .noUi-handle::before {
-  display: none;
-}
-
-.noUi-handle-circle.noUi-target {
-  --falcon-noUi-handle-top: -3px;
-}
-.noUi-handle-circle.noUi-target .noUi-handle {
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
-}
-.noUi-handle-circle.noUi-target .noUi-handle::after, .noUi-handle-circle.noUi-target .noUi-handle::before {
-  display: none;
-}
-
-.noUi-slider-slim.noUi-target {
-  --falcon-noUi-track-height: 4px;
-  --falcon-noUi-handle-top: -10px;
-}
-
-.noUi-target {
-  --falcon-noUi-track-height: 0.75rem;
-  --falcon-noUi-handle-top: -6px;
-  background: var(--falcon-gray-300);
-  border: none;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-}
-.noUi-target.noUi-horizontal {
-  height: var(--falcon-noUi-track-height);
-}
-.noUi-target.noUi-horizontal .noUi-handle {
-  left: -8px;
-}
-.noUi-target .noUi-connect {
-  background: var(--falcon-primary);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-}
-.noUi-target .noUi-handle {
-  width: 16px;
-  height: 24px;
-  background: #fff;
-  border: 1px solid #fff;
-  -webkit-box-shadow: var(--falcon-btn-falcon-box-shadow);
-  box-shadow: var(--falcon-btn-falcon-box-shadow);
-  top: var(--falcon-noUi-handle-top);
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-.noUi-target .noUi-handle:hover {
-  background: #f9fafd;
-}
-.noUi-target .noUi-handle:hover .noUi-tooltip {
-  display: block;
-}
-.noUi-target .noUi-handle::after, .noUi-target .noUi-handle::before {
-  background: #d8e2ef;
-  height: 10px;
-  top: 6px;
-}
-.noUi-target .noUi-handle::after {
-  right: 9px;
-}
-.noUi-target .noUi-handle::before {
-  right: 4px;
-}
-.noUi-target .noUi-handle .noUi-tooltip {
-  display: none;
-  background: #fff;
-  border: 1px solid #d8e2ef;
-  font-size: 0.8333333333rem;
-}
-.noUi-target .noUi-handle:active {
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
-  -webkit-box-shadow: var(--falcon-btn-falcon-hover-box-shadow);
-  box-shadow: var(--falcon-btn-falcon-hover-box-shadow);
-}
-.noUi-target .noUi-handle.noUi-active .noUi-tooltip {
-  display: block;
-}
-.noUi-target .noUi-pips {
-  color: var(--falcon-gray-400);
-  margin-top: 0.25rem;
-}
-.noUi-target .noUi-pips .noUi-value-sub {
-  color: var(--falcon-gray-400);
-}
-.noUi-target .noUi-pips .noUi-marker, .noUi-target .noUi-pips .noUi-marker-large {
-  background: var(--falcon-gray-400);
-}
-
-[data-bs-theme=dark] .noUi-handle .noUi-tooltip {
-  background: #232e3c;
-  color: #fff;
 }
 
 /*-----------------------------------------------
@@ -26471,31 +23520,31 @@ h5, .h5 {
   color: var(--falcon-navbar-vertical-vibrant-hr-color);
 }
 
-.windows.chrome .navbar-vertical.navbar-default .scrollbar::-webkit-scrollbar-thumb, .windows.chrome .navbar-vertical.navbar-default .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody::-webkit-scrollbar-thumb, .dataTables_wrapper .dataTables_scroll .windows.chrome .navbar-vertical.navbar-default .dataTables_scrollBody::-webkit-scrollbar-thumb, .windows.chrome .navbar-vertical.navbar-default .picmo__picker.picmo__picker .picmo__emojiArea::-webkit-scrollbar-thumb, .picmo__picker.picmo__picker .windows.chrome .navbar-vertical.navbar-default .picmo__emojiArea::-webkit-scrollbar-thumb {
+.windows.chrome .navbar-vertical.navbar-default .scrollbar::-webkit-scrollbar-thumb {
   background-color: var(--falcon-navbar-vertical-default-scrollbar-color);
 }
-.windows.firefox .navbar-vertical.navbar-default .scrollbar, .windows.firefox .navbar-vertical.navbar-default .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody, .dataTables_wrapper .dataTables_scroll .windows.firefox .navbar-vertical.navbar-default .dataTables_scrollBody, .windows.firefox .navbar-vertical.navbar-default .picmo__picker.picmo__picker .picmo__emojiArea, .picmo__picker.picmo__picker .windows.firefox .navbar-vertical.navbar-default .picmo__emojiArea {
+.windows.firefox .navbar-vertical.navbar-default .scrollbar {
   scrollbar-color: var(--falcon-navbar-vertical-default-scrollbar-color) transparent;
 }
 
-.windows.chrome .navbar-vertical.navbar-inverted .scrollbar::-webkit-scrollbar-thumb, .windows.chrome .navbar-vertical.navbar-inverted .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody::-webkit-scrollbar-thumb, .dataTables_wrapper .dataTables_scroll .windows.chrome .navbar-vertical.navbar-inverted .dataTables_scrollBody::-webkit-scrollbar-thumb, .windows.chrome .navbar-vertical.navbar-inverted .picmo__picker.picmo__picker .picmo__emojiArea::-webkit-scrollbar-thumb, .picmo__picker.picmo__picker .windows.chrome .navbar-vertical.navbar-inverted .picmo__emojiArea::-webkit-scrollbar-thumb {
+.windows.chrome .navbar-vertical.navbar-inverted .scrollbar::-webkit-scrollbar-thumb {
   background-color: var(--falcon-navbar-vertical-inverted-scrollbar-color);
 }
-.windows.firefox .navbar-vertical.navbar-inverted .scrollbar, .windows.firefox .navbar-vertical.navbar-inverted .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody, .dataTables_wrapper .dataTables_scroll .windows.firefox .navbar-vertical.navbar-inverted .dataTables_scrollBody, .windows.firefox .navbar-vertical.navbar-inverted .picmo__picker.picmo__picker .picmo__emojiArea, .picmo__picker.picmo__picker .windows.firefox .navbar-vertical.navbar-inverted .picmo__emojiArea {
+.windows.firefox .navbar-vertical.navbar-inverted .scrollbar {
   scrollbar-color: var(--falcon-navbar-vertical-inverted-scrollbar-color) transparent;
 }
 
-.windows.chrome .navbar-vertical.navbar-card .scrollbar::-webkit-scrollbar-thumb, .windows.chrome .navbar-vertical.navbar-card .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody::-webkit-scrollbar-thumb, .dataTables_wrapper .dataTables_scroll .windows.chrome .navbar-vertical.navbar-card .dataTables_scrollBody::-webkit-scrollbar-thumb, .windows.chrome .navbar-vertical.navbar-card .picmo__picker.picmo__picker .picmo__emojiArea::-webkit-scrollbar-thumb, .picmo__picker.picmo__picker .windows.chrome .navbar-vertical.navbar-card .picmo__emojiArea::-webkit-scrollbar-thumb {
+.windows.chrome .navbar-vertical.navbar-card .scrollbar::-webkit-scrollbar-thumb {
   background-color: var(--falcon-navbar-vertical-card-scrollbar-color);
 }
-.windows.firefox .navbar-vertical.navbar-card .scrollbar, .windows.firefox .navbar-vertical.navbar-card .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody, .dataTables_wrapper .dataTables_scroll .windows.firefox .navbar-vertical.navbar-card .dataTables_scrollBody, .windows.firefox .navbar-vertical.navbar-card .picmo__picker.picmo__picker .picmo__emojiArea, .picmo__picker.picmo__picker .windows.firefox .navbar-vertical.navbar-card .picmo__emojiArea {
+.windows.firefox .navbar-vertical.navbar-card .scrollbar {
   scrollbar-color: var(--falcon-navbar-vertical-card-scrollbar-color) transparent;
 }
 
-.windows.chrome .navbar-vertical.navbar-vibrant .scrollbar::-webkit-scrollbar-thumb, .windows.chrome .navbar-vertical.navbar-vibrant .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody::-webkit-scrollbar-thumb, .dataTables_wrapper .dataTables_scroll .windows.chrome .navbar-vertical.navbar-vibrant .dataTables_scrollBody::-webkit-scrollbar-thumb, .windows.chrome .navbar-vertical.navbar-vibrant .picmo__picker.picmo__picker .picmo__emojiArea::-webkit-scrollbar-thumb, .picmo__picker.picmo__picker .windows.chrome .navbar-vertical.navbar-vibrant .picmo__emojiArea::-webkit-scrollbar-thumb {
+.windows.chrome .navbar-vertical.navbar-vibrant .scrollbar::-webkit-scrollbar-thumb {
   background-color: var(--falcon-navbar-vertical-vibrant-scrollbar-color);
 }
-.windows.firefox .navbar-vertical.navbar-vibrant .scrollbar, .windows.firefox .navbar-vertical.navbar-vibrant .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody, .dataTables_wrapper .dataTables_scroll .windows.firefox .navbar-vertical.navbar-vibrant .dataTables_scrollBody, .windows.firefox .navbar-vertical.navbar-vibrant .picmo__picker.picmo__picker .picmo__emojiArea, .picmo__picker.picmo__picker .windows.firefox .navbar-vertical.navbar-vibrant .picmo__emojiArea {
+.windows.firefox .navbar-vertical.navbar-vibrant .scrollbar {
   scrollbar-color: var(--falcon-navbar-vertical-vibrant-scrollbar-color) transparent;
 }
 
@@ -28324,60 +25373,60 @@ html[dir=ltr] .img-dropdown {
 /*-----------------------------------------------
 |   Scrollbar style for windows
 -----------------------------------------------*/
-.scrollbar, .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody, .picmo__picker.picmo__picker .picmo__emojiArea {
+.scrollbar {
   overflow: auto;
 }
-.scrollbar::-webkit-scrollbar, .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody::-webkit-scrollbar, .picmo__picker.picmo__picker .picmo__emojiArea::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar {
   visibility: hidden;
   -webkit-appearance: none;
   width: 6px;
   height: 6px;
   background-color: transparent;
 }
-.scrollbar::-webkit-scrollbar-thumb, .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody::-webkit-scrollbar-thumb, .picmo__picker.picmo__picker .picmo__emojiArea::-webkit-scrollbar-thumb {
+.scrollbar::-webkit-scrollbar-thumb {
   visibility: hidden;
   border-radius: 3px;
   background-color: var(--falcon-scrollbar-bg);
 }
-.scrollbar:hover::-webkit-scrollbar, .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody:hover::-webkit-scrollbar, .picmo__picker.picmo__picker .picmo__emojiArea:hover::-webkit-scrollbar, .scrollbar:hover::-webkit-scrollbar-thumb, .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody:hover::-webkit-scrollbar-thumb, .picmo__picker.picmo__picker .picmo__emojiArea:hover::-webkit-scrollbar-thumb, .scrollbar:focus::-webkit-scrollbar, .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody:focus::-webkit-scrollbar, .picmo__picker.picmo__picker .picmo__emojiArea:focus::-webkit-scrollbar, .scrollbar:focus::-webkit-scrollbar-thumb, .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody:focus::-webkit-scrollbar-thumb, .picmo__picker.picmo__picker .picmo__emojiArea:focus::-webkit-scrollbar-thumb {
+.scrollbar:hover::-webkit-scrollbar, .scrollbar:hover::-webkit-scrollbar-thumb, .scrollbar:focus::-webkit-scrollbar, .scrollbar:focus::-webkit-scrollbar-thumb {
   visibility: visible;
 }
 @media (min-width: 1200px) {
-  .scrollbar.scrollbar-none-xl, .dataTables_wrapper .dataTables_scroll .scrollbar-none-xl.dataTables_scrollBody, .picmo__picker.picmo__picker .scrollbar-none-xl.picmo__emojiArea {
+  .scrollbar.scrollbar-none-xl {
     overflow: initial;
   }
 }
 
-.navbar-vibrant .scrollbar, .navbar-vibrant .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody, .dataTables_wrapper .dataTables_scroll .navbar-vibrant .dataTables_scrollBody, .navbar-vibrant .picmo__picker.picmo__picker .picmo__emojiArea, .picmo__picker.picmo__picker .navbar-vibrant .picmo__emojiArea {
+.navbar-vibrant .scrollbar {
   overflow: auto;
 }
-.navbar-vibrant .scrollbar::-webkit-scrollbar, .navbar-vibrant .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody::-webkit-scrollbar, .dataTables_wrapper .dataTables_scroll .navbar-vibrant .dataTables_scrollBody::-webkit-scrollbar, .navbar-vibrant .picmo__picker.picmo__picker .picmo__emojiArea::-webkit-scrollbar, .picmo__picker.picmo__picker .navbar-vibrant .picmo__emojiArea::-webkit-scrollbar {
+.navbar-vibrant .scrollbar::-webkit-scrollbar {
   visibility: hidden;
   -webkit-appearance: none;
   width: 6px;
   height: 6px;
   background-color: transparent;
 }
-.navbar-vibrant .scrollbar::-webkit-scrollbar-thumb, .navbar-vibrant .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody::-webkit-scrollbar-thumb, .dataTables_wrapper .dataTables_scroll .navbar-vibrant .dataTables_scrollBody::-webkit-scrollbar-thumb, .navbar-vibrant .picmo__picker.picmo__picker .picmo__emojiArea::-webkit-scrollbar-thumb, .picmo__picker.picmo__picker .navbar-vibrant .picmo__emojiArea::-webkit-scrollbar-thumb {
+.navbar-vibrant .scrollbar::-webkit-scrollbar-thumb {
   visibility: hidden;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.4);
 }
-.navbar-vibrant .scrollbar:hover::-webkit-scrollbar, .navbar-vibrant .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody:hover::-webkit-scrollbar, .dataTables_wrapper .dataTables_scroll .navbar-vibrant .dataTables_scrollBody:hover::-webkit-scrollbar, .navbar-vibrant .picmo__picker.picmo__picker .picmo__emojiArea:hover::-webkit-scrollbar, .picmo__picker.picmo__picker .navbar-vibrant .picmo__emojiArea:hover::-webkit-scrollbar, .navbar-vibrant .scrollbar:hover::-webkit-scrollbar-thumb, .navbar-vibrant .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody:hover::-webkit-scrollbar-thumb, .dataTables_wrapper .dataTables_scroll .navbar-vibrant .dataTables_scrollBody:hover::-webkit-scrollbar-thumb, .navbar-vibrant .picmo__picker.picmo__picker .picmo__emojiArea:hover::-webkit-scrollbar-thumb, .picmo__picker.picmo__picker .navbar-vibrant .picmo__emojiArea:hover::-webkit-scrollbar-thumb, .navbar-vibrant .scrollbar:focus::-webkit-scrollbar, .navbar-vibrant .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody:focus::-webkit-scrollbar, .dataTables_wrapper .dataTables_scroll .navbar-vibrant .dataTables_scrollBody:focus::-webkit-scrollbar, .navbar-vibrant .picmo__picker.picmo__picker .picmo__emojiArea:focus::-webkit-scrollbar, .picmo__picker.picmo__picker .navbar-vibrant .picmo__emojiArea:focus::-webkit-scrollbar, .navbar-vibrant .scrollbar:focus::-webkit-scrollbar-thumb, .navbar-vibrant .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody:focus::-webkit-scrollbar-thumb, .dataTables_wrapper .dataTables_scroll .navbar-vibrant .dataTables_scrollBody:focus::-webkit-scrollbar-thumb, .navbar-vibrant .picmo__picker.picmo__picker .picmo__emojiArea:focus::-webkit-scrollbar-thumb, .picmo__picker.picmo__picker .navbar-vibrant .picmo__emojiArea:focus::-webkit-scrollbar-thumb {
+.navbar-vibrant .scrollbar:hover::-webkit-scrollbar, .navbar-vibrant .scrollbar:hover::-webkit-scrollbar-thumb, .navbar-vibrant .scrollbar:focus::-webkit-scrollbar, .navbar-vibrant .scrollbar:focus::-webkit-scrollbar-thumb {
   visibility: visible;
 }
 
-.firefox .scrollbar, .firefox .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody, .dataTables_wrapper .dataTables_scroll .firefox .dataTables_scrollBody, .firefox .picmo__picker.picmo__picker .picmo__emojiArea, .picmo__picker.picmo__picker .firefox .picmo__emojiArea {
+.firefox .scrollbar {
   overflow: auto !important;
   scrollbar-color: var(--falcon-scrollbar-bg) transparent;
   scrollbar-width: thin;
 }
 @media (min-width: 1200px) {
-  .firefox .scrollbar.scrollbar-none-xl, .firefox .dataTables_wrapper .dataTables_scroll .scrollbar-none-xl.dataTables_scrollBody, .dataTables_wrapper .dataTables_scroll .firefox .scrollbar-none-xl.dataTables_scrollBody, .firefox .picmo__picker.picmo__picker .scrollbar-none-xl.picmo__emojiArea, .picmo__picker.picmo__picker .firefox .scrollbar-none-xl.picmo__emojiArea {
+  .firefox .scrollbar.scrollbar-none-xl {
     overflow: initial !important;
   }
 }
-.firefox .navbar-vibrant .scrollbar, .firefox .navbar-vibrant .dataTables_wrapper .dataTables_scroll .dataTables_scrollBody, .dataTables_wrapper .dataTables_scroll .firefox .navbar-vibrant .dataTables_scrollBody, .firefox .navbar-vibrant .picmo__picker.picmo__picker .picmo__emojiArea, .picmo__picker.picmo__picker .firefox .navbar-vibrant .picmo__emojiArea {
+.firefox .navbar-vibrant .scrollbar {
   overflow: auto !important;
   scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
   scrollbar-width: thin;
@@ -28752,31 +25801,7 @@ a[href].bg-200:hover, a[href].bg-200:focus {
   display: -ms-flexbox;
   display: flex;
 }
-.hover-actions-trigger:hover .hover-actions.btn, .hover-actions-trigger:hover .tox .tox-menu__footer .hover-actions.tox-button--secondary, .tox .tox-menu__footer .hover-actions-trigger:hover .hover-actions.tox-button--secondary,
-.hover-actions-trigger:hover .tox .tox-dialog__footer .hover-actions.tox-button--secondary,
-.tox .tox-dialog__footer .hover-actions-trigger:hover .hover-actions.tox-button--secondary, .hover-actions-trigger:hover .tox .tox-menu__footer .hover-actions.tox-button:last-child, .tox .tox-menu__footer .hover-actions-trigger:hover .hover-actions.tox-button:last-child,
-.hover-actions-trigger:hover .tox .tox-dialog__footer .hover-actions.tox-button:last-child,
-.tox .tox-dialog__footer .hover-actions-trigger:hover .hover-actions.tox-button:last-child, .hover-actions-trigger:hover [data-list] .hover-actions.page, [data-list] .hover-actions-trigger:hover .hover-actions.page, .hover-actions-trigger:hover .table-list .hover-actions.page, .table-list .hover-actions-trigger:hover .hover-actions.page, .hover-actions-trigger:hover .falcon-data-table .paging_full_numbers .hover-actions.page-link, .falcon-data-table .paging_full_numbers .hover-actions-trigger:hover .hover-actions.page-link,
-.hover-actions-trigger:hover .falcon-data-table .paging_first_last_numbers .hover-actions.page-link,
-.falcon-data-table .paging_first_last_numbers .hover-actions-trigger:hover .hover-actions.page-link,
-.hover-actions-trigger:hover .falcon-data-table .paging_full .hover-actions.page-link,
-.falcon-data-table .paging_full .hover-actions-trigger:hover .hover-actions.page-link,
-.hover-actions-trigger:hover .falcon-data-table .paging_numbers .hover-actions.page-link,
-.falcon-data-table .paging_numbers .hover-actions-trigger:hover .hover-actions.page-link,
-.hover-actions-trigger:hover .falcon-data-table .paging_simple_numbers .hover-actions.page-link,
-.falcon-data-table .paging_simple_numbers .hover-actions-trigger:hover .hover-actions.page-link, .hover-actions-trigger:focus .hover-actions.btn, .hover-actions-trigger:focus .tox .tox-menu__footer .hover-actions.tox-button--secondary, .tox .tox-menu__footer .hover-actions-trigger:focus .hover-actions.tox-button--secondary,
-.hover-actions-trigger:focus .tox .tox-dialog__footer .hover-actions.tox-button--secondary,
-.tox .tox-dialog__footer .hover-actions-trigger:focus .hover-actions.tox-button--secondary, .hover-actions-trigger:focus .tox .tox-menu__footer .hover-actions.tox-button:last-child, .tox .tox-menu__footer .hover-actions-trigger:focus .hover-actions.tox-button:last-child,
-.hover-actions-trigger:focus .tox .tox-dialog__footer .hover-actions.tox-button:last-child,
-.tox .tox-dialog__footer .hover-actions-trigger:focus .hover-actions.tox-button:last-child, .hover-actions-trigger:focus [data-list] .hover-actions.page, [data-list] .hover-actions-trigger:focus .hover-actions.page, .hover-actions-trigger:focus .table-list .hover-actions.page, .table-list .hover-actions-trigger:focus .hover-actions.page, .hover-actions-trigger:focus .falcon-data-table .paging_full_numbers .hover-actions.page-link, .falcon-data-table .paging_full_numbers .hover-actions-trigger:focus .hover-actions.page-link,
-.hover-actions-trigger:focus .falcon-data-table .paging_first_last_numbers .hover-actions.page-link,
-.falcon-data-table .paging_first_last_numbers .hover-actions-trigger:focus .hover-actions.page-link,
-.hover-actions-trigger:focus .falcon-data-table .paging_full .hover-actions.page-link,
-.falcon-data-table .paging_full .hover-actions-trigger:focus .hover-actions.page-link,
-.hover-actions-trigger:focus .falcon-data-table .paging_numbers .hover-actions.page-link,
-.falcon-data-table .paging_numbers .hover-actions-trigger:focus .hover-actions.page-link,
-.hover-actions-trigger:focus .falcon-data-table .paging_simple_numbers .hover-actions.page-link,
-.falcon-data-table .paging_simple_numbers .hover-actions-trigger:focus .hover-actions.page-link {
+.hover-actions-trigger:hover .hover-actions.btn, .hover-actions-trigger:hover [data-list] .hover-actions.page, [data-list] .hover-actions-trigger:hover .hover-actions.page, .hover-actions-trigger:hover .table-list .hover-actions.page, .table-list .hover-actions-trigger:hover .hover-actions.page, .hover-actions-trigger:focus .hover-actions.btn, .hover-actions-trigger:focus [data-list] .hover-actions.page, [data-list] .hover-actions-trigger:focus .hover-actions.page, .hover-actions-trigger:focus .table-list .hover-actions.page, .table-list .hover-actions-trigger:focus .hover-actions.page {
   display: inline-block;
 }
 .hover-actions-trigger:hover .hover-hide, .hover-actions-trigger:focus .hover-hide {
@@ -29545,7 +26570,7 @@ option:disabled {
     transform: rotate(90deg);
     outline: none;
   }
-  .setting-toggle .bg-primary-subtle, .setting-toggle .fc-timegrid .event-bg-primary-subtle, .fc-timegrid .setting-toggle .event-bg-primary-subtle {
+  .setting-toggle .bg-primary-subtle {
     background-color: transparent !important;
   }
   .setting-toggle small, .setting-toggle .small {
@@ -29588,83 +26613,23 @@ option:disabled {
   border-radius: 0.25rem !important;
   border: 1px solid var(--falcon-gray-200);
 }
-.nav-pills-falcon .btn, .nav-pills-falcon .tox .tox-menu__footer .tox-button--secondary, .tox .tox-menu__footer .nav-pills-falcon .tox-button--secondary,
-.nav-pills-falcon .tox .tox-dialog__footer .tox-button--secondary,
-.tox .tox-dialog__footer .nav-pills-falcon .tox-button--secondary, .nav-pills-falcon .tox .tox-menu__footer .tox-button:last-child, .tox .tox-menu__footer .nav-pills-falcon .tox-button:last-child,
-.nav-pills-falcon .tox .tox-dialog__footer .tox-button:last-child,
-.tox .tox-dialog__footer .nav-pills-falcon .tox-button:last-child, .nav-pills-falcon [data-list] .page, [data-list] .nav-pills-falcon .page, .nav-pills-falcon .table-list .page, .table-list .nav-pills-falcon .page, .nav-pills-falcon .falcon-data-table .paging_full_numbers .page-link, .falcon-data-table .paging_full_numbers .nav-pills-falcon .page-link,
-.nav-pills-falcon .falcon-data-table .paging_first_last_numbers .page-link,
-.falcon-data-table .paging_first_last_numbers .nav-pills-falcon .page-link,
-.nav-pills-falcon .falcon-data-table .paging_full .page-link,
-.falcon-data-table .paging_full .nav-pills-falcon .page-link,
-.nav-pills-falcon .falcon-data-table .paging_numbers .page-link,
-.falcon-data-table .paging_numbers .nav-pills-falcon .page-link,
-.nav-pills-falcon .falcon-data-table .paging_simple_numbers .page-link,
-.falcon-data-table .paging_simple_numbers .nav-pills-falcon .page-link {
+.nav-pills-falcon .btn, .nav-pills-falcon [data-list] .page, [data-list] .nav-pills-falcon .page, .nav-pills-falcon .table-list .page, .table-list .nav-pills-falcon .page {
   --falcon-btn-hover-border-color: transparent;
   --falcon-btn-box-shadow: none;
   --falcon-btn-color: var(--falcon-gray-600);
   outline: 0;
 }
-.nav-pills-falcon .btn.active, .nav-pills-falcon .tox .tox-menu__footer .active.tox-button--secondary, .tox .tox-menu__footer .nav-pills-falcon .active.tox-button--secondary,
-.nav-pills-falcon .tox .tox-dialog__footer .active.tox-button--secondary,
-.tox .tox-dialog__footer .nav-pills-falcon .active.tox-button--secondary, .nav-pills-falcon .tox .tox-menu__footer .active.tox-button:last-child, .tox .tox-menu__footer .nav-pills-falcon .active.tox-button:last-child,
-.nav-pills-falcon .tox .tox-dialog__footer .active.tox-button:last-child,
-.tox .tox-dialog__footer .nav-pills-falcon .active.tox-button:last-child, .nav-pills-falcon [data-list] .active.page, [data-list] .nav-pills-falcon .active.page, .nav-pills-falcon .table-list .active.page, .table-list .nav-pills-falcon .active.page, .nav-pills-falcon .falcon-data-table .paging_full_numbers .active.page-link, .falcon-data-table .paging_full_numbers .nav-pills-falcon .active.page-link,
-.nav-pills-falcon .falcon-data-table .paging_first_last_numbers .active.page-link,
-.falcon-data-table .paging_first_last_numbers .nav-pills-falcon .active.page-link,
-.nav-pills-falcon .falcon-data-table .paging_full .active.page-link,
-.falcon-data-table .paging_full .nav-pills-falcon .active.page-link,
-.nav-pills-falcon .falcon-data-table .paging_numbers .active.page-link,
-.falcon-data-table .paging_numbers .nav-pills-falcon .active.page-link,
-.nav-pills-falcon .falcon-data-table .paging_simple_numbers .active.page-link,
-.falcon-data-table .paging_simple_numbers .nav-pills-falcon .active.page-link {
+.nav-pills-falcon .btn.active, .nav-pills-falcon [data-list] .active.page, [data-list] .nav-pills-falcon .active.page, .nav-pills-falcon .table-list .active.page, .table-list .nav-pills-falcon .active.page {
   --falcon-btn-active-bg: var(--falcon-nav-pills-falcon-active-bg-color) !important;
   --falcon-btn-active-shadow: var(--falcon-btn-falcon-box-shadow) !important;
   --falcon-btn-color: var(--falcon-btn-falcon-default-color);
   --falcon-btn-active-color: var(--falcon-btn-falcon-default-color);
 }
-.nav-pills-falcon .btn.active:focus, .nav-pills-falcon .tox .tox-menu__footer .active.tox-button--secondary:focus, .tox .tox-menu__footer .nav-pills-falcon .active.tox-button--secondary:focus,
-.nav-pills-falcon .tox .tox-dialog__footer .active.tox-button--secondary:focus,
-.tox .tox-dialog__footer .nav-pills-falcon .active.tox-button--secondary:focus, .nav-pills-falcon .tox .tox-menu__footer .active.tox-button:focus:last-child, .tox .tox-menu__footer .nav-pills-falcon .active.tox-button:focus:last-child,
-.nav-pills-falcon .tox .tox-dialog__footer .active.tox-button:focus:last-child,
-.tox .tox-dialog__footer .nav-pills-falcon .active.tox-button:focus:last-child, .nav-pills-falcon [data-list] .active.page:focus, [data-list] .nav-pills-falcon .active.page:focus, .nav-pills-falcon .table-list .active.page:focus, .table-list .nav-pills-falcon .active.page:focus, .nav-pills-falcon .falcon-data-table .paging_full_numbers .active.page-link:focus, .falcon-data-table .paging_full_numbers .nav-pills-falcon .active.page-link:focus,
-.nav-pills-falcon .falcon-data-table .paging_first_last_numbers .active.page-link:focus,
-.falcon-data-table .paging_first_last_numbers .nav-pills-falcon .active.page-link:focus,
-.nav-pills-falcon .falcon-data-table .paging_full .active.page-link:focus,
-.falcon-data-table .paging_full .nav-pills-falcon .active.page-link:focus,
-.nav-pills-falcon .falcon-data-table .paging_numbers .active.page-link:focus,
-.falcon-data-table .paging_numbers .nav-pills-falcon .active.page-link:focus,
-.nav-pills-falcon .falcon-data-table .paging_simple_numbers .active.page-link:focus,
-.falcon-data-table .paging_simple_numbers .nav-pills-falcon .active.page-link:focus {
+.nav-pills-falcon .btn.active:focus, .nav-pills-falcon [data-list] .active.page:focus, [data-list] .nav-pills-falcon .active.page:focus, .nav-pills-falcon .table-list .active.page:focus, .table-list .nav-pills-falcon .active.page:focus {
   --falcon-btn-active-shadow: var(--falcon-btn-falcon-box-shadow) !important;
   --falcon-btn-focus-box-shadow: var(--falcon-btn-falcon-box-shadow) !important;
 }
-.nav-pills-falcon .btn:hover, .nav-pills-falcon .tox .tox-menu__footer .tox-button--secondary:hover, .tox .tox-menu__footer .nav-pills-falcon .tox-button--secondary:hover,
-.nav-pills-falcon .tox .tox-dialog__footer .tox-button--secondary:hover,
-.tox .tox-dialog__footer .nav-pills-falcon .tox-button--secondary:hover, .nav-pills-falcon .tox .tox-menu__footer .tox-button:hover:last-child, .tox .tox-menu__footer .nav-pills-falcon .tox-button:hover:last-child,
-.nav-pills-falcon .tox .tox-dialog__footer .tox-button:hover:last-child,
-.tox .tox-dialog__footer .nav-pills-falcon .tox-button:hover:last-child, .nav-pills-falcon [data-list] .page:hover, [data-list] .nav-pills-falcon .page:hover, .nav-pills-falcon .table-list .page:hover, .table-list .nav-pills-falcon .page:hover, .nav-pills-falcon .falcon-data-table .paging_full_numbers .page-link:hover, .falcon-data-table .paging_full_numbers .nav-pills-falcon .page-link:hover,
-.nav-pills-falcon .falcon-data-table .paging_first_last_numbers .page-link:hover,
-.falcon-data-table .paging_first_last_numbers .nav-pills-falcon .page-link:hover,
-.nav-pills-falcon .falcon-data-table .paging_full .page-link:hover,
-.falcon-data-table .paging_full .nav-pills-falcon .page-link:hover,
-.nav-pills-falcon .falcon-data-table .paging_numbers .page-link:hover,
-.falcon-data-table .paging_numbers .nav-pills-falcon .page-link:hover,
-.nav-pills-falcon .falcon-data-table .paging_simple_numbers .page-link:hover,
-.falcon-data-table .paging_simple_numbers .nav-pills-falcon .page-link:hover, .nav-pills-falcon .btn:focus, .nav-pills-falcon .tox .tox-menu__footer .tox-button--secondary:focus, .tox .tox-menu__footer .nav-pills-falcon .tox-button--secondary:focus,
-.nav-pills-falcon .tox .tox-dialog__footer .tox-button--secondary:focus,
-.tox .tox-dialog__footer .nav-pills-falcon .tox-button--secondary:focus, .nav-pills-falcon .tox .tox-menu__footer .tox-button:focus:last-child, .tox .tox-menu__footer .nav-pills-falcon .tox-button:focus:last-child,
-.nav-pills-falcon .tox .tox-dialog__footer .tox-button:focus:last-child,
-.tox .tox-dialog__footer .nav-pills-falcon .tox-button:focus:last-child, .nav-pills-falcon [data-list] .page:focus, [data-list] .nav-pills-falcon .page:focus, .nav-pills-falcon .table-list .page:focus, .table-list .nav-pills-falcon .page:focus, .nav-pills-falcon .falcon-data-table .paging_full_numbers .page-link:focus, .falcon-data-table .paging_full_numbers .nav-pills-falcon .page-link:focus,
-.nav-pills-falcon .falcon-data-table .paging_first_last_numbers .page-link:focus,
-.falcon-data-table .paging_first_last_numbers .nav-pills-falcon .page-link:focus,
-.nav-pills-falcon .falcon-data-table .paging_full .page-link:focus,
-.falcon-data-table .paging_full .nav-pills-falcon .page-link:focus,
-.nav-pills-falcon .falcon-data-table .paging_numbers .page-link:focus,
-.falcon-data-table .paging_numbers .nav-pills-falcon .page-link:focus,
-.nav-pills-falcon .falcon-data-table .paging_simple_numbers .page-link:focus,
-.falcon-data-table .paging_simple_numbers .nav-pills-falcon .page-link:focus {
+.nav-pills-falcon .btn:hover, .nav-pills-falcon [data-list] .page:hover, [data-list] .nav-pills-falcon .page:hover, .nav-pills-falcon .table-list .page:hover, .table-list .nav-pills-falcon .page:hover, .nav-pills-falcon .btn:focus, .nav-pills-falcon [data-list] .page:focus, [data-list] .nav-pills-falcon .page:focus, .nav-pills-falcon .table-list .page:focus, .table-list .nav-pills-falcon .page:focus {
   color: var(--falcon-btn-falcon-default-color);
 }
 

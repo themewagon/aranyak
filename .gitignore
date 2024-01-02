@@ -41,3 +41,5 @@ Thumbs.db
 # ZiON ignored files #
 node_modules
 temp
+.env
+.env.local

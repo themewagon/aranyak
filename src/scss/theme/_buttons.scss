@@ -161,6 +161,24 @@ $value in $theme-falcon-btn-colors {
 
 }
 
+.btn-gradient {
+  border-radius: 40px;
+  background: linear-gradient(93deg, #85C7B3 -18.71%, #265C4C 117.68%), #FFF;
+  padding: 12px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+  width: fit-content;
+
+  // &:hover,
+  // &:focus,
+  // &:active {
+  //   background: white;
+  //   color: #265C4C;
+  // }
+}
+
 // disabled btn box shadow
 .btn {
   &:disabled {

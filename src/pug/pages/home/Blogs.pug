@@ -1,10 +1,42 @@
+mixin blogcard(imgSrc, innertext, requiredTime, blogTitle, text, link)
+    div.blog-card
+        div.position-relative.mb-3.mb-md-14.mb-lg-mb-13 
+            img(src=`${CWD}assets/img/blogs/${imgSrc}`, alt="").w-100
+            .inner-div 
+                p.text-white.fw-semi-bold.lh-normal.mb-0= innertext  
+        
+        div 
+            p(style="color: #5C5C5C;").lh-normal= requiredTime 
+            p.text-success.fw-semi-bold.lh-normal.text-capitalize.mb-4.mb-md-13.mb-lg-18.blog-title= blogTitle
+            p(style="margin-bottom: 13px").text-cardText.fs-9.fs-md-8.fw-light.lh-xl= text
+            a(href=link).text-success.fw-bold.lh-normal.fs-9.fs-md-8 read more...
+
+
+            
+
+
 append content 
     #blogs.container.mx-auto.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11 
-        p.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold aryanak blog 
+        p.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal aryanak blog 
         
-        p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-5    
+        p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.lh-normal.mb-13.mb-lg-5    
             | To Bring more 
             span.fw-bold Green
             br
             | into 
             span.fw-bold your home
+
+        .row.g-lg-4.mb-6.mb-lg-7.mb-xl-16 
+            .col-12.col-lg-4
+                +blogcard('blog_1.png', 'indoor gardening', '5 mins read', '4 Ways to Level Up Your Indoor Gardening Game', 'Indoor gardening is not just about maintaining plants but also about composition and arrangement in a ...', '/')
+            .col-12.col-lg-4
+                +blogcard('blog_2.png', 'Cactus gardening', '2 mins read', 'Cactus: Some Common Myths and Misconceptions ', 'Cactus Plants symbolize endurance, persistence, & toughness. Gifting someone a cactus plant means ...', '/')
+            .col-12.col-lg-4
+                +blogcard('blog_3.png', 'Fruit plant', '2 mins read', '6 reasons to reconsider where to plant your next fruit tree', 'Growing fruit trees indoors means you get to control everything from the light to humidity, right down to ...', '/')
+
+        div.d-flex.justify-content-center 
+            a(href="/")
+                button.btn.btn-gradient
+                    p.fs-8.text-white.fs-bold.mb-0 see all posts
+                    span 
+                        img(src=`${CWD}assets/img/icons/arrow_right.svg`, alt="") 

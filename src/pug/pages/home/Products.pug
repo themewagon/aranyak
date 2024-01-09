@@ -14,18 +14,18 @@ mixin card(imgSrc, productTitle, text)
                     span.fs-10.fs-md-9.text-success.fw-bold add to cart
 
         .product-card-body 
-            h2.text-success.fs-8.fs-md-8.fw-semi-bold= productTitle 
-            p.text-cardText.fs-10.fs-md-9.text-capitalize= text 
+            h2.text-success.fs-8.fs-md-8.fw-semi-bold.lh-normal= productTitle 
+            p.text-cardText.fs-10.fs-md-9.text-capitalize.lh-xl= text 
             
 
 append content 
     #products.container.mx-auto.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11
-        p.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold Our Products 
+        p.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal Our Products 
         
-        p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-5    
+        p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-5.lh-normal    
             span.fw-bold New 
             | Arrivals
-        .row.g-4.mb-6.mb-lg-7.mb-xl-16 
+        .row.g-lg-4.mb-6.mb-lg-7.mb-xl-16 
             .col-12.col-lg-4
                 +card('assets/img/products/products/1.png', 'Philodendron', 'The Philodendron White Princess has been around for some time in private collections. But they have hit the market now in full big potted plants.')
             .col-12.col-lg-4
@@ -35,11 +35,11 @@ append content
                 +card('assets/img/products/products/3.png', 'Norfolk Island Pine', 'Although a lively addition to your home all year round—the Norfolk Island Pine shines as a live holiday tree during the winter season')
         
         div
-            p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.text-md-end.fw-light.mb-13.mb-lg-5    
+            p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.text-md-end.fw-light.mb-13.mb-lg-5.lh-normal    
                 span.fw-bold Popular 
                 | little plants
 
-        .row.g-4.mb-6.mb-lg-7.mb-xl-16 
+        .row.g-lg-4.mb-6.mb-lg-7.mb-xl-16 
             .col-12.col-lg-4
                 +card('assets/img/products/products/4.png', 'Snake/Sansevieria', "Sansevierias are succulent plants. they have strong, stiff, succulent leaves that store water. these plants release oxygen in the night")
             .col-12.col-lg-4
@@ -49,11 +49,11 @@ append content
                 +card('assets/img/products/products/6.png', 'Parlor Palm', ' The parlor palm (Chamaedorea elegans) has long been used as an indoor plant. NASA gave this plant a high purifying score.')
         
         div
-            p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-5    
+            p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-5.lh-normal    
                 span.fw-bold Easy 
                 | to care plants
 
-        .row.g-4.mb-6.mb-lg-7.mb-xl-16 
+        .row.g-lg-4.mb-6.mb-lg-7.mb-xl-16 
             .col-12.col-lg-4
                 +card('assets/img/products/products/7.png', 'Peace Lily', "If you're prone to overwatering, try Spathiphyllum. With enough light, they'll also produce their spade-shaped flowers throughout the year. ")
             .col-12.col-lg-4

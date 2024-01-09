@@ -1,0 +1,10 @@
+.Footer {
+    position: relative !important;
+    min-height: 40vh;
+    background: url(`${CWD}assets/img/illustrations/footer.svg`);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+}

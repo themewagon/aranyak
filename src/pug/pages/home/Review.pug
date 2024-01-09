@@ -1,0 +1,36 @@
+mixin reviewCard(star ,text, name, designation, imageSrc)
+    div.review-card
+        div
+            img(src=`${CWD}assets/img/review/${imageSrc}`, alt="")
+        div
+            div(style="margin-bottom:5px;").d-flex.gap-1 
+                - for(var i = 0; i < star; i ++)
+                        img(src=`${CWD}assets/img/icons/Group.png`, alt="")
+            div(style="margin-bottom: 19px")
+                p.text-black.fs-9.fs-md-8= text 
+            div
+                p.text-success.fs-9.fs-md-8= name 
+            div 
+                p.text-black.fs-10.fs-md-9.mb-0= designation
+
+
+append content
+    #review.container.mx-auto.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11 
+        p.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold review 
+        
+        p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-5    
+            | Some words from 
+            br
+            | our 
+            span.fw-bold Lovely customers
+        .row.g-6 
+            .col-12.col-lg-6
+                +reviewCard(5,"I’m not really a customer of this site, but their free gardening guide helped me a lot. Thank you ...", 'Ahsoka Tano', 'Firefighter','1.png')
+                +reviewCard(5,"Aranyak is the perfect place for making yourself surrounded by lots and lots of plant with a guide of extensive details of how to take care of them😘", 'Sabine Wren', 'Influencer & Plant lover','2.png')
+                +reviewCard(5,"I’ve brought dozens of plants over the year from this site and not a penny wasted. All arround good service and professionalism from Aranyak. keep it up guys. ", 'Ezra Bridger', 'Small-time thief','3.png')
+                div.d-flex.justify-content-center
+                div.mt-6.mt-lg-7.mt-xl-16.d-flex.justify-content-center 
+                    button.btn.btn-gradient
+                        p.fs-8.text-white.fs-bold.mb-0 load more
+            .col-12.col-lg-6
+                img(src=`${CWD}assets/img/illustrations/loveletter.png`, alt="").w-100

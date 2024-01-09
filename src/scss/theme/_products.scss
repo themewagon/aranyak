@@ -1,0 +1,52 @@
+.product-card {
+    height: 100%;
+    border-radius: 22px;
+    background: rgba(255, 217, 145, 0.65);
+    box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 30px;
+
+    .add-section {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: rgba(255, 217, 145, 0.60);
+        gap: 30px;
+
+        @include media-breakpoint-up(xl) {
+            gap: 75px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .product-card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 32px;
+        gap: 20px;
+
+        @include media-breakpoint-up(lg) {
+            padding: 0 40px;
+        }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        .add-section {
+            background: rgba(255, 255, 255, 0.90);
+        }
+    }
+}

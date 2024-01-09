@@ -1,0 +1,23 @@
+.card {
+    border-radius: 40px;
+    border: 2px solid #FFD991;
+    background: #FFF;
+    padding: 24px 35px;
+    margin-top: -50px;
+    @include media-breakpoint-up(lg) {
+        margin-top: 0;
+        margin-left: -100px;
+        max-width: 480px;
+      }
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: absolute;
+    top: 50%;
+    padding: 0 5px;
+    transform: translateY(-50%);
+    
+}

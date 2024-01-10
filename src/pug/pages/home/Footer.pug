@@ -1,8 +1,8 @@
 append content 
-    footer.Footer
+    footer(style=`background-image: url('${CWD}assets/img/illustrations/Footer.svg')` class="Footer")
         .container.mx-auto 
-            .row 
-                .col-12.col-md-3.col-lg-.d-flex.flex-column.justify-end.h-100
+            .row.d-lg-flex.align-items-end
+                .col-12.col-md-4.d-flex.flex-column.align-items-md-center.justify-content-end.h-100
                     div.mb-13.mb-md-18.mb-md-19 
                         img(src=`${CWD}assets/img/logos/logo.svg`, alt="")
                     div(style="gap:12px;").d-flex.flex-column
@@ -22,7 +22,7 @@ append content
                             a(href="#support").links.
                                 support
 
-                .col-12.col-md-3.col-lg-.d-flex.flex-column.justify-end.h-100
+                .col-12.col-md-4.d-flex.flex-column.align-items-md-center.justify-content-end.h-100
                     div.mb-13.mb-md-18.mb-md-19 
                         p(style="color: #FFF0D3;").fs-9.fs-md-8.fw-bold.lh-normal.mb-0 User Account
                     div(style="gap:12px;").d-flex.flex-column
@@ -42,7 +42,7 @@ append content
                             a(href="#support").links.
                                 support
  
-                .col-12.col-md-4.col-lg-.d-flex.flex-column.justify-end.h-100
+                .col-12.col-md-4.d-flex.flex-column.align-items-md-center.justify-content-end.h-100
                     div.mb-13.mb-md-18.mb-md-19 
                         p(style="color: #FFF0D3;").fs-9.fs-md-8.fw-bold.lh-normal.mb-0 Follow Us At 
                     div(style="gap:12px;").d-flex.flex-column

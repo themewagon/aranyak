@@ -1,17 +1,27 @@
 append content
-    div.navbar.container.d-flex.w-100.justify-content-center.justify-content-lg-end.align-items-center
+    div.sub-navbar.container.d-flex.w-100.justify-content-center.justify-content-lg-end.align-items-center
 
         for item in submenu
             a(href="#").d-flex.justify-content-center.align-items-center
                 img(src=`${CWD}${item.imageSrc}`, alt="")
                 span(style="margin-left:4px;").fs-10 #{item.label}
-    div.bg-warning.mb-6.navbar-main
-        div(style="padding: 12px 0px;").container.mx-auto.d-block.d-lg-flex.justify-content-between.align-items-center.text-center
-            a(href="#")
-                img(src=`${CWD}assets/img/logos/logo.png`, alt="")
-            div
-                input(type="search", name="search" placeholder=" search plants...").search.fs-8.bg-transparent
+    header.sticky-top
+        nav.bg-warning.mb-6.navbar.navbar-expand-lg.navbar-light
+            .container.mx-auto 
+                div 
+                    a(href="#").navbar-brand.me-lg-auto
+                        img(src=`${CWD}assets/img/logos/logo.png`, alt="")
+                button(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler
+                    span.navbar-toggler-icon.text-white 
+                
+                div#navbarSupportedContent.collapse.navbar-collapse
+                    
+                    form.form-inline.mx-lg-3.mx-xl-13.position-relative
+                            input(type="search", name="search" placeholder=" search plants...").search.fs-8.bg-transparent
+                            .search-icon 
+                                img(src=`${CWD}assets/img/icons/ei_search.png`, alt="")
+                    ul.navbar-nav.ms-auto.d-lg-flex.justify-content-lg-between.w-100 
 
-            for navMenu in menu 
-                a(href=`${navMenu.link}`)
-                     p.mb-0.fs-8.text-gray-900.fw-medium #{navMenu.label}
+                        for navMenu in menu 
+                            li.nav-item 
+                                a(href=`${navMenu.link}`).nav-link.nav-bar-item #{navMenu.label}

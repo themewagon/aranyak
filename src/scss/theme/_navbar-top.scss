@@ -276,7 +276,7 @@
   }
 }  
 
-.navbar {
+.sub-navbar {
   gap:27.67px; 
   margin-top:7px;
   padding:10px 0px 10px 10px;
@@ -297,4 +297,21 @@
   a:hover, :focus{
     text-decoration: none;
   }
+}
+
+.nav-bar-item{
+  color: #535353 !important;
+  font-size: 20px !important;
+  font-weight: 500;
+  line-height: normal;
+  
+  &:hover{
+    color: #124838 !important;
+    font-weight: 700 !important;
+  }
+}
+.search-icon{
+  position: absolute;
+  top: 8px;
+  left: 2px;
 }

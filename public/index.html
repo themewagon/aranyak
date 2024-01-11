@@ -49,69 +49,29 @@
       <div class="container-fluid bg-white" data-layout="container-fluid">
         <div class="content">
           <Navbar></Navbar>
-          <div class="navbar container d-flex w-100 justify-content-center justify-content-lg-end align-items-center"><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/ps_sale-tag.png" alt="" /><span class="fs-10" style="margin-left:4px;">sale</span></a><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/Vector.png" alt="" /><span class="fs-10" style="margin-left:4px;">Wishlist</span></a><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/cil_cart.png" alt="" /><span class="fs-10" style="margin-left:4px;">cart</span></a><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/codicon_account.png" alt="" /><span class="fs-10" style="margin-left:4px;">log in/sign up</span></a>
+          <div class="sub-navbar container d-flex w-100 justify-content-center justify-content-lg-end align-items-center"><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/ps_sale-tag.png" alt="" /><span class="fs-10" style="margin-left:4px;">sale</span></a><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/Vector.png" alt="" /><span class="fs-10" style="margin-left:4px;">Wishlist</span></a><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/cil_cart.png" alt="" /><span class="fs-10" style="margin-left:4px;">cart</span></a><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/codicon_account.png" alt="" /><span class="fs-10" style="margin-left:4px;">log in/sign up</span></a>
           </div>
-          <div class="bg-warning mb-6 navbar-main">
-            <div class="container mx-auto d-block d-lg-flex justify-content-between align-items-center text-center" style="padding: 12px 0px;"><a href="#"><img src="assets/img/logos/logo.png" alt="" /></a>
-              <div>
-                <input class="search fs-8 bg-transparent" type="search" name="search" placeholder=" search plants..." />
-              </div><a href="#">
-                <p class="mb-0 fs-8 text-gray-900 fw-medium">home</p>
-              </a><a href="#about">
-                <p class="mb-0 fs-8 text-gray-900 fw-medium">about</p>
-              </a><a href="#products">
-                <p class="mb-0 fs-8 text-gray-900 fw-medium">catalog</p>
-              </a><a href="#review">
-                <p class="mb-0 fs-8 text-gray-900 fw-medium">reviews</p>
-              </a><a href="#">
-                <p class="mb-0 fs-8 text-gray-900 fw-medium">support</p>
-              </a>
-            </div>
-          </div>
-          <footer class="Footer">
-            <div class="container mx-auto">
-              <div class="row">
-                <div class="col-12 col-md-3 col-lg- d-flex flex-column justify-end h-100">
-                  <div class="mb-13 mb-md-18 mb-md-19"> <img src="assets/img/logos/logo.svg" alt="" /></div>
-                  <div class="d-flex flex-column" style="gap:12px;">
-                    <div> <a class="links" href="#">home</a></div>
-                    <div> <a class="links" href="about">about</a></div>
-                    <div> <a class="links" href="#products">catalog</a></div>
-                    <div> <a class="links" href="#review">review</a></div>
-                    <div> <a class="links" href="#support">
-                        support
-                      </a></div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-3 col-lg- d-flex flex-column justify-end h-100">
-                  <div class="mb-13 mb-md-18 mb-md-19">
-                    <p class="fs-9 fs-md-8 fw-bold lh-normal mb-0" style="color: #FFF0D3;">User Account</p>
-                  </div>
-                  <div class="d-flex flex-column" style="gap:12px;">
-                    <div> <a class="links" href="#">home</a></div>
-                    <div> <a class="links" href="about">about</a></div>
-                    <div> <a class="links" href="#products">catalog</a></div>
-                    <div> <a class="links" href="#review">review</a></div>
-                    <div> <a class="links" href="#support">
-                        support
-                      </a></div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg- d-flex flex-column justify-end h-100">
-                  <div class="mb-13 mb-md-18 mb-md-19">
-                    <p class="fs-9 fs-md-8 fw-bold lh-normal mb-0" style="color: #FFF0D3;">Follow Us At </p>
-                  </div>
-                  <div class="d-flex flex-column" style="gap:12px;">
-                    <div> <a class="links" href="#">home</a></div>
-                    <div> <a class="links" href="about">about</a></div>
-                    <div> <a class="links" href="#products">catalog</a></div>
-                    <div> <a class="links" href="#review">review</a></div>
-                    <div> <a class="links" href="#support">support</a></div>
-                  </div>
+          <header class="sticky-top">
+            <nav class="bg-warning mb-6 navbar navbar-expand-lg navbar-light">
+              <div class="container mx-auto">
+                <div> <a class="navbar-brand me-lg-auto" href="#"><img src="assets/img/logos/logo.png" alt="" /></a></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon text-white"> </span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <form class="form-inline mx-lg-3 mx-xl-13 position-relative">
+                    <input class="search fs-8 bg-transparent" type="search" name="search" placeholder=" search plants..." />
+                    <div class="search-icon"> <img src="assets/img/icons/ei_search.png" alt="" /></div>
+                  </form>
+                  <ul class="navbar-nav ms-auto d-lg-flex justify-content-lg-between w-100">
+                    <li class="nav-item"> <a class="nav-link nav-bar-item" href="#">home</a></li>
+                    <li class="nav-item"> <a class="nav-link nav-bar-item" href="#about">about</a></li>
+                    <li class="nav-item"> <a class="nav-link nav-bar-item" href="#products">catalog</a></li>
+                    <li class="nav-item"> <a class="nav-link nav-bar-item" href="#review">reviews</a></li>
+                    <li class="nav-item"> <a class="nav-link nav-bar-item" href="#">support</a></li>
+                  </ul>
                 </div>
               </div>
-            </div>
-          </footer>
+            </nav>
+          </header>
           <div class="container mx-auto mb-7 mb-lg-16 mb-xl-11">
             <div class="row g-lg-4 px-3 px-lg-0 mb-6 mb-lg-7 mb-xl-16">
               <div class="col-12 col-lg-6 pr-0">
@@ -529,7 +489,7 @@
                   <p class="fs-8 text-white fs-bold mb-0">see all posts</p><span> <img src="assets/img/icons/arrow_right.svg" alt=""/></span>
                 </button></a></div>
           </div>
-          <div class="container mx-auto px-3 px-lg-0" id="support">
+          <div class="container mx-auto px-3 px-lg-0 mb-7 mb-lg-16 mb-xl-11" id="support">
             <div class="row g-lg-6">
               <div class="d-none d-lg-block col-lg-6"><img class="w-100" src="assets/img/illustrations/women_watering.png" alt="" /></div>
               <div class="col-12 col-lg-6 d-flex flex-column justify-content-center h-100">
@@ -548,14 +508,58 @@
               </div>
             </div>
           </div>
+          <footer class="Footer" style="background-image: url('assets/img/illustrations/Footer.svg')">
+            <div class="container mx-auto">
+              <div class="row d-lg-flex align-items-end">
+                <div class="col-12 col-md-4 d-flex flex-column align-items-md-center justify-content-end h-100">
+                  <div class="mb-13 mb-md-18 mb-md-19"> <img src="assets/img/logos/logo.svg" alt="" /></div>
+                  <div class="d-flex flex-column" style="gap:12px;">
+                    <div> <a class="links" href="#">home</a></div>
+                    <div> <a class="links" href="about">about</a></div>
+                    <div> <a class="links" href="#products">catalog</a></div>
+                    <div> <a class="links" href="#review">review</a></div>
+                    <div> <a class="links" href="#support">
+                        support
+                      </a></div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column align-items-md-center justify-content-end h-100">
+                  <div class="mb-13 mb-md-18 mb-md-19">
+                    <p class="fs-9 fs-md-8 fw-bold lh-normal mb-0" style="color: #FFF0D3;">User Account</p>
+                  </div>
+                  <div class="d-flex flex-column" style="gap:12px;">
+                    <div> <a class="links" href="#">home</a></div>
+                    <div> <a class="links" href="about">about</a></div>
+                    <div> <a class="links" href="#products">catalog</a></div>
+                    <div> <a class="links" href="#review">review</a></div>
+                    <div> <a class="links" href="#support">
+                        support
+                      </a></div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column align-items-md-center justify-content-end h-100">
+                  <div class="mb-13 mb-md-18 mb-md-19">
+                    <p class="fs-9 fs-md-8 fw-bold lh-normal mb-0" style="color: #FFF0D3;">Follow Us At </p>
+                  </div>
+                  <div class="d-flex flex-column" style="gap:12px;">
+                    <div> <a class="links" href="#">home</a></div>
+                    <div> <a class="links" href="about">about</a></div>
+                    <div> <a class="links" href="#products">catalog</a></div>
+                    <div> <a class="links" href="#review">review</a></div>
+                    <div> <a class="links" href="#support">support</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
           <Hero-section></Hero-section>
           <About-us></About-us>
           <Products></Products>
           <Review></Review>
           <Blogs></Blogs>
           <Support></Support>
+          <Footer> </Footer>
           <Home></Home>
-          <Footer></Footer>
         </div>
       </div>
     </main>

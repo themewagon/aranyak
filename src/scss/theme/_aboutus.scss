@@ -1,9 +1,11 @@
-.card {
+.about-card {
+    position: relative;
     border-radius: 40px;
     border: 2px solid #FFD991;
     background: #FFF;
     padding: 24px 35px;
     margin-top: -50px;
+    z-index: 99;
     @include media-breakpoint-up(lg) {
         margin-top: 0;
         margin-left: -100px;

@@ -151,11 +151,11 @@
 .content {
   min-height: 100vh;
   position: relative;
-  padding-bottom: 6.375rem;
+  // padding-bottom: 6.375rem;
 
-  @include media-breakpoint-up(sm) {
-    padding-bottom: $footer-height;
-  }
+  // @include media-breakpoint-up(sm) {
+  //   padding-bottom: $footer-height;
+  // }
 }
 .navbar-top + .content{
   min-height: calc(100vh - $top-nav-height);

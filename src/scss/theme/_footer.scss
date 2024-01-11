@@ -1,12 +1,12 @@
 .Footer {
     position: relative !important;
-    min-height: 60vh;
-    padding-bottom: 40px;
+    min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    justify-content: end;
 
     .links{
         color: rgba(255, 255, 255, 0.70);
@@ -17,9 +17,13 @@
         @include media-breakpoint-up(md) {
             font-size: 20px;
         }
+        @include hover-focus {
+            color: white;
+            font-weight: 600;
+        }
     }
     @include media-breakpoint-up(md) {
         min-height: 75vh;
-        padding-bottom: 55px;
+        padding: 0;
       }
 }

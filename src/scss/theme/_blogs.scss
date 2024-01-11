@@ -5,6 +5,7 @@
         width: fit-content;
         border-radius: 0px 20px;
         padding: 10px 20px;
+        color: white;
         background: rgba(18, 72, 56, 0.75);
         position: absolute;
         bottom: 0;
@@ -15,6 +16,12 @@
 
         @include media-breakpoint-up(md){
             font-size: 30px;
+        }
+    }
+    @include hover-focus {
+        .inner-div {
+            background: rgba(255, 255, 255, 0.90);
+            color: rgba(18, 72, 56, 0.75);;
         }
     }
 }

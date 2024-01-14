@@ -3,7 +3,7 @@ mixin blogcard(imgSrc, innertext, requiredTime, blogTitle, text, link)
         div.position-relative.mb-3.mb-md-14.mb-lg-mb-13 
             img(src=`${CWD}assets/img/blogs/${imgSrc}`, alt="").w-100
             .inner-div 
-                p.text-white.fw-semi-bold.lh-normal.mb-0= innertext  
+                p.fw-semi-bold.lh-normal.mb-0= innertext  
         
         div 
             p(style="color: #5C5C5C;").lh-normal= requiredTime 
@@ -26,10 +26,10 @@ append content
             | into 
             span.fw-bold your home
 
-        .row.g-lg-4.mb-6.mb-lg-7.mb-xl-16 
-            .col-12.col-lg-4
+        .row.g-lg-3.mb-6.mb-lg-7.mb-xl-16 
+            .col-12.col-lg-4.mb-5.mb-lg-0
                 +blogcard('blog_1.png', 'indoor gardening', '5 mins read', '4 Ways to Level Up Your Indoor Gardening Game', 'Indoor gardening is not just about maintaining plants but also about composition and arrangement in a ...', '/')
-            .col-12.col-lg-4
+            .col-12.col-lg-4.mb-4.mb-lg-0
                 +blogcard('blog_2.png', 'Cactus gardening', '2 mins read', 'Cactus: Some Common Myths and Misconceptions ', 'Cactus Plants symbolize endurance, persistence, & toughness. Gifting someone a cactus plant means ...', '/')
             .col-12.col-lg-4
                 +blogcard('blog_3.png', 'Fruit plant', '2 mins read', '6 reasons to reconsider where to plant your next fruit tree', 'Growing fruit trees indoors means you get to control everything from the light to humidity, right down to ...', '/')

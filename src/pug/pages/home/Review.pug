@@ -7,9 +7,9 @@ mixin reviewCard(star ,text, name, designation, imageSrc)
                 - for(var i = 0; i < star; i ++)
                         img(src=`${CWD}assets/img/icons/Group.png`, alt="")
             div(style="margin-bottom: 19px")
-                p.text-black.fs-9.fs-md-8.lh-normal= text 
-            .mb-1 
-                p.text-success.fs-9.fs-md-8.lh-normal= name 
+                p.text-black.fs-9.fs-md-8.lh-normal= text
+            div 
+                p.text-success.fs-9.fs-md-8.fw-bold.lh-normal.mb-0= name 
             div 
                 p.text-black.fs-10.fs-md-9.mb-0.lh-normal.fw-light= designation
 
@@ -31,6 +31,6 @@ append content
                 div.d-flex.justify-content-center
                 div.mt-6.mt-lg-7.mt-xl-16.d-flex.justify-content-center 
                     button.btn.btn-gradient
-                        p.fs-8.text-white.fs-bold.mb-0 load more
+                        p.fs-8.mb-0 load more
             .d-none.d-lg-block.col-lg-6
                 img(src=`${CWD}assets/img/illustrations/loveletter.png`, alt="").w-100

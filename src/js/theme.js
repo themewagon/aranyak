@@ -10,6 +10,7 @@ import themeControl from './theme-control';
 import scrollbarInit from './scrollbar';
 import iconCopiedInit from './icons';
 import scrollInit from './scroll';
+import countupInit from './Counter'
 
 /* -------------------------------------------------------------------------- */
 /*                            Theme Initialization                            */
@@ -25,3 +26,4 @@ docReady(scrollbarInit);
 docReady(iconCopiedInit);
 docReady(scrollInit);
 docReady(listInit);
+docReady(countupInit)

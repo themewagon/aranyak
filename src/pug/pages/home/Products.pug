@@ -1,67 +1,141 @@
-mixin card(imgSrc, productTitle, text)
-    div.product-card
-        .position-relative.w-100 
-            img(src=`${CWD}${imgSrc}`, alt="").w-100
-            .add-section
-                a(href="/").d-flex.align-items-center
-                    div(style="margin-right: 5px;")
-                        img(src=`${CWD}assets/img/icons/wishlist.png`, alt="")
-                    span.fs-10.fs-md-9.text-success.fw-bold add to wishlist 
-
-                a(href="/").d-flex.align-items-center
-                    div(style="margin-right: 5px;")
-                        img(src=`${CWD}assets/img/icons/bi_cart-plus.png`, alt="")
-                    span.fs-10.fs-md-9.text-success.fw-bold add to cart
-
-        .product-card-body 
-            h2.text-success.fs-8.fs-md-8.fw-semi-bold.lh-normal= productTitle 
-            p.text-cardText.fs-10.fs-md-9.text-capitalize.lh-xl= text 
-            
+include ../../mixins/common/Product
 
 append content 
-    #products.container.mx-auto.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11
-        p.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal Our Products 
-        
-        p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-5.lh-normal    
-            span.fw-bold New 
-            | Arrivals
-        .row.g-lg-4.mb-6.mb-lg-7.mb-xl-16 
-            .col-12.col-lg-4.mb-4.mb-lg-0
-                +card('assets/img/products/products/1.png', 'Philodendron', 'The Philodendron White Princess has been around for some time in private collections. But they have hit the market now in full big potted plants.')
-            .col-12.col-lg-4.mb-4.mb-lg-0
-                +card('assets/img/products/products/2.png', 'Monstera Obliqua Peruvian', 'aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons')
-                
-            .col-12.col-lg-4
-                +card('assets/img/products/products/3.png', 'Norfolk Island Pine', 'Although a lively addition to your home all year round—the Norfolk Island Pine shines as a live holiday tree during the winter season')
-        
-        div
-            p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.text-md-end.fw-light.mb-13.mb-lg-5.lh-normal    
-                span.fw-bold Popular 
-                | little plants
+	#products.container.mx-auto.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11
+		p.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal Our Products 
 
-        .row.g-lg-4.mb-6.mb-lg-7.mb-xl-16 
-            .col-12.col-lg-4.mb-4.mb-lg-0
-                +card('assets/img/products/products/4.png', 'Snake/Sansevieria', "Sansevierias are succulent plants. they have strong, stiff, succulent leaves that store water. these plants release oxygen in the night")
-            .col-12.col-lg-4.mb-4.mb-lg-0
-                +card('assets/img/products/products/5.png', 'Bromeliad Aechmea Pink', 'Featuring colorful, long-lasting blooms, the Bromeliad Aechmea Pink is a unique flowering plant to add a touch of tropics With lasting blooms ')
-                
-            .col-12.col-lg-4
-                +card('assets/img/products/products/6.png', 'Parlor Palm', ' The parlor palm (Chamaedorea elegans) has long been used as an indoor plant. NASA gave this plant a high purifying score.')
-        
-        div
-            p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-5.lh-normal    
-                span.fw-bold Easy 
-                | to care plants
+		p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-5.lh-normal    
+			span.fw-bold New 
+			| Arrivals
+		#slider-1.row.g-lg-4.mb-6.mb-lg-7.mb-xl-16.position-relative 
+			.col-12.mb-4.mb-lg-0
+				.swiper-theme-container.position-relative
+					.swiper-container.theme-slider(data-swiper!= {
+						spaceBetween:12,
+						loop:true,
+						loopedSlides:5,
+						slideToClickedSlide:true,
+						slidesPerView:3, 
+						breakpoints:{
+							0:{slidesPerView: 1}, 
+							768:{slidesPerView: 2}, 
+							1024: {slidesPerView: 3}}
+						})
+						div.swiper-wrapper
+							+ProductItem(
+								'assets/img/products/products/1.png', 
+								'Philodendron', 
+								'The Philodendron White Princess has been around for some time in private collections. But they have hit the market now in full big potted plants.'
+							)
+							+ProductItem(
+								'assets/img/products/products/2.png', 
+								'Monstera Obliqua Peruvian', 
+								'aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons'
+							)
+							+ProductItem(
+								'assets/img/products/products/3.png', 
+								'Norfolk Island Pine', 
+								'Although a lively addition to your home all year round—the Norfolk Island Pine shines as a live holiday tree during the winter season'
+							)
+							+ProductItem(
+								'assets/img/products/products/3.png', 
+								'Norfolk Island Pine', 
+								'Although a lively addition to your home all year round—the Norfolk Island Pine shines as a live holiday tree during the winter season'
+							)
+							+ProductItem(
+								'assets/img/products/products/2.png', 
+								'Monstera Obliqua Peruvian', 
+								'aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons'
+							)
+					div.slider-nav
+						button(data-slider="slider-1").btn.next-button 
+							i.fas.fa-solid.fa-chevron-right
+		div
+			p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.text-md-end.fw-light.mb-13.mb-lg-5.lh-normal    
+				span.fw-bold Popular 
+				| little plants
 
-        .row.g-lg-4.mb-6.mb-lg-7.mb-xl-16 
-            .col-12.col-lg-4.mb-4.mb-lg-0
-                +card('assets/img/products/products/7.png', 'Peace Lily', "If you're prone to overwatering, try Spathiphyllum. With enough light, they'll also produce their spade-shaped flowers throughout the year. ")
-            .col-12.col-lg-4.mb-4.mb-lg-0
-                +card('assets/img/products/products/8.png', 'Spider Plant', 'The fast-growing shoots produce little "babies" that you can re-pot for added greenery elsewhere. Just stick to well-lit spots, water weekly. ')
-                
-            .col-12.col-lg-4
-                +card('assets/img/products/products/9.png', 'Kalanchoe', 'This water-retaining succulent grows colorful, bell-shaped flowers and withstands dry climates and terrible temperature swings.')
+		#slider-2.row.g-lg-4.mb-6.mb-lg-7.mb-xl-16 
+			.col-12.mb-4.mb-lg-0
+				.swiper-theme-container.position-relative
+					.swiper-container.theme-sliderdiv(data-swiper!= {
+						spaceBetween:12,
+						loop:true,
+						loopedSlides:5,
+						slideToClickedSlide:true,
+						slidesPerView:3, 
+						breakpoints:{
+							0:{slidesPerView: 1}, 
+							768:{slidesPerView: 2}, 
+							1024: {slidesPerView: 3}}
+						})
+						div.swiper-wrapper
+							+ProductItem(
+								'assets/img/products/products/4.png', 
+								'Snake/Sansevieria', 
+								"Sansevierias are succulent plants. they have strong, stiff, succulent leaves that store water. these plants release oxygen in the night"
+							)
+							+ProductItem(
+								'assets/img/products/products/5.png', 
+								'Bromeliad Aechmea Pink', 
+								'Featuring colorful, long-lasting blooms, the Bromeliad Aechmea Pink is a unique flowering plant to add a touch of tropics With lasting blooms '
+							)
+							+ProductItem(
+								'assets/img/products/products/6.png', 
+								'Parlor Palm', 
+								' The parlor palm (Chamaedorea elegans) has long been used as an indoor plant. NASA gave this plant a high purifying score.'
+							)
+							+ProductItem(
+								'assets/img/products/products/6.png', 
+								'Parlor Palm', 
+								' The parlor palm (Chamaedorea elegans) has long been used as an indoor plant. NASA gave this plant a high purifying score.'
+							)
+					.slider-nav
+						button(data-slider="slider-2").btn.next-button 
+							i.fas.fa-solid.fa-chevron-right
 
-        div.d-flex.justify-content-center
-            button.btn.btn-gradient
-                p.fs-8.text-white.fs-bold.mb-0 see full catalog
+		div
+			p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-5.lh-normal    
+				span.fw-bold Easy 
+				| to care plants
+
+		#slider-3.row.g-lg-4.mb-6.mb-lg-7.mb-xl-16.position-relative 
+			.col-12.mb-4.mb-lg-0
+				.swiper-theme-container.position-relative
+					.swiper-container.theme-slider(data-swiper!= {
+						spaceBetween:12,
+						loop:true,
+						loopedSlides:5,
+						slideToClickedSlide:true,
+						slidesPerView:3, 
+						breakpoints:{
+							0:{slidesPerView: 1}, 
+							768:{slidesPerView: 2}, 
+							1024: {slidesPerView: 3}}
+						})
+						div.swiper-wrapper
+							+ProductItem(
+								'assets/img/products/products/7.png', 
+								'Peace Lily', 
+								"If you're prone to overwatering, try Spathiphyllum. With enough light, they'll also produce their spade-shaped flowers throughout the year. "
+							)
+							+ProductItem(
+								'assets/img/products/products/8.png', 
+								'Spider Plant', 'The fast-growing shoots produce little "babies" that you can re-pot for added greenery elsewhere. Just stick to well-lit spots, water weekly. '
+							)
+							+ProductItem(
+								'assets/img/products/products/9.png', 
+								'Kalanchoe', 
+								'This water-retaining succulent grows colorful, bell-shaped flowers and withstands dry climates and terrible temperature swings.'
+								)
+							+ProductItem(
+								'assets/img/products/products/9.png', 
+								'Kalanchoe', 
+								'This water-retaining succulent grows colorful, bell-shaped flowers and withstands dry climates and terrible temperature swings.'
+								)
+					.slider-nav
+						button(data-slider="slider-3").btn.next-button 
+							i.fas.fa-solid.fa-chevron-right
+		div.d-flex.justify-content-center
+			button.btn.btn-gradient
+				p.fs-8.mb-0 see full catalog

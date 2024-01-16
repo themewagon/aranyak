@@ -1,0 +1,18 @@
+mixin ProductItem(imgSrc, productTitle, text)
+	div.product-card.swiper-slide.h-auto
+		.position-relative.w-100 
+			img(src=`${CWD}${imgSrc}`, alt="").w-100
+			.add-section
+				a(href="/").d-flex.align-items-center
+					div(style="margin-right: 5px;")
+						img(src=`${CWD}assets/img/icons/wishlist.png`, alt="")
+					span.fs-10.fs-md-9.text-success.fw-bold add to wishlist 
+
+				a(href="/").d-flex.align-items-center
+					div(style="margin-right: 5px;")
+						img(src=`${CWD}assets/img/icons/bi_cart-plus.png`, alt="")
+					span.fs-10.fs-md-9.text-success.fw-bold add to cart
+
+		.product-card-body 
+			h2.text-success.fs-8.fs-md-8.fw-semi-bold.lh-normal= productTitle 
+			p.text-cardText.fs-10.fs-md-9.text-capitalize.lh-xl= text 

@@ -33,10 +33,11 @@ append content
                 +blogcard('blog_2.png', 'Cactus gardening', '2 mins read', 'Cactus: Some Common Myths and Misconceptions ', 'Cactus Plants symbolize endurance, persistence, & toughness. Gifting someone a cactus plant means ...', '/')
             .col-12.col-lg-4
                 +blogcard('blog_3.png', 'Fruit plant', '2 mins read', '6 reasons to reconsider where to plant your next fruit tree', 'Growing fruit trees indoors means you get to control everything from the light to humidity, right down to ...', '/')
-
         div.d-flex.justify-content-center 
             a(href="/")
                 button.btn.btn-gradient
-                    p.fs-8.text-white.fs-bold.mb-0 see all posts
-                    span 
-                        img(src=`${CWD}assets/img/icons/arrow_right.svg`, alt="") 
+                    p.fs-8.mb-0 see all posts
+                    span.arrow-right
+                            img(src=`${CWD}assets/img/icons/arrow_right.svg`, alt="")
+                    span.arrow-right-alt 
+                        img(src=`${CWD}assets/img/icons/arrow_right_alt.png`, alt="")

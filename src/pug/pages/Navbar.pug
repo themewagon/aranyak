@@ -7,21 +7,20 @@ append content
                 span(style="margin-left:4px;").fs-10 #{item.label}
     header.sticky-top
         nav.bg-warning.mb-6.navbar.navbar-expand-lg.navbar-light
-            .container.mx-auto 
+            .container.mx-auto.d-flex.justify-content-bewteen.gap-lg-4.gap-xxl-20
                 div 
                     a(href="#").navbar-brand.me-lg-auto
                         img(src=`${CWD}assets/img/logos/logo.png`, alt="")
-                button(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler
+                button(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler
                     span.navbar-toggler-icon.text-white 
-                
-                div#navbarSupportedContent.collapse.navbar-collapse
+                .d-none.d-lg-block 
+                div#navbarSupportedContent.collapse.navbar-collapse.mt-3.mt-lg-0.px-3.px-lg-0.d-lg-flex.justify-content-lg-between
                     
-                    form.form-inline.mx-lg-3.mx-xl-13.position-relative
-                            input(type="search", name="search" placeholder=" search plants...").search.fs-8.bg-transparent
+                    form.form-inline.position-relative.w-lg-50
+                            input(type="search", name="search" placeholder=" search plants...").search.fs-8.bg-transparent.w-100
                             .search-icon 
                                 img(src=`${CWD}assets/img/icons/ei_search.png`, alt="")
-                    ul.navbar-nav.ms-auto.d-lg-flex.justify-content-lg-between.w-100 
-
+                    ul.navbar-nav.ms-auto.d-lg-flex.justify-content-lg-between.mt-2.mt-lg-0 
                         for navMenu in menu 
                             li.nav-item 
                                 a(href=`${navMenu.link}`).nav-link.nav-bar-item #{navMenu.label}

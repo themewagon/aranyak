@@ -22,8 +22,4 @@
             font-weight: 600;
         }
     }
-    @include media-breakpoint-up(md) {
-        min-height: 75vh;
-        padding: 0;
-      }
 }

@@ -1,8 +1,11 @@
 "use strict";
 
+var _excluded = ["endValue"];
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
@@ -377,8 +380,31 @@ var DomNode = /*#__PURE__*/function () {
   return DomNode;
 }();
 /* -------------------------------------------------------------------------- */
+/*                                  Count Up                                  */
+/* -------------------------------------------------------------------------- */
+var countupInit = function countupInit() {
+  if (window.countUp) {
+    var countups = document.querySelectorAll('[data-countup]');
+    countups.forEach(function (node) {
+      var _utils$getData = utils.getData(node, 'countup'),
+        endValue = _utils$getData.endValue,
+        options = _objectWithoutProperties(_utils$getData, _excluded);
+      var countUp = new window.countUp.CountUp(node, endValue, _objectSpread({
+        duration: 5
+      }, options));
+      if (!countUp.error) {
+        countUp.start();
+      } else {
+        console.error(countUp.error);
+      }
+    });
+  }
+};
+
+/* -------------------------------------------------------------------------- */
 /*                               from-validation                              */
 /* -------------------------------------------------------------------------- */
+
 var formValidationInit = function formValidationInit() {
   // Example starter JavaScript for disabling form submissions if there are invalid fields
 
@@ -748,38 +774,21 @@ var scrollbarInit = function scrollbarInit() {
 /*-----------------------------------------------
 |  Swiper
 -----------------------------------------------*/
+
+// const swiperInit = () => {
+
 var swiperInit = function swiperInit() {
-  var swipers = document.querySelectorAll('[data-swiper]');
+  console.log('hello');
+  var themeContainers = document.querySelectorAll('.swiper-theme-container');
   var navbarVerticalToggle = document.querySelector('.navbar-vertical-toggle');
-  swipers.forEach(function (swiper) {
+  themeContainers.forEach(function (themeContainer) {
+    var swiper = themeContainer.querySelector('[data-swiper]');
     var options = utils.getData(swiper, 'swiper');
-    var thumbsOptions = options.thumb;
-    var thumbsInit;
-    if (thumbsOptions) {
-      var thumbImages = swiper.querySelectorAll('img');
-      var slides = '';
-      thumbImages.forEach(function (img) {
-        slides += "\n          <div class='swiper-slide '>\n            <img class='img-fluid rounded mt-1' src=".concat(img.src, " alt=''/>\n          </div>\n        ");
-      });
-      var thumbs = document.createElement('div');
-      thumbs.setAttribute('class', 'swiper-container thumb');
-      thumbs.innerHTML = "<div class='swiper-wrapper'>".concat(slides, "</div>");
-      if (thumbsOptions.parent) {
-        var parent = document.querySelector(thumbsOptions.parent);
-        parent.parentNode.appendChild(thumbs);
-      } else {
-        swiper.parentNode.appendChild(thumbs);
-      }
-      thumbsInit = new window.Swiper(thumbs, thumbsOptions);
-    }
-    var swiperNav = swiper.querySelector('.swiper-nav');
+    var swiperNav = themeContainer.querySelector('.slider-nav');
     var newSwiper = new window.Swiper(swiper, _objectSpread(_objectSpread({}, options), {}, {
       navigation: {
-        nextEl: swiperNav === null || swiperNav === void 0 ? void 0 : swiperNav.querySelector('.swiper-button-next'),
-        prevEl: swiperNav === null || swiperNav === void 0 ? void 0 : swiperNav.querySelector('.swiper-button-prev')
-      },
-      thumbs: {
-        swiper: thumbsInit
+        nextEl: swiperNav === null || swiperNav === void 0 ? void 0 : swiperNav.querySelector('.next-button'),
+        prevEl: swiperNav === null || swiperNav === void 0 ? void 0 : swiperNav.querySelector('.prev-button')
       }
     }));
     if (navbarVerticalToggle) {
@@ -944,4 +953,5 @@ docReady(scrollbarInit);
 docReady(iconCopiedInit);
 docReady(scrollInit);
 docReady(listInit);
+docReady(countupInit);
 //# sourceMappingURL=theme.js.map

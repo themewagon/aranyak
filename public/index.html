@@ -37,6 +37,7 @@
     <link href="assets/css/theme.css" rel="stylesheet" id="style-default">
     <link href="assets/css/user-rtl.css" rel="stylesheet" id="user-style-rtl">
     <link href="assets/css/user.css" rel="stylesheet" id="user-style-default">
+    <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
   </head>
 
 
@@ -49,24 +50,25 @@
       <div class="container-fluid bg-white" data-layout="container-fluid">
         <div class="content">
           <Navbar></Navbar>
-          <div class="sub-navbar container d-flex w-100 justify-content-center justify-content-lg-end align-items-center"><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/ps_sale-tag.png" alt="" /><span class="fs-10" style="margin-left:4px;">sale</span></a><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/Vector.png" alt="" /><span class="fs-10" style="margin-left:4px;">Wishlist</span></a><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/cil_cart.png" alt="" /><span class="fs-10" style="margin-left:4px;">cart</span></a><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/codicon_account.png" alt="" /><span class="fs-10" style="margin-left:4px;">log in/sign up</span></a>
+          <div class="sub-navbar container d-flex w-100 justify-content-center justify-content-lg-end align-items-center"><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/ps_sale-tag.png" alt="" /><span class="fs-10" style="margin-left:4px;">sale</span></a><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/Vector.png" alt="" /><span class="fs-10" style="margin-left:4px;">wishlist</span></a><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/cil_cart.png" alt="" /><span class="fs-10" style="margin-left:4px;">cart</span></a><a class="d-flex justify-content-center align-items-center" href="#"><img src="assets/img/icons/codicon_account.png" alt="" /><span class="fs-10" style="margin-left:4px;">log in/sign up</span></a>
           </div>
           <header class="sticky-top">
             <nav class="bg-warning mb-6 navbar navbar-expand-lg navbar-light">
-              <div class="container mx-auto">
+              <div class="container mx-auto d-flex justify-content-bewteen gap-lg-4 gap-xxl-20">
                 <div> <a class="navbar-brand me-lg-auto" href="#"><img src="assets/img/logos/logo.png" alt="" /></a></div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon text-white"> </span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <form class="form-inline mx-lg-3 mx-xl-13 position-relative">
-                    <input class="search fs-8 bg-transparent" type="search" name="search" placeholder=" search plants..." />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon text-white"> </span></button>
+                <div class="d-none d-lg-block"> </div>
+                <div class="collapse navbar-collapse mt-3 mt-lg-0 px-3 px-lg-0 d-lg-flex justify-content-lg-between" id="navbarSupportedContent">
+                  <form class="form-inline position-relative w-lg-50">
+                    <input class="search fs-8 bg-transparent w-100" type="search" name="search" placeholder=" search plants..." />
                     <div class="search-icon"> <img src="assets/img/icons/ei_search.png" alt="" /></div>
                   </form>
-                  <ul class="navbar-nav ms-auto d-lg-flex justify-content-lg-between w-100">
+                  <ul class="navbar-nav ms-auto d-lg-flex justify-content-lg-between mt-2 mt-lg-0">
                     <li class="nav-item"> <a class="nav-link nav-bar-item" href="#">home</a></li>
                     <li class="nav-item"> <a class="nav-link nav-bar-item" href="#about">about</a></li>
                     <li class="nav-item"> <a class="nav-link nav-bar-item" href="#products">catalog</a></li>
                     <li class="nav-item"> <a class="nav-link nav-bar-item" href="#review">reviews</a></li>
-                    <li class="nav-item"> <a class="nav-link nav-bar-item" href="#">support</a></li>
+                    <li class="nav-item"> <a class="nav-link nav-bar-item" href="#support">support</a></li>
                   </ul>
                 </div>
               </div>
@@ -86,7 +88,7 @@
                     yard.
                   </p>
                   <button class="btn btn-gradient">
-                    <p class="fs-8 text-white fs-bold mb-0">explore catalog</p><span> <img src="assets/img/icons/arrow_right.svg" alt=""/></span>
+                    <p class="fs-8 mb-0">explore catalog</p><span class="arrow-right"><img src="assets/img/icons/arrow_right.svg" alt=""/></span><span class="arrow-right-alt"> <img src="assets/img/icons/arrow_right_alt.png" alt=""/></span>
                   </button>
                 </div>
               </div>
@@ -98,12 +100,43 @@
                   <p class="fs-5 fs-lg-3 fs-xl-2 text-secondary text-capitalize lh-normal fw-light mb-13">However Popular or <span class="fw-bold">rare plant </span>it is</p>
                   <p class="fs-8 fs-xl-7 text-primary mb-13 mb-lg-5 mb-xl-15 fw-light lh-normal">Our catalog of plants of fruits and flowers; <br />for indoors and outdoors; is expanding everyday. </p>
                   <button class="btn btn-gradient">
-                    <p class="fs-8 text-white fs-bold mb-0">explore catalog</p><span> <img src="assets/img/icons/arrow_right.svg" alt=""/></span>
+                    <p class="fs-8 mb-0">explore catalog</p><span class="arrow-right"><img src="assets/img/icons/arrow_right.svg" alt=""/></span><span class="arrow-right-alt"> <img src="assets/img/icons/arrow_right_alt.png" alt=""/></span>
                   </button>
                 </div>
               </div>
               <div class="col-12 col-lg-5 pr-0 order-0 order-lg-1">
                 <div> <img class="w-100" src="assets/img/Hero/planting.png" alt="" /></div>
+              </div>
+            </div>
+          </div>
+          <div class="container mx-auto mb-7 mb-lg-16 mb-xl-11">
+            <div class="row">
+              <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                <div class="d-flex flex-column itmes-center text-center w-100">
+                  <div class="mb-3"><img src="assets/img/icons/Counter_1.png" alt="" /></div>
+                  <div class="text-warning fs-13 fs-lg-15 fs-xl-2 lh-normal counter-delivared" data-countup='{"endValue":9124201}' style="font-variant-numeric: lining-nums proportional-nums;">0</div>
+                  <div>
+                    <p class="text-success fs-7 fs-md-5 fs-lg-6 fs-xl-12 fw-bold mb-0">Plants Delivered</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                <div class="d-flex flex-column itmes-center text-center">
+                  <div class="mb-3"><img src="assets/img/icons/Counter_2.png" alt="" /></div>
+                  <div class="text-warning fs-13 fs-lg-15 fs-xl-2 lh-normal counter-delivared" data-countup='{"endValue":36487}' style="font-variant-numeric: lining-nums proportional-nums;"> 0</div>
+                  <div>
+                    <p class="text-success fs-7 fs-md-8 fs-lg-6 fs-xl-12 fw-bold mb-0">Happy customers</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                <div class="d-flex flex-column itmes-center text-center">
+                  <div class="mb-3"><img src="assets/img/icons/Counter_3.png" alt="" /></div>
+                  <div class="text-warning fs-13 fs-lg-15 fs-xl-2 lh-normal counter-delivared" data-countup='{"endValue":400,"suffix":"+"}' style="font-variant-numeric: lining-nums proportional-nums;"> 0</div>
+                  <div>
+                    <p class="text-success fs-7 fs-md-5 fs-lg-6 fs-xl-12 fw-bold mb-0">Growing Catalog</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -223,49 +256,80 @@
           <div class="container mx-auto px-3 px-lg-0 mb-7 mb-lg-16 mb-xl-11" id="products">
             <p class="mb-3 mb-lg-14 fs-7 fs-lg-5 fs-xl-12 text-success fw-bold lh-normal">Our Products </p>
             <p class="fs-5 fs-lg-3 fs-xl-2 text-secondary text-capitalize fw-light mb-13 mb-lg-5 lh-normal"> <span class="fw-bold">New </span>Arrivals</p>
-            <div class="row g-lg-4 mb-6 mb-lg-7 mb-xl-16">
-              <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                <div class="product-card">
-                  <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/1.png" alt="" />
-                    <div class="add-section"><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                      </a><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
-                      </a></div>
+            <div class="row g-lg-4 mb-6 mb-lg-7 mb-xl-16 position-relative" id="slider-1">
+              <div class="col-12 mb-4 mb-lg-0">
+                <div class="swiper-theme-container position-relative">
+                  <div class="swiper-container theme-slider" data-swiper='{"spaceBetween":12,"loop":true,"loopedSlides":5,"slideToClickedSlide":true,"slidesPerView":3,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}}'>
+                    <div class="swiper-wrapper">
+                      <div class="product-card swiper-slide h-auto">
+                        <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/1.png" alt="" />
+                          <div class="add-section"><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
+                            </a><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
+                            </a></div>
+                        </div>
+                        <div class="product-card-body">
+                          <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Philodendron</h2>
+                          <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">The Philodendron White Princess has been around for some time in private collections. But they have hit the market now in full big potted plants.</p>
+                        </div>
+                      </div>
+                      <div class="product-card swiper-slide h-auto">
+                        <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/2.png" alt="" />
+                          <div class="add-section"><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
+                            </a><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
+                            </a></div>
+                        </div>
+                        <div class="product-card-body">
+                          <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Monstera Obliqua Peruvian</h2>
+                          <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons</p>
+                        </div>
+                      </div>
+                      <div class="product-card swiper-slide h-auto">
+                        <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/3.png" alt="" />
+                          <div class="add-section"><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
+                            </a><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
+                            </a></div>
+                        </div>
+                        <div class="product-card-body">
+                          <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Norfolk Island Pine</h2>
+                          <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">Although a lively addition to your home all year round—the Norfolk Island Pine shines as a live holiday tree during the winter season</p>
+                        </div>
+                      </div>
+                      <div class="product-card swiper-slide h-auto">
+                        <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/3.png" alt="" />
+                          <div class="add-section"><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
+                            </a><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
+                            </a></div>
+                        </div>
+                        <div class="product-card-body">
+                          <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Norfolk Island Pine</h2>
+                          <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">Although a lively addition to your home all year round—the Norfolk Island Pine shines as a live holiday tree during the winter season</p>
+                        </div>
+                      </div>
+                      <div class="product-card swiper-slide h-auto">
+                        <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/2.png" alt="" />
+                          <div class="add-section"><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
+                            </a><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
+                            </a></div>
+                        </div>
+                        <div class="product-card-body">
+                          <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Monstera Obliqua Peruvian</h2>
+                          <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="product-card-body">
-                    <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Philodendron</h2>
-                    <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">The Philodendron White Princess has been around for some time in private collections. But they have hit the market now in full big potted plants.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                <div class="product-card">
-                  <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/2.png" alt="" />
-                    <div class="add-section"><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                      </a><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
-                      </a></div>
-                  </div>
-                  <div class="product-card-body">
-                    <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Monstera Obliqua Peruvian</h2>
-                    <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="product-card">
-                  <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/3.png" alt="" />
-                    <div class="add-section"><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                      </a><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
-                      </a></div>
-                  </div>
-                  <div class="product-card-body">
-                    <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Norfolk Island Pine</h2>
-                    <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">Although a lively addition to your home all year round—the Norfolk Island Pine shines as a live holiday tree during the winter season</p>
+                  <div class="slider-nav">
+                    <button class="btn next-button" data-slider="slider-1"> <i class="fas fa-solid fa-chevron-right"></i></button>
                   </div>
                 </div>
               </div>
@@ -273,49 +337,67 @@
             <div>
               <p class="fs-5 fs-lg-3 fs-xl-2 text-secondary text-capitalize text-md-end fw-light mb-13 mb-lg-5 lh-normal"> <span class="fw-bold">Popular </span>little plants</p>
             </div>
-            <div class="row g-lg-4 mb-6 mb-lg-7 mb-xl-16">
-              <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                <div class="product-card">
-                  <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/4.png" alt="" />
-                    <div class="add-section"><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                      </a><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
-                      </a></div>
+            <div class="row g-lg-4 mb-6 mb-lg-7 mb-xl-16" id="slider-2">
+              <div class="col-12 mb-4 mb-lg-0">
+                <div class="swiper-theme-container position-relative">
+                  <div class="swiper-container theme-sliderdiv" data-swiper='{"spaceBetween":12,"loop":true,"loopedSlides":5,"slideToClickedSlide":true,"slidesPerView":3,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}}'>
+                    <div class="swiper-wrapper">
+                      <div class="product-card swiper-slide h-auto">
+                        <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/4.png" alt="" />
+                          <div class="add-section"><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
+                            </a><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
+                            </a></div>
+                        </div>
+                        <div class="product-card-body">
+                          <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Snake/Sansevieria</h2>
+                          <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">Sansevierias are succulent plants. they have strong, stiff, succulent leaves that store water. these plants release oxygen in the night</p>
+                        </div>
+                      </div>
+                      <div class="product-card swiper-slide h-auto">
+                        <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/5.png" alt="" />
+                          <div class="add-section"><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
+                            </a><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
+                            </a></div>
+                        </div>
+                        <div class="product-card-body">
+                          <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Bromeliad Aechmea Pink</h2>
+                          <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">Featuring colorful, long-lasting blooms, the Bromeliad Aechmea Pink is a unique flowering plant to add a touch of tropics With lasting blooms </p>
+                        </div>
+                      </div>
+                      <div class="product-card swiper-slide h-auto">
+                        <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/6.png" alt="" />
+                          <div class="add-section"><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
+                            </a><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
+                            </a></div>
+                        </div>
+                        <div class="product-card-body">
+                          <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Parlor Palm</h2>
+                          <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl"> The parlor palm (Chamaedorea elegans) has long been used as an indoor plant. NASA gave this plant a high purifying score.</p>
+                        </div>
+                      </div>
+                      <div class="product-card swiper-slide h-auto">
+                        <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/6.png" alt="" />
+                          <div class="add-section"><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
+                            </a><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
+                            </a></div>
+                        </div>
+                        <div class="product-card-body">
+                          <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Parlor Palm</h2>
+                          <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl"> The parlor palm (Chamaedorea elegans) has long been used as an indoor plant. NASA gave this plant a high purifying score.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="product-card-body">
-                    <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Snake/Sansevieria</h2>
-                    <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">Sansevierias are succulent plants. they have strong, stiff, succulent leaves that store water. these plants release oxygen in the night</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                <div class="product-card">
-                  <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/5.png" alt="" />
-                    <div class="add-section"><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                      </a><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
-                      </a></div>
-                  </div>
-                  <div class="product-card-body">
-                    <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Bromeliad Aechmea Pink</h2>
-                    <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">Featuring colorful, long-lasting blooms, the Bromeliad Aechmea Pink is a unique flowering plant to add a touch of tropics With lasting blooms </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="product-card">
-                  <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/6.png" alt="" />
-                    <div class="add-section"><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                      </a><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
-                      </a></div>
-                  </div>
-                  <div class="product-card-body">
-                    <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Parlor Palm</h2>
-                    <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl"> The parlor palm (Chamaedorea elegans) has long been used as an indoor plant. NASA gave this plant a high purifying score.</p>
+                  <div class="slider-nav">
+                    <button class="btn next-button" data-slider="slider-2"> <i class="fas fa-solid fa-chevron-right"></i></button>
                   </div>
                 </div>
               </div>
@@ -323,56 +405,74 @@
             <div>
               <p class="fs-5 fs-lg-3 fs-xl-2 text-secondary text-capitalize fw-light mb-13 mb-lg-5 lh-normal"> <span class="fw-bold">Easy </span>to care plants</p>
             </div>
-            <div class="row g-lg-4 mb-6 mb-lg-7 mb-xl-16">
-              <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                <div class="product-card">
-                  <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/7.png" alt="" />
-                    <div class="add-section"><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                      </a><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
-                      </a></div>
+            <div class="row g-lg-4 mb-6 mb-lg-7 mb-xl-16 position-relative" id="slider-3">
+              <div class="col-12 mb-4 mb-lg-0">
+                <div class="swiper-theme-container position-relative">
+                  <div class="swiper-container theme-slider" data-swiper='{"spaceBetween":12,"loop":true,"loopedSlides":5,"slideToClickedSlide":true,"slidesPerView":3,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}}'>
+                    <div class="swiper-wrapper">
+                      <div class="product-card swiper-slide h-auto">
+                        <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/7.png" alt="" />
+                          <div class="add-section"><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
+                            </a><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
+                            </a></div>
+                        </div>
+                        <div class="product-card-body">
+                          <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Peace Lily</h2>
+                          <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">If you're prone to overwatering, try Spathiphyllum. With enough light, they'll also produce their spade-shaped flowers throughout the year. </p>
+                        </div>
+                      </div>
+                      <div class="product-card swiper-slide h-auto">
+                        <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/8.png" alt="" />
+                          <div class="add-section"><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
+                            </a><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
+                            </a></div>
+                        </div>
+                        <div class="product-card-body">
+                          <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Spider Plant</h2>
+                          <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">The fast-growing shoots produce little &quot;babies&quot; that you can re-pot for added greenery elsewhere. Just stick to well-lit spots, water weekly. </p>
+                        </div>
+                      </div>
+                      <div class="product-card swiper-slide h-auto">
+                        <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/9.png" alt="" />
+                          <div class="add-section"><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
+                            </a><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
+                            </a></div>
+                        </div>
+                        <div class="product-card-body">
+                          <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Kalanchoe</h2>
+                          <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">This water-retaining succulent grows colorful, bell-shaped flowers and withstands dry climates and terrible temperature swings.</p>
+                        </div>
+                      </div>
+                      <div class="product-card swiper-slide h-auto">
+                        <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/9.png" alt="" />
+                          <div class="add-section"><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
+                            </a><a class="d-flex align-items-center" href="/">
+                              <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
+                            </a></div>
+                        </div>
+                        <div class="product-card-body">
+                          <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Kalanchoe</h2>
+                          <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">This water-retaining succulent grows colorful, bell-shaped flowers and withstands dry climates and terrible temperature swings.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="product-card-body">
-                    <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Peace Lily</h2>
-                    <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">If you're prone to overwatering, try Spathiphyllum. With enough light, they'll also produce their spade-shaped flowers throughout the year. </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                <div class="product-card">
-                  <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/8.png" alt="" />
-                    <div class="add-section"><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                      </a><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
-                      </a></div>
-                  </div>
-                  <div class="product-card-body">
-                    <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Spider Plant</h2>
-                    <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">The fast-growing shoots produce little &quot;babies&quot; that you can re-pot for added greenery elsewhere. Just stick to well-lit spots, water weekly. </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="product-card">
-                  <div class="position-relative w-100"> <img class="w-100" src="assets/img/products/products/9.png" alt="" />
-                    <div class="add-section"><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/wishlist.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                      </a><a class="d-flex align-items-center" href="/">
-                        <div style="margin-right: 5px;"><img src="assets/img/icons/bi_cart-plus.png" alt="" /></div><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span>
-                      </a></div>
-                  </div>
-                  <div class="product-card-body">
-                    <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal">Kalanchoe</h2>
-                    <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl">This water-retaining succulent grows colorful, bell-shaped flowers and withstands dry climates and terrible temperature swings.</p>
+                  <div class="slider-nav">
+                    <button class="btn next-button" data-slider="slider-3"> <i class="fas fa-solid fa-chevron-right"></i></button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="d-flex justify-content-center">
               <button class="btn btn-gradient">
-                <p class="fs-8 text-white fs-bold mb-0">see full catalog</p>
+                <p class="fs-8 mb-0">see full catalog</p>
               </button>
             </div>
           </div>
@@ -390,8 +490,8 @@
                     <div style="margin-bottom: 19px">
                       <p class="text-black fs-9 fs-md-8 lh-normal">I’m not really a customer of this site, but their free gardening guide helped me a lot. Thank you ...</p>
                     </div>
-                    <div class="mb-1">
-                      <p class="text-success fs-9 fs-md-8 lh-normal">Ahsoka Tano</p>
+                    <div>
+                      <p class="text-success fs-9 fs-md-8 fw-bold lh-normal mb-0">Ahsoka Tano</p>
                     </div>
                     <div>
                       <p class="text-black fs-10 fs-md-9 mb-0 lh-normal fw-light">Firefighter</p>
@@ -406,8 +506,8 @@
                     <div style="margin-bottom: 19px">
                       <p class="text-black fs-9 fs-md-8 lh-normal">Aranyak is the perfect place for making yourself surrounded by lots and lots of plant with a guide of extensive details of how to take care of them😘</p>
                     </div>
-                    <div class="mb-1">
-                      <p class="text-success fs-9 fs-md-8 lh-normal">Sabine Wren</p>
+                    <div>
+                      <p class="text-success fs-9 fs-md-8 fw-bold lh-normal mb-0">Sabine Wren</p>
                     </div>
                     <div>
                       <p class="text-black fs-10 fs-md-9 mb-0 lh-normal fw-light">Influencer &amp; Plant lover</p>
@@ -422,8 +522,8 @@
                     <div style="margin-bottom: 19px">
                       <p class="text-black fs-9 fs-md-8 lh-normal">I’ve brought dozens of plants over the year from this site and not a penny wasted. All arround good service and professionalism from Aranyak. keep it up guys. </p>
                     </div>
-                    <div class="mb-1">
-                      <p class="text-success fs-9 fs-md-8 lh-normal">Ezra Bridger</p>
+                    <div>
+                      <p class="text-success fs-9 fs-md-8 fw-bold lh-normal mb-0">Ezra Bridger</p>
                     </div>
                     <div>
                       <p class="text-black fs-10 fs-md-9 mb-0 lh-normal fw-light">Small-time thief</p>
@@ -433,7 +533,7 @@
                 <div class="d-flex justify-content-center"></div>
                 <div class="mt-6 mt-lg-7 mt-xl-16 d-flex justify-content-center">
                   <button class="btn btn-gradient">
-                    <p class="fs-8 text-white fs-bold mb-0">load more</p>
+                    <p class="fs-8 mb-0">load more</p>
                   </button>
                 </div>
               </div>
@@ -490,7 +590,7 @@
             </div>
             <div class="d-flex justify-content-center"> <a href="/">
                 <button class="btn btn-gradient">
-                  <p class="fs-8 text-white fs-bold mb-0">see all posts</p><span> <img src="assets/img/icons/arrow_right.svg" alt=""/></span>
+                  <p class="fs-8 mb-0">see all posts</p><span class="arrow-right"><img src="assets/img/icons/arrow_right.svg" alt=""/></span><span class="arrow-right-alt"> <img src="assets/img/icons/arrow_right_alt.png" alt=""/></span>
                 </button></a></div>
           </div>
           <div class="container mx-auto px-3 px-lg-0 mb-7 mb-lg-16 mb-xl-11" id="support">
@@ -500,7 +600,7 @@
                 <p class="mb-3 fs-7 fs-lg-5 fs-xl-12 text-success fw-bold lh-">join us </p>
                 <p class="fs-5 fs-lg-3 fs-xl-2 text-secondary text-capitalize lh-normal fw-light mb-3">
                   Subscribe to <br />our <span class="fw-bold">Newsletter</span></p>
-                <p class="text-success fs-8 fs-lg-7 text-capitalize lh-xl lh-lg-xxl">Get Our <span class="fw-bold">Beginners Guide To Plant Parenthood </span>for free </p>
+                <p class="text-success fs-8 fs-lg-14 text-capitalize lh-xl lh-lg-2xl">Get Our <span class="fw-bold">Beginners Guide To Plant Parenthood </span>for free </p>
                 <form>
                   <div class="input-group position-relative">
                     <input class="form-control email-input" type="email" name="email" placeholder="your email address" />
@@ -512,12 +612,12 @@
               </div>
             </div>
           </div>
-          <footer class="Footer" style="background-image: url('assets/img/illustrations/Footer_1.svg')">
+          <footer class="Footer" style="background-image: url('assets/img/illustrations/BOTTOM.png')">
             <div class="pb-x1 px-3 px-lg-0">
               <div class="container mx-auto">
-                <div class="row d-lg-flex align-items-end">
-                  <div class="col-12 col-md-4 d-flex flex-column align-items-md-center justify-content-end h-100 mb-3 mb-md-0">
-                    <div class="mb-17 mb-md-18 mb-md-19"> <img src="assets/img/logos/logo.svg" alt="" /></div>
+                <div class="row d-lg-flex align-items-end justify-content-center">
+                  <div class="col-12 col-md-4 d-flex flex-column justify-content-center h-100 mb-3 mb-md-0">
+                    <div class="mb-17 mb-md-18 mb-md-19"> <img src="assets/img/logos/Footer_logo.png" alt="" /></div>
                     <div class="d-flex flex-column" style="gap:12px;">
                       <div> <a class="links" href="#">home</a></div>
                       <div> <a class="links" href="about">about</a></div>
@@ -528,7 +628,7 @@
                         </a></div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-4 d-flex flex-column align-items-md-center justify-content-end h-100">
+                  <div class="col-6 col-md-4 d-flex flex-column justify-content-end h-100">
                     <div class="mb-13 mb-md-18 mb-md-19">
                       <p class="fs-9 fs-md-8 fw-bold lh-normal mb-0" style="color: #FFF0D3;">User Account</p>
                     </div>
@@ -542,7 +642,7 @@
                         </a></div>
                     </div>
                   </div>
-                  <div class="col-6 col-md-4 d-flex flex-column align-items-md-center justify-content-end h-100">
+                  <div class="col-6 col-md-4 d-flex flex-column justify-content-end h-100">
                     <div class="mb-13 mb-md-18 mb-md-19">
                       <p class="fs-9 fs-md-8 fw-bold lh-normal mb-0" style="color: #FFF0D3;">Follow Us At </p>
                     </div>
@@ -566,16 +666,17 @@
                 </div>
               </div>
             </div>
-            <div class="py-2 py-md-3" style="background-color: rgba(0,0,0,0.33)">
-              <div class="container mx-auto d-flex justify-content-center justify-content-md-end py-12 gap-3 gap-md-4">
-                <div> <a class="links" href="/"> F.A.Q </a></div>
-                <div><a class="links" href="/"> Cookies Policy</a></div>
-                <div> <a class="links" href="/"> Legal Terms </a></div>
-                <div><a class="links" href="/"> Privacy Policy </a></div>
-              </div>
-            </div>
           </footer>
-          <Home></Home>
+          <div class="bg-success py-2 py-md-3 position-relative terms-condition">
+            <div class="overley-background"></div>
+            <div class="container mx-auto d-flex justify-content-center justify-content-md-end py-12 gap-3 gap-md-4 text-div">
+              <div> <a class="links" href="/"> F.A.Q </a></div>
+              <div><a class="links" href="/"> Cookies Policy</a></div>
+              <div> <a class="links" href="/"> Legal Terms </a></div>
+              <div><a class="links" href="/"> Privacy Policy</a></div>
+            </div>
+            <div class="cloud"> <img src="assets/img/illustrations/Cloud.svg" alt="" /></div>
+          </div>
         </div>
       </div>
     </main>
@@ -596,6 +697,8 @@
     <script src="vendors/lodash/lodash.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="vendors/list.js/list.min.js"></script>
+    <script src="vendors/countup/countUp.umd.js"></script>
+    <script src="vendors/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/theme.js"></script>
 
   </body>

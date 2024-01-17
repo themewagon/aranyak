@@ -1,23 +1,4 @@
-mixin team(imgSrc, name, designation, text)
-    .text-center.mb-5.mb-lg-0
-        .d-flex.justify-content-center
-            div.position-relative 
-                img(src=`${CWD}${imgSrc}`, alt="").w-100
-                div.social-icons
-                    a(href="/") 
-                        img(src=`${CWD}assets/img/icons/facebook-rect.png`, alt="")
-                    a(href="/") 
-                        img(src=`${CWD}assets/img/icons/instagram-solid.png`, alt="")
-                    a(href="/") 
-                        img(src=`${CWD}assets/img/icons/twitter-square.png`, alt="")
-
-        p.fs-9.fs-md-8.text-success.fw-bold.lh-normal.mb-1= name
-        p.text-black.fs-10.fs-md-9.fw-medium.text-capitalize.mb-3.lh-normal= designation
-        p.fs-9.fs-md-8.text-success.lh-xl= text 
-        
-
-
-
+include ../../mixins/common/Team
 append content 
     #about.container.mx-auto.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11
         p.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal About us 
@@ -64,13 +45,13 @@ append content
         div.d-flex.justify-content-center
             div.w-lg-75
                 .d-md-flex.justify-content-center.gap-17.mb-13.mb-lg-5.w-100
-                    +team('assets/img/team/team/6.png', "James T. Kirk", 'CFO', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper')
-                    +team('assets/img/team/team/5.png', "Montgomery Scott", 'Accounts', 'Semper sed eget. Sed consectetur tellus tortor porta enim, cursus ')
-                    +team('assets/img/team/team/4.png', "Nyota Uhura", 'Marketing', 'Cursus  turpis. Tristique neque aliquam nunc elementum imperdiet')
+                    +Team('assets/img/team/team/6.png', "James T. Kirk", 'CFO', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper')
+                    +Team('assets/img/team/team/5.png', "Montgomery Scott", 'Accounts', 'Semper sed eget. Sed consectetur tellus tortor porta enim, cursus ')
+                    +Team('assets/img/team/team/4.png', "Nyota Uhura", 'Marketing', 'Cursus  turpis. Tristique neque aliquam nunc elementum imperdiet')
                 .d-md-flex.justify-content-center.gap-17.w-100
-                    +team('assets/img/team/team/3.png', "Hikaru Sulu", 'CFO', 'Imperdiet sed amet, fusce consequat magna non euismod sed. ')
-                    +team('assets/img/team/team/2.png', "Pavel Chekov", 'cTO', 'Turpis nec lorem nunc sagittis, aliquam adipiscing. Dolor aliquet')
-                    +team('assets/img/team/team/1.png', "Nyota Uhura", 'Human resource', ' condiment consequat, dolor id leo volutpat et. Viverra sem vitae ac.')
+                    +Team('assets/img/team/team/3.png', "Hikaru Sulu", 'CFO', 'Imperdiet sed amet, fusce consequat magna non euismod sed. ')
+                    +Team('assets/img/team/team/2.png', "Pavel Chekov", 'cTO', 'Turpis nec lorem nunc sagittis, aliquam adipiscing. Dolor aliquet')
+                    +Team('assets/img/team/team/1.png', "Nyota Uhura", 'Human resource', ' condiment consequat, dolor id leo volutpat et. Viverra sem vitae ac.')
 
 
 

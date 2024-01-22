@@ -7,8 +7,8 @@ mixin Review(star ,text, name, designation, imageSrc)
                 - for(var i = 0; i < star; i ++)
                         img(src=`${CWD}assets/img/icons/Group.png`, alt="")
             div(style="margin-bottom: 19px")
-                p.text-black.fs-9.fs-md-8.lh-normal= text
+                p.text-black.fs-9.fs-md-8.lh-normal.mb-0= text
             div 
                 p.text-success.fs-9.fs-md-8.fw-bold.lh-normal.mb-0= name 
             div 
-                p.text-black.fs-10.fs-md-9.mb-0.lh-normal.fw-light= designation
+                p.text-black.fs-10.fs-md-9.mb-0.lh-normal.fw-light.mb-0= designation

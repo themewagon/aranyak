@@ -9665,6 +9665,10 @@ textarea.form-control-lg {
   opacity: 0.5 !important;
 }
 
+.opacity-70 {
+  opacity: 0.7 !important;
+}
+
 .opacity-75 {
   opacity: 0.75 !important;
 }
@@ -13914,6 +13918,9 @@ textarea.form-control-lg {
   .opacity-sm-50 {
     opacity: 0.5 !important;
   }
+  .opacity-sm-70 {
+    opacity: 0.7 !important;
+  }
   .opacity-sm-75 {
     opacity: 0.75 !important;
   }
@@ -16482,6 +16489,9 @@ textarea.form-control-lg {
   }
   .opacity-md-50 {
     opacity: 0.5 !important;
+  }
+  .opacity-md-70 {
+    opacity: 0.7 !important;
   }
   .opacity-md-75 {
     opacity: 0.75 !important;
@@ -19052,6 +19062,9 @@ textarea.form-control-lg {
   .opacity-lg-50 {
     opacity: 0.5 !important;
   }
+  .opacity-lg-70 {
+    opacity: 0.7 !important;
+  }
   .opacity-lg-75 {
     opacity: 0.75 !important;
   }
@@ -21621,6 +21634,9 @@ textarea.form-control-lg {
   .opacity-xl-50 {
     opacity: 0.5 !important;
   }
+  .opacity-xl-70 {
+    opacity: 0.7 !important;
+  }
   .opacity-xl-75 {
     opacity: 0.75 !important;
   }
@@ -24189,6 +24205,9 @@ textarea.form-control-lg {
   }
   .opacity-xxl-50 {
     opacity: 0.5 !important;
+  }
+  .opacity-xxl-70 {
+    opacity: 0.7 !important;
   }
   .opacity-xxl-75 {
     opacity: 0.75 !important;
@@ -30180,6 +30199,12 @@ html[dir=ltr] .img-dropdown {
   width: -moz-fit-content;
   width: fit-content;
 }
+.search-icon i {
+  font-size: 36px;
+  line-height: 0%;
+  color: #124838;
+  opacity: 60%;
+}
 
 /*-----------------------------------------------
 |   Search box
@@ -32247,6 +32272,9 @@ div[data-collapse] + .kanban-item,
 [data-bs-theme=dark] .dark__bg-opacity-50 {
   --falcon-bg-opacity: 0.5 !important;
 }
+[data-bs-theme=dark] .dark__bg-opacity-70 {
+  --falcon-bg-opacity: 0.7 !important;
+}
 [data-bs-theme=dark] .dark__bg-opacity-75 {
   --falcon-bg-opacity: 0.75 !important;
 }
@@ -33253,7 +33281,7 @@ html[data-bs-theme=dark] .bg-priority-low:checked {
 }
 @media (min-width: 1200px) {
   .slider-nav .prev-button {
-    left: 97%;
+    left: 98%;
   }
 }
 .slider-nav .next-button {
@@ -33266,7 +33294,7 @@ html[data-bs-theme=dark] .bg-priority-low:checked {
 }
 @media (min-width: 1200px) {
   .slider-nav .next-button {
-    right: 97%;
+    right: 98%;
   }
 }
 
@@ -33376,7 +33404,7 @@ a:hover, a:focus {
   background: rgba(0, 0, 0, 0.33);
   right: 0%;
   top: 0%;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
   height: 100%;
 }

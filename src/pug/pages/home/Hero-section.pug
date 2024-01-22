@@ -2,8 +2,8 @@ append content
     .container.mx-auto.mb-7.mb-lg-16.mb-xl-11
         div.row.px-3.gap-4.gap-lg-15.gap-xl-20.px-lg-0.mb-6.mb-lg-7.mb-xl-16
             .col-12.col-lg-5
-                div.h-75.h-lg-100 
-                    img(src=`${CWD}assets/img/Hero/man_watering.png`, alt="").w-100
+                div 
+                    img(src=`${CWD}assets/img/Hero/man_watering.png`, alt="").h-75.w-75.h-lg-100.w-lg-100
             div.col-12.col-lg-6
                 .d-flex.flex-column.justify-content-center.h-100 
                     p.fs-5.fs-lg-3.fs-xl-2.text-black.lh-normal.fw-light.mb-13
@@ -17,11 +17,8 @@ append content
                         | yard.
                     
                     button.btn.btn-gradient
-                        p.fs-8.mb-0 explore catalog
-                        span.arrow-right
-                            img(src=`${CWD}assets/img/icons/arrow_right.svg`, alt="")
-                        span.arrow-right-alt 
-                            img(src=`${CWD}assets/img/icons/arrow_right_alt.png`, alt="")
+                        span.fs-8.lh-button explore catalog
+                        i.uil.uil-arrow-right.fs-8.lh-button
         
         div.row.gap-4.gap-lg-15.gap-xl-20.px-3.px-lg-0
             div.col-12.col-lg-6.pr-0.order-1.order-lg-0
@@ -37,11 +34,9 @@ append content
                         | for indoors and outdoors; is expanding everyday.    
                     
                     button.btn.btn-gradient
-                        p.fs-8.mb-0 explore catalog
-                        span.arrow-right
-                            img(src=`${CWD}assets/img/icons/arrow_right.svg`, alt="")
-                        span.arrow-right-alt 
-                            img(src=`${CWD}assets/img/icons/arrow_right_alt.png`, alt="")
+                        span.fs-8.lh-button explore catalog
+                        i.uil.uil-arrow-right.fs-8.lh-button
+
             .col-12.col-lg-5.pr-0.order-0.order-lg-1
-                div 
-                    img(src=`${CWD}assets/img/Hero/planting.png`, alt="").w-100
+                div.d-flex.justify-content-end.d-lg-block
+                    img(src=`${CWD}assets/img/Hero/planting.png`, alt="").h-75.w-75.h-lg-100.w-lg-100

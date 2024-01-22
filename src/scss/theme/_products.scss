@@ -8,17 +8,19 @@
     gap: 20px;
     align-items: center;
     padding-bottom: 30px;
+    margin: 10px 0;
 
 
     .add-section {
         position: absolute;
         bottom: 0px;
         left: 0;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 10px;
-        background: rgba(255, 217, 145, 0.60);
+        background: rgba(255, 217, 145, 0.80);
         gap: 30px;
 
         @include media-breakpoint-up(xl) {
@@ -28,6 +30,10 @@
         a {
             text-decoration: none;
         }
+        i {
+            font-size: 25px;
+            line-height: 0%;
+        }
     }
 
     .product-card-body {
@@ -35,7 +41,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 32px;
+        padding: 0 32px 30px;
         gap: 20px;
 
         @include media-breakpoint-up(lg) {
@@ -46,7 +52,9 @@
     &:hover,
     &:focus,
     &:active {
-        border: 2px solid #FFD991;
+        border-radius: 18px;
+        outline: 2px solid #FFD991;
+        outline-offset: 1px;
         box-shadow: none;
         .add-section {
             background: rgba(255, 255, 255, 0.90);
@@ -56,23 +64,46 @@
 
 .slider-nav {
     display: block;
-    .next-button {
+    .next-button, .prev-button {
         position: absolute;
-        left: 93%;
         top: 50%;
         transform: translateY(-50%);
         z-index: 999 ;
-        width: fit-content;
+        padding: 0;
+        opacity: 80%;
         background-color: #E2FFF6;
-        border: 3px solid #124838;
-        padding: 3px 12px;
+        border: 5px solid #124838;
         border-radius: 50%;
-        font-size: 20px !important;
         font-weight: bold;
         color: #124838;
-        @include media-breakpoint-up(sm){
-            left: 98%;
+
+        i {
+            font-size: 40px;
+            line-height: 0%;
         }
     }
+    .prev-button {
+        right: 93%;
+
+        @include media-breakpoint-up(sm){
+            right: 96%;
+        }
+
+        @include media-breakpoint-up(xl){
+            right: 97%;
+        }
+    }
+    .next-button {
+        left: 93%;
+
+        @include media-breakpoint-up(sm){
+            left: 96%;
+        }
+
+        @include media-breakpoint-up(xl){
+            left: 97%;
+        }
+    }
+
 }
 

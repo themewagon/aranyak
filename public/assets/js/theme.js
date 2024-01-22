@@ -1,6 +1,6 @@
 "use strict";
 
-var _excluded = ["endValue"];
+var _excluded = ["autoIncreasing"];
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -387,12 +387,23 @@ var countupInit = function countupInit() {
     var countups = document.querySelectorAll('[data-countup]');
     countups.forEach(function (node) {
       var _utils$getData = utils.getData(node, 'countup'),
-        endValue = _utils$getData.endValue,
+        autoIncreasing = _utils$getData.autoIncreasing,
         options = _objectWithoutProperties(_utils$getData, _excluded);
+      var endValue = options.endValue;
       var countUp = new window.countUp.CountUp(node, endValue, _objectSpread({
-        duration: 5
+        duration: 5,
+        scrollSpyOnce: true
       }, options));
-      if (!countUp.error) {
+      if (!countUp.error && autoIncreasing) {
+        countUp.update(endValue);
+        var interval = setInterval(function () {
+          endValue += 1;
+          countUp.update(endValue);
+        }, 1500);
+        window.addEventListener('close', function () {
+          clearInterval(interval);
+        });
+      } else if (!countUp.error) {
         countUp.start();
       } else {
         console.error(countUp.error);
@@ -778,7 +789,6 @@ var scrollbarInit = function scrollbarInit() {
 // const swiperInit = () => {
 
 var swiperInit = function swiperInit() {
-  console.log('hello');
   var themeContainers = document.querySelectorAll('.swiper-theme-container');
   var navbarVerticalToggle = document.querySelector('.navbar-vertical-toggle');
   themeContainers.forEach(function (themeContainer) {

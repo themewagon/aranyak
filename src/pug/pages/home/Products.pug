@@ -1,5 +1,6 @@
 include ../../mixins/common/Product
 
+
 append content 
 	#products.container.mx-auto.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11
 		p.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal Our Products 
@@ -48,8 +49,10 @@ append content
 								'aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons'
 							)
 					div.slider-nav
+						button(data-slider="slider-1").btn.prev-button 
+							i.uil.uil-angle-left-b
 						button(data-slider="slider-1").btn.next-button 
-							i.fas.fa-solid.fa-chevron-right
+							i.uil.uil-angle-right-b
 		div
 			p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.text-md-end.fw-light.mb-13.mb-lg-5.lh-normal    
 				span.fw-bold Popular 
@@ -91,8 +94,10 @@ append content
 								' The parlor palm (Chamaedorea elegans) has long been used as an indoor plant. NASA gave this plant a high purifying score.'
 							)
 					.slider-nav
+						button(data-slider="slider-2").btn.prev-button 
+							i.uil.uil-angle-left-b
 						button(data-slider="slider-2").btn.next-button 
-							i.fas.fa-solid.fa-chevron-right
+							i.uil.uil-angle-right-b
 
 		div
 			p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-5.lh-normal    
@@ -134,8 +139,10 @@ append content
 								'This water-retaining succulent grows colorful, bell-shaped flowers and withstands dry climates and terrible temperature swings.'
 								)
 					.slider-nav
+						button(data-slider="slider-3").btn.prev-button 
+							i.uil.uil-angle-left-b
 						button(data-slider="slider-3").btn.next-button 
-							i.fas.fa-solid.fa-chevron-right
+							i.uil.uil-angle-right-b
 		div.d-flex.justify-content-center
 			button.btn.btn-gradient
-				p.fs-8.mb-0 see full catalog
+				span.fs-8.lh-button see full catalog

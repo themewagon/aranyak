@@ -166,5 +166,9 @@
   "nouislider": {
     "src": ["dist/nouislider.min.js", "dist/nouislider.min.css"],
     "dest": "nouislider"
+  },
+  "@iconscout/unicons": {
+    "src": ["script/monochrome/bundle.js", "script/monochrome/bundle.js.map", "css/line.css"],
+    "dest": "unicon"
   }
 }

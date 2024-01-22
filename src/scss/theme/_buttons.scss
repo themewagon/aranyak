@@ -166,27 +166,29 @@ $value in $theme-falcon-btn-colors {
   background: linear-gradient(93deg, #85C7B3 -18.71%, #265C4C 117.68%), #FFF;
   color: white;
   font-weight: 700;
-  padding: 12px 40px;
+  padding: 11px 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 21px;
   width: fit-content;
   box-shadow: none !important;
-  border: none;
-  transition: all 0.2s ease-in-out;
+  // border: 1px solid transparent !important;
+  border: none !important;
+  transition: outline 0.3s ease-in-out, background 1s ease-in-out;
   @include media-breakpoint-up(lg){
-    padding: 12px 80px;
+    padding: 11px 80px;
   }
   .arrow-right-alt{
     display: none;
   }
 
   @include hover-focus{
-    color: map-get($theme-colors, $primary );
-    border-radius: 40px;
-    border: 1px solid #85C7B3;
+    padding: 10px 80px;
+    color: #124838;
     background: linear-gradient(93deg, rgba(113, 179, 159, 0.00) -18.71%, rgba(18, 72, 56, 0.00) 117.68%), #FFF;
+    border-radius: 40px;
+    border: 1px solid #124838 !important;
     outline: 4px solid #85C7B3;
     outline-offset: 5px;
 

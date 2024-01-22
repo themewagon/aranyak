@@ -8,8 +8,10 @@ mixin LayoutContent
       .content()&attributes(attrsContent)
 
         block navbarTop 
-          
+          +Navbar
 
         block content
+        +Footer 
+        +TermsAndConditions
 
       block afterContent

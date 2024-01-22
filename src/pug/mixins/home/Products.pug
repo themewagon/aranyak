@@ -1,7 +1,7 @@
-include ../../mixins/common/Product
+include ./Product
 
+mixin Products 
 
-append content 
 	#products.container.mx-auto.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11
 		p.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal Our Products 
 
@@ -11,7 +11,7 @@ append content
 		#slider-1.row.g-lg-4.mb-6.mb-lg-7.mb-xl-16.position-relative 
 			.col-12.mb-4.mb-lg-0
 				.swiper-theme-container.position-relative
-					.swiper-container.theme-slider(data-swiper!= {
+					.swiper-container.theme-slider(data-swiper!={
 						spaceBetween:12,
 						loop:true,
 						loopedSlides:5,

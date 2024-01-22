@@ -1,0 +1,26 @@
+mixin Counter 
+    .container.mx-auto.mb-7.mb-lg-16.mb-xl-11 
+        .row
+            .col-12.col-lg-4.mb-4.mb-lg-0
+                .d-flex.flex-column.itmes-center.text-center.w-100
+                    div.mb-3
+                        img(src=`${CWD}assets/img/icons/Counter_1.png`, alt="")
+                    .text-warning.fs-13.fs-lg-15.fs-xl-2.lh-normal.counter-delivared(data-countup!={endValue:9124201, autoIncreasing: true} style="font-variant-numeric: lining-nums proportional-nums;") 0
+                    div 
+                        p.text-success.fs-7.fs-md-5.fs-lg-6.fs-xl-12.fw-bold.mb-0 Plants Delivered
+            .col-12.col-lg-4.mb-4.mb-lg-0
+                .d-flex.flex-column.itmes-center.text-center
+                    div.mb-3
+                        img(src=`${CWD}assets/img/icons/Counter_2.png`, alt="")
+                    .text-warning.fs-13.fs-lg-15.fs-xl-2.lh-normal(data-countup!={endValue:36487} style="font-variant-numeric: lining-nums proportional-nums;")  0
+                    div 
+                        p.text-success.fs-7.fs-md-8.fs-lg-6.fs-xl-12.fw-bold.mb-0 Happy customers
+            .col-12.col-lg-4.mb-4.mb-lg-0 
+                .d-flex.flex-column.itmes-center.text-center
+                    div.mb-3
+                        img(src=`${CWD}assets/img/icons/Counter_3.png`, alt="")
+                    .text-warning.fs-13.fs-lg-15.fs-xl-2.lh-normal(data-countup!={endValue:400, suffix:'+'} style="font-variant-numeric: lining-nums proportional-nums;")   0
+                    div 
+                        p.text-success.fs-7.fs-md-5.fs-lg-6.fs-xl-12.fw-bold.mb-0 Growing Catalog
+
+

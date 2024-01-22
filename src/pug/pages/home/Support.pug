@@ -18,8 +18,9 @@ append content
                 form
                     div.input-group.position-relative 
                         input(type="email", name="email" placeholder="your email address").form-control.email-input 
-                        div(style="position:absolute; right:0; top: 0; bottom:0; height: 100%;z-index: 100;") 
-                            button(type="submit").btn.shadow-none.px-0.py-0.h-100
-                                img(src=`${CWD}assets/img/icons/input_button.svg`, alt="").h-100  
+                        div.absolute-div 
+                            button(type="submit").btn.shadow-none.bg-success.rounded-circle.submit-button
+                                i.uil.uil-arrow-right.text-white
+                                 
 
 

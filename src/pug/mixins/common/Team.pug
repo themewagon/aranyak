@@ -1,15 +1,15 @@
 mixin Team(imgSrc, name, designation, text)
     .text-center.mb-5.mb-lg-0
-        .d-flex.justify-content-center
+        .d-flex.justify-content-center.mb-2
             div.position-relative 
                 img(src=`${CWD}${imgSrc}`, alt="").w-100
                 div.social-icons
-                    a(href="/") 
-                        img(src=`${CWD}assets/img/icons/facebook-rect.png`, alt="")
-                    a(href="/") 
-                        img(src=`${CWD}assets/img/icons/instagram-solid.png`, alt="")
-                    a(href="/") 
-                        img(src=`${CWD}assets/img/icons/twitter-square.png`, alt="")
+                    a(href="#!") 
+                        i.uil.uil-facebook
+                    a(href="#!") 
+                        i.uil.uil-instagram-alt
+                    a(href="#!") 
+                        i.uil.uil-linkedin
 
         p.fs-9.fs-md-8.text-success.fw-bold.lh-normal.mb-1= name
         p.text-black.fs-10.fs-md-9.fw-medium.text-capitalize.mb-3.lh-normal= designation

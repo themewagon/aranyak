@@ -21,5 +21,9 @@
     top: 50%;
     padding: 0 5px;
     transform: translateY(-50%);
-    
+    font-size: map-get($font-sizes, 8);
+    i {
+        color: map-get($theme-colors ,'secondary'); 
+        opacity: 60%; 
+    }
 }

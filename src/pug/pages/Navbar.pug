@@ -3,7 +3,7 @@ append content
 
         for item in submenu
             a(href="#").d-flex.justify-content-center.align-items-center
-                img(src=`${CWD}${item.imageSrc}`, alt="")
+                i(class=`${item.className}`).text-secondary.fs-9
                 span(style="margin-left:4px;").fs-10 #{item.label}
     header.sticky-top
         nav.bg-warning.mb-6.navbar.navbar-expand-lg.navbar-light

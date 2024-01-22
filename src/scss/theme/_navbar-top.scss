@@ -278,7 +278,6 @@
 
 .sub-navbar {
   gap:27.67px; 
-  margin-top:7px;
   padding:10px 0px 10px 10px;
 
   a:hover {
@@ -287,11 +286,14 @@
 }
 
 .search {
-  padding: 10px 40px;
+  padding: 10px 20px 10px 60px;
   color:rgba(18,72,0,0.40);
   border: 1px solid rgba(18, 72, 56, 0.70);
   border-radius: 40px;
   outline: none;
+}
+.search::placeholder{
+  color:rgba(18,72,0,0.40);
 }
 .navbar-main {
   a:hover, :focus{
@@ -313,5 +315,6 @@
 .search-icon{
   position: absolute;
   top: 8px;
-  left: 5px;
+  left: 20px;
+  width: fit-content;
 }

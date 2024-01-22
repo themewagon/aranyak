@@ -166,6 +166,7 @@ $line-height-xl:  28px;
 $line-height-normal: normal;
 $line-height-2xl: 53px; 
 $line-height-xxl: 84px;
+$line-height-button: 26px;
 // scss-docs-start font-variables
 $font-family-sans-serif: 'Raleway',
   -apple-system,
@@ -201,6 +202,7 @@ $type-scale: 1.25 !default;
 $font-size-base: 1rem !default;
 $font-sizes: ( ) !default;
 $font-sizes: map-merge((
+    17: $font-size-base * 2,
     16: $font-size-base * 3.5,
     15: $font-size-base * 3,
     14: $font-size-base * 1.5,

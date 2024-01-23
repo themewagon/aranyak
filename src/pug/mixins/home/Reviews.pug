@@ -3,14 +3,14 @@ include ./Review
 mixin Reviews 
 
     #review.container.mx-auto.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11 
-        p.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh- review 
+        p.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal review 
         
         p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.lh-normal.fw-light.mb-13.mb-lg-5    
             | Some words from 
             br
             | our 
             span.fw-bold Lovely customers
-        .row.g-lg-6 
+        .row.gap-lg-7.gap-xl-22
             .col-12.col-lg-6
                 +Review(
                         5,
@@ -36,5 +36,5 @@ mixin Reviews
                 div.mt-6.mt-lg-7.mt-xl-16.d-flex.justify-content-center 
                     button.btn.btn-gradient
                         span.fs-8.lh-button load more
-            .d-none.d-lg-block.col-lg-6
+            .d-none.d-lg-block.col-lg-5
                 img(src=`${CWD}assets/img/illustrations/loveletter.png`, alt="").w-100

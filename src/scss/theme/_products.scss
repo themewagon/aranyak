@@ -83,7 +83,7 @@
         }
     }
     .prev-button {
-        right: 93%;
+        right: 90%;
 
         @include media-breakpoint-up(sm){
             right: 96%;
@@ -94,7 +94,7 @@
         }
     }
     .next-button {
-        left: 93%;
+        left: 90%;
 
         @include media-breakpoint-up(sm){
             left: 96%;

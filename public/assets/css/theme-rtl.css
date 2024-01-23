@@ -30149,31 +30149,31 @@ html[dir=ltr] .img-dropdown {
 }
 
 .search {
-  padding: 10px 60px 10px 20px;
-  color: rgba(18, 72, 0, 0.4);
+  padding: 10px 70px 10px 20px;
+  color: rgba(18, 72, 56, 0.5);
   border: 1px solid rgba(18, 72, 56, 0.7);
   border-radius: 40px;
   outline: none;
 }
 
 .search::-webkit-input-placeholder {
-  color: rgba(18, 72, 0, 0.4);
+  color: rgba(18, 72, 0, 0.5);
 }
 
 .search::-moz-placeholder {
-  color: rgba(18, 72, 0, 0.4);
+  color: rgba(18, 72, 0, 0.5);
 }
 
 .search:-ms-input-placeholder {
-  color: rgba(18, 72, 0, 0.4);
+  color: rgba(18, 72, 0, 0.5);
 }
 
 .search::-ms-input-placeholder {
-  color: rgba(18, 72, 0, 0.4);
+  color: rgba(18, 72, 0, 0.5);
 }
 
 .search::placeholder {
-  color: rgba(18, 72, 0, 0.4);
+  color: rgba(18, 72, 0, 0.5);
 }
 
 .navbar-main a:hover, .navbar-main :focus {
@@ -33272,7 +33272,7 @@ html[data-bs-theme=dark] .bg-priority-low:checked {
   line-height: 0%;
 }
 .slider-nav .prev-button {
-  left: 93%;
+  left: 90%;
 }
 @media (min-width: 576px) {
   .slider-nav .prev-button {
@@ -33285,7 +33285,7 @@ html[data-bs-theme=dark] .bg-priority-low:checked {
   }
 }
 .slider-nav .next-button {
-  right: 93%;
+  right: 90%;
 }
 @media (min-width: 576px) {
   .slider-nav .next-button {
@@ -33358,7 +33358,7 @@ a:hover, a:focus {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0;
+  padding: 0 5px;
   height: 100%;
 }
 .absolute-div .submit-button i {

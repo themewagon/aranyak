@@ -1,11 +1,73 @@
-mixin Footer
-  footer.footer&attributes(attributes)
-    .row.g-0.justify-content-between.fs-10.mt-4.mb-3
-      .col-12.col-sm-auto.text-center
-        p.mb-0.text-600 Thank you for creating with #{name} 
-          span.d-none.d-sm-inline-block | 
-          br.d-sm-none
-          |  #{ new Date().getFullYear() } &copy; 
-          a(href="https://themewagon.com") Themewagon
-      .col-12.col-sm-auto.text-center
-        p.mb-0.text-600=version
+mixin Footer 
+
+    footer(style=`background-image: url('${CWD}assets/img/illustrations/BOTTOM.png')` class="Footer")
+        div.pb-x1.px-3.px-lg-0 
+            .container.mx-auto 
+                .row.d-lg-flex.align-items-end.justify-content-center
+                    .col-12.col-md-4.d-flex.flex-column.justify-content-center.h-100.mb-3.mb-md-0
+                        div.mb-17.mb-md-18.mb-md-19 
+                            img(src=`${CWD}assets/img/logos/Footer_logo.png`, alt="")
+                        div(style="gap:12px;").d-flex.flex-column
+                            div 
+                                a(href="#").links.
+                                    home
+                            div 
+                                a(href="about").links.
+                                    about
+                            div 
+                                a(href="#products").links.
+                                    catalog
+                            div 
+                                a(href="#review").links.
+                                    review
+                            div 
+                                a(href="#support").links.
+                                    support
+
+                    .col-6.col-md-4.d-flex.flex-column.justify-content-end.h-100
+                        div.mb-13.mb-md-18.mb-md-19 
+                            p(style="color: #FFF0D3;").fs-9.fs-md-8.fw-bold.lh-normal.mb-0 User Account
+                        div(style="gap:12px;").d-flex.flex-column
+                            div 
+                                a(href="#").links.
+                                    sign up
+                            div 
+                                a(href="about").links.
+                                    log in 
+                            div 
+                                a(href="#products").links.
+                                    edit profile
+                            div 
+                                a(href="#review").links.
+                                    history
+                            div 
+                                a(href="#support").links.
+                                    refund
+    
+                    .col-6.col-md-4.d-flex.flex-column.justify-content-end.h-100
+                        div.mb-13.mb-md-18.mb-md-19 
+                            p(style="color: #FFF0D3;").fs-9.fs-md-8.fw-bold.lh-normal.mb-0 Follow Us At 
+                        div(style="gap:12px; margin-bottom: 28px;").d-flex
+                            div 
+                                a(href="#!").links
+                                    i(style="font-size:21px").uil.uil-facebook.text-white
+                            div 
+                                a(href="#!").links
+                                    i(style="font-size:21px").uil.uil-instagram-alt.text-white
+                            div 
+                                a(href="#!").links
+                                    i(style="font-size:21px").uil.uil-youtube.text-white
+                            div 
+                                a(href="#!").links
+                                    i(style="font-size:21px").uil.uil-twitter.text-white
+                        div 
+                            div(style="margin-bottom:15px")
+                                p(style="color: #FFF0D3;").fs-10.fs-md-9.fw-bold.lh-nomal.mb-0    Contact 
+                            div(style="color: rgba(255,255,255,0.70);").fs-10.fs-md-9
+                                p.lh-normal.mb-0.opacity-70  Md Sourav Mostafa
+                                p.lh-normal.mb-0.opacity-70  Dhaka, Bangladesh
+                                p.lh-normal.mb-0.opacity-70  +880 177 938 7790
+                            
+                         
+           
+

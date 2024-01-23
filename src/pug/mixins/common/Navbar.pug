@@ -1,20 +1,19 @@
 mixin Navbar 
-    div.sub-navbar.container.d-flex.w-100.justify-content-center.justify-content-lg-end.align-items-center
-
+    div.container.mx-auto.text-end.p-12
         for item in submenu
-            a(href="#").d-flex.justify-content-center.align-items-center
-                i(class=`${item.className}`).text-secondary.fs-9
-                span(style="margin-left:4px;").fs-10 #{item.label}
+            a(href="#").ms-21.ms-md-23
+                i(class=`${item.className}`).text-secondary
+                span.ms-1.fs-10 #{item.label}
     header.sticky-top
-        nav.bg-warning.mb-6.navbar.navbar-expand-lg.navbar-light
-            .container.mx-auto.d-flex.justify-content-bewteen.gap-lg-4.gap-xxl-20
+        nav.bg-warning.mb-6.navbar.navbar-expand-lg
+            .container.mx-auto
                 div 
                     a(href="#").navbar-brand.me-lg-auto
                         img(src=`${CWD}assets/img/logos/logo.png`, alt="")
                 button(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler
                     span.navbar-toggler-icon.text-white 
                 .d-none.d-lg-block 
-                div#navbarSupportedContent.collapse.navbar-collapse.mt-3.mt-lg-0.px-3.px-lg-0.d-lg-flex.justify-content-lg-between
+                div#navbarSupportedContent.collapse.navbar-collapse.ms-lg-4.ms-xl-20.mt-3.mt-lg-0.px-3.px-lg-0
                     
                     form.form-inline.position-relative.w-lg-50
                             input(type="search", name="search" placeholder=" search plants...").search.fs-8.bg-transparent.w-100

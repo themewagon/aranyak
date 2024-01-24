@@ -1,12 +1,12 @@
 mixin Navbar 
-    div.container.mx-auto.text-end.p-12
+    section.container.text-center.text-md-end.p-12
         for item in submenu
             a(href="#").ms-21.ms-md-23
                 i(class=`${item.className}`).text-secondary
                 span.ms-1.fs-10 #{item.label}
     header.sticky-top
         nav.bg-warning.mb-6.navbar.navbar-expand-lg
-            .container.mx-auto
+            .container
                 div 
                     a(href="#").navbar-brand.me-lg-auto
                         img(src=`${CWD}assets/img/logos/logo.png`, alt="")

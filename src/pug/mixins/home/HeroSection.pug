@@ -1,11 +1,10 @@
 mixin HeroSection 
-    .container.mx-auto.mb-7.mb-lg-16.mb-xl-11
-        div.row.px-3.gap-4.gap-lg-7.gap-xl-22.px-lg-0.mb-6.mb-lg-7.mb-xl-16
+    section.container.mb-7.mb-lg-16.mb-xl-11.px-3.px-lg-0.text-center.text-md-start
+        div.row.gap-4.gap-lg-7.gap-xl-22.mb-6.mb-lg-7.mb-xl-16
             .col-12.col-lg-5
-                div 
                     img(src=`${CWD}assets/img/Hero/man_watering.png`, alt="").w-75.w-lg-100
             div.col-12.col-lg-6
-                p.fs-5.fs-lg-3.fs-xl-2.text-black.fw-light.lh-normal.mb-13
+                h1.fs-5.fs-lg-3.fs-xl-2.text-black.fw-light.lh-normal.mb-13
                     | Be a 
                     span.fw-bold Plant Parent 
                     |today with 
@@ -15,26 +14,27 @@ mixin HeroSection
                     | Take a look at our vast collection of greenery & let us help you transform your household and front/back 
                     | yard.
                 
-                button.btn.btn-gradient
-                    span.fs-8.lh-button explore catalog
-                    i.uil.uil-arrow-right.fs-8.lh-button
+                div.d-flex.justify-content-center.justify-content-md-start 
+                    button.btn.btn-gradient.lh-button.fs-8
+                        span explore catalog
+                        i.uil.uil-arrow-right
         
-        div.row.gap-4.gap-lg-7.gap-xl-22.px-3.px-lg-0
+        div.row.gap-4.gap-lg-7.gap-xl-22
             div.col-12.col-lg-6.pr-0.order-1.order-lg-0
                 p.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.mb-14 we have got you covered 
-                p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.lh-normal.mb-13
+                h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.lh-normal.mb-13
                     | However Popular or 
                     span.fw-bold rare plant 
                     | it is
                 p.fs-8.fs-xl-7.text-primary.mb-13.mb-lg-5.mb-xl-15.fw-light.lh-normal
                     | Our catalog of plants of fruits and flowers; 
                     br
-                    | for indoors and outdoors; is expanding everyday.    
-                
-                button.btn.btn-gradient
-                    span.fs-8.lh-button explore catalog
-                    i.uil.uil-arrow-right.fs-8.lh-button
+                    | for indoors and outdoors; is expanding everyday. 
+
+                div.d-flex.justify-content-center.justify-content-md-start 
+                    button.btn.btn-gradient.lh-button.fs-8
+                        span explore catalog
+                        i.uil.uil-arrow-right
 
             .col-12.col-lg-5.pr-0.order-0.order-lg-1
-                div.d-flex.justify-content-end.d-lg-block
                     img(src=`${CWD}assets/img/Hero/planting.png`, alt="").w-75.w-lg-100

@@ -3,12 +3,8 @@ mixin Review(star ,text, name, designation, imageSrc)
         div
             img(src=`${CWD}assets/img/review/${imageSrc}`, alt="")
         div
-            div(style="margin-bottom:5px;").d-flex.gap-1 
-                - for(var i = 0; i < star; i ++)
-                        img(src=`${CWD}assets/img/icons/Group.png`, alt="")
-            div(style="margin-bottom: 19px")
-                p.text-black.fs-9.fs-md-8.lh-normal.mb-0= text
-            div 
-                p.text-success.fs-9.fs-md-8.fw-bold.lh-normal.mb-0= name 
-            div 
-                p.text-black.fs-10.fs-md-9.mb-0.lh-normal.fw-light.mb-0= designation
+            - for(var i = 0; i < star; i ++)
+                    img(src=`${CWD}assets/img/icons/Group.png`, alt="").me-1.mb-1
+            p.text-black.fs-9.fs-md-8.lh-normal.mb-23= text
+            h2.text-success.fs-9.fs-md-8.fw-bold.lh-normal.mb-0= name 
+            h4.text-black.fs-10.fs-md-9.mb-0.lh-normal.fw-light.mb-0= designation

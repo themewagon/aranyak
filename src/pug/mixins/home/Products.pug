@@ -2,14 +2,14 @@ include ./Product
 
 mixin Products 
 
-	#products.container.mx-auto.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11
-		p.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal Our Products 
+	section#products.container.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11.text-center.text-md-start
+		h3.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal Our Products 
 
-		p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-5.lh-normal    
-			span.fw-bold New 
-			| Arrivals
-		#slider-1.row.mb-6.mb-lg-7.mb-xl-16.position-relative 
-			.col-12.mb-4.mb-lg-0
+		#slider-1.mb-6.mb-lg-7.mb-xl-16.position-relative 
+			h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-7.lh-normal    
+				span.fw-bold New 
+				| Arrivals
+			.mb-4.mb-lg-0
 				.swiper-theme-container.position-relative
 					.swiper-container.theme-slider(data-swiper!={
 						spaceBetween:12,
@@ -53,13 +53,12 @@ mixin Products
 							i.uil.uil-angle-left-b
 						button(data-slider="slider-1").btn.next-button 
 							i.uil.uil-angle-right-b
-		div
-			p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.text-md-end.fw-light.mb-13.mb-lg-5.lh-normal    
+
+		#slider-2.mb-6.mb-lg-7.mb-xl-16 
+			h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.text-md-end.fw-light.mb-13.mb-lg-7.lh-normal    
 				span.fw-bold Popular 
 				| little plants
-
-		#slider-2.row.mb-6.mb-lg-7.mb-xl-16 
-			.col-12.mb-4.mb-lg-0
+			.mb-4.mb-lg-0
 				.swiper-theme-container.position-relative
 					.swiper-container.theme-sliderdiv(data-swiper!= {
 						spaceBetween:12,
@@ -99,13 +98,11 @@ mixin Products
 						button(data-slider="slider-2").btn.next-button 
 							i.uil.uil-angle-right-b
 
-		div
-			p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-5.lh-normal    
+		#slider-3.mb-6.mb-lg-7.mb-xl-16.position-relative 
+			h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-7.lh-normal    
 				span.fw-bold Easy 
 				| to care plants
-
-		#slider-3.row.mb-6.mb-lg-7.mb-xl-16.position-relative 
-			.col-12.mb-4.mb-lg-0
+			.mb-4.mb-lg-0
 				.swiper-theme-container.position-relative
 					.swiper-container.theme-slider(data-swiper!= {
 						spaceBetween:12,

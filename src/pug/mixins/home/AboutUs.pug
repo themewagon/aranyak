@@ -2,7 +2,7 @@ include ./Team
 
 mixin AboutUs
 
-    section#about.container.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11.text-center.text-md-start
+    section#about.mb-7.mb-lg-16.mb-xl-11.text-center.text-md-start
         h4.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal About us 
         h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-3.mb-lg-14.lh-normal
             | our     
@@ -11,8 +11,8 @@ mixin AboutUs
             br
             | and their 
             span.fw-bold philosophy
-        div.row.mb-7.mb-lg-20.mb-xl-24
-            div.col-12.col-lg.px-2.mb-3.mb-lg-0 
+        .row.mb-7.mb-lg-20.mb-xl-24
+            .col-12.col-lg.px-2.mb-3.mb-lg-0 
                 p.text-black.fs-9.fs.md-8.lh-xl.mb-0 
                     | Lorem ipsum dolor sit amet, consectetur 
                     | adipiscing elit. Semper lacus 
@@ -20,7 +20,7 @@ mixin AboutUs
                     | eget venenatis. Morbi vitae, augue diam, 
                     | viverra malesuada quam. Enim feugiat aliquet 
                     | feugiat quis neque. Viverra
-            div.col-12.col-lg.px-2 
+            .col-12.col-lg.px-2 
                 p.text-black.fs-9.fs.md-8.lh-xl.mb-0 
                     | Lorem ipsum dolor sit amet, consectetur 
                     | adipiscing elit. Semper lacus 
@@ -32,7 +32,7 @@ mixin AboutUs
             .d-lg-flex.align-items-center  
                 div
                     img(src=`${CWD}assets/img/team/badhon.png`, alt="").w-100
-                div.about-card
+                .about-card
                     h1.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal Meet Badhon
                     p.fs-9.fs-lg-8.text-primary.lh-normal.mb-0
                         | Dhruba Badhon lives in Dhaka with her husband, 
@@ -44,8 +44,8 @@ mixin AboutUs
             p.text-secondary.text-capitalize.fw-light.mb-0.fs-15.fs-lg-18 
                 | meet the 
                 span.fw-bold team
-        div.d-flex.justify-content-center
-            div.w-lg-75
+        .d-flex.justify-content-center
+            .w-lg-75
                 .row.mb-13.mb-lg-5.w-100
                     +Team('assets/img/team/team/6.png', "James T. Kirk", 'CFO', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper')
                     +Team('assets/img/team/team/5.png', "Montgomery Scott", 'Accounts', 'Semper sed eget. Sed consectetur tellus tortor porta enim, cursus ')

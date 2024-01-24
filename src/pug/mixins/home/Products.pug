@@ -2,7 +2,7 @@ include ./Product
 
 mixin Products 
 
-	section#products.container.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11.text-center.text-md-start
+	section#products.mb-7.mb-lg-16.mb-xl-11.text-center.text-md-start
 		h3.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal Our Products 
 
 		#slider-1.mb-6.mb-lg-7.mb-xl-16.position-relative 
@@ -22,7 +22,7 @@ mixin Products
 							768:{slidesPerView: 2}, 
 							1024: {slidesPerView: 3}}
 						})
-						div.swiper-wrapper
+						.swiper-wrapper
 							+ProductItem(
 								'assets/img/products/products/1.png', 
 								'Philodendron', 
@@ -48,11 +48,11 @@ mixin Products
 								'Monstera Obliqua Peruvian', 
 								'aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons'
 							)
-					div.slider-nav
+					.slider-nav
 						button(data-slider="slider-1").btn.prev-button 
-							i.uil.uil-angle-left-b
+							span.uil.uil-angle-left-b
 						button(data-slider="slider-1").btn.next-button 
-							i.uil.uil-angle-right-b
+							span.uil.uil-angle-right-b
 
 		#slider-2.mb-6.mb-lg-7.mb-xl-16 
 			h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.text-md-end.fw-light.mb-13.mb-lg-7.lh-normal    
@@ -71,7 +71,7 @@ mixin Products
 							768:{slidesPerView: 2}, 
 							1024: {slidesPerView: 3}}
 						})
-						div.swiper-wrapper
+						.swiper-wrapper
 							+ProductItem(
 								'assets/img/products/products/4.png', 
 								'Snake/Sansevieria', 
@@ -94,9 +94,9 @@ mixin Products
 							)
 					.slider-nav
 						button(data-slider="slider-2").btn.prev-button 
-							i.uil.uil-angle-left-b
+							span.uil.uil-angle-left-b
 						button(data-slider="slider-2").btn.next-button 
-							i.uil.uil-angle-right-b
+							span.uil.uil-angle-right-b
 
 		#slider-3.mb-6.mb-lg-7.mb-xl-16.position-relative 
 			h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-7.lh-normal    
@@ -115,7 +115,7 @@ mixin Products
 							768:{slidesPerView: 2}, 
 							1024: {slidesPerView: 3}}
 						})
-						div.swiper-wrapper
+						.swiper-wrapper
 							+ProductItem(
 								'assets/img/products/products/7.png', 
 								'Peace Lily', 
@@ -137,9 +137,9 @@ mixin Products
 								)
 					.slider-nav
 						button(data-slider="slider-3").btn.prev-button 
-							i.uil.uil-angle-left-b
+							span.uil.uil-angle-left-b
 						button(data-slider="slider-3").btn.next-button 
-							i.uil.uil-angle-right-b
-		div.d-flex.justify-content-center
+							span.uil.uil-angle-right-b
+		.d-flex.justify-content-center
 			button.btn.btn-gradient
 				span.fs-8.lh-button see full catalog

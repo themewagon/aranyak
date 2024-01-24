@@ -2,7 +2,7 @@ mixin Navbar
     section.container.text-center.text-md-end.p-12
         for item in submenu
             a(href="#").ms-21.ms-md-23
-                i(class=`${item.className}`).text-secondary
+                span(class=`${item.className}`).text-secondary
                 span.ms-1.fs-10 #{item.label}
     header.sticky-top
         nav.bg-warning.mb-6.navbar.navbar-expand-lg
@@ -13,12 +13,12 @@ mixin Navbar
                 button(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler
                     span.navbar-toggler-icon.text-white 
                 .d-none.d-lg-block 
-                div#navbarSupportedContent.collapse.navbar-collapse.ms-lg-4.ms-xl-20.mt-3.mt-lg-0.px-3.px-lg-0
+                div#navbarSupportedContent.collapse.navbar-collapse.ms-lg-4.ms-xl-20.mt-3.mt-lg-0
                     
                     form.form-inline.position-relative.w-lg-50
                             input(type="search", name="search" placeholder=" search plants...").search.fs-8.bg-transparent.w-100
                             .search-icon 
-                                i.uil.uil-search
+                                span.uil.uil-search
                     ul.navbar-nav.ms-auto.d-lg-flex.justify-content-lg-between.mt-2.mt-lg-0 
                         for navMenu in menu 
                             li.nav-item 

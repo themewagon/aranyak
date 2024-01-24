@@ -2,13 +2,13 @@ mixin Team(imgSrc, name, designation, text)
     .col-12.col-md-4.px-3.text-center.mb-5.mb-lg-0
         .mb-2.position-relative
                 img(src=`${CWD}${imgSrc}`, alt="").w-100
-                div.social-icons
+                .social-icons
                     a(href="#!") 
-                        i.uil.uil-facebook
+                        span.uil.uil-facebook
                     a(href="#!") 
-                        i.uil.uil-instagram-alt
+                        span.uil.uil-instagram-alt
                     a(href="#!") 
-                        i.uil.uil-linkedin
+                        span.uil.uil-linkedin
 
         h3.fs-9.fs-md-8.text-success.fw-bold.lh-normal.mb-1= name
         h5.text-black.fs-10.fs-md-9.fw-medium.text-capitalize.mb-3.lh-normal= designation

@@ -177,38 +177,38 @@ $value in $theme-falcon-btn-colors {
   border: none !important;
   transition: outline 0.3s ease-in-out, background 1s ease-in-out;
 
-  @include hover-focus{
+  &:hover, &:focus, &:active{
     padding: 10px 50px;
     color: #124838;
     background: linear-gradient(93deg, rgba(113, 179, 159, 0.00) -18.71%, rgba(18, 72, 56, 0.00) 117.68%), #FFF;
     border-radius: 40px;
     border: 1px solid #124838 !important;
-    outline: 4px solid #85C7B3;
+    outline: 4px solid #85C7B3 !important;
     outline-offset: 5px;
   }
   @include media-breakpoint-up(sm){
     padding: 10px 70px;
 
-    @include hover-focus{
+    &:hover, &:focus, &:active{
       padding: 9px 70px;
       color: #124838;
       background: linear-gradient(93deg, rgba(113, 179, 159, 0.00) -18.71%, rgba(18, 72, 56, 0.00) 117.68%), #FFF;
       border-radius: 40px;
       border: 1px solid #124838 !important;
-      outline: 4px solid #85C7B3;
+      outline: 4px solid #85C7B3 !important;
       outline-offset: 5px;
     }
   }
   @include media-breakpoint-up(lg){
     padding: 11px 80px;
 
-    @include hover-focus{
+    &:hover, &:focus, &:active{
       padding: 10px 80px;
       color: #124838;
     background: linear-gradient(93deg, rgba(113, 179, 159, 0.00) -18.71%, rgba(18, 72, 56, 0.00) 117.68%), #FFF;
     border-radius: 40px;
     border: 1px solid #124838 !important;
-    outline: 4px solid #85C7B3;
+    outline: 4px solid #85C7B3 !important;
     outline-offset: 5px;
     }
   }

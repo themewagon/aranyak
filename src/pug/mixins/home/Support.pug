@@ -1,6 +1,6 @@
 mixin Support 
 
-    section#support.container.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11.text-center.text-md-start
+    section#support.mb-7.mb-lg-16.mb-xl-11.text-center.text-md-start
         .row.gap-lg-7.gap-xl-22 
             .d-none.d-lg-block.col-lg-5
                 img(src=`${CWD}assets/img/illustrations/women_watering.png`, alt="").w-100 
@@ -17,9 +17,9 @@ mixin Support
                     | for free 
 
                 form
-                    div.input-group.position-relative 
+                    .input-group.position-relative 
                         input(type="email", name="email" placeholder="your email address").form-control.email-input 
-                        div.absolute-div 
+                        .absolute-div 
                             button(type="submit").btn.shadow-none.bg-success.rounded-circle.submit-button
-                                i.uil.uil-arrow-right.text-white
+                                span.uil.uil-arrow-right.text-white
                                  

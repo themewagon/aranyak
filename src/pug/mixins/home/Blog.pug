@@ -5,8 +5,8 @@ mixin Blog(imgSrc, innertext, requiredTime, blogTitle, text, link)
             .inner-div 
                 p.fw-semi-bold.lh-normal.mb-0= innertext  
         
-        p(style="color: #5C5C5C;").lh-normal.mb-0= requiredTime 
-        p.text-success.fw-semi-bold.lh-normal.text-capitalize.mb-4.mb-md-13.mb-lg-18.blog-title= blogTitle
+        span(style="color: #5C5C5C;").lh-normal.mb-0= requiredTime 
+        h2.text-success.fw-semi-bold.lh-normal.text-capitalize.mb-4.mb-md-13.mb-lg-18.blog-title= blogTitle
         p.text-cardText.fs-9.fs-md-8.fw-light.lh-xl.mb-25= text
         a(href=`${link}`).text-success.fw-bold.lh-normal.fs-9.fs-md-8.mb-0 read more...
         

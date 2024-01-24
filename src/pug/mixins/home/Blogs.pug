@@ -2,43 +2,42 @@ include ./Blog
 
 mixin Blogs 
 
-    #blogs.container.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11 
-        p.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal aryanak blog 
-        
-        p.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.lh-normal.mb-13.mb-lg-5    
-            | To Bring more 
-            span.fw-bold Green
-            br
-            | into 
-            span.fw-bold your home
+    section#blogs.container.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11 
 
-        .row.g-lg-3.mb-6.mb-lg-7.mb-xl-16 
-            .col-12.col-lg-4.mb-5.mb-lg-0
+        .row.mb-6.mb-lg-7.mb-xl-16 
+            h3.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal.text-center.text-md-start aryanak blog 
+            h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.lh-normal.mb-13.mb-lg-7.text-center.text-md-start    
+                | To Bring more 
+                span.fw-bold Green
+                br
+                | into 
+                span.fw-bold your home
+            .col-12.col-lg-4.mb-5.mb-lg-0.px-lg-3
                 +Blog(
                         'blog_1.png', 
                         'indoor gardening', 
                         '5 mins read', 
                         '4 Ways to Level Up Your Indoor Gardening Game', 
                         'Indoor gardening is not just about maintaining plants but also about composition and arrangement in a ...', 
-                        '/'
+                        '#!'
                     )
-            .col-12.col-lg-4.mb-4.mb-lg-0
+            .col-12.col-lg-4.mb-4.mb-lg-0.px-lg-3
                 +Blog(
                         'blog_2.png', 
                         'Cactus gardening', 
                         '2 mins read', 
                         'Cactus: Some Common Myths and Misconceptions ', 
                         'Cactus Plants symbolize endurance, persistence, & toughness. Gifting someone a cactus plant means ...', 
-                        '/'
+                        '#!'
                     )
-            .col-12.col-lg-4
+            .col-12.col-lg-4.px-lg-3
                 +Blog(
                         'blog_3.png', 
                         'Fruit plant', 
                         '2 mins read', 
                         '6 reasons to reconsider where to plant your next fruit tree', 
                         'Growing fruit trees indoors means you get to control everything from the light to humidity, right down to ...', 
-                        '/'
+                        '#!'
                     )
         div.d-flex.justify-content-center 
             a(href="/")

@@ -1,6 +1,6 @@
 mixin Blog(imgSrc, innertext, requiredTime, blogTitle, text, link)
-    div.blog-card
-        div.position-relative.mb-3.mb-md-14.mb-lg-mb-13 
+    .blog-card
+        .position-relative.mb-3.mb-md-14.mb-lg-mb-13 
             img(src=`${CWD}assets/img/blogs/${imgSrc}`, alt="").w-100
             .inner-div 
                 p.fw-semi-bold.lh-normal.mb-0= innertext  

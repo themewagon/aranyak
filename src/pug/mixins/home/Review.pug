@@ -1,10 +1,10 @@
 mixin Review(star ,text, name, designation, imageSrc)
-    div.review-card
+    .review-card
         div
             img(src=`${CWD}assets/img/review/${imageSrc}`, alt="")
         div
             - for(var i = 0; i < star; i ++)
-                    img(src=`${CWD}assets/img/icons/Group.png`, alt="").me-1.mb-1
+                    img(src=`${CWD}assets/img/icons/star.png`, alt="").me-1.mb-1
             p.text-black.fs-9.fs-md-8.lh-normal.mb-23= text
             h2.text-success.fs-9.fs-md-8.fw-bold.lh-normal.mb-0= name 
             h4.text-black.fs-10.fs-md-9.mb-0.lh-normal.fw-light.mb-0= designation

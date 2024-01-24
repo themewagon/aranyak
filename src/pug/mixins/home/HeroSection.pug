@@ -1,9 +1,9 @@
 mixin HeroSection 
-    section.container.mb-7.mb-lg-16.mb-xl-11.px-3.px-lg-0.text-center.text-md-start
-        div.row.gap-4.gap-lg-7.gap-xl-22.mb-6.mb-lg-7.mb-xl-16
+    section.mb-7.mb-lg-16.mb-xl-11.text-center.text-md-start
+        .row.gap-4.gap-lg-7.gap-xl-22.mb-6.mb-lg-7.mb-xl-16
             .col-12.col-lg-5
                     img(src=`${CWD}assets/img/Hero/man_watering.png`, alt="").w-75.w-lg-100
-            div.col-12.col-lg-6
+            .col-12.col-lg-6
                 h1.fs-5.fs-lg-3.fs-xl-2.text-black.fw-light.lh-normal.mb-13
                     | Be a 
                     span.fw-bold Plant Parent 
@@ -14,13 +14,13 @@ mixin HeroSection
                     | Take a look at our vast collection of greenery & let us help you transform your household and front/back 
                     | yard.
                 
-                div.d-flex.justify-content-center.justify-content-md-start 
+                .d-flex.justify-content-center.justify-content-md-start 
                     button.btn.btn-gradient.lh-button.fs-8
                         span explore catalog
-                        i.uil.uil-arrow-right
+                        span.uil.uil-arrow-right
         
-        div.row.gap-4.gap-lg-7.gap-xl-22
-            div.col-12.col-lg-6.pr-0.order-1.order-lg-0
+        .row.gap-4.gap-lg-7.gap-xl-22
+            .col-12.col-lg-6.pr-0.order-1.order-lg-0
                 p.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.mb-14 we have got you covered 
                 h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.lh-normal.mb-13
                     | However Popular or 
@@ -31,10 +31,10 @@ mixin HeroSection
                     br
                     | for indoors and outdoors; is expanding everyday. 
 
-                div.d-flex.justify-content-center.justify-content-md-start 
+                .d-flex.justify-content-center.justify-content-md-start 
                     button.btn.btn-gradient.lh-button.fs-8
                         span explore catalog
-                        i.uil.uil-arrow-right
+                        span.uil.uil-arrow-right
 
             .col-12.col-lg-5.pr-0.order-0.order-lg-1
                     img(src=`${CWD}assets/img/Hero/planting.png`, alt="").w-75.w-lg-100

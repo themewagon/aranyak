@@ -10,7 +10,7 @@ import themeControl from './theme-control';
 import scrollbarInit from './scrollbar';
 import iconCopiedInit from './icons';
 import scrollInit from './scroll';
-import countupInit from './Counter'
+import countupInit from './counter';
 
 /* -------------------------------------------------------------------------- */
 /*                            Theme Initialization                            */

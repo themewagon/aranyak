@@ -2,7 +2,7 @@ include ./Blog
 
 mixin Blogs 
 
-    section#blogs.container.px-3.px-lg-0.mb-7.mb-lg-16.mb-xl-11 
+    section#blogs.mb-7.mb-lg-16.mb-xl-11 
 
         .row.mb-6.mb-lg-7.mb-xl-16 
             h3.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal.text-center.text-md-start aryanak blog 
@@ -39,9 +39,9 @@ mixin Blogs
                         'Growing fruit trees indoors means you get to control everything from the light to humidity, right down to ...', 
                         '#!'
                     )
-        div.d-flex.justify-content-center 
+        .d-flex.justify-content-center 
             a(href="/")
                 button.btn.btn-gradient
                     span.fs-8.lh-button see all posts
                     span
-                        i.uil.uil-arrow-right.fs-8.lh-button
+                        span.uil.uil-arrow-right.fs-8.lh-button

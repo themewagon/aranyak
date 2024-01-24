@@ -1280,7 +1280,7 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-  --falcon-gutter-x: 0rem;
+  --falcon-gutter-x: 2rem;
   --falcon-gutter-y: 0;
   width: 100%;
   padding-left: calc(var(--falcon-gutter-x) * 0.5);
@@ -1324,7 +1324,7 @@ progress {
 }
 
 .row {
-  --falcon-gutter-x: 0rem;
+  --falcon-gutter-x: 2rem;
   --falcon-gutter-y: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6766,7 +6766,7 @@ textarea.form-control-lg {
   --falcon-card-color: ;
   --falcon-card-bg: #fff;
   --falcon-card-img-overlay-padding: 1rem;
-  --falcon-card-group-margin: 0rem;
+  --falcon-card-group-margin: 1rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7895,7 +7895,7 @@ textarea.form-control-lg {
   --falcon-toast-zindex: 1090;
   --falcon-toast-padding-x: 0.75rem;
   --falcon-toast-padding-y: 0.5rem;
-  --falcon-toast-spacing: 0rem;
+  --falcon-toast-spacing: 2rem;
   --falcon-toast-max-width: 350px;
   --falcon-toast-font-size: 0.875rem;
   --falcon-toast-color: var(--falcon-gray-600);
@@ -31861,28 +31861,28 @@ html:not([data-bs-theme=dark]) .d-light-none {
   -o-transition: outline 0.3s ease-in-out, background 1s ease-in-out;
   transition: outline 0.3s ease-in-out, background 1s ease-in-out;
 }
-.btn-gradient:hover, .btn-gradient:focus {
+.btn-gradient:hover, .btn-gradient:focus, .btn-gradient:active {
   padding: 10px 50px;
   color: #124838;
   background: -o-linear-gradient(-357deg, rgba(113, 179, 159, 0) -18.71%, rgba(18, 72, 56, 0) 117.68%), #FFF;
   background: linear-gradient(-93deg, rgba(113, 179, 159, 0) -18.71%, rgba(18, 72, 56, 0) 117.68%), #FFF;
   border-radius: 40px;
   border: 1px solid #124838 !important;
-  outline: 4px solid #85C7B3;
+  outline: 4px solid #85C7B3 !important;
   outline-offset: 5px;
 }
 @media (min-width: 576px) {
   .btn-gradient {
     padding: 10px 70px;
   }
-  .btn-gradient:hover, .btn-gradient:focus {
+  .btn-gradient:hover, .btn-gradient:focus, .btn-gradient:active {
     padding: 9px 70px;
     color: #124838;
     background: -o-linear-gradient(-357deg, rgba(113, 179, 159, 0) -18.71%, rgba(18, 72, 56, 0) 117.68%), #FFF;
     background: linear-gradient(-93deg, rgba(113, 179, 159, 0) -18.71%, rgba(18, 72, 56, 0) 117.68%), #FFF;
     border-radius: 40px;
     border: 1px solid #124838 !important;
-    outline: 4px solid #85C7B3;
+    outline: 4px solid #85C7B3 !important;
     outline-offset: 5px;
   }
 }
@@ -31890,14 +31890,14 @@ html:not([data-bs-theme=dark]) .d-light-none {
   .btn-gradient {
     padding: 11px 80px;
   }
-  .btn-gradient:hover, .btn-gradient:focus {
+  .btn-gradient:hover, .btn-gradient:focus, .btn-gradient:active {
     padding: 10px 80px;
     color: #124838;
     background: -o-linear-gradient(-357deg, rgba(113, 179, 159, 0) -18.71%, rgba(18, 72, 56, 0) 117.68%), #FFF;
     background: linear-gradient(-93deg, rgba(113, 179, 159, 0) -18.71%, rgba(18, 72, 56, 0) 117.68%), #FFF;
     border-radius: 40px;
     border: 1px solid #124838 !important;
-    outline: 4px solid #85C7B3;
+    outline: 4px solid #85C7B3 !important;
     outline-offset: 5px;
   }
 }
@@ -34658,7 +34658,7 @@ html[dir=ltr] .img-dropdown {
   width: -moz-fit-content;
   width: fit-content;
 }
-.search-icon i {
+.search-icon span {
   font-size: 36px;
   line-height: 0%;
   color: #124838;
@@ -37621,7 +37621,7 @@ html[data-bs-theme=dark] .bg-priority-low:checked {
   transform: translateY(-50%);
   font-size: 1.25rem;
 }
-.social-icons i {
+.social-icons span {
   color: #E3A476;
   opacity: 60%;
 }
@@ -37679,7 +37679,7 @@ html[data-bs-theme=dark] .bg-priority-low:checked {
 .product-card .add-section a {
   text-decoration: none;
 }
-.product-card .add-section i {
+.product-card .add-section span {
   font-size: 25px;
   line-height: 0%;
 }
@@ -37734,7 +37734,7 @@ html[data-bs-theme=dark] .bg-priority-low:checked {
   font-weight: bold;
   color: #124838;
 }
-.slider-nav .prev-button i, .slider-nav .next-button i {
+.slider-nav .prev-button span, .slider-nav .next-button span {
   font-size: 40px;
   line-height: 0%;
 }
@@ -37828,7 +37828,7 @@ a:hover, a:focus {
   padding: 0 5px;
   height: 100%;
 }
-.absolute-div .submit-button i {
+.absolute-div .submit-button span {
   font-size: 50px;
   line-height: 0%;
 }

@@ -1,18 +1,17 @@
-mixin ProductItem(imgSrc, productTitle, text)
+mixin Product({imgSrc, productTitle, description})
 	.product-card.swiper-slide.h-auto
 		.position-relative.w-100
-			img(src=`${CWD}${imgSrc}`, alt="").w-100
+			img(src=`${CWD}${imgSrc}`, alt="").img-fluid
 			.add-section
-				a(href="#!").d-flex.align-items-center
-					.mr-1
-						span.uil.uil-file-heart.text-success
-					span.fs-10.fs-md-9.text-success.fw-bold add to wishlist 
+				a(href="#!").text-success.fs-10.fs-md-9.fw-bold.text-center
+					span.uil.uil-file-heart.mr-1.align-middle
+					| add to wishlist 
+					
 
-				a(href="#!").d-flex.align-items-center
-					span.mr-1
-						span.uil.uil-shopping-cart.text-success
-					span.fs-10.fs-md-9.text-success.fw-bold add to cart
+				a(href="#!").text-success.fs-10.fs-md-9.fw-bold
+					span.uil.uil-shopping-cart.mr-1.align-middle
+					| add to cart
 
-		.product-card-body 
-			h2.text-success.fs-8.fs-md-8.fw-semi-bold.lh-normal.mb-0= productTitle 
-			p.text-cardText.fs-10.fs-md-9.text-capitalize.lh-xl.mb-0= text 
+		.p-13.pt-0
+			h2.text-success.fs-8.fs-md-8.fw-semi-bold.lh-normal.mb-x1.text-center= productTitle 
+			p.text-dark.fs-10.fs-md-9.text-capitalize.lh-xl.mb-0= description 

@@ -11,6 +11,7 @@ import scrollbarInit from './scrollbar';
 import iconCopiedInit from './icons';
 import scrollInit from './scroll';
 import countupInit from './counter';
+import raterInit from './rater';
 
 /* -------------------------------------------------------------------------- */
 /*                            Theme Initialization                            */
@@ -27,3 +28,4 @@ docReady(iconCopiedInit);
 docReady(scrollInit);
 docReady(listInit);
 docReady(countupInit)
+docReady(raterInit)

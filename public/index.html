@@ -31,6 +31,7 @@
     <!--    Stylesheets-->
     <!-- ===============================================-->
     <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="vendors/rater-js/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&amp;display=swap" rel="stylesheet">
     <link href="vendors/simplebar/simplebar.min.css" rel="stylesheet">
@@ -49,20 +50,18 @@
     <main class="main" id="top">
       <div class="bg-white">
         <div class="content">
-          <section class="container text-center text-md-end p-12"><a class="ms-21 ms-md-23" href="#"><span class="uil uil-bill text-secondary"></span><span class="ms-1 fs-10">sale</span></a><a class="ms-21 ms-md-23" href="#"><span class="uil uil-file-heart text-secondary"></span><span class="ms-1 fs-10">wishlist</span></a><a class="ms-21 ms-md-23" href="#"><span class="uil uil-shopping-cart text-secondary"></span><span class="ms-1 fs-10">cart</span></a><a class="ms-21 ms-md-23" href="#"><span class="uil uil-user-circle text-secondary"></span><span class="ms-1 fs-10">log in/sign up</span></a>
+          <section class="container text-center text-md-end p-12"><a class="ms-21 ms-md-23" href="#"><span class="uil uil-bill text-secondary"></span><span class="ms-1 fs-10 text-primary">sale</span></a><a class="ms-21 ms-md-23" href="#"><span class="uil uil-file-heart text-secondary"></span><span class="ms-1 fs-10 text-primary">wishlist</span></a><a class="ms-21 ms-md-23" href="#"><span class="uil uil-shopping-cart text-secondary"></span><span class="ms-1 fs-10 text-primary">cart</span></a><a class="ms-21 ms-md-23" href="#"><span class="uil uil-user-circle text-secondary"></span><span class="ms-1 fs-10 text-primary">log in/sign up</span></a>
           </section>
           <header class="sticky-top">
             <nav class="bg-warning mb-6 navbar navbar-expand-lg">
-              <div class="container">
-                <div> <a class="navbar-brand me-lg-auto" href="#"><img src="assets/img/logos/logo.png" alt="" /></a></div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon text-white"> </span></button>
-                <div class="d-none d-lg-block"> </div>
-                <div class="collapse navbar-collapse ms-lg-4 ms-xl-20 mt-3 mt-lg-0" id="navbarSupportedContent">
-                  <form class="form-inline position-relative w-lg-50">
-                    <input class="search fs-8 bg-transparent w-100" type="search" name="search" placeholder=" search plants..." />
+              <div class="container"><a class="navbar-brand me-lg-auto" href="#"><img src="assets/img/logos/logo.png" alt="" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon text-white"></span></button>
+                <div class="collapse navbar-collapse ms-lg-4 ms-xl-20 mt-3 mt-lg-0 d-lg-flex justify-content-between" id="navbarSupportedContent">
+                  <form class="form-inline position-relative">
+                    <input class="search fs-8 bg-transparent form-control" type="search" name="search" placeholder=" search plants..." />
                     <div class="search-icon"> <span class="uil uil-search"></span></div>
                   </form>
-                  <ul class="navbar-nav ms-auto d-lg-flex justify-content-lg-between mt-2 mt-lg-0">
+                  <ul class="navbar-nav mt-2 mt-lg-0 ms-lg-4">
                     <li class="nav-item"> <a class="nav-link nav-bar-item" href="#">home</a></li>
                     <li class="nav-item"> <a class="nav-link nav-bar-item" href="#about">about</a></li>
                     <li class="nav-item"> <a class="nav-link nav-bar-item" href="#products">catalog</a></li>
@@ -85,9 +84,7 @@
                     Take a look at our vast collection of greenery & let us help you transform your household and front/back
                     yard.
                   </p>
-                  <div class="d-flex justify-content-center justify-content-md-start">
-                    <button class="btn btn-gradient lh-button fs-8"><span>explore catalog</span><span class="uil uil-arrow-right"></span></button>
-                  </div>
+                  <button class="btn btn-gradient lh-button fs-8 d-inline-block"><span>explore catalog</span><span class="uil uil-arrow-right"></span></button>
                 </div>
               </div>
               <div class="row gap-4 gap-lg-7 gap-xl-22">
@@ -95,132 +92,101 @@
                   <p class="fs-7 fs-lg-5 fs-xl-12 text-success fw-bold mb-14">we have got you covered </p>
                   <h1 class="fs-5 fs-lg-3 fs-xl-2 text-secondary text-capitalize fw-light lh-normal mb-13">However Popular or <span class="fw-bold">rare plant </span>it is</h1>
                   <p class="fs-8 fs-xl-7 text-primary mb-13 mb-lg-5 mb-xl-15 fw-light lh-normal">Our catalog of plants of fruits and flowers; <br />for indoors and outdoors; is expanding everyday. </p>
-                  <div class="d-flex justify-content-center justify-content-md-start">
-                    <button class="btn btn-gradient lh-button fs-8"><span>explore catalog</span><span class="uil uil-arrow-right"></span></button>
-                  </div>
+                  <button class="btn btn-gradient lh-button fs-8 d-inline-block"><span>explore catalog</span><span class="uil uil-arrow-right"></span></button>
                 </div>
                 <div class="col-12 col-lg-5 pr-0 order-0 order-lg-1"><img class="w-75 w-lg-100" src="assets/img/Hero/planting.png" alt="" /></div>
               </div>
             </section>
-            <section class="container mb-7 mb-lg-16 mb-xl-11">
-              <div class="row">
-                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                  <div class="text-center"><img class="mb-3" src="assets/img/icons/Counter_1.png" alt="" />
-                    <h1 class="text-warning fs-13 fs-lg-15 fs-xl-2 lh-normal counter-delivared" data-countup='{"endValue":9124201,"autoIncreasing":true}' style="font-variant-numeric: lining-nums proportional-nums;">0</h1>
-                    <p class="text-success fs-7 fs-md-5 fs-lg-6 fs-xl-12 fw-bold mb-0">Plants Delivered</p>
-                  </div>
+            <section class="mb-7 mb-lg-16 mb-xl-11">
+              <div class="row gap-4 gap-lg-0">
+                <div class="col-12 col-lg-4 text-center"><img class="mb-3" src="assets/img/icons/Counter_1.png" alt="" />
+                  <h1 class="text-warning fs-13 fs-lg-15 fs-xl-2 lh-normal counter-delivared" data-countup='{"endValue":9124201,"autoIncreasing":true}' style="font-variant-numeric: lining-nums proportional-nums;">0</h1>
+                  <p class="text-success fs-7 fs-md-5 fs-lg-6 fs-xl-12 fw-bold mb-0">Plants Delivered</p>
                 </div>
-                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                  <div class="text-center"><img class="mb-3" src="assets/img/icons/Counter_2.png" alt="" />
-                    <h1 class="text-warning fs-13 fs-lg-15 fs-xl-2 lh-normal" data-countup='{"endValue":36487}' style="font-variant-numeric: lining-nums proportional-nums;"> 0</h1>
-                    <p class="text-success fs-7 fs-md-5 fs-lg-6 fs-xl-12 fw-bold mb-0">Happy customers </p>
-                  </div>
+                <div class="col-12 col-lg-4 text-center"><img class="mb-3" src="assets/img/icons/Counter_2.png" alt="" />
+                  <h1 class="text-warning fs-13 fs-lg-15 fs-xl-2 lh-normal" data-countup='{"endValue":36487}' style="font-variant-numeric: lining-nums proportional-nums;"> 0</h1>
+                  <p class="text-success fs-7 fs-md-5 fs-lg-6 fs-xl-12 fw-bold mb-0">Happy customers </p>
                 </div>
-                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                  <div class="text-center"><img class="mb-3" src="assets/img/icons/Counter_3.png" alt="" />
-                    <h1 class="text-warning fs-13 fs-lg-15 fs-xl-2 lh-normal" data-countup='{"endValue":400,"suffix":"+"}' style="font-variant-numeric: lining-nums proportional-nums;"> 0</h1>
-                    <p class="text-success fs-7 fs-md-5 fs-lg-6 fs-xl-12 fw-bold mb-0">Growing Catalog </p>
-                  </div>
+                <div class="col-12 col-lg-4 text-center"><img class="mb-3" src="assets/img/icons/Counter_3.png" alt="" />
+                  <h1 class="text-warning fs-13 fs-lg-15 fs-xl-2 lh-normal" data-countup='{"endValue":400,"suffix":"+"}' style="font-variant-numeric: lining-nums proportional-nums;"> 0</h1>
+                  <p class="text-success fs-7 fs-md-5 fs-lg-6 fs-xl-12 fw-bold mb-0">Growing Catalog </p>
                 </div>
               </div>
             </section>
             <section class="mb-7 mb-lg-16 mb-xl-11 text-center text-md-start" id="about">
               <h4 class="mb-3 mb-lg-14 fs-7 fs-lg-5 fs-xl-12 text-success fw-bold lh-normal">About us </h4>
-              <h1 class="fs-5 fs-lg-3 fs-xl-2 text-secondary text-capitalize fw-light mb-3 mb-lg-14 lh-normal">our <span class="fw-bold">Core </span>team<br />and their <span class="fw-bold">philosophy</span></h1>
-              <div class="row mb-7 mb-lg-20 mb-xl-24">
-                <div class="col-12 col-lg px-2 mb-3 mb-lg-0">
-                  <p class="text-black fs-9 fs md-8 lh-xl mb-0">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Semper lacus
-                    ipsum odio felis neque aliquet scelerisque
-                    eget venenatis. Morbi vitae, augue diam,
-                    viverra malesuada quam. Enim feugiat aliquet
-                    feugiat quis neque. Viverra
-                  </p>
+              <h1 class="fs-5 fs-lg-3 fs-xl-2 text-secondary text-capitalize fw-light mb-lg-14 lh-normal">our <span class="fw-bold">Core </span>team<br />and their <span class="fw-bold">philosophy</span></h1>
+              <div class="row mb-7 mb-lg-20 mb-xl-24 gap-3">
+                <div class="col-12 col-lg">
+                  <p class="text-black fs-9 fs md-8 lh-xl mb-0"> In Aranyak, we have a great team to help you manage and maintain all your healthy plants simultaneously. We help you to change your outlook on life with our huge collection of greenery. Refer to our collection of plants for indoor and outdoor vegetation and beautification.</p>
                 </div>
-                <div class="col-12 col-lg px-2">
-                  <p class="text-black fs-9 fs md-8 lh-xl mb-0">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Semper lacus
-                    ipsum odio felis neque aliquet scelerisque
-                    eget venenatis. Morbi vitae, augue diam,
-                    viverra malesuada quam. Enim feugiat aliquet
-                    feugiat quis neque. Viverra
+                <div class="col-12 col-lg">
+                  <p class="text-black fs-9 fs md-8 lh-xl mb-0"> Our wide variety of plants can help you get stimulated to creative works and help you maintain your mental health while also uplifting your way of life. Aranyak avails an efficient team of designers to help you plan your indoor and outdoor beautification works in no time. Enjoy your journey with Aranyak!</p>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center mb-6 mb-lg-7 mb-xl-16"> <img class="img-fluid" src="assets/img/team/badhon.png" alt="" />
+                <div class="about-card">
+                  <h1 class="fs-7 fs-lg-5 fs-xl-12 text-success fw-bold lh-normal">Meet Badhon</h1>
+                  <p class="fs-9 fs-lg-8 text-primary lh-normal mb-0">
+                    Dhruba Badhon lives in Dhaka with her husband,
+                    Raihan Nil, their daughter, Shimul and two cats,
+                    Pantha and Sanji. She began her professional carrier
+                    at a scam house named Hexit. At the summer of 2069,
+                    she created a ...
                   </p>
                 </div>
               </div>
-              <div class="d-flex justify-content-center align-items-center mb-6 mb-lg-7 mb-xl-16">
-                <div class="d-lg-flex align-items-center">
-                  <div><img class="w-100" src="assets/img/team/badhon.png" alt="" /></div>
-                  <div class="about-card">
-                    <h1 class="fs-7 fs-lg-5 fs-xl-12 text-success fw-bold lh-normal">Meet Badhon</h1>
-                    <p class="fs-9 fs-lg-8 text-primary lh-normal mb-0">
-                      Dhruba Badhon lives in Dhaka with her husband,
-                      Raihan Nil, their daughter, Shimul and two cats,
-                      Pantha and Sanji. She began her professional carrier
-                      at a scam house named Hexit. At the summer of 2069,
-                      she created a ...
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="text-center mb-13 mb-lg-5">
-                <p class="text-secondary text-capitalize fw-light mb-0 fs-15 fs-lg-18">
+              <div>
+                <p class="text-secondary text-capitalize fw-light mb-0 fs-15 fs-lg-18 text-center mb-13 mb-lg-5">
                   meet the <span class="fw-bold">team</span></p>
-              </div>
-              <div class="d-flex justify-content-center">
-                <div class="w-lg-75">
-                  <div class="row mb-13 mb-lg-5 w-100">
-                    <div class="col-12 col-md-4 px-3 text-center mb-5 mb-lg-0">
-                      <div class="mb-2 position-relative"><img class="w-100" src="assets/img/team/team/6.png" alt="" />
-                        <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
-                      </div>
-                      <h3 class="fs-9 fs-md-8 text-success fw-bold lh-normal mb-1">James T. Kirk</h3>
-                      <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3 lh-normal">CFO</h5>
-                      <p class="fs-9 fs-md-8 text-success lh-xl mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper</p>
+                <div class="row mb-13 w-lg-75 mb-lg-5 mx-auto g-lg-5">
+                  <div class="col-12 col-md-6 col-lg-4 px-3 text-center mb-5 mb-lg-0">
+                    <div class="mb-2 position-relative"><img class="w-100" src="assets/img/team/team/6.png" alt="" />
+                      <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
                     </div>
-                    <div class="col-12 col-md-4 px-3 text-center mb-5 mb-lg-0">
-                      <div class="mb-2 position-relative"><img class="w-100" src="assets/img/team/team/5.png" alt="" />
-                        <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
-                      </div>
-                      <h3 class="fs-9 fs-md-8 text-success fw-bold lh-normal mb-1">Montgomery Scott</h3>
-                      <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3 lh-normal">Accounts</h5>
-                      <p class="fs-9 fs-md-8 text-success lh-xl mb-0">Semper sed eget. Sed consectetur tellus tortor porta enim, cursus </p>
-                    </div>
-                    <div class="col-12 col-md-4 px-3 text-center mb-5 mb-lg-0">
-                      <div class="mb-2 position-relative"><img class="w-100" src="assets/img/team/team/4.png" alt="" />
-                        <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
-                      </div>
-                      <h3 class="fs-9 fs-md-8 text-success fw-bold lh-normal mb-1">Nyota Uhura</h3>
-                      <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3 lh-normal">Marketing</h5>
-                      <p class="fs-9 fs-md-8 text-success lh-xl mb-0">Cursus turpis. Tristique neque aliquam nunc elementum imperdiet</p>
-                    </div>
+                    <h3 class="fs-9 fs-md-8 text-success fw-bold lh-normal mb-1">James T. Kirk</h3>
+                    <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3 lh-normal">CFO</h5>
+                    <p class="fs-9 fs-md-8 text-success lh-xl mb-0">We're trying to teach you a technique here and how to use it.</p>
                   </div>
-                  <div class="row w-100">
-                    <div class="col-12 col-md-4 px-3 text-center mb-5 mb-lg-0">
-                      <div class="mb-2 position-relative"><img class="w-100" src="assets/img/team/team/3.png" alt="" />
-                        <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
-                      </div>
-                      <h3 class="fs-9 fs-md-8 text-success fw-bold lh-normal mb-1">Hikaru Sulu</h3>
-                      <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3 lh-normal">CFO</h5>
-                      <p class="fs-9 fs-md-8 text-success lh-xl mb-0">Imperdiet sed amet, fusce consequat magna non euismod sed. </p>
+                  <div class="col-12 col-md-6 col-lg-4 px-3 text-center mb-5 mb-lg-0">
+                    <div class="mb-2 position-relative"><img class="w-100" src="assets/img/team/team/5.png" alt="" />
+                      <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
                     </div>
-                    <div class="col-12 col-md-4 px-3 text-center mb-5 mb-lg-0">
-                      <div class="mb-2 position-relative"><img class="w-100" src="assets/img/team/team/2.png" alt="" />
-                        <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
-                      </div>
-                      <h3 class="fs-9 fs-md-8 text-success fw-bold lh-normal mb-1">Pavel Chekov</h3>
-                      <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3 lh-normal">cTO</h5>
-                      <p class="fs-9 fs-md-8 text-success lh-xl mb-0">Turpis nec lorem nunc sagittis, aliquam adipiscing. Dolor aliquet</p>
+                    <h3 class="fs-9 fs-md-8 text-success fw-bold lh-normal mb-1">Montgomery Scott</h3>
+                    <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3 lh-normal">Accounts</h5>
+                    <p class="fs-9 fs-md-8 text-success lh-xl mb-0">Just make a decision and let it go.</p>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 px-3 text-center mb-5 mb-lg-0">
+                    <div class="mb-2 position-relative"><img class="w-100" src="assets/img/team/team/4.png" alt="" />
+                      <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
                     </div>
-                    <div class="col-12 col-md-4 px-3 text-center mb-5 mb-lg-0">
-                      <div class="mb-2 position-relative"><img class="w-100" src="assets/img/team/team/1.png" alt="" />
-                        <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
-                      </div>
-                      <h3 class="fs-9 fs-md-8 text-success fw-bold lh-normal mb-1">Nyota Uhura</h3>
-                      <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3 lh-normal">Human resource</h5>
-                      <p class="fs-9 fs-md-8 text-success lh-xl mb-0"> condiment consequat, dolor id leo volutpat et. Viverra sem vitae ac.</p>
+                    <h3 class="fs-9 fs-md-8 text-success fw-bold lh-normal mb-1">Nyota Uhura</h3>
+                    <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3 lh-normal">Marketing</h5>
+                    <p class="fs-9 fs-md-8 text-success lh-xl mb-0">We'll throw some old gray clouds in here just sneaking around...</p>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 px-3 text-center mb-5 mb-lg-0">
+                    <div class="mb-2 position-relative"><img class="w-100" src="assets/img/team/team/3.png" alt="" />
+                      <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
                     </div>
+                    <h3 class="fs-9 fs-md-8 text-success fw-bold lh-normal mb-1">Hikaru Sulu</h3>
+                    <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3 lh-normal">CFO</h5>
+                    <p class="fs-9 fs-md-8 text-success lh-xl mb-0">Everything's not great in life, but we can still find beauty in it.</p>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 px-3 text-center mb-5 mb-lg-0">
+                    <div class="mb-2 position-relative"><img class="w-100" src="assets/img/team/team/2.png" alt="" />
+                      <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
+                    </div>
+                    <h3 class="fs-9 fs-md-8 text-success fw-bold lh-normal mb-1">Pavel Chekov</h3>
+                    <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3 lh-normal">CTO</h5>
+                    <p class="fs-9 fs-md-8 text-success lh-xl mb-0">That is when you can experience true joy, when you have no fear.</p>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 px-3 text-center mb-5 mb-lg-0">
+                    <div class="mb-2 position-relative"><img class="w-100" src="assets/img/team/team/1.png" alt="" />
+                      <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
+                    </div>
+                    <h3 class="fs-9 fs-md-8 text-success fw-bold lh-normal mb-1">Leonard McCoy</h3>
+                    <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3 lh-normal">Human resource</h5>
+                    <p class="fs-9 fs-md-8 text-success lh-xl mb-0">Let's make a nice big leafy tree.</p>
                   </div>
                 </div>
               </div>
@@ -234,58 +200,48 @@
                     <div class="swiper-container theme-slider" data-swiper='{"spaceBetween":12,"loop":true,"loopedSlides":5,"slideToClickedSlide":true,"slidesPerView":3,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}}'>
                       <div class="swiper-wrapper">
                         <div class="product-card swiper-slide h-auto">
-                          <div class="position-relative w-100"><img class="w-100" src="assets/img/products/products/1.png" alt="" />
-                            <div class="add-section"><a class="d-flex align-items-center" href="#!">
-                                <div class="mr-1"><span class="uil uil-file-heart text-success"></span></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                              </a><a class="d-flex align-items-center" href="#!"><span class="mr-1"><span class="uil uil-shopping-cart text-success"></span></span><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span></a></div>
+                          <div class="position-relative w-100"><img class="img-fluid" src="assets/img/products/products/1.png" alt="" />
+                            <div class="add-section"><a class="text-success fs-10 fs-md-9 fw-bold text-center" href="#!"><span class="uil uil-file-heart mr-1 align-middle"></span>add to wishlist </a><a class="text-success fs-10 fs-md-9 fw-bold" href="#!"><span class="uil uil-shopping-cart mr-1 align-middle"></span>add to cart</a></div>
                           </div>
-                          <div class="product-card-body">
-                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-0">Philodendron</h2>
-                            <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl mb-0">The Philodendron White Princess has been around for some time in private collections. But they have hit the market now in full big potted plants.</p>
+                          <div class="p-13 pt-0">
+                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-x1 text-center">Philodendron</h2>
+                            <p class="text-dark fs-10 fs-md-9 text-capitalize lh-xl mb-0">The Philodendron White Princess has been around for some time in private collections. But they have hit the market now in full big potted plants.</p>
                           </div>
                         </div>
                         <div class="product-card swiper-slide h-auto">
-                          <div class="position-relative w-100"><img class="w-100" src="assets/img/products/products/2.png" alt="" />
-                            <div class="add-section"><a class="d-flex align-items-center" href="#!">
-                                <div class="mr-1"><span class="uil uil-file-heart text-success"></span></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                              </a><a class="d-flex align-items-center" href="#!"><span class="mr-1"><span class="uil uil-shopping-cart text-success"></span></span><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span></a></div>
+                          <div class="position-relative w-100"><img class="img-fluid" src="assets/img/products/products/2.png" alt="" />
+                            <div class="add-section"><a class="text-success fs-10 fs-md-9 fw-bold text-center" href="#!"><span class="uil uil-file-heart mr-1 align-middle"></span>add to wishlist </a><a class="text-success fs-10 fs-md-9 fw-bold" href="#!"><span class="uil uil-shopping-cart mr-1 align-middle"></span>add to cart</a></div>
                           </div>
-                          <div class="product-card-body">
-                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-0">Monstera Obliqua Peruvian</h2>
-                            <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl mb-0">aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons</p>
+                          <div class="p-13 pt-0">
+                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-x1 text-center">Monstera Obliqua Peruvian</h2>
+                            <p class="text-dark fs-10 fs-md-9 text-capitalize lh-xl mb-0">aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons</p>
                           </div>
                         </div>
                         <div class="product-card swiper-slide h-auto">
-                          <div class="position-relative w-100"><img class="w-100" src="assets/img/products/products/3.png" alt="" />
-                            <div class="add-section"><a class="d-flex align-items-center" href="#!">
-                                <div class="mr-1"><span class="uil uil-file-heart text-success"></span></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                              </a><a class="d-flex align-items-center" href="#!"><span class="mr-1"><span class="uil uil-shopping-cart text-success"></span></span><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span></a></div>
+                          <div class="position-relative w-100"><img class="img-fluid" src="assets/img/products/products/3.png" alt="" />
+                            <div class="add-section"><a class="text-success fs-10 fs-md-9 fw-bold text-center" href="#!"><span class="uil uil-file-heart mr-1 align-middle"></span>add to wishlist </a><a class="text-success fs-10 fs-md-9 fw-bold" href="#!"><span class="uil uil-shopping-cart mr-1 align-middle"></span>add to cart</a></div>
                           </div>
-                          <div class="product-card-body">
-                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-0">Norfolk Island Pine</h2>
-                            <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl mb-0">Although a lively addition to your home all year round—the Norfolk Island Pine shines as a live holiday tree during the winter season</p>
+                          <div class="p-13 pt-0">
+                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-x1 text-center">Norfolk Island Pine</h2>
+                            <p class="text-dark fs-10 fs-md-9 text-capitalize lh-xl mb-0">Although a lively addition to your home all year round—the Norfolk Island Pine shines as a live holiday tree during the winter season</p>
                           </div>
                         </div>
                         <div class="product-card swiper-slide h-auto">
-                          <div class="position-relative w-100"><img class="w-100" src="assets/img/products/products/3.png" alt="" />
-                            <div class="add-section"><a class="d-flex align-items-center" href="#!">
-                                <div class="mr-1"><span class="uil uil-file-heart text-success"></span></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                              </a><a class="d-flex align-items-center" href="#!"><span class="mr-1"><span class="uil uil-shopping-cart text-success"></span></span><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span></a></div>
+                          <div class="position-relative w-100"><img class="img-fluid" src="assets/img/products/products/2.png" alt="" />
+                            <div class="add-section"><a class="text-success fs-10 fs-md-9 fw-bold text-center" href="#!"><span class="uil uil-file-heart mr-1 align-middle"></span>add to wishlist </a><a class="text-success fs-10 fs-md-9 fw-bold" href="#!"><span class="uil uil-shopping-cart mr-1 align-middle"></span>add to cart</a></div>
                           </div>
-                          <div class="product-card-body">
-                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-0">Norfolk Island Pine</h2>
-                            <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl mb-0">Although a lively addition to your home all year round—the Norfolk Island Pine shines as a live holiday tree during the winter season</p>
+                          <div class="p-13 pt-0">
+                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-x1 text-center">Monstera Obliqua Peruvian</h2>
+                            <p class="text-dark fs-10 fs-md-9 text-capitalize lh-xl mb-0">aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons</p>
                           </div>
                         </div>
                         <div class="product-card swiper-slide h-auto">
-                          <div class="position-relative w-100"><img class="w-100" src="assets/img/products/products/2.png" alt="" />
-                            <div class="add-section"><a class="d-flex align-items-center" href="#!">
-                                <div class="mr-1"><span class="uil uil-file-heart text-success"></span></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                              </a><a class="d-flex align-items-center" href="#!"><span class="mr-1"><span class="uil uil-shopping-cart text-success"></span></span><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span></a></div>
+                          <div class="position-relative w-100"><img class="img-fluid" src="assets/img/products/products/1.png" alt="" />
+                            <div class="add-section"><a class="text-success fs-10 fs-md-9 fw-bold text-center" href="#!"><span class="uil uil-file-heart mr-1 align-middle"></span>add to wishlist </a><a class="text-success fs-10 fs-md-9 fw-bold" href="#!"><span class="uil uil-shopping-cart mr-1 align-middle"></span>add to cart</a></div>
                           </div>
-                          <div class="product-card-body">
-                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-0">Monstera Obliqua Peruvian</h2>
-                            <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl mb-0">aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons</p>
+                          <div class="p-13 pt-0">
+                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-x1 text-center">Monstera Obliqua Peruvian</h2>
+                            <p class="text-dark fs-10 fs-md-9 text-capitalize lh-xl mb-0">aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons</p>
                           </div>
                         </div>
                       </div>
@@ -304,47 +260,48 @@
                     <div class="swiper-container theme-sliderdiv" data-swiper='{"spaceBetween":12,"loop":true,"loopedSlides":5,"slideToClickedSlide":true,"slidesPerView":3,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}}'>
                       <div class="swiper-wrapper">
                         <div class="product-card swiper-slide h-auto">
-                          <div class="position-relative w-100"><img class="w-100" src="assets/img/products/products/4.png" alt="" />
-                            <div class="add-section"><a class="d-flex align-items-center" href="#!">
-                                <div class="mr-1"><span class="uil uil-file-heart text-success"></span></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                              </a><a class="d-flex align-items-center" href="#!"><span class="mr-1"><span class="uil uil-shopping-cart text-success"></span></span><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span></a></div>
+                          <div class="position-relative w-100"><img class="img-fluid" src="assets/img/products/products/4.png" alt="" />
+                            <div class="add-section"><a class="text-success fs-10 fs-md-9 fw-bold text-center" href="#!"><span class="uil uil-file-heart mr-1 align-middle"></span>add to wishlist </a><a class="text-success fs-10 fs-md-9 fw-bold" href="#!"><span class="uil uil-shopping-cart mr-1 align-middle"></span>add to cart</a></div>
                           </div>
-                          <div class="product-card-body">
-                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-0">Snake/Sansevieria</h2>
-                            <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl mb-0">Sansevierias are succulent plants. they have strong, stiff, succulent leaves that store water. these plants release oxygen in the night</p>
+                          <div class="p-13 pt-0">
+                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-x1 text-center">Snake/Sansevieria</h2>
+                            <p class="text-dark fs-10 fs-md-9 text-capitalize lh-xl mb-0">Sansevierias are succulent plants. they have strong, stiff, succulent leaves that store water. these plants release oxygen in the night</p>
                           </div>
                         </div>
                         <div class="product-card swiper-slide h-auto">
-                          <div class="position-relative w-100"><img class="w-100" src="assets/img/products/products/5.png" alt="" />
-                            <div class="add-section"><a class="d-flex align-items-center" href="#!">
-                                <div class="mr-1"><span class="uil uil-file-heart text-success"></span></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                              </a><a class="d-flex align-items-center" href="#!"><span class="mr-1"><span class="uil uil-shopping-cart text-success"></span></span><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span></a></div>
+                          <div class="position-relative w-100"><img class="img-fluid" src="assets/img/products/products/5.png" alt="" />
+                            <div class="add-section"><a class="text-success fs-10 fs-md-9 fw-bold text-center" href="#!"><span class="uil uil-file-heart mr-1 align-middle"></span>add to wishlist </a><a class="text-success fs-10 fs-md-9 fw-bold" href="#!"><span class="uil uil-shopping-cart mr-1 align-middle"></span>add to cart</a></div>
                           </div>
-                          <div class="product-card-body">
-                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-0">Bromeliad Aechmea Pink</h2>
-                            <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl mb-0">Featuring colorful, long-lasting blooms, the Bromeliad Aechmea Pink is a unique flowering plant to add a touch of tropics With lasting blooms </p>
+                          <div class="p-13 pt-0">
+                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-x1 text-center">Bromeliad Aechmea Pink</h2>
+                            <p class="text-dark fs-10 fs-md-9 text-capitalize lh-xl mb-0">Featuring colorful, long-lasting blooms, the Bromeliad Aechmea Pink is a unique flowering plant to add a touch of tropics With lasting blooms</p>
                           </div>
                         </div>
                         <div class="product-card swiper-slide h-auto">
-                          <div class="position-relative w-100"><img class="w-100" src="assets/img/products/products/6.png" alt="" />
-                            <div class="add-section"><a class="d-flex align-items-center" href="#!">
-                                <div class="mr-1"><span class="uil uil-file-heart text-success"></span></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                              </a><a class="d-flex align-items-center" href="#!"><span class="mr-1"><span class="uil uil-shopping-cart text-success"></span></span><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span></a></div>
+                          <div class="position-relative w-100"><img class="img-fluid" src="assets/img/products/products/6.png" alt="" />
+                            <div class="add-section"><a class="text-success fs-10 fs-md-9 fw-bold text-center" href="#!"><span class="uil uil-file-heart mr-1 align-middle"></span>add to wishlist </a><a class="text-success fs-10 fs-md-9 fw-bold" href="#!"><span class="uil uil-shopping-cart mr-1 align-middle"></span>add to cart</a></div>
                           </div>
-                          <div class="product-card-body">
-                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-0">Parlor Palm</h2>
-                            <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl mb-0"> The parlor palm (Chamaedorea elegans) has long been used as an indoor plant. NASA gave this plant a high purifying score.</p>
+                          <div class="p-13 pt-0">
+                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-x1 text-center">Parlor Palm</h2>
+                            <p class="text-dark fs-10 fs-md-9 text-capitalize lh-xl mb-0">The parlor palm (Chamaedorea elegans) has long been used as an indoor plant. NASA gave this plant a high purifying score.</p>
                           </div>
                         </div>
                         <div class="product-card swiper-slide h-auto">
-                          <div class="position-relative w-100"><img class="w-100" src="assets/img/products/products/6.png" alt="" />
-                            <div class="add-section"><a class="d-flex align-items-center" href="#!">
-                                <div class="mr-1"><span class="uil uil-file-heart text-success"></span></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                              </a><a class="d-flex align-items-center" href="#!"><span class="mr-1"><span class="uil uil-shopping-cart text-success"></span></span><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span></a></div>
+                          <div class="position-relative w-100"><img class="img-fluid" src="assets/img/products/products/2.png" alt="" />
+                            <div class="add-section"><a class="text-success fs-10 fs-md-9 fw-bold text-center" href="#!"><span class="uil uil-file-heart mr-1 align-middle"></span>add to wishlist </a><a class="text-success fs-10 fs-md-9 fw-bold" href="#!"><span class="uil uil-shopping-cart mr-1 align-middle"></span>add to cart</a></div>
                           </div>
-                          <div class="product-card-body">
-                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-0">Parlor Palm</h2>
-                            <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl mb-0"> The parlor palm (Chamaedorea elegans) has long been used as an indoor plant. NASA gave this plant a high purifying score.</p>
+                          <div class="p-13 pt-0">
+                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-x1 text-center">Monstera Obliqua Peruvian</h2>
+                            <p class="text-dark fs-10 fs-md-9 text-capitalize lh-xl mb-0">aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons</p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide h-auto">
+                          <div class="position-relative w-100"><img class="img-fluid" src="assets/img/products/products/1.png" alt="" />
+                            <div class="add-section"><a class="text-success fs-10 fs-md-9 fw-bold text-center" href="#!"><span class="uil uil-file-heart mr-1 align-middle"></span>add to wishlist </a><a class="text-success fs-10 fs-md-9 fw-bold" href="#!"><span class="uil uil-shopping-cart mr-1 align-middle"></span>add to cart</a></div>
+                          </div>
+                          <div class="p-13 pt-0">
+                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-x1 text-center">Monstera Obliqua Peruvian</h2>
+                            <p class="text-dark fs-10 fs-md-9 text-capitalize lh-xl mb-0">aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons</p>
                           </div>
                         </div>
                       </div>
@@ -363,47 +320,39 @@
                     <div class="swiper-container theme-slider" data-swiper='{"spaceBetween":12,"loop":true,"loopedSlides":5,"slideToClickedSlide":true,"slidesPerView":3,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}}'>
                       <div class="swiper-wrapper">
                         <div class="product-card swiper-slide h-auto">
-                          <div class="position-relative w-100"><img class="w-100" src="assets/img/products/products/7.png" alt="" />
-                            <div class="add-section"><a class="d-flex align-items-center" href="#!">
-                                <div class="mr-1"><span class="uil uil-file-heart text-success"></span></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                              </a><a class="d-flex align-items-center" href="#!"><span class="mr-1"><span class="uil uil-shopping-cart text-success"></span></span><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span></a></div>
+                          <div class="position-relative w-100"><img class="img-fluid" src="assets/img/products/products/7.png" alt="" />
+                            <div class="add-section"><a class="text-success fs-10 fs-md-9 fw-bold text-center" href="#!"><span class="uil uil-file-heart mr-1 align-middle"></span>add to wishlist </a><a class="text-success fs-10 fs-md-9 fw-bold" href="#!"><span class="uil uil-shopping-cart mr-1 align-middle"></span>add to cart</a></div>
                           </div>
-                          <div class="product-card-body">
-                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-0">Peace Lily</h2>
-                            <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl mb-0">If you're prone to overwatering, try Spathiphyllum. With enough light, they'll also produce their spade-shaped flowers throughout the year. </p>
+                          <div class="p-13 pt-0">
+                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-x1 text-center">Peace Lily</h2>
+                            <p class="text-dark fs-10 fs-md-9 text-capitalize lh-xl mb-0">If you're prone to overwatering, try Spathiphyllum. With enough light, they'll also produce their spade-shaped flowers throughout the year.</p>
                           </div>
                         </div>
                         <div class="product-card swiper-slide h-auto">
-                          <div class="position-relative w-100"><img class="w-100" src="assets/img/products/products/8.png" alt="" />
-                            <div class="add-section"><a class="d-flex align-items-center" href="#!">
-                                <div class="mr-1"><span class="uil uil-file-heart text-success"></span></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                              </a><a class="d-flex align-items-center" href="#!"><span class="mr-1"><span class="uil uil-shopping-cart text-success"></span></span><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span></a></div>
+                          <div class="position-relative w-100"><img class="img-fluid" src="assets/img/products/products/8.png" alt="" />
+                            <div class="add-section"><a class="text-success fs-10 fs-md-9 fw-bold text-center" href="#!"><span class="uil uil-file-heart mr-1 align-middle"></span>add to wishlist </a><a class="text-success fs-10 fs-md-9 fw-bold" href="#!"><span class="uil uil-shopping-cart mr-1 align-middle"></span>add to cart</a></div>
                           </div>
-                          <div class="product-card-body">
-                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-0">Spider Plant</h2>
-                            <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl mb-0">The fast-growing shoots produce little &quot;babies&quot; that you can re-pot for added greenery elsewhere. Just stick to well-lit spots, water weekly. </p>
+                          <div class="p-13 pt-0">
+                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-x1 text-center">Spider Plant</h2>
+                            <p class="text-dark fs-10 fs-md-9 text-capitalize lh-xl mb-0">The fast-growing shoots produce little &quot;babies&quot; that you can re-pot for added greenery elsewhere. Just stick to well-lit spots, water weekly. </p>
                           </div>
                         </div>
                         <div class="product-card swiper-slide h-auto">
-                          <div class="position-relative w-100"><img class="w-100" src="assets/img/products/products/9.png" alt="" />
-                            <div class="add-section"><a class="d-flex align-items-center" href="#!">
-                                <div class="mr-1"><span class="uil uil-file-heart text-success"></span></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                              </a><a class="d-flex align-items-center" href="#!"><span class="mr-1"><span class="uil uil-shopping-cart text-success"></span></span><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span></a></div>
+                          <div class="position-relative w-100"><img class="img-fluid" src="assets/img/products/products/9.png" alt="" />
+                            <div class="add-section"><a class="text-success fs-10 fs-md-9 fw-bold text-center" href="#!"><span class="uil uil-file-heart mr-1 align-middle"></span>add to wishlist </a><a class="text-success fs-10 fs-md-9 fw-bold" href="#!"><span class="uil uil-shopping-cart mr-1 align-middle"></span>add to cart</a></div>
                           </div>
-                          <div class="product-card-body">
-                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-0">Kalanchoe</h2>
-                            <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl mb-0">This water-retaining succulent grows colorful, bell-shaped flowers and withstands dry climates and terrible temperature swings.</p>
+                          <div class="p-13 pt-0">
+                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-x1 text-center">Kalanchoe</h2>
+                            <p class="text-dark fs-10 fs-md-9 text-capitalize lh-xl mb-0">This water-retaining succulent grows colorful, bell-shaped flowers and withstands dry climates and terrible temperature swings.,</p>
                           </div>
                         </div>
                         <div class="product-card swiper-slide h-auto">
-                          <div class="position-relative w-100"><img class="w-100" src="assets/img/products/products/9.png" alt="" />
-                            <div class="add-section"><a class="d-flex align-items-center" href="#!">
-                                <div class="mr-1"><span class="uil uil-file-heart text-success"></span></div><span class="fs-10 fs-md-9 text-success fw-bold">add to wishlist </span>
-                              </a><a class="d-flex align-items-center" href="#!"><span class="mr-1"><span class="uil uil-shopping-cart text-success"></span></span><span class="fs-10 fs-md-9 text-success fw-bold">add to cart</span></a></div>
+                          <div class="position-relative w-100"><img class="img-fluid" src="assets/img/products/products/1.png" alt="" />
+                            <div class="add-section"><a class="text-success fs-10 fs-md-9 fw-bold text-center" href="#!"><span class="uil uil-file-heart mr-1 align-middle"></span>add to wishlist </a><a class="text-success fs-10 fs-md-9 fw-bold" href="#!"><span class="uil uil-shopping-cart mr-1 align-middle"></span>add to cart</a></div>
                           </div>
-                          <div class="product-card-body">
-                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-0">Kalanchoe</h2>
-                            <p class="text-cardText fs-10 fs-md-9 text-capitalize lh-xl mb-0">This water-retaining succulent grows colorful, bell-shaped flowers and withstands dry climates and terrible temperature swings.</p>
+                          <div class="p-13 pt-0">
+                            <h2 class="text-success fs-8 fs-md-8 fw-semi-bold lh-normal mb-x1 text-center">Monstera Obliqua Peruvian</h2>
+                            <p class="text-dark fs-10 fs-md-9 text-capitalize lh-xl mb-0">aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons</p>
                           </div>
                         </div>
                       </div>
@@ -427,7 +376,8 @@
                 <div class="col-12 col-lg-6">
                   <div class="review-card">
                     <div><img src="assets/img/review/1.png" alt="" /></div>
-                    <div><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" /><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" /><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" /><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" /><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" />
+                    <div>
+                      <div class="rating"></div>
                       <p class="text-black fs-9 fs-md-8 lh-normal mb-23">I’m not really a customer of this site, but their free gardening guide helped me a lot. Thank you ...</p>
                       <h2 class="text-success fs-9 fs-md-8 fw-bold lh-normal mb-0">Ahsoka Tano</h2>
                       <h4 class="text-black fs-10 fs-md-9 mb-0 lh-normal fw-light mb-0">Firefighter</h4>
@@ -435,7 +385,8 @@
                   </div>
                   <div class="review-card">
                     <div><img src="assets/img/review/2.png" alt="" /></div>
-                    <div><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" /><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" /><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" /><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" /><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" />
+                    <div>
+                      <div class="rating"></div>
                       <p class="text-black fs-9 fs-md-8 lh-normal mb-23">Aranyak is the perfect place for making yourself surrounded by lots and lots of plant with a guide of extensive details of how to take care of them😘</p>
                       <h2 class="text-success fs-9 fs-md-8 fw-bold lh-normal mb-0">Sabine Wren</h2>
                       <h4 class="text-black fs-10 fs-md-9 mb-0 lh-normal fw-light mb-0">Influencer &amp; Plant lover</h4>
@@ -443,7 +394,8 @@
                   </div>
                   <div class="review-card">
                     <div><img src="assets/img/review/3.png" alt="" /></div>
-                    <div><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" /><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" /><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" /><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" /><img class="me-1 mb-1" src="assets/img/icons/star.png" alt="" />
+                    <div>
+                      <div class="rating"></div>
                       <p class="text-black fs-9 fs-md-8 lh-normal mb-23">I’ve brought dozens of plants over the year from this site and not a penny wasted. All arround good service and professionalism from Aranyak. keep it up guys. </p>
                       <h2 class="text-success fs-9 fs-md-8 fw-bold lh-normal mb-0">Ezra Bridger</h2>
                       <h4 class="text-black fs-10 fs-md-9 mb-0 lh-normal fw-light mb-0">Small-time thief</h4>
@@ -454,7 +406,7 @@
                     <button class="btn btn-gradient"><span class="fs-8 lh-button">load more</span></button>
                   </div>
                 </div>
-                <div class="d-none d-lg-block col-lg-5"><img class="w-100" src="assets/img/illustrations/loveletter.png" alt="" /></div>
+                <div class="d-none d-lg-block col-lg-5"><img class="img-fluid" src="assets/img/illustrations/loveletter.png" alt="" /></div>
               </div>
             </section>
             <section class="mb-7 mb-lg-16 mb-xl-11" id="blogs">
@@ -464,7 +416,7 @@
                   To Bring more <span class="fw-bold">Green</span><br />into <span class="fw-bold">your home</span></h1>
                 <div class="col-12 col-lg-4 mb-5 mb-lg-0 px-lg-3">
                   <div class="blog-card">
-                    <div class="position-relative mb-3 mb-md-14 mb-lg-mb-13"> <img class="w-100" src="assets/img/blogs/blog_1.png" alt="" />
+                    <div class="position-relative mb-3 mb-md-14 mb-lg-mb-13"> <img class="img-fluid" src="assets/img/blogs/blog_1.png" alt="" />
                       <div class="inner-div">
                         <p class="fw-semi-bold lh-normal mb-0">indoor gardening</p>
                       </div>
@@ -473,26 +425,26 @@
                     <p class="text-cardText fs-9 fs-md-8 fw-light lh-xl mb-25">Indoor gardening is not just about maintaining plants but also about composition and arrangement in a ...</p><a class="text-success fw-bold lh-normal fs-9 fs-md-8 mb-0" href="#!">read more...</a>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 mb-4 mb-lg-0 px-lg-3">
+                <div class="col-12 col-lg-4 mb-5 mb-lg-0 px-lg-3">
                   <div class="blog-card">
-                    <div class="position-relative mb-3 mb-md-14 mb-lg-mb-13"> <img class="w-100" src="assets/img/blogs/blog_2.png" alt="" />
+                    <div class="position-relative mb-3 mb-md-14 mb-lg-mb-13"> <img class="img-fluid" src="assets/img/blogs/blog_2.png" alt="" />
                       <div class="inner-div">
                         <p class="fw-semi-bold lh-normal mb-0">Cactus gardening</p>
                       </div>
                     </div><span class="lh-normal mb-0" style="color: #5C5C5C;">2 mins read</span>
-                    <h2 class="text-success fw-semi-bold lh-normal text-capitalize mb-4 mb-md-13 mb-lg-18 blog-title">Cactus: Some Common Myths and Misconceptions </h2>
+                    <h2 class="text-success fw-semi-bold lh-normal text-capitalize mb-4 mb-md-13 mb-lg-18 blog-title">Cactus: Some Common Myths and Misconceptions</h2>
                     <p class="text-cardText fs-9 fs-md-8 fw-light lh-xl mb-25">Cactus Plants symbolize endurance, persistence, &amp; toughness. Gifting someone a cactus plant means ...</p><a class="text-success fw-bold lh-normal fs-9 fs-md-8 mb-0" href="#!">read more...</a>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 px-lg-3">
+                <div class="col-12 col-lg-4 mb-5 mb-lg-0 px-lg-3">
                   <div class="blog-card">
-                    <div class="position-relative mb-3 mb-md-14 mb-lg-mb-13"> <img class="w-100" src="assets/img/blogs/blog_3.png" alt="" />
+                    <div class="position-relative mb-3 mb-md-14 mb-lg-mb-13"> <img class="img-fluid" src="assets/img/blogs/blog_3.png" alt="" />
                       <div class="inner-div">
                         <p class="fw-semi-bold lh-normal mb-0">Fruit plant</p>
                       </div>
                     </div><span class="lh-normal mb-0" style="color: #5C5C5C;">2 mins read</span>
                     <h2 class="text-success fw-semi-bold lh-normal text-capitalize mb-4 mb-md-13 mb-lg-18 blog-title">6 reasons to reconsider where to plant your next fruit tree</h2>
-                    <p class="text-cardText fs-9 fs-md-8 fw-light lh-xl mb-25">Growing fruit trees indoors means you get to control everything from the light to humidity, right down to ...</p><a class="text-success fw-bold lh-normal fs-9 fs-md-8 mb-0" href="#!">read more...</a>
+                    <p class="text-cardText fs-9 fs-md-8 fw-light lh-xl mb-25">Growing fruit trees indoors means you get to control everything from the light to humidity, right down to ....</p><a class="text-success fw-bold lh-normal fs-9 fs-md-8 mb-0" href="#!">read more...</a>
                   </div>
                 </div>
               </div>
@@ -501,7 +453,7 @@
             </section>
             <section class="mb-7 mb-lg-16 mb-xl-11 text-center text-md-start" id="support">
               <div class="row gap-lg-7 gap-xl-22">
-                <div class="d-none d-lg-block col-lg-5"><img class="w-100" src="assets/img/illustrations/women_watering.png" alt="" /></div>
+                <div class="d-none d-lg-block col-lg-5"><img class="img-fluid" src="assets/img/illustrations/women_watering.png" alt="" /></div>
                 <div class="col-12 col-lg-6 d-flex flex-column justify-content-center h-100">
                   <p class="mb-3 fs-7 fs-lg-5 fs-xl-12 text-success fw-bold lh-normal">join us </p>
                   <h1 class="fs-5 fs-lg-3 fs-xl-2 text-secondary text-capitalize lh-normal fw-light mb-3">
@@ -593,6 +545,7 @@
     <script src="vendors/is/is.min.js"></script>
     <script src="vendors/countup/countUp.umd.js"></script>
     <script src="vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="vendors/rater-js/index.js"></script>
     <script src="vendors/fontawesome/all.min.js"></script>
     <script src="vendors/lodash/lodash.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>

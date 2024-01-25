@@ -753,6 +753,28 @@ var navbarDarkenOnScroll = function navbarDarkenOnScroll() {
   }
 };
 
+// import utils from "./utils";
+
+var raterInit = function raterInit() {
+  // console.log('hello');
+  var ratings = document.querySelectorAll('.rating');
+  console.log(ratings);
+  if (ratings.length) {
+    ratings.forEach(function (element) {
+      console.log(element);
+      window.raterJs({
+        max: 5,
+        rating: 5,
+        element: element,
+        rateCallback: function rateCallback(rating, done) {
+          this.setRating(rating);
+          done();
+        }
+      });
+    });
+  }
+};
+
 /* -------------------------------------------------------------------------- */
 /*                                 Scrollbars                                 */
 /* -------------------------------------------------------------------------- */
@@ -964,4 +986,5 @@ docReady(iconCopiedInit);
 docReady(scrollInit);
 docReady(listInit);
 docReady(countupInit);
+docReady(raterInit);
 //# sourceMappingURL=theme.js.map

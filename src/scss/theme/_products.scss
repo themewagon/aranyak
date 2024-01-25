@@ -85,6 +85,12 @@
             font-size: 40px;
             line-height: 0%;
         }
+
+        &:hover, &:focus, &:active {
+            background-color: white;
+            border: 5px solid #124838;
+            translate: scale(0.9);
+        }
     }
     .prev-button {
         right: 90%;
@@ -96,6 +102,7 @@
         @include media-breakpoint-up(xl){
             right: 98%;
         }
+
     }
     .next-button {
         left: 90%;

@@ -1,13 +1,11 @@
 import utils from './utils';
 
-
-
 /*-----------------------------------------------
 |  Swiper
 -----------------------------------------------*/
 
 // const swiperInit = () => {
- 
+
 const swiperInit = () => {
   const themeContainers = document.querySelectorAll('.swiper-theme-container');
   const navbarVerticalToggle = document.querySelector(
@@ -17,9 +15,7 @@ const swiperInit = () => {
 
     const swiper = themeContainer.querySelector('[data-swiper]');
     const options = utils.getData(swiper, 'swiper');
-
     const swiperNav = themeContainer.querySelector('.slider-nav');
-    
     const newSwiper = new window.Swiper(swiper, {
       ...options,
       navigation: {
@@ -27,12 +23,12 @@ const swiperInit = () => {
         prevEl: swiperNav?.querySelector('.prev-button'),
       },
     });
-    if( navbarVerticalToggle){
+    if (navbarVerticalToggle) {
       navbarVerticalToggle.addEventListener('navbar.vertical.toggle', () => {
         newSwiper.update();
       });
     }
-  })
+  });
 };
 
 export default swiperInit;

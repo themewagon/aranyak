@@ -435,18 +435,6 @@ var formValidationInit = function formValidationInit() {
 };
 
 /* -------------------------------------------------------------------------- */
-/*                                 Glightbox                                */
-/* -------------------------------------------------------------------------- */
-
-var glightboxInit = function glightboxInit() {
-  if (window.GLightbox) {
-    window.GLightbox({
-      selector: '[data-gallery]'
-    });
-  }
-};
-
-/* -------------------------------------------------------------------------- */
 /*                           Icon copy to clipboard                           */
 /* -------------------------------------------------------------------------- */
 
@@ -624,22 +612,6 @@ var listInit = function listInit() {
     }
   }
 };
-var lottieInit = function lottieInit() {
-  var lotties = document.querySelectorAll('.lottie');
-  if (lotties.length) {
-    lotties.forEach(function (item) {
-      var options = utils.getData(item, 'options');
-      window.bodymovin.loadAnimation(_objectSpread({
-        container: item,
-        path: '../img/animated-icons/warning-light.json',
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        name: 'Hello World'
-      }, options));
-    });
-  }
-};
 
 /* -------------------------------------------------------------------------- */
 /*                         Navbar Darken on scroll                        */
@@ -750,6 +722,24 @@ var navbarDarkenOnScroll = function navbarDarkenOnScroll() {
     navbarCollapse.addEventListener(Events.HIDDEN_BS_COLLAPSE, function () {
       navbar.style.transition = 'none';
     });
+  }
+};
+var raterInit = function raterInit() {
+  if (window.raterJs) {
+    var ratings = document.querySelectorAll('[data-rating]');
+    if (ratings.length) {
+      ratings.forEach(function (element) {
+        var options = utils.getData(element, 'rating');
+        window.raterJs(_objectSpread(_objectSpread({}, options), {}, {
+          max: 5,
+          element: element,
+          rateCallback: function rateCallback(rating, done) {
+            this.setRating(rating);
+            done();
+          }
+        }));
+      });
+    }
   }
 };
 
@@ -953,15 +943,14 @@ var themeControl = function themeControl() {
 /*                            Theme Initialization                            */
 /* -------------------------------------------------------------------------- */
 docReady(detectorInit);
-docReady(glightboxInit);
 docReady(formValidationInit);
 docReady(navbarDarkenOnScroll);
 docReady(swiperInit);
-docReady(lottieInit);
 docReady(themeControl);
 docReady(scrollbarInit);
 docReady(iconCopiedInit);
 docReady(scrollInit);
 docReady(listInit);
 docReady(countupInit);
+docReady(raterInit);
 //# sourceMappingURL=theme.js.map

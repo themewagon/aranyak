@@ -1,5 +1,87 @@
 include ./Product
 
+append variables
+
+	- 
+		var products = {
+			new: [
+				{
+					imgSrc: 'assets/img/products/products/1.png', 
+					productTitle: 'Philodendron', 
+					description: "The Philodendron White Princess has been around for some time in private collections. But they have hit the market now in full big potted plants."
+				},
+				{
+					imgSrc: 'assets/img/products/products/2.png', 
+					productTitle: 'Monstera Obliqua Peruvian', 
+					description: "aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons"
+				},
+				{
+					imgSrc: 'assets/img/products/products/3.png', 
+					productTitle: 'Norfolk Island Pine', 
+					description: "Although a lively addition to your home all year round—the Norfolk Island Pine shines as a live holiday tree during the winter season"
+				},
+				{
+					imgSrc: 'assets/img/products/products/2.png', 
+					productTitle: 'Monstera Obliqua Peruvian', 
+					description: "aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons"
+				},
+				{
+					imgSrc: 'assets/img/products/products/1.png', 
+					productTitle: 'Monstera Obliqua Peruvian', 
+					description: "aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons"
+				}
+			],
+			popular: [
+				{
+					imgSrc: 'assets/img/products/products/4.png', 
+					productTitle: 'Snake/Sansevieria', 
+					description: "Sansevierias are succulent plants. they have strong, stiff, succulent leaves that store water. these plants release oxygen in the night"
+				},
+				{
+					imgSrc: 'assets/img/products/products/5.png', 
+					productTitle: 'Bromeliad Aechmea Pink', 
+					description: "Featuring colorful, long-lasting blooms, the Bromeliad Aechmea Pink is a unique flowering plant to add a touch of tropics With lasting blooms"
+				},
+				{
+					imgSrc: 'assets/img/products/products/6.png', 
+					productTitle: 'Parlor Palm', 
+					description: "The parlor palm (Chamaedorea elegans) has long been used as an indoor plant. NASA gave this plant a high purifying score."
+				},
+				{
+					imgSrc: 'assets/img/products/products/2.png', 
+					productTitle: 'Monstera Obliqua Peruvian', 
+					description: "aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons"
+				},
+				{
+					imgSrc: 'assets/img/products/products/1.png', 
+					productTitle: 'Monstera Obliqua Peruvian', 
+					description: "aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons"
+				}
+			],
+			easy: [
+				{
+					imgSrc: 'assets/img/products/products/7.png', 
+					productTitle: 'Peace Lily', 
+					description: "If you're prone to overwatering, try Spathiphyllum. With enough light, they'll also produce their spade-shaped flowers throughout the year."
+				},
+				{
+					imgSrc: 'assets/img/products/products/8.png', 
+					productTitle: 'Spider Plant', 
+					description: 'The fast-growing shoots produce little "babies" that you can re-pot for added greenery elsewhere. Just stick to well-lit spots, water weekly. '
+				},
+				{
+					imgSrc: 'assets/img/products/products/9.png', 
+					productTitle: 'Kalanchoe', 
+					description: 'This water-retaining succulent grows colorful, bell-shaped flowers and withstands dry climates and terrible temperature swings.,'
+				},
+				{
+					imgSrc: 'assets/img/products/products/1.png', 
+					productTitle: 'Monstera Obliqua Peruvian', 
+					description: 'aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons'
+				}
+			]
+		}
+
 mixin Products 
 
 	section#products.mb-7.mb-lg-16.mb-xl-11.text-center.text-md-start
@@ -23,31 +105,8 @@ mixin Products
 							1024: {slidesPerView: 3}}
 						})
 						.swiper-wrapper
-							+ProductItem(
-								'assets/img/products/products/1.png', 
-								'Philodendron', 
-								'The Philodendron White Princess has been around for some time in private collections. But they have hit the market now in full big potted plants.'
-							)
-							+ProductItem(
-								'assets/img/products/products/2.png', 
-								'Monstera Obliqua Peruvian', 
-								'aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons'
-							)
-							+ProductItem(
-								'assets/img/products/products/3.png', 
-								'Norfolk Island Pine', 
-								'Although a lively addition to your home all year round—the Norfolk Island Pine shines as a live holiday tree during the winter season'
-							)
-							+ProductItem(
-								'assets/img/products/products/3.png', 
-								'Norfolk Island Pine', 
-								'Although a lively addition to your home all year round—the Norfolk Island Pine shines as a live holiday tree during the winter season'
-							)
-							+ProductItem(
-								'assets/img/products/products/2.png', 
-								'Monstera Obliqua Peruvian', 
-								'aS it is a small species, Monstera Obliqua is uncommon. Another reason for its scarcity is that it grows slowly and has short selling seasons'
-							)
+							each product in products.new 
+								+Product(product)
 					.slider-nav
 						button(data-slider="slider-1").btn.prev-button 
 							span.uil.uil-angle-left-b
@@ -72,26 +131,8 @@ mixin Products
 							1024: {slidesPerView: 3}}
 						})
 						.swiper-wrapper
-							+ProductItem(
-								'assets/img/products/products/4.png', 
-								'Snake/Sansevieria', 
-								"Sansevierias are succulent plants. they have strong, stiff, succulent leaves that store water. these plants release oxygen in the night"
-							)
-							+ProductItem(
-								'assets/img/products/products/5.png', 
-								'Bromeliad Aechmea Pink', 
-								'Featuring colorful, long-lasting blooms, the Bromeliad Aechmea Pink is a unique flowering plant to add a touch of tropics With lasting blooms '
-							)
-							+ProductItem(
-								'assets/img/products/products/6.png', 
-								'Parlor Palm', 
-								' The parlor palm (Chamaedorea elegans) has long been used as an indoor plant. NASA gave this plant a high purifying score.'
-							)
-							+ProductItem(
-								'assets/img/products/products/6.png', 
-								'Parlor Palm', 
-								' The parlor palm (Chamaedorea elegans) has long been used as an indoor plant. NASA gave this plant a high purifying score.'
-							)
+							each product in products.popular 
+								+Product(product)
 					.slider-nav
 						button(data-slider="slider-2").btn.prev-button 
 							span.uil.uil-angle-left-b
@@ -116,25 +157,8 @@ mixin Products
 							1024: {slidesPerView: 3}}
 						})
 						.swiper-wrapper
-							+ProductItem(
-								'assets/img/products/products/7.png', 
-								'Peace Lily', 
-								"If you're prone to overwatering, try Spathiphyllum. With enough light, they'll also produce their spade-shaped flowers throughout the year. "
-							)
-							+ProductItem(
-								'assets/img/products/products/8.png', 
-								'Spider Plant', 'The fast-growing shoots produce little "babies" that you can re-pot for added greenery elsewhere. Just stick to well-lit spots, water weekly. '
-							)
-							+ProductItem(
-								'assets/img/products/products/9.png', 
-								'Kalanchoe', 
-								'This water-retaining succulent grows colorful, bell-shaped flowers and withstands dry climates and terrible temperature swings.'
-								)
-							+ProductItem(
-								'assets/img/products/products/9.png', 
-								'Kalanchoe', 
-								'This water-retaining succulent grows colorful, bell-shaped flowers and withstands dry climates and terrible temperature swings.'
-								)
+							each product in products.easy 
+								+Product(product)
 					.slider-nav
 						button(data-slider="slider-3").btn.prev-button 
 							span.uil.uil-angle-left-b

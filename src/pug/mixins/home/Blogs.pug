@@ -1,6 +1,46 @@
-include ./Blog
+mixin Blog({imgSrc, type, requiredTime, title, description, link})
+    .blog-card
+        .position-relative.mb-3.mb-md-14.mb-lg-mb-13 
+            img(src=`${CWD}assets/img/blogs/${imgSrc}`, alt="").img-fluid
+            .inner-div 
+                p.fw-semi-bold.lh-normal.mb-0= type  
+        
+        span(style="color: #5C5C5C;").lh-normal.mb-0= requiredTime 
+        h2.text-success.fw-semi-bold.lh-normal.text-capitalize.mb-4.mb-md-13.mb-lg-18.blog-title= title
+        p.text-cardText.fs-9.fs-md-8.fw-light.lh-xl.mb-25= description
+        a(href=`${link}`).text-success.fw-bold.lh-normal.fs-9.fs-md-8.mb-0 read more...
+        
 
-mixin Blogs 
+
+mixin Blogs
+    - 
+        var blogItems = [
+            {
+                imgSrc: 'blog_1.png',
+                type: 'indoor gardening',
+                requiredTime: '5 mins read',
+                title: '4 Ways to Level Up Your Indoor Gardening Game',
+                description: 'Indoor gardening is not just about maintaining plants but also about composition and arrangement in a ...',
+                link: '#!'
+            },
+            {
+                imgSrc: 'blog_2.png',
+                type: 'Cactus gardening',
+                requiredTime: '2 mins read',
+                title: 'Cactus: Some Common Myths and Misconceptions',
+                description: 'Cactus Plants symbolize endurance, persistence, & toughness. Gifting someone a cactus plant means ...',
+                link: '#!'
+            },
+            {
+                imgSrc: 'blog_3.png',
+                type: 'Fruit plant',
+                requiredTime: '2 mins read',
+                title: '6 reasons to reconsider where to plant your next fruit tree',
+                description: 'Growing fruit trees indoors means you get to control everything from the light to humidity, right down to ....',
+                link: '#!'
+            }
+        ]
+    
 
     section#blogs.mb-7.mb-lg-16.mb-xl-11 
 
@@ -12,33 +52,9 @@ mixin Blogs
                 br
                 | into 
                 span.fw-bold your home
-            .col-12.col-lg-4.mb-5.mb-lg-0.px-lg-3
-                +Blog(
-                        'blog_1.png', 
-                        'indoor gardening', 
-                        '5 mins read', 
-                        '4 Ways to Level Up Your Indoor Gardening Game', 
-                        'Indoor gardening is not just about maintaining plants but also about composition and arrangement in a ...', 
-                        '#!'
-                    )
-            .col-12.col-lg-4.mb-4.mb-lg-0.px-lg-3
-                +Blog(
-                        'blog_2.png', 
-                        'Cactus gardening', 
-                        '2 mins read', 
-                        'Cactus: Some Common Myths and Misconceptions ', 
-                        'Cactus Plants symbolize endurance, persistence, & toughness. Gifting someone a cactus plant means ...', 
-                        '#!'
-                    )
-            .col-12.col-lg-4.px-lg-3
-                +Blog(
-                        'blog_3.png', 
-                        'Fruit plant', 
-                        '2 mins read', 
-                        '6 reasons to reconsider where to plant your next fruit tree', 
-                        'Growing fruit trees indoors means you get to control everything from the light to humidity, right down to ...', 
-                        '#!'
-                    )
+            each item in blogItems
+                .col-12.col-lg-4.mb-5.mb-lg-0.px-lg-3
+                    +Blog(item)
         .d-flex.justify-content-center 
             a(href="/")
                 button.btn.btn-gradient

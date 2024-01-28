@@ -8,13 +8,16 @@ include ../mixins/home/Support
 
 prepend styles
     link(rel="stylesheet", href=`${CWD}vendors/swiper/swiper-bundle.min.css`)
+    link(rel="stylesheet", href=`${CWD}vendors/rater-js/style.css`)
 
 prepend scripts 
     script(src=`${CWD}vendors/countup/countUp.umd.js`)
     script(src=`${CWD}vendors/swiper/swiper-bundle.min.js`)
+    script(src=`${CWD}vendors/rater-js/index.js`)
+
 
 append content 
-    .container
+    .container(data-bs-target="#navbar" data-bs-spy="scroll" data-bs-offset="0" tabindex="0")
         +HeroSection
         +Counter
         +AboutUs 

@@ -8,7 +8,7 @@ import themeControl from './theme-control';
 import scrollbarInit from './scrollbar';
 import iconCopiedInit from './icons';
 import scrollInit from './scroll';
-import countupInit from './counter';
+import countupInit from './countup';
 import raterInit from './rater';
 
 /* -------------------------------------------------------------------------- */

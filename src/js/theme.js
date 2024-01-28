@@ -23,5 +23,5 @@ docReady(scrollbarInit);
 docReady(iconCopiedInit);
 docReady(scrollInit);
 docReady(listInit);
-docReady(countupInit)
-docReady(raterInit)
+docReady(countupInit);
+docReady(raterInit);

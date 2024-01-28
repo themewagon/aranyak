@@ -5,7 +5,7 @@ mixin Navbar
                 span(class=`${item.className}`).text-secondary
                 span.ms-1.fs-10.text-primary #{item.label}
     header.sticky-top
-        nav.bg-warning.mb-6.navbar.navbar-expand-lg
+        nav#navbar.bg-warning.mb-6.navbar.navbar-expand-lg
             .container
                 a(href="#").navbar-brand.me-lg-auto
                     img(src=`${CWD}assets/img/logos/logo.png`, alt="")

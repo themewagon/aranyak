@@ -1,23 +1,23 @@
-// import utils from "./utils";
+import utils from "./utils";
 
 
 const raterInit = () => {
-    // console.log('hello');
-    const ratings = document.querySelectorAll('.rating');
-    console.log(ratings)
-    if(ratings.length){
-        ratings.forEach((element) => {
-            console.log(element);
-            window.raterJs({
-                max: 5,
-                rating: 5,
-                element: element,
-                rateCallback:function rateCallback(rating, done) {
-                    this.setRating(rating); 
-                    done(); 
-                }
+    if(window.raterJs){
+        const ratings = document.querySelectorAll('[data-rating]');
+        if(ratings.length){
+            ratings.forEach((element) => {
+                const options = utils.getData(element, 'rating');
+                window.raterJs({
+                    ...options,
+                    max: 5,
+                    element,
+                    rateCallback:function rateCallback(rating, done) {
+                        this.setRating(rating); 
+                        done(); 
+                    }
+                })
             })
-        })
+        }
     }
 };
 

@@ -378,6 +378,7 @@
   --falcon-dropdown-link-hover-color-global: #464646;
   --falcon-dropdown-link-hover-bg-global: #f9fafd;
   --falcon-popover-header-bg-global: #f9fafd;
+  --falcon-top-nav-height: 5rem;
   --falcon-toast-bg-global: rgba(255, 255, 255, 0.85);
   --falcon-toast-header-bg-global: rgba(255, 255, 255, 0.85);
   --falcon-list-group-bg-global: var(--falcon-emphasis-bg);

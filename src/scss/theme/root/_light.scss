@@ -298,6 +298,8 @@
   // Popover
   //  
   --#{$prefix}popover-header-bg-global: #{$gray-100};
+
+  --#{$prefix}top-nav-height: #{map_get($spacers, 7)};
   
   
   //

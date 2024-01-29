@@ -1,13 +1,13 @@
 mixin Blog({imgSrc, type, requiredTime, title, description, link})
     .blog-card
-        .position-relative.mb-3.mb-md-14.mb-lg-mb-13 
-            img(src=`${CWD}assets/img/blogs/${imgSrc}`, alt="").img-fluid
+        .position-relative.mb-3.mb-lg-4 
+            img(src=`${CWD}assets/img/blogs/${imgSrc}`, alt="").w-100
             .inner-div 
                 p.fw-semi-bold.lh-normal.mb-0= type  
         
         span(style="color: #5C5C5C;").lh-normal.mb-0= requiredTime 
-        h2.text-success.fw-semi-bold.lh-normal.text-capitalize.mb-4.mb-md-13.mb-lg-18.blog-title= title
-        p.text-cardText.fs-9.fs-md-8.fw-light.lh-xl.mb-25= description
+        h2.text-success.fw-semi-bold.lh-normal.text-capitalize.mb-3.mb-lg-4.blog-title= title
+        p.text-cardText.fs-9.fs-md-8.fw-light.lh-xl.mb-2= description
         a(href=`${link}`).text-success.fw-bold.lh-normal.fs-9.fs-md-8.mb-0 read more...
         
 
@@ -42,11 +42,11 @@ mixin Blogs
         ]
     
 
-    section#blogs.mb-7.mb-lg-16.mb-xl-11 
+    section#blogs.mb-7.mb-lg-16.mb-xl-11
 
-        .row.mb-6.mb-lg-7.mb-xl-16 
-            h3.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal.text-center.text-md-start aryanak blog 
-            h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.lh-normal.mb-13.mb-lg-7.text-center.text-md-start    
+        .row.mb-6.mb-lg-7.mb-xl-10
+            h3.mb-3.fs-7.fs-lg-6.text-success.fw-bold.lh-normal.text-center.text-lg-start aryanak blog 
+            h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.lh-normal.mb-7.mb-lg-9.text-center.text-lg-start    
                 | To Bring more 
                 span.fw-bold Green
                 br
@@ -55,9 +55,8 @@ mixin Blogs
             each item in blogItems
                 .col-12.col-lg-4.mb-5.mb-lg-0.px-lg-3
                     +Blog(item)
+
         .d-flex.justify-content-center 
-            a(href="/")
-                button.btn.btn-gradient
-                    span.fs-8.lh-button see all posts
-                    span
-                        span.uil.uil-arrow-right.fs-8.lh-button
+            button.btn.btn-gradient.fs-8
+                span explore catalog
+                span.uil.uil-arrow-right

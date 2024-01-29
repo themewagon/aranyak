@@ -64,11 +64,7 @@ $utilities: map_merge(
           sm: $line-height-sm,
           base: $line-height-base,
           lg: $line-height-lg,
-          xl: $line-height-xl,
-          normal: $line-height-normal,
-          2xl: $line-height-2xl,
-          xxl: $line-height-xxl,
-          button: $line-height-button
+          xl: $line-height-xl
         )
     ),
     "position": (

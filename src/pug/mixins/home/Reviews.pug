@@ -4,9 +4,9 @@ mixin Review({starCount,comment, name, designation, imageSrc})
             img(src=`${CWD}assets/img/review/${imageSrc}`, alt="")
         div 
             div(data-rating!=starCount)
-            p.text-black.fs-9.fs-md-8.lh-normal.mb-23= comment
-            h2.text-success.fs-9.fs-md-8.fw-bold.lh-normal.mb-0= name 
-            p.text-black.fs-10.fs-md-9.mb-0.lh-normal.mb-0= designation
+            p.text-black.fs-9.fs-md-8.mb-3= comment
+            h2.text-success.fs-9.fs-md-8.fw-bold.mb-0= name 
+            p.text-black.fs-10.fs-md-9.mb-0.mb-0= designation
 
 
 mixin Reviews
@@ -36,18 +36,18 @@ mixin Reviews
         ];
 
     section#review.mb-7.mb-lg-16.mb-xl-11 
-        h3.mb-3.mb-lg-14.fs-7.fs-lg-5.fs-xl-12.text-success.fw-bold.lh-normal.text-center.text-md-start review 
-        h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.lh-normal.fw-light.mb-13.mb-lg-7.text-center.text-md-start    
+        h3.mb-3.fs-7.fs-lg-6.text-success.fw-bold.lh-normal.text-center.text-lg-start review 
+        h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.lh-normal.fw-light.mb-6.mb-lg-7.text-center.text-lg-start    
             | Some words from 
             br
             | our 
             span.fw-bold Lovely customers
-        .row.gap-lg-7.gap-xl-22
+        .row.gap-4.gap-lg-0
             .col-12.col-lg-6
                 each item in reviewItems
                     +Review(item)
-                .mt-6.mt-lg-7.mt-xl-16.text-center
-                    button.btn.btn-gradient.d-inline-block
+                .mt-6.mt-md-9.mt-lg-10.text-center
+                    button.btn.btn-gradient.d-inline-flex
                         span.fs-8.lh-button load more
-            .col-lg-5.d-none.d-lg-block
+            .col-lg-6.d-none.d-lg-block.text-center
                 img(src=`${CWD}assets/img/illustrations/loveletter.png`, alt="").img-fluid

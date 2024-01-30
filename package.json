@@ -1,6 +1,6 @@
 {
-  "name": "falcon",
-  "version": "3.19.0",
+  "name": "aranyak",
+  "version": "1.0.0",
   "description": "Dashboard & WebApp Template",
   "main": "gulpfile.js",
   "scripts": {

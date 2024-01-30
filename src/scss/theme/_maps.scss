@@ -2,11 +2,9 @@
 //|   Utilities colors map
 //-----------------------------------------------*/
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
-$theme-dark-colors-rgb: map-loop($theme-dark-colors, to-rgb, "$value") !default;
 $utilities-colors: $theme-colors-rgb !default;
 
 $grays-rgb: map-loop($grays, to-rgb, "$value") !default;
-$dark-grays-rgb: map-loop($dark-grays, to-rgb, "$value") !default;
 
 $brand-colors-rgb: map-loop($brand-colors, to-rgb, "$value") !default;
 $theme-all-colors: map_merge_multiple($theme-colors, $grays, ('black': $black, 'white': $white)) !default;

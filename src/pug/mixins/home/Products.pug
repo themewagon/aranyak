@@ -84,8 +84,8 @@ append variables
 
 mixin Products 
 
-	section#products.mb-7.mb-lg-16.mb-xl-11.text-center.text-md-start
-		h3.mb-x1.fs-7.fs-lg-6.text-success.fw-bold.lh-normal Our Products 
+	section#products.mb-7.mb-lg-11.text-center.text-md-start
+		h3.mb-x1.fs-7.fs-lg-6.text-success.fw-bold.lh-normal.pt-6 Our Products 
 
 		#slider-1.mb-6.mb-lg-7.mb-xl-10 
 			h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-7.lh-normal    
@@ -165,5 +165,6 @@ mixin Products
 						button(data-slider="slider-3").btn.next-button 
 							span.uil.uil-angle-right-b
 		.d-flex.justify-content-center
-			button.btn.btn-gradient
-				span.fs-8.lh-button see full catalog
+			button.btn.btn-gradient.fs-8.d-inline-flex
+				span see full catalog
+				span.uil.uil-arrow-right

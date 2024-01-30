@@ -12,16 +12,7 @@
   }
 }
 
-.search {
-  padding: 10px 20px 10px 70px;
-  color:rgba(18,72,56,0.50);
-  border: 1px solid rgba(18, 72, 56, 0.70);
-  border-radius: 40px;
-  outline: none;
-}
-.search::placeholder{
-  color:rgba(18,72,0,0.50);
-}
+
 .navbar-main {
   a:hover, :focus{
     text-decoration: none;
@@ -36,18 +27,5 @@
   &:hover{
     color: #124838 !important;
     font-weight: 700 !important;
-  }
-}
-.search-icon{
-  position: absolute;
-  top: 8px;
-  left: 20px;
-  width: fit-content;
-
-  span {
-    font-size: 36px;
-    line-height: 0%;
-    color: map-get($theme-colors, 'success');
-    opacity: 60%;
   }
 }

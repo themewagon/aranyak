@@ -1,90 +1,30 @@
 /*-----------------------------------------------
 |   Form
 -----------------------------------------------*/
-.form-check-label {
-  line-height: 1.45rem;
-}
-.primary-form-check-input {
-  background: $primary;
-}
 
-/*-----------------------------------------------
-|   Remove spinner from Input[type="number"]
------------------------------------------------*/
-.input-spin-none::-webkit-outer-spin-button,
-.input-spin-none::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.search {
+  padding: 10px 20px 10px 70px;
+  color:rgba(18,72,56,0.50);
+  border: 1px solid rgba(18, 72, 56, 0.70);
+  border-radius: 40px;
+  outline: none;
+}
+.search::placeholder{
+  color:rgba(18,72,0,0.50);
 }
 
-.input-spin-none[type="number"] {
-  -moz-appearance: textfield;
-  /* Firefox */
-}
+.search-icon{
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  width: fit-content;
 
-/*-----------------------------------------------
-|   Theme Checkbox
------------------------------------------------*/
-.form-check {
-
-  @each $color,
-  $value in $theme-colors {
-    &-input {
-      &-#{$color} {
-        border-color: $value !important;
-
-        &:focus {
-          box-shadow: 0 0 $input-btn-focus-blur $input-btn-focus-width rgba($value, $input-btn-focus-color-opacity);
-        }
-
-        &:checked {
-          background-color: $value !important;
-        }
-        &.falcon-dual-switch {
-          background-color: $value !important;
-        }
-      }
-      &.falcon-dual-switch {
-        background-color: $primary;
-      }
-    }
+  span {
+    font-size: 36px;
+    line-height: 0%;
+    color: map-get($theme-colors, 'success');
+    opacity: 60%;
   }
-}
-
-.form-switch {
-  .falcon-dual-switch.form-check-input {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
-  }
-}
-
-.form-check-line-through {
-  &+label {
-    transition: $transition-base;
-  }
-
-  &:checked+label {
-    color: $gray-500;
-    text-decoration: line-through;
-  }
-
-  .ticket-todo-list &{
-    &+label {
-      transition: none;
-    }
-  }
-}
-
-// Floating Labels
-.form-floating>label {
-  line-height: 1.625rem;
-}
-
-input[type="file"].form-control-lg {
-  line-height: 1.813rem;
-}
-
-option:disabled {
-  color: var(--#{$prefix}gray-400);
 }
 
 .email-input {

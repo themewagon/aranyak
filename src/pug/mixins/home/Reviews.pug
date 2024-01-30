@@ -35,9 +35,10 @@ mixin Reviews
             }
         ];
 
-    section#review.mb-7.mb-lg-16.mb-xl-11 
-        h3.mb-3.fs-7.fs-lg-6.text-success.fw-bold.lh-normal.text-center.text-lg-start review 
-        h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.lh-normal.fw-light.mb-6.mb-lg-7.text-center.text-lg-start    
+    section#review.mb-7.mb-lg-11
+        
+        h3.mb-3.pt-6.fs-7.fs-lg-6.text-success.fw-bold.lh-normal.text-center.text-lg-start review 
+        h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.lh-normal.fw-light.mb-6.mb-lg-8.text-center.text-lg-start    
             | Some words from 
             br
             | our 
@@ -47,7 +48,8 @@ mixin Reviews
                 each item in reviewItems
                     +Review(item)
                 .mt-6.mt-md-9.mt-lg-10.text-center
-                    button.btn.btn-gradient.d-inline-flex
-                        span.fs-8.lh-button load more
+                    button.btn.btn-gradient.fs-8.my-3.d-inline-flex 
+                        span load more
+                        span.uil.uil-arrow-right
             .col-lg-6.d-none.d-lg-block.text-center
                 img(src=`${CWD}assets/img/illustrations/loveletter.png`, alt="").img-fluid

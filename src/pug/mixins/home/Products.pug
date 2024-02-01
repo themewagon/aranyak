@@ -85,10 +85,10 @@ append variables
 mixin Products 
 
 	section#products.mb-7.mb-lg-11.text-center.text-md-start
-		h3.mb-x1.fs-7.fs-lg-6.text-success.fw-bold.lh-normal.pt-6 Our Products 
+		h3.mb-x1.fs-7.fs-lg-6.text-success.fw-bold.pt-6 Our Products 
 
 		#slider-1.mb-6.mb-lg-7.mb-xl-10 
-			h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-7.lh-normal    
+			h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-7    
 				span.fw-bold New 
 				| Arrivals
 			.mb-4.mb-lg-0
@@ -108,13 +108,13 @@ mixin Products
 							each product in products.new 
 								+Product(product)
 					.slider-nav
-						button(data-slider="slider-1").btn.prev-button 
+						button(data-slider="slider-1").btn.prev-button.fs-8.fs-md-7
 							span.uil.uil-angle-left-b
-						button(data-slider="slider-1").btn.next-button 
+						button(data-slider="slider-1").btn.next-button.fs-8.fs-md-7 
 							span.uil.uil-angle-right-b
 
 		#slider-2.mb-6.mb-lg-7.mb-xl-10
-			h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.text-md-end.fw-light.mb-13.mb-lg-7.lh-normal    
+			h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.text-md-end.fw-light.mb-13.mb-lg-7    
 				span.fw-bold Popular 
 				| little plants
 			.mb-4.mb-lg-0
@@ -134,13 +134,13 @@ mixin Products
 							each product in products.popular 
 								+Product(product)
 					.slider-nav
-						button(data-slider="slider-2").btn.prev-button 
+						button(data-slider="slider-2").btn.prev-button.fs-8.fs-md-7
 							span.uil.uil-angle-left-b
-						button(data-slider="slider-2").btn.next-button 
+						button(data-slider="slider-2").btn.next-button.fs-8.fs-md-7
 							span.uil.uil-angle-right-b
 
 		#slider-3.mb-6.mb-lg-7.mb-xl-10
-			h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-7.lh-normal    
+			h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-13.mb-lg-7    
 				span.fw-bold Easy 
 				| to care plants
 			.mb-4.mb-lg-0
@@ -160,11 +160,12 @@ mixin Products
 							each product in products.easy 
 								+Product(product)
 					.slider-nav
-						button(data-slider="slider-3").btn.prev-button 
+						button(data-slider="slider-3").btn.prev-button.fs-8.fs-md-7
 							span.uil.uil-angle-left-b
-						button(data-slider="slider-3").btn.next-button 
+						button(data-slider="slider-3").btn.next-button.fs-8.fs-md-7
 							span.uil.uil-angle-right-b
 		.d-flex.justify-content-center
-			button.btn.btn-gradient.fs-8.d-inline-flex
-				span see full catalog
-				span.uil.uil-arrow-right
+			a(href="#!")
+				button.btn.btn-gradient.fs-8.d-inline-flex
+					span see full catalog
+					span.uil.uil-arrow-right

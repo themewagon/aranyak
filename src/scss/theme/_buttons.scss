@@ -8,25 +8,22 @@
 .btn-gradient {
   border-radius: 40px;
   background: linear-gradient(93deg, #85C7B3 -18.71%, #265C4C 117.68%), #FFF;
-  color: white;
-  font-weight: 700;
-  padding: 11px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: $white;
+  font-weight: $font-weight-bold;
+  padding: 8px 40px;
+  display: inline-block;
   gap: 21px;
   width: fit-content;
   box-shadow: none !important;
-  border: 1px solid transparent !important;
   border: none !important;
   transition: outline 0.3s ease-in-out, background 1s ease-in-out;
 
   &:hover, &:focus, &:active{
-    padding: 10px 50px;
-    color: #124838;
+    padding: 7px 40px;
+    color: map-get($theme-colors, 'success');
     background: linear-gradient(93deg, rgba(113, 179, 159, 0.00) -18.71%, rgba(18, 72, 56, 0.00) 117.68%), #FFF;
     border-radius: 40px;
-    border: 1px solid #124838 !important;
+    border: 1px solid map-get($theme-colors, 'success') !important;
     outline: 4px solid #85C7B3 !important;
     outline-offset: 5px;
   }
@@ -35,23 +32,23 @@
 
     &:hover, &:focus, &:active{
       padding: 9px 70px;
-      color: #124838;
+      color: map-get($theme-colors, 'success');
       background: linear-gradient(93deg, rgba(113, 179, 159, 0.00) -18.71%, rgba(18, 72, 56, 0.00) 117.68%), #FFF;
       border-radius: 40px;
-      border: 1px solid #124838 !important;
+      border: 1px solid map-get($theme-colors, 'success') !important;
       outline: 4px solid #85C7B3 !important;
       outline-offset: 5px;
     }
   }
   @include media-breakpoint-up(lg){
-    padding: 11px 80px;
+    padding: 12px 80px;
 
     &:hover, &:focus, &:active{
-      padding: 10px 80px;
-      color: #124838;
+      padding: 11px 80px;
+      color: map-get($theme-colors, 'success');
     background: linear-gradient(93deg, rgba(113, 179, 159, 0.00) -18.71%, rgba(18, 72, 56, 0.00) 117.68%), #FFF;
     border-radius: 40px;
-    border: 1px solid #124838 !important;
+    border: 1px solid map-get($theme-colors, 'success') !important;
     outline: 4px solid #85C7B3 !important;
     outline-offset: 5px;
     }

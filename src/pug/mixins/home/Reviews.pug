@@ -1,55 +1,56 @@
 mixin Review({starCount,comment, name, designation, imageSrc})
-    .review-card
-        div
-            img(src=`${CWD}assets/img/review/${imageSrc}`, alt="")
-        div 
-            div(data-rating!=starCount)
-            p.text-black.fs-9.fs-md-8.mb-3= comment
-            h2.text-success.fs-9.fs-md-8.fw-bold.mb-0= name 
-            p.text-black.fs-10.fs-md-9.mb-0.mb-0= designation
+  .review-card
+    div
+      img(src=`${CWD}assets/img/review/${imageSrc}`, alt="")
+    div 
+      - for(var i = 0; i < starCount; i ++)
+        img(src=`${CWD}assets/img/icons/star.png`, alt="").me-1.mb-1
+      p.text-black.fs-9.fs-md-8.mb-3.line-clamp-2= comment
+      h2.text-success.fs-9.fs-md-8.fw-bold.mb-0= name 
+      p.text-black.fs-10.fs-md-9.mb-0.mb-0= designation
 
 
 mixin Reviews
-    - 
-        var reviewItems = [
-            {
-                starCount: 5,
-                comment: 'I’m not really a customer of this site, but their free gardening guide helped me a lot. Thank you ...',
-                name: 'Ahsoka Tano', 
-                designation: 'Firefighter',
-                imageSrc:'1.png'
-            },
-            {
-                starCount: 5,
-                comment: "Aranyak is the perfect place for making yourself surrounded by lots and lots of plant with a guide of extensive details of how to take care of them😘", 
-                name:  'Sabine Wren', 
-                designation: 'Influencer & Plant lover',
-                imageSrc: '2.png'
-            },
-            {
-                starCount: 4.5,
-                comment: "I’ve brought dozens of plants over the year from this site and not a penny wasted. All arround good service and professionalism from Aranyak. keep it up guys. ", 
-                name: 'Ezra Bridger', 
-                designation: 'Small-time thief',
-                imageSrc: '3.png'
-            }
-        ];
+  - 
+    var reviewItems = [
+      {
+        starCount: 5,
+        comment: 'I’m not really a customer of this site, but their free gardening guide helped me a lot. Thank you ...',
+        name: 'Ahsoka Tano', 
+        designation: 'Firefighter',
+        imageSrc:'1.png'
+      },
+      {
+        starCount: 5,
+        comment: "Aranyak is the perfect place for making yourself surrounded by lots and lots of plant with a guide of extensive details of how to take care of them😘", 
+        name:  'Sabine Wren', 
+        designation: 'Influencer & Plant lover',
+        imageSrc: '2.png'
+      },
+      {
+        starCount: 5,
+        comment: "I’ve brought dozens of plants over the year from this site and not a penny wasted. All arround good service and professionalism from Aranyak. keep it up guys. ", 
+        name: 'Ezra Bridger', 
+        designation: 'Small-time thief',
+        imageSrc: '3.png'
+      }
+    ];
 
-    section#review.mb-7.mb-lg-11
-        
-        h3.mb-3.pt-6.fs-7.fs-lg-6.text-success.fw-bold.lh-normal.text-center.text-lg-start review 
-        h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.lh-normal.fw-light.mb-6.mb-lg-8.text-center.text-lg-start    
-            | Some words from 
-            br
-            | our 
-            span.fw-bold Lovely customers
-        .row.gap-4.gap-lg-0
-            .col-12.col-lg-6
-                each item in reviewItems
-                    +Review(item)
-                .mt-6.mt-md-9.mt-lg-10.text-center
-                    button.btn.btn-gradient.fs-8.my-3.d-inline-flex 
-                        span load more
-                        span.uil.uil-arrow-right
-            .col-lg-6.d-none.d-lg-block.text-center
-                img(src=`${CWD}assets/img/illustrations/loveletter.png`, alt="").img-fluid
+  section#review.mb-7.mb-lg-11
+    h3.mb-3.pt-6.fs-7.fs-lg-6.text-success.fw-bold.text-center.text-lg-start review 
+    h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-6.mb-lg-8.text-center.text-lg-start    
+      | Some words from 
+      br
+      | our 
+      span.fw-bold Lovely customers
+    .row.g-4.g-lg-6.g-xl-10
+      .col-12.col-lg-6
+        each item in reviewItems
+          +Review(item)
+        .mt-6.mt-md-9.mt-lg-10.text-center
+          a(href="#!")
+            button.btn.btn-gradient.fs-8.my-3.d-inline-flex 
+              span load more
+              span.uil.uil-arrow-right
+      .col-lg-6.d-none.d-lg-block.text-center
+        img(src=`${CWD}assets/img/illustrations/loveletter.png`, alt="").img-fluid

@@ -31,10 +31,6 @@
     "src": ["swiper-bundle.min.js", "swiper-bundle.min.css"],
     "dest": "swiper"
   },
-  "rater-js": {
-    "src": ["index.js", "lib/**/*.*"],
-    "dest": "rater-js"
-  },
   "@iconscout/unicons": {
     "src": ["script/monochrome/bundle.js", "script/monochrome/bundle.js.map", "css/line.css"],
     "dest": "unicon"

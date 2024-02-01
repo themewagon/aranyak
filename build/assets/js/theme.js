@@ -433,24 +433,6 @@ var formValidationInit = function formValidationInit() {
     }, false);
   });
 };
-var raterInit = function raterInit() {
-  if (window.raterJs) {
-    var ratings = document.querySelectorAll('[data-rating]');
-    if (ratings.length) {
-      ratings.forEach(function (element) {
-        var options = utils.getData(element, 'rating');
-        window.raterJs(_objectSpread(_objectSpread({}, options), {}, {
-          max: 5,
-          element: element,
-          rateCallback: function rateCallback(rating, done) {
-            this.setRating(rating);
-            done();
-          }
-        }));
-      });
-    }
-  }
-};
 
 /*-----------------------------------------------
 |  Swiper
@@ -486,4 +468,3 @@ docReady(detectorInit);
 docReady(formValidationInit);
 docReady(swiperInit);
 docReady(countupInit);
-docReady(raterInit);

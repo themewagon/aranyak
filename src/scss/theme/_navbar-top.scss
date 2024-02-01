@@ -22,14 +22,14 @@
 .nav-bar-item{
   color: #535353 !important;
   font-size: 20px !important;
-  font-weight: 500;
+  font-weight: $font-weight-medium;
   line-height: normal;
   &:hover{
-    color: #124838 !important;
-    font-weight: 700 !important;
+    color: map-get($theme-colors, 'success') !important;
+    font-weight: $font-weight-bold !important;
   }
 }
 .active {
-  color: #124838 !important;
-  font-weight: 700 !important;
+  color: map-get($theme-colors, 'success') !important;
+  font-weight: $font-weight-bold !important;
 }

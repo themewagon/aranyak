@@ -288,7 +288,6 @@ $card-bg-dark: tint-color($gray-1100, 2.9%) !default;
 $card-title-color: $headings-color !default;
 // scss-docs-end card-variables
 
-
 // Accordion
 // 
 // scss-docs-start accordion-variables
@@ -437,7 +436,8 @@ $navbar-light-hover-color: #{rgba(var(--#{$prefix}emphasis-color-rgb), .7)} !def
 $navbar-light-active-color: #{rgba(var(--#{$prefix}emphasis-color-rgb), .9)} !default;
 $navbar-light-disabled-color: #{rgba(var(--#{$prefix}emphasis-color-rgb), .3)} !default;
 $navbar-light-toggler-border-color: #{rgba(var(--#{$prefix}emphasis-color-rgb), .1)} !default;
-$navbar-light-toggler-icon-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#9da9bb' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M0 6h30M0 14h30M0 22h30'/%3E%3C/svg%3E"),
+$navbar-light-icon-color: $success !default;
+$navbar-light-toggler-icon-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-icon-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M0 6h30M0 14h30M0 22h30'/%3E%3C/svg%3E"),
     '#',
     '%23'
   ) !default;

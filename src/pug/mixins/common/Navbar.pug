@@ -1,24 +1,74 @@
 mixin Navbar 
-    section.container.text-center.text-md-end.p-2
-        for item in submenu
-            a(href="#").ms-2.ms-md-3
-                span(class=`${item.className}`).text-secondary
-                span.ms-1.fs-9.text-primary #{item.label}
-    header.sticky-top
-        nav#navbar-top.bg-warning.navbar.navbar-expand-lg
-            .container
-                a(href="#").navbar-brand.me-lg-auto
-                    img(src=`${CWD}assets/img/logos/logo.png`, alt="")
+  - 
+    var submenu = [
+        { 
+        label: 'sale', 
+        imageSrc: 'assets/img/icons/ps_sale-tag.png',
+        className: 'uil uil-bill' 
+        },
+        { 
+        label: 'wishlist', 
+        imageSrc: 'assets/img/icons/Vector.png',
+        className: 'uil uil-file-heart' 
+        },
+        { 
+        label: 'cart', 
+        imageSrc: 'assets/img/icons/cil_cart.png',
+        className: 'uil uil-shopping-cart' 
+        },
+        { 
+        label: 'log in/sign up', 
+        imageSrc: 'assets/img/icons/codicon_account.png',
+        className: 'uil uil-user-circle' 
+        }
+    ]
+
+  - 
+    var menu = [
+      { 
+        label: 'home', 
+        link: '#home' 
+      },
+      { 
+        label: 'about', 
+        link: '#about' 
+      },
+      { 
+        label: 'catalog', 
+        link: '#products' 
+      },
+      { 
+        label: 'reviews', 
+        link: '#review' 
+      }, 
+      { 
+        label: "support", 
+        link: "#support" 
+      }
+    ]
+
+
+  section.container.p-2
+    .d-flex.justify-content-sm-end.align-items-center
+      each item in submenu
+          a(href="#!").ms-2.ms-md-3
+            span(class=`${item.className}`).text-secondary
+            span.ms-1.fs-10.fs-sm-9.text-primary #{item.label}
+  header.sticky-top
+    nav#navbar-top.bg-warning.navbar.navbar-expand-lg
+      .container
+        a(href="#").navbar-brand.me-lg-auto
+          img(src=`${CWD}assets/img/logos/logo.png`, alt="").w-50.w-md-100.img-fluid
+    
+        button(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler.border-0
+          span.navbar-toggler-icon.text-white
+        div#navbarSupportedContent.collapse.navbar-collapse.ms-lg-4.ms-xl-9.mt-3.mt-lg-0.d-lg-flex.justify-content-between
             
-                button(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler
-                    span.navbar-toggler-icon.text-white
-                div#navbarSupportedContent.collapse.navbar-collapse.ms-lg-4.ms-xl-9.mt-3.mt-lg-0.d-lg-flex.justify-content-between
-                    
-                    form.form-inline.position-relative.w-lg-50
-                            input(type="search", name="search" placeholder=" search plants...").search.fs-8.bg-transparent.form-control
-                            .search-icon 
-                                span.uil.uil-search
-                    ul.navbar-nav.mt-2.mt-lg-0.ms-lg-4 
-                        for navMenu in menu 
-                            li.nav-item 
-                                a(href=`${navMenu.link}`).nav-link.nav-bar-item #{navMenu.label}
+          form.form-inline.position-relative.w-lg-50
+            input(type="search", name="search" placeholder=" search plants...").search.fs-8.bg-transparent.form-control
+            .search-icon 
+                span.uil.uil-search
+          ul.navbar-nav.mt-2.mt-lg-0.ms-lg-4 
+            each navMenu in menu 
+                li.nav-item 
+                    a(href=`${navMenu.link}`).nav-link.nav-bar-item #{navMenu.label}

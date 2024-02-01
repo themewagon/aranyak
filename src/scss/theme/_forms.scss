@@ -32,7 +32,7 @@
   border-radius: 40px !important;
   border: 2px solid rgba(18, 72, 56, 0.50);
   color: rgba(18, 72, 56, 0.50);
-  font-size: 20px;
+  font-size: map-get($font-sizes, 8 );
   outline: none;
   &:focus {
     outline: none;
@@ -40,7 +40,7 @@
   }
   &::placeholder{
     color: rgba(18, 72, 56, 0.50);
-    font-size: 20px;
+    font-size: map-get($font-sizes, 8 );;
   }
   @include media-breakpoint-up(lg){
     padding: 12px 25px; 

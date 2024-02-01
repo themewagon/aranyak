@@ -1,8 +1,8 @@
 .about-card {
     position: relative;
     border-radius: 40px;
-    border: 2px solid #FFD991;
-    background: #FFF;
+    border: 2px solid map-get($theme-colors, 'warning');
+    background: $white;
     padding: 24px 35px;
     margin-top: -50px;
     z-index: 99;
@@ -25,5 +25,9 @@
     span {
         color: map-get($theme-colors ,'secondary'); 
         opacity: 60%; 
+        &:hover, &:focus, &:active {
+            color: $white;
+        }
     }
+
 }

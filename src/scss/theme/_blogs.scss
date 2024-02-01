@@ -1,14 +1,14 @@
 .blog-card {
-    background-color: white;
-    
+    background-color: $white;
+    overflow: hidden;
     .inner-div {
-        width: fit-content;
         border-radius: 0px 15px;
         padding: 10px 20px;
-        color: white;
+        color: $white;
         background: rgba(18, 72, 56, 0.75);
         position: absolute;
         bottom: 0;
+        left: 0;
     }
 
     .blog-title {

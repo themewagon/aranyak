@@ -65,10 +65,10 @@ mixin Navbar
         div#navbarSupportedContent.collapse.navbar-collapse.ms-lg-4.ms-xl-9.mt-3.mt-lg-0.d-lg-flex.justify-content-between
             
           form.form-inline.position-relative.w-lg-50
-            input(type="search", name="search" placeholder=" search plants...").search.fs-8.bg-transparent.form-control
+            input(type="search", name="search" placeholder="search plants...").search.fs-8.bg-transparent.form-control
             .search-icon 
                 span.uil.uil-search
-          ul.navbar-nav.mt-2.mt-lg-0.ms-lg-4 
+          ul.navbar-nav.mt-2.mt-lg-0.ms-lg-4.gap-x1 
             each navMenu in menu 
                 li.nav-item 
-                    a(href=`${navMenu.link}`).nav-link.nav-bar-item #{navMenu.label}
+                    a(href=`${navMenu.link}`).nav-link.nav-bar-item.px-0 #{navMenu.label}

@@ -22277,11 +22277,15 @@ h5, .h5 {
   text-decoration: none;
 }
 
+@media (min-width: 992px) {
+  .nav-item {
+    width: 4rem;
+  }
+}
 .nav-bar-item {
   color: #535353 !important;
   font-size: 20px !important;
   font-weight: 500;
-  line-height: normal;
 }
 .nav-bar-item:hover {
   color: #124838 !important;
@@ -22297,7 +22301,7 @@ h5, .h5 {
 |   Form
 -----------------------------------------------*/
 .search {
-  padding: 10px 70px 10px 20px;
+  padding: 10px 74px 10px 20px;
   color: rgba(18, 72, 56, 0.5);
   border: 1px solid rgba(18, 72, 56, 0.7);
   border-radius: 40px;
@@ -22326,15 +22330,15 @@ h5, .h5 {
 
 .search-icon {
   position: absolute;
-  top: 8px;
-  right: 20px;
+  top: 0px;
+  right: 30px;
+  bottom: 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 .search-icon span {
   font-size: 36px;
-  line-height: 0%;
   color: #124838;
   opacity: 60%;
 }
@@ -22427,9 +22431,12 @@ h5, .h5 {
 .social-icons span {
   color: #E3A476;
   opacity: 60%;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .social-icons span:hover, .social-icons span:focus, .social-icons span:active {
-  color: #fff;
+  opacity: 1;
 }
 
 .product-card {
@@ -22467,6 +22474,7 @@ h5, .h5 {
 }
 @media (min-width: 1200px) {
   .product-card .add-section {
+    padding: 10px;
     gap: 75px;
   }
 }
@@ -22477,15 +22485,18 @@ h5, .h5 {
   font-size: 25px;
   line-height: 0%;
 }
+.product-card img {
+  width: 100%;
+  border-radius: 22px 22px 0px 0px !important;
+}
 @media (min-width: 992px) {
   .product-card .product-card-body {
     padding: 0 40px;
   }
 }
 .product-card:hover, .product-card:focus, .product-card:active {
-  border-radius: 18px;
-  outline: 3px solid #FFDA91;
-  outline-offset: 2px;
+  border-radius: 22px;
+  outline: 2px solid #E3A476;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -22539,30 +22550,10 @@ h5, .h5 {
   translate: scale(0.9);
 }
 .slider-nav .prev-button {
-  left: 90%;
-}
-@media (min-width: 576px) {
-  .slider-nav .prev-button {
-    left: 96%;
-  }
-}
-@media (min-width: 1200px) {
-  .slider-nav .prev-button {
-    left: 97%;
-  }
+  right: -3%;
 }
 .slider-nav .next-button {
-  right: 90%;
-}
-@media (min-width: 576px) {
-  .slider-nav .next-button {
-    right: 96%;
-  }
-}
-@media (min-width: 1200px) {
-  .slider-nav .next-button {
-    right: 97%;
-  }
+  left: -3%;
 }
 
 .review-card {
@@ -22584,6 +22575,19 @@ h5, .h5 {
 
 .blog-card {
   background-color: #fff;
+  border: 2px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 22px;
   overflow: hidden;
 }
 .blog-card .inner-div {
@@ -22603,6 +22607,9 @@ h5, .h5 {
     font-size: 30px;
   }
 }
+.blog-card:hover, .blog-card:focus {
+  border: 2px solid #E3A476;
+}
 .blog-card:hover .inner-div, .blog-card:focus .inner-div {
   background: rgba(255, 255, 255, 0.9);
   color: rgba(18, 72, 56, 0.75);
@@ -22618,29 +22625,24 @@ a:hover, a:focus {
   top: 0;
   z-index: 100;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+.absolute-div .submit-button {
+  height: 100%;
+  padding: 5px 15px;
+}
+.absolute-div .submit-button span {
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-.absolute-div .submit-button span {
   font-size: 25px;
 }
 @media (min-width: 768px) {
   .absolute-div .submit-button span {
     font-size: 35px;
-  }
-}
-@media (min-width: 992px) {
-  .absolute-div .submit-button span {
-    font-size: 40px;
-  }
-}
-@media (min-width: 1200px) {
-  .absolute-div .submit-button span {
-    font-size: 50px;
   }
 }
 .absolute-div .submit-button span::before {
@@ -22649,7 +22651,7 @@ a:hover, a:focus {
 
 .Footer {
   position: relative !important;
-  min-height: 95vh;
+  min-height: 100vh;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22681,7 +22683,6 @@ a:hover, a:focus {
 }
 @media (min-width: 768px) {
   .Footer {
-    min-height: 80vh;
     background-position: center;
   }
 }

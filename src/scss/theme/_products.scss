@@ -102,9 +102,9 @@
         //     right: 96%;
         // }
 
-        // @include media-breakpoint-up(xl){
-        //     right: 97%;
-        // }
+        @include media-breakpoint-up(xl){
+            left: -2%;
+        }
 
     }
     .next-button {
@@ -114,9 +114,9 @@
         //     left: 96%;
         // }
 
-        // @include media-breakpoint-up(xl){
-        //     left: 98%;
-        // }
+        @include media-breakpoint-up(xl){
+            right: -2%;
+        }
     }
 
 }

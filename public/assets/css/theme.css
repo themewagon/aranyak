@@ -22587,8 +22587,18 @@ h5, .h5 {
 .slider-nav .prev-button {
   left: -3%;
 }
+@media (min-width: 1200px) {
+  .slider-nav .prev-button {
+    left: -2%;
+  }
+}
 .slider-nav .next-button {
   right: -3%;
+}
+@media (min-width: 1200px) {
+  .slider-nav .next-button {
+    right: -2%;
+  }
 }
 
 .review-card {

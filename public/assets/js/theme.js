@@ -392,7 +392,7 @@ var countupInit = function countupInit() {
       var endValue = options.endValue;
       var countUp = new window.countUp.CountUp(node, endValue, _objectSpread({
         duration: 5,
-        enableScrollSpy: true
+        enableScrollOnce: true
       }, options));
       if (!countUp.error && autoIncreasing) {
         countUp.update(endValue);

@@ -1,15 +1,15 @@
 mixin Product({imgSrc, productTitle, description})
 	.product-card.swiper-slide.h-auto
 		.position-relative.w-100
-			img(src=`${CWD}${imgSrc}`, alt="").w-100
+			img(src=`${CWD}${imgSrc}`, alt="").w-100.img-fluid
 			.add-section
 				a(href="#!").text-success.fs-10.fs-md-9.fw-bold.text-center
-					span.uil.uil-file-heart.mr-1.align-middle
+					span.uil.uil-file-heart.me-1.align-middle
 					| add to wishlist 
 					
 
 				a(href="#!").text-success.fs-10.fs-md-9.fw-bold
-					span.uil.uil-shopping-cart.mr-1.align-middle
+					span.uil.uil-shopping-cart.me-1.align-middle
 					| add to cart
 
 		.p-x1

@@ -4,10 +4,12 @@ mixin Blog({imgSrc, type, requiredTime, title, description, link})
       img(src=`${CWD}assets/img/blogs/${imgSrc}`, alt="").w-100
       .inner-div 
         p.fw-semi-bold.mb-0= type
-    span(style="color: #5C5C5C;").mb-0= requiredTime 
-    h2.text-success.fw-semi-bold.text-capitalize.mb-3.mb-lg-4.blog-title= title
-    p.text-cardText.fs-9.fs-md-8.fw-light.lh-xl.mb-2= description
-    a(href=`${link}`).text-success.fw-bold.fs-9.fs-md-8.mb-0 read more...
+    div.p-2
+      span(style="color: #5C5C5C;").mb-0= requiredTime 
+      h2.text-success.fw-semi-bold.text-capitalize.mb-3.mb-lg-4.blog-title= title
+      
+      p.text-cardText.fs-9.fs-md-8.fw-light.lh-xl.mb-2.line-clamp-2= description
+      a(href=`${link}`).text-success.fw-bold.fs-9.fs-md-8.mb-0 read more...
         
 
 

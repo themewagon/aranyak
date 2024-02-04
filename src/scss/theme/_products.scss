@@ -21,6 +21,7 @@
             padding: 10px;
         }
         @include media-breakpoint-up(xl) {
+            padding: 10px;
             gap: 75px;
         }
 
@@ -33,6 +34,11 @@
         }
     }
 
+    img {
+        width: 100%;
+        border-radius: 22px 22px 0px 0px !important;
+    }
+
     .product-card-body {
         @include media-breakpoint-up(lg) {
             padding: 0 40px;
@@ -42,9 +48,8 @@
     &:hover,
     &:focus,
     &:active {
-        border-radius: 18px;
-        outline: 3px solid map-get($theme-colors, 'warning' );
-        outline-offset: 2px;
+        border-radius: 22px;
+        outline: 2px solid map-get($theme-colors, 'secondary' );
         box-shadow: none;
         .add-section {
             background: rgba(255, 255, 255, 0.90);
@@ -91,27 +96,27 @@
         }
     }
     .prev-button {
-        right: 90%;
+        left: -3%;
 
-        @include media-breakpoint-up(sm){
-            right: 96%;
-        }
+        // @include media-breakpoint-up(sm){
+        //     right: 96%;
+        // }
 
-        @include media-breakpoint-up(xl){
-            right: 97%;
-        }
+        // @include media-breakpoint-up(xl){
+        //     right: 97%;
+        // }
 
     }
     .next-button {
-        left: 90%;
+        right: -3%;
 
-        @include media-breakpoint-up(sm){
-            left: 96%;
-        }
+        // @include media-breakpoint-up(sm){
+        //     left: 96%;
+        // }
 
-        @include media-breakpoint-up(xl){
-            left: 97%;
-        }
+        // @include media-breakpoint-up(xl){
+        //     left: 98%;
+        // }
     }
 
 }

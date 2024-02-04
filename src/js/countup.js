@@ -12,7 +12,7 @@ const countupInit = () => {
       let { endValue } = options;
       const countUp = new window.countUp.CountUp(node, endValue, {
         duration: 5,
-        enableScrollSpy: true,
+        enableScrollOnce: true,
         ...options,
       });
       if (!countUp.error && autoIncreasing) {

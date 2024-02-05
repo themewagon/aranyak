@@ -1,7 +1,7 @@
 /* prettier-ignore */
 @use 'sass:math';
 @use "sass:string";
-$prefix: 'falcon-';
+$prefix: 'aranyak-';
 
 // Grid containers
 //
@@ -331,10 +331,10 @@ $table-bg-scale: -80% !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-// scss-docs-start btn-falcon-variables
-$btn-falcon-box-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1), 0 2px 5px 0 rgba(43, 45, 80, 0.08), 0 1px 1.5px 0 rgba($black, 0.07), 0 1px 2px 0 rgba($black, 0.08) !default;
-$btn-falcon-hover-box-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1), 0 2px 5px 0 rgba(43, 45, 80, 0.1), 0 3px 9px 0 rgba(43, 45, 80, 0.08), 0 1px 1.5px 0 rgba($black, 0.08), 0 1px 2px 0 rgba($black, 0.08) !default;
-// scss-docs-end btn-falcon-variables
+// scss-docs-start btn-aranyak-variables
+$btn-aranyak-box-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1), 0 2px 5px 0 rgba(43, 45, 80, 0.08), 0 1px 1.5px 0 rgba($black, 0.07), 0 1px 2px 0 rgba($black, 0.08) !default;
+$btn-aranyak-hover-box-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1), 0 2px 5px 0 rgba(43, 45, 80, 0.1), 0 3px 9px 0 rgba(43, 45, 80, 0.08), 0 1px 1.5px 0 rgba($black, 0.08), 0 1px 2px 0 rgba($black, 0.08) !default;
+// scss-docs-end btn-aranyak-variables
 
 // scss-docs-start input-btn-variables
 $input-btn-padding-y: 0.3125rem !default;
@@ -707,7 +707,7 @@ $offcanvas-bg-color: var(--#{$prefix}quaternary-bg) !default;
 
 
 // 
-// Falcon Specific
+// Aranyak Specific
 // 
 
 $transparent-50: rgba(var(--#{$prefix}quaternary-bg-rgb), 0.5) !default;

@@ -19,19 +19,30 @@
   }
 }
 
-@include media-breakpoint-up(lg){
-  .nav-item{
-    width: 4rem;
-  }
+.nav-item{
+  display: inline-block;
+  font-size: 0;
 }
 
+
 .nav-bar-item{
+  display: inline-block;
+  text-align: center;
   color: #535353 !important;
   font-size: 20px !important;
   font-weight: $font-weight-medium;
   &:hover{
     color: map-get($theme-colors, 'success') !important;
-    font-weight: $font-weight-bold !important;
+    font-weight: bold;
+  }
+
+  &::before{
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
   }
 }
 .active {

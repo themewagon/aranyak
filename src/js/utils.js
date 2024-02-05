@@ -56,7 +56,7 @@ const rgbaColor = (color = '#fff', alpha = 0.5) =>
 /* --------------------------------- Colors --------------------------------- */
 
 const getColor = (name, dom = document.documentElement) =>
-  getComputedStyle(dom).getPropertyValue(`--falcon-${name}`).trim();
+  getComputedStyle(dom).getPropertyValue(`--aranyak-${name}`).trim();
 
 const getColors = dom => ({
   primary: getColor('primary', dom),

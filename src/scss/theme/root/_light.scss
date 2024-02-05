@@ -62,31 +62,31 @@
   --#{$prefix}btn-reveal-focus-border-color: #{shade-color($white, 12.5%)};
 
   //
-  // Falcon Button
+  // Aranyak Button
   //
-  --#{$prefix}btn-falcon-background: var(--#{$prefix}quaternary-bg);
+  --#{$prefix}btn-aranyak-background: var(--#{$prefix}quaternary-bg);
   --#{$prefix}btn-disabled-color: #4d5969;
-  --#{$prefix}btn-falcon-box-shadow: #{$btn-falcon-box-shadow};
-  --#{$prefix}btn-falcon-hover-box-shadow: #{$btn-falcon-hover-box-shadow};
+  --#{$prefix}btn-aranyak-box-shadow: #{$btn-aranyak-box-shadow};
+  --#{$prefix}btn-aranyak-hover-box-shadow: #{$btn-aranyak-hover-box-shadow};
 
-  --#{$prefix}btn-falcon-default-color: var(--#{$prefix}gray-800);
-  --#{$prefix}btn-falcon-default-hover-color: #{shift-color($gray-800, 17%)};
-  --#{$prefix}btn-falcon-default-active-background: #{shade-color($white, 10%)};
-  --#{$prefix}btn-falcon-default-active-border: #{shift-color($gray-800, 17%)};
+  --#{$prefix}btn-aranyak-default-color: var(--#{$prefix}gray-800);
+  --#{$prefix}btn-aranyak-default-hover-color: #{shift-color($gray-800, 17%)};
+  --#{$prefix}btn-aranyak-default-active-background: #{shade-color($white, 10%)};
+  --#{$prefix}btn-aranyak-default-active-border: #{shift-color($gray-800, 17%)};
   --#{$prefix}btn-active-border-color: transparent;
 
-  [class^="btn-falcon-"].show {
-    --#{$prefix}btn-active-shadow: var(--#{$prefix}btn-falcon-box-shadow);
+  [class^="btn-aranyak-"].show {
+    --#{$prefix}btn-active-shadow: var(--#{$prefix}btn-aranyak-box-shadow);
   }
 
   @each $color, $value in $theme-colors {
     // 
-    // Falcon Button
+    // Aranyak Button
     // 
-    --#{$prefix}btn-falcon-#{$color}-color: var(--#{$prefix}#{$color});
-    --#{$prefix}btn-falcon-#{$color}-hover-color: #{shift-color($value, 17%)};
-    --#{$prefix}btn-falcon-#{$color}-active-background: #{shift-color($value, -80%)};
-    --#{$prefix}btn-falcon-#{$color}-active-color: #{shift-color($value, 17%)};
+    --#{$prefix}btn-aranyak-#{$color}-color: var(--#{$prefix}#{$color});
+    --#{$prefix}btn-aranyak-#{$color}-hover-color: #{shift-color($value, 17%)};
+    --#{$prefix}btn-aranyak-#{$color}-active-background: #{shift-color($value, -80%)};
+    --#{$prefix}btn-aranyak-#{$color}-active-color: #{shift-color($value, 17%)};
   }
 
   // Need To Work
@@ -277,9 +277,9 @@
   --#{$prefix}simplebar-bg: #{rgba($gray-400, 1)};
 
   // 
-  // Falcon pill
+  // Aranyak pill
   // 
-  --#{$prefix}nav-pills-falcon-active-bg-color: var(--#{$prefix}quaternary-bg);
+  --#{$prefix}nav-pills-aranyak-active-bg-color: var(--#{$prefix}quaternary-bg);
 
   //
   // Custom disabled button

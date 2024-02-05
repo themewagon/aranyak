@@ -71,4 +71,4 @@ mixin Navbar
           ul.navbar-nav.mt-2.mt-lg-0.ms-lg-4.gap-lg-x1 
             each navMenu in menu 
                 li.nav-item 
-                    a(href=`${navMenu.link}`).nav-link.nav-bar-item.px-0 #{navMenu.label}
+                    a(href=`${navMenu.link}` title=`${navMenu.label}`).nav-link.nav-bar-item.px-0 #{navMenu.label}

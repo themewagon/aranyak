@@ -3,10 +3,10 @@ mixin Footer
   footer(style=`background-image: url('${CWD}assets/img/illustrations/BOTTOM.png')` class="Footer")
     .pb-x1.px-3.px-lg-0 
       .container 
-        .row.align-items-end.g-6
+        .row.align-items-end.g-4.g-sm-6
           .col-6.col-md-4
             .mb-3.mb-md-5 
-              img(src=`${CWD}assets/img/logos/Footer_logo.png`, alt="").img-fluid
+              img(src=`${CWD}assets/img/logos/Footer_logo.png`, alt="").img-fluid.w-75.w-sm-100
             div
               .mb-2 
                 a(href="#").links.
@@ -45,7 +45,7 @@ mixin Footer
                 refund
 
           .col-12.col-md-4
-            .row.g-4.g-md-0
+            .row.g-4.g-sm-6.g-md-0
               .col-6.col-md-12
                 .mb-3.mb-md-5 
                   p(style="color: #FFF0D3;").fs-9.fs-md-8.fw-bold.mb-0 Follow Us At 
@@ -60,11 +60,10 @@ mixin Footer
                     span.uil.uil-twitter.text-white.fs-8
               .col-6.col-md-12 
                 .mb-3
-                  p(style="color: #FFF0D3;").fs-10.fs-md-9.fw-bold.lh-nomal.mb-0    Contact 
+                  p(style="color: #FFF0D3;").fs-9.fs-md-8.fw-bold.lh-nomal.mb-0    Contact 
                 .fs-10.fs-md-9
                   p.mb-0.text-white.opacity-70  Md Sourav Mostafa
                   p.mb-0.text-white.opacity-70  Dhaka, Bangladesh
-                  p.mb-0.text-white.opacity-70  +880 177 938 7790
 
     .bg-success.py-2.py-md-3.position-relative.terms-condition
       .overley-background

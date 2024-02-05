@@ -4,7 +4,7 @@ mixin Footer
     .pb-x1.px-3.px-lg-0 
       .container 
         .row.align-items-end.g-6
-          .col-6.col-md-4.d-flex.flex-column.justify-content-center
+          .col-6.col-md-4
             .mb-3.mb-md-5 
               img(src=`${CWD}assets/img/logos/Footer_logo.png`, alt="").img-fluid
             div
@@ -24,7 +24,7 @@ mixin Footer
               a(href="#support").links.
                 support
 
-          .col-6.col-md-4.d-flex.flex-column.justify-content-end
+          .col-6.col-md-4
             .mb-3.mb-md-5 
               p(style="color: #FFF0D3;").fs-9.fs-md-8.fw-bold.mb-0 User Account
             div
@@ -44,26 +44,27 @@ mixin Footer
               a(href="#!").links.
                 refund
 
-          .col-12.col-md-4.d-flex.flex-row.flex-md-column.justify-content-lg-end.h-100.gap-4.gap-sm-10.gap-md-0
-            div
-              .mb-3.mb-md-5 
-                p(style="color: #FFF0D3;").fs-9.fs-md-8.fw-bold.mb-0 Follow Us At 
-              .mb-3.mb-md-5
-                a(href="#!").links.me-2
-                  span.uil.uil-facebook.text-white.fs-8
-                a(href="#!").links.me-2
-                  span.uil.uil-instagram-alt.text-white.fs-8
-                a(href="#!").links.me-2
-                  span.uil.uil-youtube.text-white.fs-8
-                a(href="#!").links
-                  span.uil.uil-twitter.text-white.fs-8
-            div 
-              .mb-3
-                p(style="color: #FFF0D3;").fs-10.fs-md-9.fw-bold.lh-nomal.mb-0    Contact 
-              .fs-10.fs-md-9
-                p.mb-0.text-white.opacity-70  Md Sourav Mostafa
-                p.mb-0.text-white.opacity-70  Dhaka, Bangladesh
-                p.mb-0.text-white.opacity-70  +880 177 938 7790
+          .col-12.col-md-4
+            .row.g-4.g-md-0
+              .col-6.col-md-12
+                .mb-3.mb-md-5 
+                  p(style="color: #FFF0D3;").fs-9.fs-md-8.fw-bold.mb-0 Follow Us At 
+                .mb-3.mb-md-4
+                  a(href="#!").links.me-2
+                    span.uil.uil-facebook.text-white.fs-8
+                  a(href="#!").links.me-2
+                    span.uil.uil-instagram-alt.text-white.fs-8
+                  a(href="#!").links.me-2
+                    span.uil.uil-youtube.text-white.fs-8
+                  a(href="#!").links
+                    span.uil.uil-twitter.text-white.fs-8
+              .col-6.col-md-12 
+                .mb-3
+                  p(style="color: #FFF0D3;").fs-10.fs-md-9.fw-bold.lh-nomal.mb-0    Contact 
+                .fs-10.fs-md-9
+                  p.mb-0.text-white.opacity-70  Md Sourav Mostafa
+                  p.mb-0.text-white.opacity-70  Dhaka, Bangladesh
+                  p.mb-0.text-white.opacity-70  +880 177 938 7790
 
     .bg-success.py-2.py-md-3.position-relative.terms-condition
       .overley-background

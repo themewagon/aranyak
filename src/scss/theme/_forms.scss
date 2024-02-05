@@ -15,13 +15,13 @@
 
 .search-icon{
   position: absolute;
-  top: 0px;
+  top: 50%;
   left: 30px;
-  bottom: 0;
+  transform: translateY(-50%);
   width: fit-content;
 
   span {
-    font-size: 36px;
+    font-size: 24px;
     color: map-get($theme-colors, 'success');
     opacity: 60%;
   }

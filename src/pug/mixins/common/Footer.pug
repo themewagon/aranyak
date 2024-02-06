@@ -5,7 +5,7 @@ mixin Footer
       .container 
         .row.align-items-end.g-4.g-sm-6
           .col-6.col-md-4
-            .mb-3.mb-md-5 
+            .mb-6.mb-md-8 
               img(src=`${CWD}assets/img/logos/Footer_logo.png`, alt="").img-fluid
             div
               .mb-2 
@@ -26,7 +26,7 @@ mixin Footer
 
           .col-6.col-md-4
             .mb-3.mb-md-5 
-              p(style="color: #FFF0D3;").fs-9.fs-md-8.fw-bold.mb-0 User Account
+              h3(style="color: #FFF0D3;").fs-9.fs-md-8.fw-bold.mb-0 User Account
             div
               .mb-2 
                 a(href="#!").links.
@@ -46,18 +46,16 @@ mixin Footer
 
           .col-12.col-md-4
             .row.g-4.g-sm-6.g-md-0
-              .col-6.col-md-12
-                .mb-3.mb-md-5 
-                  p(style="color: #FFF0D3;").fs-9.fs-md-8.fw-bold.mb-0 Follow Us At 
-                .mb-3.mb-md-4
-                  a(href="#!").links.me-2
-                    span.uil.uil-facebook.text-white.fs-8
-                  a(href="#!").links.me-2
-                    span.uil.uil-instagram-alt.text-white.fs-8
-                  a(href="#!").links.me-2
-                    span.uil.uil-youtube.text-white.fs-8
-                  a(href="#!").links
-                    span.uil.uil-twitter.text-white.fs-8
+              .col-6.col-md-12.mb-md-7
+                h3(style="color: #FFF0D3;").fs-9.fs-md-8.fw-bold.mb-3 Follow Us At
+                a(href="#!").social-icon.me-2
+                  span.uil.uil-facebook.fs-8
+                a(href="#!").social-icon.me-2
+                  span.uil.uil-linkedin.fs-8
+                a(href="#!").social-icon.me-2
+                  span.uil.uil-youtube.fs-8
+                a(href="#!").social-icon
+                  span.uil.uil-twitter.fs-8
               .col-6.col-md-12 
                 .mb-3
                   p(style="color: #FFF0D3;").fs-9.fs-md-8.fw-bold.lh-nomal.mb-0    Contact 
@@ -68,10 +66,10 @@ mixin Footer
     .bg-success.py-2.py-md-3.position-relative.terms-condition
       .overley-background
       .container.py-12.text-div.text-md-end
-        a(href="#!").links.ms-lg-4   F.A.Q 
-        a(href="#!").links.ms-3.ms-lg-4   Cookies Policy
-        a(href="#!").links.ms-3.ms-lg-4   Legal Terms 
-        a(href="#!").links.ms-3.ms-lg-4   Privacy Policy
+        a(href="#!" title="F.A.Q").links.ms-lg-4   F.A.Q 
+        a(href="#!" title="Cookies Policy").links.ms-3.ms-lg-4   Cookies Policy
+        a(href="#!" title="Legal Terms").links.ms-3.ms-lg-4   Legal Terms 
+        a(href="#!" title="Privacy Policy").links.ms-3.ms-lg-4   Privacy Policy
                         
                       
         

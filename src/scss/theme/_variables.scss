@@ -196,7 +196,7 @@ $font-sizes: map-merge((
     5: $font-size-base * 3, // 48
     4: $font-size-base * 3.53, // 56.54
     3: pow($type-scale, 6) * $font-size-base, // 47.78
-    2: 5 * $font-size-base,
+    2: 4.5 * $font-size-base,
     1: pow($type-scale, 8) * $font-size-base, // 68.79
   ),
   $font-sizes

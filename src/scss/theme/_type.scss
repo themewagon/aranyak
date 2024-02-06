@@ -72,7 +72,7 @@ h5, .h5 {
   }
 }
 
-@for $i from 1 through 3 {
+@for $i from 1 through 5 {
   .line-clamp-#{$i} {
     display: -webkit-box;
     -webkit-line-clamp: #{$i};

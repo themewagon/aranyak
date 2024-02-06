@@ -1,7 +1,6 @@
 mixin Blog({imgSrc, type, requiredTime, title, description, link})
   .blog-card
-    .position-relative
-      img(src=`${CWD}assets/img/blogs/${imgSrc}`, alt="").w-100
+    .blog-card-top(style=`background-image: url('${CWD}assets/img/blogs/${imgSrc}')`)
       .inner-div 
         p.fw-semi-bold.mb-0= type
     .d-flex.flex-column.justify-content-between.h-100 

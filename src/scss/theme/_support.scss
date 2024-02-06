@@ -3,16 +3,19 @@
 }
 
 .absolute-div{
-
-    height: 100%;
-    .submit-button{
-
     position:absolute; 
     right:0; 
     top: 0; 
     z-index: 100;
+    max-width: 4rem;
+    max-height: 6rem;
+    width: 100%;
+    height: 100%;
+    .submit-button{
+        border-radius: map-get($border-radiuses, 'circle');
+        background: map-get($theme-colors, 'success');
+        width: 100%;
         height: 100%;
-        padding: 5px 15px;
         span {
             display: inline-flex;
             align-items: center;
@@ -24,5 +27,8 @@
             }
         }
 
+        @include hover-focus{
+            background: map-get($theme-colors, 'secondary');
+        }
     }
 }

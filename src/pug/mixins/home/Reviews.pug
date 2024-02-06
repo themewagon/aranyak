@@ -43,11 +43,11 @@ mixin Reviews
       br
       | our 
       span.fw-bold Lovely customers
-    .row.g-4.g-lg-6.g-xl-9
+    .row.g-4.g-lg-6.g-xl-9.align-items-center
       .col-12.col-lg-6
         each item in reviewItems
           +Review(item)
-        .mt-6.mt-md-9.mt-lg-10.text-center
+        .mt-3.mt-md-5.mt-lg-6.text-center
           a(href="#!")
             button.btn.btn-gradient.fs-8.my-3.d-inline-flex 
               span load more

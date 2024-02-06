@@ -51,9 +51,9 @@ mixin Navbar
   section.container.p-2
     .d-flex.justify-content-sm-end.align-items-center
       each item in submenu
-          a(href="#!").ms-2.ms-md-3
+          a(href="#!").ms-2.ms-md-3.submenu
             span(class=`${item.className}`).text-secondary
-            span.ms-1.fs-10.fs-sm-9.text-primary #{item.label}
+            span.ms-1.fs-10.fs-sm-9 #{item.label}
   header.sticky-top
     nav#navbar-top.bg-warning.navbar.navbar-expand-lg
       .container

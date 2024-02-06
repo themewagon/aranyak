@@ -1,16 +1,15 @@
 mixin Product({imgSrc, productTitle, description})
 	.product-card.swiper-slide.h-auto
-		.position-relative.w-100
-			img(src=`${CWD}${imgSrc}`, alt="")
+		.product-card-top(style=`background-image: url('${CWD}${imgSrc}')`)
 			.add-section
-					a(href="#!").fs-10.fs-md-9.d-flex.flex-column.flex-xl-row.align-items-center.text-success.fw-bold
-						span.uil.uil-file-heart.me-1.align-middle
-						| add to wishlist 
-					
-					a(href="#!").fs-10.fs-md-9.d-flex.flex-column.flex-xl-row.align-items-center.text-success.fw-bold
-						span.uil.uil-shopping-cart.me-1.align-middle
-						| add to cart
+				a(href="#!").fs-10.fs-md-9.d-flex.flex-column.flex-xl-row.align-items-center
+					span.uil.uil-file-heart.me-1.align-middle
+					| add to wishlist 
+				
+				a(href="#!").fs-10.fs-md-9.d-flex.flex-column.flex-xl-row.align-items-center.text-success.fw-bold
+					span.uil.uil-shopping-cart.me-1.align-middle
+					| add to cart
 
-		.p-x1
-			h2.text-success.fs-7.fw-semi-bold.mb-x1.text-center= productTitle 
-			p.text-dark.fs-9.fs-lg-8.text-capitalize.lh-xl.mb-0= description 
+		.d-flex.flex-column.justify-content-between.gap-x1.p-x1
+			h2.text-success.fs-7.fw-semi-bold.text-center.line-clamp-1= productTitle 
+			p.text-dark.fs-9.fs-lg-8.text-capitalize.lh-xl.mb-0.line-clamp-3= description 

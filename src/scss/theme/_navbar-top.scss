@@ -3,12 +3,12 @@
 // /* -------------------------------------------------------------------------- */
 
 
-.sub-navbar {
-  gap:27.67px; 
-  padding:10px 0px 10px 10px;
 
-  a:hover {
-    text-decoration: none;
+
+.submenu{
+  color: map-get($theme-colors,'primary') !important;
+  &:hover, &:focus, &:active{
+    color: map-get($theme-colors, 'secondary') !important;
   }
 }
 

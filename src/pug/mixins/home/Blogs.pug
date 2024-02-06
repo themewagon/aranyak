@@ -5,10 +5,10 @@ mixin Blog({imgSrc, type, requiredTime, title, description, link})
       .inner-div 
         p.fw-semi-bold.mb-0= type
     .d-flex.flex-column.justify-content-between.h-100 
-      div.p-2.pt-0
+      div.px-x1.py-2
         span(style="color: #5C5C5C;").mb-0= requiredTime 
         h2.text-success.fw-semi-bold.text-capitalize.mb-3.mb-lg-4.blog-title= title
-      div.p-2.pt-0
+      div.px-x1.py-2
         p.text-cardText.fs-9.fs-md-8.fw-light.lh-xl.mb-2.line-clamp-2= description
         a(href=`${link}`).text-success.fw-bold.fs-9.fs-md-8.mb-0 read more...
         

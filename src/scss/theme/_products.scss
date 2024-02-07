@@ -76,23 +76,25 @@
 
 .slider-nav {
     .next-button, .prev-button {
+        padding: 0;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         z-index: 999 ;
-        display: flex;
-        align-items: center;
+        height: 50px;
+        width: 50px;
         opacity: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #E2FFF6;
         border: 5px solid map-get($theme-colors, 'success');
         border-radius: map-get($border-radiuses, 'circle');
         font-weight: $font-weight-bold;
         color: map-get($theme-colors, 'success');
-
-        span {
-            display: inline-block;
-            align-items: center;
-            height: 100%;
+        
+        span{
+            font-size: 23px;
         }
 
         &:hover, &:focus, &:active {
@@ -104,14 +106,14 @@
     .prev-button {
         left: -3%;
 
-        @include media-breakpoint-up(xxl){
+        @include media-breakpoint-up(lg){
             left: -2%;
         }
     }
     .next-button {
         right: -3%;
 
-        @include media-breakpoint-up(xxl){
+        @include media-breakpoint-up(lg){
             right: -2%;
         }
     }

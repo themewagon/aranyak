@@ -22617,14 +22617,15 @@ h5, .h5 {
   border-radius: 50%;
   font-weight: 700;
   color: #124838;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .slider-nav .next-button span, .slider-nav .prev-button span {
   font-size: 23px;
 }
 .slider-nav .next-button:hover, .slider-nav .next-button:focus, .slider-nav .next-button:active, .slider-nav .prev-button:hover, .slider-nav .prev-button:focus, .slider-nav .prev-button:active {
-  background-color: #fff;
-  border: 5px solid #124838;
-  translate: scale(0.9);
+  opacity: 1;
 }
 .slider-nav .prev-button {
   left: -3%;

@@ -92,15 +92,14 @@
         border-radius: map-get($border-radiuses, 'circle');
         font-weight: $font-weight-bold;
         color: map-get($theme-colors, 'success');
+        transition: opacity 0.3s ease-in-out;
         
         span{
             font-size: 23px;
         }
 
         &:hover, &:focus, &:active {
-            background-color: $white;
-            border: 5px solid map-get($theme-colors, 'success');
-            translate: scale(0.9);
+            opacity: 1;
         }
     }
     .prev-button {

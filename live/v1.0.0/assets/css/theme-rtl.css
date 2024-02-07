@@ -22377,7 +22377,7 @@ h5, .h5 {
 }
 
 .email-input {
-  padding: 8px 25px;
+  padding: 12px 25px;
   border-radius: 40px !important;
   border: 2px solid rgba(18, 72, 56, 0.5);
   color: rgba(18, 72, 56, 0.5);
@@ -22409,11 +22409,6 @@ h5, .h5 {
 .email-input::placeholder {
   color: rgba(18, 72, 56, 0.5);
   font-size: 1.25rem;
-}
-@media (min-width: 992px) {
-  .email-input {
-    padding: 12px 25px;
-  }
 }
 
 /*-----------------------------------------------
@@ -22563,41 +22558,44 @@ h5, .h5 {
 }
 
 .slider-nav .prev-button, .slider-nav .next-button {
+  padding: 0;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 999;
+  height: 50px;
+  width: 50px;
+  opacity: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  opacity: 80%;
   background-color: #E2FFF6;
   border: 5px solid #124838;
   border-radius: 50%;
   font-weight: 700;
   color: #124838;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .slider-nav .prev-button span, .slider-nav .next-button span {
-  display: inline-block;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
+  font-size: 23px;
 }
 .slider-nav .prev-button:hover, .slider-nav .prev-button:focus, .slider-nav .prev-button:active, .slider-nav .next-button:hover, .slider-nav .next-button:focus, .slider-nav .next-button:active {
-  background-color: #fff;
-  border: 5px solid #124838;
-  translate: scale(0.9);
+  opacity: 1;
 }
 .slider-nav .prev-button {
   right: -3%;
 }
-@media (min-width: 1540px) {
+@media (min-width: 992px) {
   .slider-nav .prev-button {
     right: -2%;
   }
@@ -22605,7 +22603,7 @@ h5, .h5 {
 .slider-nav .next-button {
   left: -3%;
 }
-@media (min-width: 1540px) {
+@media (min-width: 992px) {
   .slider-nav .next-button {
     left: -2%;
   }
@@ -22694,23 +22692,28 @@ a:hover, a:focus {
   line-height: 1.5;
 }
 
-.absolute-div {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  max-width: 4rem;
-  max-height: 6rem;
-  width: 100%;
-  height: 100%;
-}
-.absolute-div .submit-button {
-  border-radius: 50%;
+.submit-button {
   background: #124838;
-  width: 100%;
-  height: 100%;
+  width: 58px;
+  height: 58px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50% !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+  z-index: 1000 !important;
 }
-.absolute-div .submit-button span {
+.submit-button span {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -22718,8 +22721,9 @@ a:hover, a:focus {
   -ms-flex-align: center;
   align-items: center;
   font-size: 25px;
+  color: #fff;
 }
-.absolute-div .submit-button span::before {
+.submit-button span::before {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -22728,8 +22732,14 @@ a:hover, a:focus {
   align-items: center;
   line-height: normal;
 }
-.absolute-div .submit-button:hover, .absolute-div .submit-button:focus {
-  background: #E3A476;
+.submit-button:hover, .submit-button:focus {
+  border: 2px solid #124838;
+  -webkit-box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 5px #124838, 0px 0px 0px 10px #fff, 0px 0px 0px 10.5px #124838;
+  box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 5px #124838, 0px 0px 0px 10px #fff, 0px 0px 0px 10.5px #124838;
+  background: #fff;
+}
+.submit-button:hover span, .submit-button:focus span {
+  color: #124838;
 }
 
 .Footer {

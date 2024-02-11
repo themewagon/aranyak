@@ -6,6 +6,8 @@
     gap: 32px;
     height: 100%;
     overflow: hidden;
+    border-radius: 25px;
+    transition: border-color 0.2s ease-in-out;
     .blog-card-top{
         min-height: 28rem;
         width: 100%;
@@ -38,6 +40,14 @@
         .inner-div {
             background: rgba(255, 255, 255, 0.90);
             color: rgba(18, 72, 56, 0.75);;
+        }
+    }
+    .read-more{
+        color: map-get($theme-colors, 'success');
+        transition: color 0.3s ease-in-out;
+        
+        &:hover, &:focus, &:active{
+            color: map-get($theme-colors, 'secondary');
         }
     }
 }

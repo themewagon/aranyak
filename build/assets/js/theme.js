@@ -433,6 +433,18 @@ var formValidationInit = function formValidationInit() {
     }, false);
   });
 };
+var navbarInit = function navbarInit() {
+  var navLinks = document.querySelectorAll('.navbar-nav .nav-item');
+  navLinks.forEach(function (navLink) {
+    navLink.addEventListener('click', function () {
+      var navbarToggler = document.querySelector('.navbar-toggler');
+      var navbarContainer = document.querySelector('#navbarSupportedContent');
+      navbarToggler.setAttribute('aria-expanded', false);
+      navbarContainer.classList.remove('show');
+      navbarToggler.classList.add('collapsed');
+    });
+  });
+};
 
 /*-----------------------------------------------
 |  Swiper
@@ -465,6 +477,7 @@ var swiperInit = function swiperInit() {
 /*                            Theme Initialization                            */
 /* -------------------------------------------------------------------------- */
 docReady(detectorInit);
+docReady(navbarInit);
 docReady(formValidationInit);
 docReady(swiperInit);
 docReady(countupInit);

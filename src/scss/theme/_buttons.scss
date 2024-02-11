@@ -7,10 +7,12 @@
 
 .btn-gradient {
   border-radius: 40px;
-  background: linear-gradient(93deg, #85C7B3 -18.71%, #265C4C 117.68%), #FFF;
+  background: linear-gradient(93deg, #85C7B3 -18.71%, #265C4C 117.68%);
+  background-size: 100%;
   color: $white;
   font-weight: $font-weight-bold;
-  display: flex;
+  position: relative;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 21px;
@@ -18,37 +20,36 @@
   height: 50px;
   box-shadow: none !important;
   border: none !important;
-  transition: all 0.5s ease-in-out;
+  transition:  all 0.4s ease-in-out;
+  z-index: 100;
+
+  &::before{
+    border-radius: inherit;
+    background: #FFF;
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -100;
+  }
 
   &:hover, &:focus, &:active{
-    color: map-get($theme-colors, 'success');
-    background: $white;
+    color: map-get($theme-colors, 'success') !important;
     border: 1px solid map-get($theme-colors, 'success') !important;
     outline: 4px solid #85C7B3 !important;
     outline-offset: 5px;
   }
+  &:hover::before{
+    opacity: 1;
+  }
+
   @include media-breakpoint-up(sm){
     width: 350px;
-    &:hover, &:focus, &:active{
-      padding: 8px 70px;
-      color: map-get($theme-colors, 'success');
-      background: linear-gradient(93deg, rgba(113, 179, 159, 0.00) -18.71%, rgba(18, 72, 56, 0.00) 117.68%), #FFF;
-      border-radius: 40px;
-      border: 1px solid map-get($theme-colors, 'success') !important;
-      outline: 4px solid #85C7B3 !important;
-      outline-offset: 5px;
-    }
-  }
-  @include media-breakpoint-up(lg){
-
-    &:hover, &:focus, &:active{
-      color: map-get($theme-colors, 'success');
-    background: linear-gradient(93deg, rgba(113, 179, 159, 0.00) -18.71%, rgba(18, 72, 56, 0.00) 117.68%), #FFF;
-    border-radius: 40px;
-    border: 1px solid map-get($theme-colors, 'success') !important;
-    outline: 4px solid #85C7B3 !important;
-    outline-offset: 5px;
-    }
   }
   .arrow-right-alt{
     display: none;

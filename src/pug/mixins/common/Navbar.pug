@@ -48,28 +48,27 @@ mixin Navbar
     ]
 
 
-  header.fixed-top.shadow-sm
-    .bg-white
-      .container.p-1.p-lg-2
-        .d-flex.justify-content-sm-end.align-items-center
-          each item in submenu
-              a(href="#!").ms-2.ms-md-3.submenu
-                span(class=`${item.className}`).text-secondary
-                span.ms-1.fs-10.fs-sm-9 #{item.label}
-    nav#navbar-top.bg-warning.navbar.navbar-expand-lg.py-0.py-lg-1
-      .container
-        a(href="#").navbar-brand.me-lg-auto
-          img(src=`${CWD}assets/img/logos/logo.png`, alt="").w-50.w-md-100.img-fluid
-    
-        button(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler.border-0.pe-0
-          span.navbar-toggler-icon
-        div#navbarSupportedContent.collapse.navbar-collapse.ms-lg-4.ms-xl-9.mt-3.mt-lg-0.d-lg-flex.justify-content-between
-            
-          form.form-inline.position-relative.w-lg-50
-            input(type="search", name="search" placeholder="search plants...").search.fs-8.bg-transparent.form-control
-            .search-icon 
-                span.uil.uil-search
-          ul.navbar-nav.mt-2.mt-lg-0.ms-lg-4.gap-lg-x1 
-            each navMenu in menu 
-                li.nav-item 
-                    a(href=`${navMenu.link}` title=`${navMenu.label}`).nav-link.nav-bar-item.px-0 #{navMenu.label}
+  .bg-white.p-1.p-lg-2.sub-nav
+    .container
+      .d-flex.justify-content-sm-end.align-items-center
+        each item in submenu
+            a(href="#!").ms-2.ms-md-3.submenu
+              span(class=`${item.className}`)
+              span.ms-1.fs-10.fs-sm-9 #{item.label}
+  nav#navbar-top.bg-warning.navbar.navbar-expand-lg.py-0.py-lg-1.shadow-sm
+    .container
+      a(href="#").navbar-brand.me-lg-auto
+        img(src=`${CWD}assets/img/logos/logo.png`, alt="").w-50.w-md-100.img-fluid
+  
+      button(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler.border-0.pe-0
+        span.navbar-toggler-icon
+      div#navbarSupportedContent.collapse.navbar-collapse.ms-lg-4.ms-xl-9.mt-3.mt-lg-0.d-lg-flex.justify-content-between
+          
+        form.form-inline.position-relative.w-lg-50
+          input(type="search", name="search" placeholder="search plants...").search.fs-8.bg-transparent.form-control
+          .search-icon 
+              span.uil.uil-search
+        ul.navbar-nav.mt-2.mt-lg-0.ms-lg-4.gap-lg-x1 
+          each navMenu in menu 
+              li.nav-item 
+                  a(href=`${navMenu.link}` title=`${navMenu.label}`).nav-link.nav-bar-item.px-0 #{navMenu.label}

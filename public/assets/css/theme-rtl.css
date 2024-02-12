@@ -21479,9 +21479,9 @@ h5, .h5 {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   border: none !important;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
   z-index: 100;
 }
 .btn-gradient::before {
@@ -21495,9 +21495,9 @@ h5, .h5 {
   right: 0;
   left: 0;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in;
+  -o-transition: opacity 0.4s ease-in;
+  transition: opacity 0.4s ease-in;
   z-index: -100;
 }
 .btn-gradient:hover, .btn-gradient:focus, .btn-gradient:active {

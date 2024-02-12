@@ -22885,7 +22885,7 @@ a:hover, a:focus {
 }
 @media (min-width: 768px) {
   .terms-condition .links {
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
   }
 }
 .terms-condition .links:hover, .terms-condition .links:focus {

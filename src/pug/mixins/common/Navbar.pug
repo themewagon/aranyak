@@ -57,7 +57,7 @@ mixin Navbar
               span.ms-1.fs-10.fs-sm-9 #{item.label}
   nav#navbar-top.navbar.navbar-expand-lg.py-1(data-navbar-soft-on-scroll)
     .container
-      a(href="#home").navbar-brand.me-lg-auto
+      a(href="#").navbar-brand.me-lg-auto
         img(src=`${CWD}assets/img/logos/logo.png`, alt="").w-50.w-md-100.img-fluid
   
       button(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler.border-0.pe-0
@@ -68,7 +68,7 @@ mixin Navbar
             input(type="search", name="search" placeholder="search plants...").search.fs-8.bg-transparent.form-control
             .search-icon 
                 span.uil.uil-search
-          ul.navbar-nav.mt-2.mt-lg-1.ms-lg-4.ms-xl-7.gap-lg-x1 
+          ul.navbar-nav.mt-2.mt-lg-1.ms-lg-4.ms-xl-8.ms-2xl-9.gap-lg-x1 
             each navMenu in menu 
                 li.nav-item 
                     a(href=`${navMenu.link}` title=`${navMenu.label}`).nav-link.nav-bar-item.px-0 #{navMenu.label}

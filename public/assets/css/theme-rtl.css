@@ -21263,12 +21263,12 @@ textarea.form-control-lg {
 }
 
 ::-moz-selection {
-  background-color: var(--aranyak-primary);
+  background-color: var(--aranyak-success);
   color: #fff;
 }
 
 ::selection {
-  background-color: var(--aranyak-primary);
+  background-color: var(--aranyak-success);
   color: #fff;
 }
 
@@ -22483,6 +22483,16 @@ h5, .h5 {
   -webkit-text-fill-color: transparent;
 }
 
+.text-gradient::-moz-selection {
+  background: #124838;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.text-gradient::selection {
+  background: #124838;
+  -webkit-text-fill-color: #fff !important;
+}
+
 .about-card {
   position: relative;
   border-radius: 40px;
@@ -22498,6 +22508,22 @@ h5, .h5 {
     margin-right: -100px;
     max-width: 480px;
   }
+}
+
+.badhon {
+  border-radius: 40px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .badhon {
+    max-width: 478px;
+    max-height: 395px;
+  }
+}
+
+.team-hero-image {
+  border-radius: 40px;
+  border: 1px solid #E3A476;
 }
 
 .social-icons {

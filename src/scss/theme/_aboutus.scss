@@ -6,11 +6,26 @@
     padding: 24px 35px;
     margin-top: -50px;
     z-index: 99;
+    
     @include media-breakpoint-up(lg) {
         margin-top: 0;
         margin-left: -100px;
         max-width: 480px;
       }
+}
+
+.badhon{
+    border-radius: 40px;
+    width: 100%;
+    @include media-breakpoint-up(lg){
+        max-width: 478px;
+        max-height: 395px;
+    }
+}
+
+.team-hero-image{
+    border-radius: 40px;
+    border: 1px solid map-get($theme-colors, 'secondary');
 }
 
 .social-icons {

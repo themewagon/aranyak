@@ -63,3 +63,29 @@
     @include box-shadow(var(--#{$prefix}btn-box-shadow));
   }
 }
+
+
+.scroll-to-top{
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 218, 145, 0.7);
+  border-radius: map-get($border-radiuses, 'circle');
+  transition: background-color 0.2s ease-in;
+  z-index: 1120;
+  
+  span{
+    font-size: 23px;
+  }
+
+  &:hover{
+    background-color: rgba(255, 218, 145, 1);
+  }
+
+}

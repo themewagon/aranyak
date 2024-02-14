@@ -434,16 +434,61 @@ var formValidationInit = function formValidationInit() {
   });
 };
 var navbarInit = function navbarInit() {
+  var navbar = document.querySelector('[data-navbar-soft-on-scroll]');
+  var navbarContainer = document.querySelector('#navbarSupportedContent');
+  if (navbar) {
+    var windowHeight = window.innerHeight;
+    var handleAlpha = function handleAlpha() {
+      var scrollTop = window.scrollY;
+      var alpha = scrollTop / windowHeight * 2;
+      var opacity;
+      var blur;
+      if (alpha <= 0) {
+        opacity = 1;
+        blur = 0;
+      } else if (alpha >= 1) {
+        opacity = 0.65;
+        blur = 10;
+      } else {
+        opacity = 1 - alpha * 0.5;
+        blur = alpha * 10;
+      }
+      navbar.style.backgroundColor = "rgba(255, 218, 145, ".concat(opacity, ")");
+      navbarContainer.style.backgroundColor = "rgba(255, 218, 145, ".concat(opacity, ")");
+      navbar.style.backdropFilter = "blur(".concat(blur, "px)");
+      navbarContainer.style.backdropFilter = "blur(".concat(blur, "px)");
+    };
+    handleAlpha();
+    document.addEventListener('scroll', function () {
+      return handleAlpha();
+    });
+  }
   var navLinks = document.querySelectorAll('.navbar-nav .nav-item');
   navLinks.forEach(function (navLink) {
     navLink.addEventListener('click', function () {
       var navbarToggler = document.querySelector('.navbar-toggler');
-      var navbarContainer = document.querySelector('#navbarSupportedContent');
       navbarToggler.setAttribute('aria-expanded', false);
       navbarContainer.classList.remove('show');
       navbarToggler.classList.add('collapsed');
     });
   });
+};
+var scrollToTopInit = function scrollToTopInit() {
+  var btn = document.querySelector('.scroll-to-top');
+  if (btn) {
+    btn.style.display = 'none';
+    // eslint-disable-next-line func-names
+    window.onscroll = function () {
+      if (window.scrollY > 550) {
+        btn.style.display = 'block';
+      } else {
+        btn.style.display = 'none';
+      }
+    };
+    btn.addEventListener('click', function () {
+      window.scrollTo(0, 0);
+    });
+  }
 };
 
 /*-----------------------------------------------
@@ -481,4 +526,5 @@ docReady(navbarInit);
 docReady(formValidationInit);
 docReady(swiperInit);
 docReady(countupInit);
+docReady(scrollToTopInit);
 //# sourceMappingURL=theme.js.map

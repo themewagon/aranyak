@@ -20,7 +20,7 @@
   height: 50px;
   box-shadow: none !important;
   border: none !important;
-  transition:  all 0.4s ease-in;
+  transition:  all 0.2s ease-in;
   z-index: 100;
 
   &::before{
@@ -34,7 +34,7 @@
     left: 0;
     right: 0;
     opacity: 0;
-    transition: opacity 0.4s ease-in;
+    transition: opacity 0.3s ease-in;
     z-index: -100;
   }
 

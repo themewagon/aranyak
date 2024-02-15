@@ -10871,7 +10871,7 @@ textarea.form-control-lg {
 }
 
 .fs-11 {
-  font-size: 0.64rem !important;
+  font-size: 1.5rem !important;
 }
 
 .fs-10 {
@@ -13545,7 +13545,7 @@ textarea.form-control-lg {
     column-gap: 1.5rem !important;
   }
   .fs-sm-11 {
-    font-size: 0.64rem !important;
+    font-size: 1.5rem !important;
   }
   .fs-sm-10 {
     font-size: 0.875rem !important;
@@ -15367,7 +15367,7 @@ textarea.form-control-lg {
     column-gap: 1.5rem !important;
   }
   .fs-md-11 {
-    font-size: 0.64rem !important;
+    font-size: 1.5rem !important;
   }
   .fs-md-10 {
     font-size: 0.875rem !important;
@@ -17189,7 +17189,7 @@ textarea.form-control-lg {
     column-gap: 1.5rem !important;
   }
   .fs-lg-11 {
-    font-size: 0.64rem !important;
+    font-size: 1.5rem !important;
   }
   .fs-lg-10 {
     font-size: 0.875rem !important;
@@ -19011,7 +19011,7 @@ textarea.form-control-lg {
     column-gap: 1.5rem !important;
   }
   .fs-xl-11 {
-    font-size: 0.64rem !important;
+    font-size: 1.5rem !important;
   }
   .fs-xl-10 {
     font-size: 0.875rem !important;
@@ -20833,7 +20833,7 @@ textarea.form-control-lg {
     column-gap: 1.5rem !important;
   }
   .fs-xxl-11 {
-    font-size: 0.64rem !important;
+    font-size: 1.5rem !important;
   }
   .fs-xxl-10 {
     font-size: 0.875rem !important;
@@ -21479,9 +21479,9 @@ h5, .h5 {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   border: none !important;
-  -webkit-transition: all 0.4s ease-in;
-  -o-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   z-index: 100;
 }
 .btn-gradient::before {
@@ -21495,9 +21495,9 @@ h5, .h5 {
   right: 0;
   left: 0;
   opacity: 0;
-  -webkit-transition: opacity 0.4s ease-in;
-  -o-transition: opacity 0.4s ease-in;
-  transition: opacity 0.4s ease-in;
+  -webkit-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
   z-index: -100;
 }
 .btn-gradient:hover, .btn-gradient:focus, .btn-gradient:active {
@@ -22553,8 +22553,6 @@ h5, .h5 {
 
 .product-card {
   border-radius: 22px;
-  -webkit-box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.05);
   margin: 10px 0;
   height: 100%;
   border: 2px solid transparent;
@@ -22754,14 +22752,6 @@ h5, .h5 {
   padding: 10px 20px;
   color: #fff;
   background: rgba(18, 72, 56, 0.75);
-}
-.blog-card .blog-title {
-  font-size: 24px;
-}
-@media (min-width: 768px) {
-  .blog-card .blog-title {
-    font-size: 30px;
-  }
 }
 .blog-card:hover, .blog-card:focus {
   border: 2px solid #E3A476;

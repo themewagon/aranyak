@@ -26,14 +26,6 @@
             background: rgba(18, 72, 56, 0.75);
         }
     }
-
-    .blog-title {
-        font-size: 24px;
-
-        @include media-breakpoint-up(md){
-            font-size: 30px;
-        }
-    }
     @include hover-focus {
         border: 2px solid map-get($theme-colors, 'secondary');
         border-radius: 25px;

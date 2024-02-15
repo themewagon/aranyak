@@ -5,7 +5,7 @@ mixin Review({starCount,comment, name, designation, imageSrc})
     div 
       - for(var i = 0; i < starCount; i ++)
         img(src=`${CWD}assets/img/icons/star.png`, alt="").me-1.mb-1
-      p.text-black.fs-9.fs-md-8.mb-3.line-clamp-2= comment
+      p.text-black.fs-10.fs-md-9.fs-xxl-8.mb-3.line-clamp-2= comment
       h2.text-success.fs-9.fs-md-8.fw-bold.mb-0= name 
       p.text-black.fs-10.fs-md-9.mb-0.mb-0= designation
 
@@ -36,9 +36,9 @@ mixin Reviews
       }
     ];
 
-  section#review.mb-8.mb-lg-11
-    h3.mb-3.pt-6.fs-7.fs-lg-6.text-success.fw-bold.text-center.text-lg-start review 
-    h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.fw-light.mb-6.mb-lg-8.text-center.text-lg-start    
+  section#review.mb-9.mb-lg-10.mb-xxl-11
+    h3.mb-3.pt-6.fs-8.fs-md-7.fs-xxl-6.text-success.fw-bold.text-center.text-lg-start review 
+    h1.fs-5.fs-md-3.fs-xxl-2.text-secondary.text-capitalize.fw-light.mb-6.mb-lg-8.text-center.text-lg-start    
       | Some words from 
       br
       | our 

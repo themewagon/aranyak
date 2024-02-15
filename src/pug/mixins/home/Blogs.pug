@@ -4,11 +4,11 @@ mixin Blog({imgSrc, type, requiredTime, title, description, link})
       .inner-div 
         p.fw-semi-bold.mb-0= type
     .d-flex.flex-column.justify-content-between.h-100 
-      div.px-x1.pt-2
+      div.px-3.px-xl-x1.pt-2
         span(style="color: #5C5C5C;").mb-0= requiredTime 
-        h2.text-success.fw-semi-bold.text-capitalize.mb-lg-4.blog-title= title
-      div.px-x1.pb-2.pt-1
-        p.text-cardText.fs-9.fs-md-8.fw-light.lh-xl.mb-2.line-clamp-2= description
+        h2.text-success.fw-semi-bold.text-capitalize.mb-lg-4.fs-8.fs-md-11.fs-xxl-7= title
+      div.px-3.px-xl-x1.pb-2.pt-1
+        p.text-cardText.fs-10.fs-md-9.fs-xl-8.fw-light.lh-xl.mb-2.line-clamp-2= description
         a(href=`${link}`).fw-bold.fs-9.fs-md-8.mb-0.read-more read more...
         
 
@@ -44,18 +44,18 @@ mixin Blogs
     ]
   
 
-  section#blogs.mb-7.mb-lg-11
+  section#blogs.mb-9.mb-lg-10.mb-xxl-11
 
     .row.mb-6.mb-lg-7.mb-xl-10.pt-6
-      h3.mb-3.fs-7.fs-lg-6.text-success.fw-bold.text-center.text-lg-start aryanak blog 
-      h1.fs-5.fs-lg-3.fs-xl-2.text-secondary.text-capitalize.mb-7.mb-lg-7.text-center.text-lg-start    
+      h3.mb-3.fs-8.fs-md-7.fs-xxl-6.text-success.fw-bold.text-center.text-lg-start aryanak blog 
+      h1.fs-5.fs-md-3.fs-xxl-2.text-secondary.text-capitalize.mb-7.mb-lg-7.text-center.text-lg-start    
         | To Bring more 
         span.fw-bold Green
         br
         | into 
         span.fw-bold your home
       each item in blogItems
-        .col-12.col-lg-4.mb-5.mb-lg-0.px-lg-3
+        .col-12.col-lg-4.mb-5.mb-lg-0.px-lg-2.px-xxl-3
           +Blog(item)
 
     .d-flex.justify-content-center

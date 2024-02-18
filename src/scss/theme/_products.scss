@@ -85,8 +85,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #E2FFF6;
-        border: 5px solid map-get($theme-colors, 'success');
+        background-color: #E2FFF6 !important;
+        border: 5px solid map-get($theme-colors, 'success') !important;
         border-radius: map-get($border-radiuses, 'circle');
         font-weight: $font-weight-bold;
         color: map-get($theme-colors, 'success');
@@ -96,8 +96,8 @@
             font-size: 23px;
         }
 
-        &:hover, &:focus, &:active {
-            opacity: 1;
+        &:hover, &:active {
+            opacity: 1 !important;
         }
     }
     .prev-button {

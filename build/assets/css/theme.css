@@ -22695,8 +22695,8 @@ h5, .h5 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #E2FFF6;
-  border: 5px solid #124838;
+  background-color: #E2FFF6 !important;
+  border: 5px solid #124838 !important;
   border-radius: 50%;
   font-weight: 700;
   color: #124838;
@@ -22707,8 +22707,8 @@ h5, .h5 {
 .slider-nav .next-button span, .slider-nav .prev-button span {
   font-size: 23px;
 }
-.slider-nav .next-button:hover, .slider-nav .next-button:focus, .slider-nav .next-button:active, .slider-nav .prev-button:hover, .slider-nav .prev-button:focus, .slider-nav .prev-button:active {
-  opacity: 1;
+.slider-nav .next-button:hover, .slider-nav .next-button:active, .slider-nav .prev-button:hover, .slider-nav .prev-button:active {
+  opacity: 1 !important;
 }
 .slider-nav .prev-button {
   left: -3%;
@@ -22855,13 +22855,13 @@ a:hover, a:focus {
   align-items: center;
   line-height: normal;
 }
-.submit-button:hover, .submit-button:focus, .submit-button:active {
+.submit-button:hover, .submit-button:active {
   border: 2px solid #124838 !important;
   -webkit-box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 5px #124838, 0px 0px 0px 10px #fff, 0px 0px 0px 10.5px #124838;
   box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 5px #124838, 0px 0px 0px 10px #fff, 0px 0px 0px 10.5px #124838;
   background: #fff !important;
 }
-.submit-button:hover span, .submit-button:focus span, .submit-button:active span {
+.submit-button:hover span, .submit-button:active span {
   color: #124838 !important;
 }
 

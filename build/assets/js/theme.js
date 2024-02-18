@@ -433,6 +433,11 @@ var formValidationInit = function formValidationInit() {
     }, false);
   });
 };
+
+/*-----------------------------------------------
+|  Navbar
+-----------------------------------------------*/
+
 var navbarInit = function navbarInit() {
   var navbar = document.querySelector('[data-navbar-soft-on-scroll]');
   var navbarContainer = document.querySelector('[data-navbar-collapse]');
@@ -474,6 +479,11 @@ var navbarInit = function navbarInit() {
     }
   });
 };
+
+/*-----------------------------------------------
+|  Scroll To Top
+-----------------------------------------------*/
+
 var scrollToTopInit = function scrollToTopInit() {
   var btn = document.querySelector('[data-scroll-top]');
   if (btn) {
@@ -495,8 +505,6 @@ var scrollToTopInit = function scrollToTopInit() {
 /*-----------------------------------------------
 |  Swiper
 -----------------------------------------------*/
-
-// const swiperInit = () => {
 
 var swiperInit = function swiperInit() {
   var themeContainers = document.querySelectorAll('.swiper-theme-container');

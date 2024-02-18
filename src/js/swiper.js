@@ -4,8 +4,6 @@ import utils from './utils';
 |  Swiper
 -----------------------------------------------*/
 
-// const swiperInit = () => {
-
 const swiperInit = () => {
   const themeContainers = document.querySelectorAll('.swiper-theme-container');
   const navbarVerticalToggle = document.querySelector(

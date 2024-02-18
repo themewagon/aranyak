@@ -1,3 +1,7 @@
+/*-----------------------------------------------
+|  Navbar
+-----------------------------------------------*/
+
 const navbarInit = () => {
   const navbar = document.querySelector('[data-navbar-soft-on-scroll]');
   const navbarContainer = document.querySelector('[data-navbar-collapse]');

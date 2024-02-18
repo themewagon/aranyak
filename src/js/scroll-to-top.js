@@ -1,3 +1,7 @@
+/*-----------------------------------------------
+|  Scroll To Top
+-----------------------------------------------*/
+
 const scrollToTopInit = () => {
   const btn = document.querySelector('[data-scroll-top]');
 

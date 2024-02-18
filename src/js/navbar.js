@@ -1,6 +1,6 @@
 const navbarInit = () => {
   const navbar = document.querySelector('[data-navbar-soft-on-scroll]');
-  const navbarContainer = document.querySelector('#navbarSupportedContent');
+  const navbarContainer = document.querySelector('[data-navbar-collapse]');
 
   if (navbar) {
     const windowHeight = window.innerHeight;
@@ -28,14 +28,15 @@ const navbarInit = () => {
     document.addEventListener('scroll', () => handleAlpha());
   }
 
-  const navLinks = document.querySelectorAll('.navbar-nav .nav-item');
-  navLinks.forEach((navLink) => {
-    navLink.addEventListener('click', () => {
-      const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarNav = document.querySelector('[data-navbar-nav]');
+  navbarNav.addEventListener('click', (event) => {
+    if (event.target.closest('li')) {
+      const navbarToggler = document.querySelector('[data-bs-toggle]');
+      const navbarItemContainer = document.querySelector('[data-navbar-collapse]');
       navbarToggler.setAttribute('aria-expanded', false);
-      navbarContainer.classList.remove('show');
+      navbarItemContainer.classList.remove('show');
       navbarToggler.classList.add('collapsed');
-    });
+    }
   });
 };
 

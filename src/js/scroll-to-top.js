@@ -1,10 +1,10 @@
 const scrollToTopInit = () => {
-  const btn = document.querySelector('.scroll-to-top');
+  const btn = document.querySelector('[data-scroll-top]');
 
   if (btn) {
     btn.style.display = 'none';
     // eslint-disable-next-line func-names
-    window.onscroll = function () {
+    window.onscroll = () => {
 
       if (window.scrollY > 550) {
         btn.style.display = 'block';

@@ -57,7 +57,7 @@ mixin Navbar
               span.ms-1.fs-10.fs-sm-9 #{item.label}
   nav#navbar-top.navbar.navbar-expand-lg.py-1(data-navbar-soft-on-scroll)
     .container
-      a(href="/").navbar-brand.me-lg-auto
+      a(href=`${CWD}`).navbar-brand.me-lg-auto.cursor-pointer
         img(src=`${CWD}assets/img/logos/logo.png`, alt="").w-50.w-md-100.img-fluid
   
       button(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler.border-0.pe-0

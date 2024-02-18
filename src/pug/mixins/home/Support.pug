@@ -17,7 +17,7 @@ mixin Support
           br.d-none.d-xxl-block
           | for free 
 
-        form.needs-validation
+        form.needs-validation(method="POST" onsubmit="return false;")
           .input-group.position-relative 
             input(type="email", name="email" placeholder="your email address").form-control.email-input
             button(type="submit").btn.shadow-none.submit-button.position-absolute.end-0

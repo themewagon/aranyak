@@ -22884,10 +22884,6 @@ a:hover, a:focus {
   z-index: 1;
   height: 100%;
 }
-.terms-condition .text-div {
-  z-index: 10;
-  font-size: 0;
-}
 .terms-condition .links {
   display: inline-block;
   text-align: center;
@@ -22912,6 +22908,24 @@ a:hover, a:focus {
   height: 0;
   overflow: hidden;
   visibility: hidden;
+}
+.terms-condition .text-div {
+  z-index: 10;
+}
+@media (min-width: 992px) {
+  .terms-condition .text-div .copyWrite {
+    white-space: nowrap;
+  }
+}
+@media (min-width: 768px) {
+  .terms-condition .text-div .links {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .terms-condition .text-div .links {
+    font-size: 1.25rem !important;
+  }
 }
 
 .terms-condition .overley-background {

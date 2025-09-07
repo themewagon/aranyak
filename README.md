@@ -2,7 +2,7 @@
 
 #### Preview
 
- - [Demo](https://themewagon.github.io/aranyak/)
+ - [Demo](https://themewagon.github.io/aranyak/v1.0.0/)
 
 #### Download
  - [Download from ThemeWagon](https://themewagon.com/themes/aranyak/)
